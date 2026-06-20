@@ -1,0 +1,12 @@
+{
+  "name": "dbsc-archive",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Capture and reconstruction of DBSC's published HalSail results into Sail Scoring",
+  "scripts": {
+    "capture": "tsx scripts/halsail-archive-fetch.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4"
+  }
+}
