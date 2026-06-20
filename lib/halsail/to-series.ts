@@ -175,14 +175,51 @@ function firstAppliedHcap(echo: HalsailFleet, sail: string): number | null {
   return null;
 }
 
-/** Per-race applied handicap for a sail (raceNumber → hcap), in race order. */
-function perRaceHcaps(fleet: HalsailFleet, sail: string): { raceNumber: number; hcap: number }[] {
-  const out: { raceNumber: number; hcap: number }[] = [];
+/** Per-race applied handicap for a sail (date → hcap), in race order. Keyed by
+ *  date because HalSail numbers races per-class, so the same number maps to
+ *  different dates across classes — races are merged by date (see below). */
+function perRaceHcaps(fleet: HalsailFleet, sail: string): { date: string; hcap: number }[] {
+  const out: { date: string; hcap: number }[] = [];
   for (const race of fleet.races) {
     const f = race.finishers.find((x) => x.sail === sail);
-    if (f && f.hcap != null) out.push({ raceNumber: race.raceNumber, hcap: f.hcap });
+    if (f && f.hcap != null && race.date) out.push({ date: race.date, hcap: f.hcap });
   }
   return out;
+}
+
+type HalsailRace = HalsailFleet['races'][number];
+
+/** Merge races across fragments by (date, slot). HalSail numbers races per-class,
+ *  so the number is not a cross-class key (the same number lands on different
+ *  dates across classes — see #Eleint); but date alone isn't either (a day can
+ *  hold more than one race). The slot — a race's index among its fragment's
+ *  races on the same date, in race-number order — disambiguates: same-slot races
+ *  across fragments on a day merge into one race; a second race that day stays
+ *  separate. Returns the ordered merged keys, the date of each, and per-fragment
+ *  key→race lookup. */
+function mergeRacesByDate(fragments: HalsailFleet[]): {
+  keys: string[];
+  dateOf: (key: string) => string;
+  byFragment: Map<HalsailFleet, Map<string, HalsailRace>>;
+} {
+  const byFragment = new Map<HalsailFleet, Map<string, HalsailRace>>();
+  for (const frag of fragments) {
+    const seqByDate = new Map<string, number>();
+    const byKey = new Map<string, HalsailRace>();
+    for (const r of [...frag.races].sort((a, b) => a.raceNumber - b.raceNumber)) {
+      if (!r.date) continue;
+      const seq = seqByDate.get(r.date) ?? 0;
+      seqByDate.set(r.date, seq + 1);
+      byKey.set(`${r.date}#${seq}`, r);
+    }
+    byFragment.set(frag, byKey);
+  }
+  const keys = [...new Set([...byFragment.values()].flatMap((m) => [...m.keys()]))].sort((a, b) => {
+    const [da, sa] = a.split('#');
+    const [db, sb] = b.split('#');
+    return da.localeCompare(db) || Number(sa) - Number(sb);
+  });
+  return { keys, dateOf: (key) => key.split('#')[0], byFragment };
 }
 
 /** Per-class cruiser day series (Thursday Blue, Saturday): Cruisers 0/1/2 under
@@ -223,10 +260,10 @@ export function buildCruiserDaySeries(
   // Competitors — roster from each class's ECHO fragment.
   const competitors: FileCompetitor[] = [];
   const sailToComp = new Map<string, string>();
-  // Per-race IRC TCC overrides (mid-series rating change), keyed by race number.
+  // Per-race IRC TCC overrides (mid-series rating change), keyed by race date.
   // The competitor carries its *current* (latest) TCC; earlier races where the
   // applied TCC differed get an override pinning the old value.
-  const overridesByRace = new Map<number, FileRatingOverride[]>();
+  const overridesByDate = new Map<string, FileRatingOverride[]>();
   for (const cl of classes) {
     const ircBySail = new Map(cl.irc?.competitors.map((c) => [c.sail, c]) ?? []);
     for (const c of cl.echo.competitors) {
@@ -245,11 +282,11 @@ export function buildCruiserDaySeries(
         : null;
       if (ircTcc != null) {
         fleetIds.push(ircFleetId(cl.classNum));
-        for (const { raceNumber, hcap } of ircHcaps) {
+        for (const { date, hcap } of ircHcaps) {
           if (hcap === ircTcc) continue;
-          if (!overridesByRace.has(raceNumber)) overridesByRace.set(raceNumber, []);
-          overridesByRace.get(raceNumber)!.push({
-            id: `ro-${raceNumber}-${id}-ircTcc`,
+          if (!overridesByDate.has(date)) overridesByDate.set(date, []);
+          overridesByDate.get(date)!.push({
+            id: `ro-${date}-${id}-ircTcc`,
             competitorId: id,
             field: 'ircTcc',
             value: hcap,
@@ -301,10 +338,10 @@ export function buildCruiserDaySeries(
         const vHcaps = perRaceHcaps(vc.vprs, sail);
         vprsTcc = vHcaps.length ? vHcaps[vHcaps.length - 1].hcap : (vcomp.hcap ?? null);
         if (vprsTcc != null) {
-          for (const { raceNumber, hcap } of vHcaps) {
+          for (const { date, hcap } of vHcaps) {
             if (hcap === vprsTcc) continue;
-            if (!overridesByRace.has(raceNumber)) overridesByRace.set(raceNumber, []);
-            overridesByRace.get(raceNumber)!.push({ id: `ro-${raceNumber}-${id}-vprsTcc`, competitorId: id, field: 'vprsTcc', value: hcap });
+            if (!overridesByDate.has(date)) overridesByDate.set(date, []);
+            overridesByDate.get(date)!.push({ id: `ro-${date}-${id}-vprsTcc`, competitorId: id, field: 'vprsTcc', value: hcap });
           }
         }
       }
@@ -338,24 +375,24 @@ export function buildCruiserDaySeries(
     extraStartFleets.get(od.parentClass)!.push(od.fleetId);
   }
 
-  // Races — union of race numbers across classes; each class contributes only
-  // the races it sailed (the engine excludes a race for a fleet with no
-  // finishers, so absent classes are correctly not scored that race).
-  const raceNumbers = [...new Set([
-    ...classes.flatMap((cl) => cl.echo.races.map((r) => r.raceNumber)),
-    ...vprsClasses.flatMap((vc) => vc.vprs.races.map((r) => r.raceNumber)),
-  ])].sort((a, b) => a - b);
+  // Races — merged across classes by (date, slot); see mergeRacesByDate. Merged
+  // races are numbered sequentially in date order; a class that didn't sail a
+  // given race contributes nothing, so the engine doesn't score it there.
+  const merger = mergeRacesByDate([
+    ...classes.map((cl) => cl.echo),
+    ...vprsClasses.flatMap((vc) => [vc.vprs, ...(vc.echoFleets ?? []).map((e) => e.echo)]),
+  ]);
 
   const races: FileRace[] = [];
-  for (const rn of raceNumbers) {
+  merger.keys.forEach((key, idx) => {
+    const rn = idx + 1;
+    const date = merger.dateOf(key);
     const starts: FileRaceStart[] = [];
-    let date = '';
     const crossings: Crossing[] = [];
 
     for (const cl of classes) {
-      const race = cl.echo.races.find((r) => r.raceNumber === rn);
+      const race = merger.byFragment.get(cl.echo)?.get(key);
       if (!race) continue;
-      if (race.date) date ||= race.date;
       const startFleets = [echoFleetId(cl.classNum)];
       if (cl.irc) startFleets.push(ircFleetId(cl.classNum));
       startFleets.push(...(extraStartFleets.get(cl.classNum) ?? []));
@@ -383,11 +420,10 @@ export function buildCruiserDaySeries(
       // both has the same crossing in each.
       const sources = [vc.vprs, ...(vc.echoFleets ?? []).map((e) => e.echo)];
       const raceObjs = sources
-        .map((s) => s.races.find((r) => r.raceNumber === rn))
-        .filter((r): r is NonNullable<typeof r> => !!r);
+        .map((s) => merger.byFragment.get(s)?.get(key))
+        .filter((r): r is HalsailRace => !!r);
       if (raceObjs.length === 0) continue;
       const r0 = raceObjs.find((r) => r.startTime) ?? raceObjs[0];
-      if (r0.date) date ||= r0.date;
       starts.push({
         id: `rs-${rn}-${vc.startKey}`,
         fleetIds: [vc.vprsFleetId, ...(vc.echoFleets ?? []).map((e) => e.fleetId)],
@@ -405,16 +441,16 @@ export function buildCruiserDaySeries(
       }
     }
 
-    const ratingOverrides = overridesByRace.get(rn);
+    const ratingOverrides = overridesByDate.get(date);
     races.push({
       id: `race-${rn}`,
       raceNumber: rn,
-      date: date || '2026-01-01',
+      date,
       starts,
       finishes: assembleFinishes(rn, crossings),
       ...(ratingOverrides?.length ? { ratingOverrides } : {}),
     });
-  }
+  });
 
   return assembleSeries(fleets, competitors, races, {
     seriesId: opts.seriesId ?? 'dbsc-thursday-blue-2026',
@@ -468,16 +504,17 @@ export function buildCombinedCruisersSeries(
     }
   }
 
-  const raceNumbers = [...new Set(echoFleets.flatMap((ef) => ef.fleet.races.map((r) => r.raceNumber)))].sort((a, b) => a - b);
+  // Merge races by (date, slot) across the pooled fleets (see mergeRacesByDate).
+  const merger = mergeRacesByDate(echoFleets.map((ef) => ef.fleet));
   const races: FileRace[] = [];
-  for (const rn of raceNumbers) {
+  merger.keys.forEach((key, idx) => {
+    const rn = idx + 1;
+    const date = merger.dateOf(key);
     const starts: FileRaceStart[] = [];
-    let date = '';
     const crossings: Crossing[] = [];
     for (const ef of echoFleets) {
-      const race = ef.fleet.races.find((r) => r.raceNumber === rn);
+      const race = merger.byFragment.get(ef.fleet)?.get(key);
       if (!race) continue;
-      if (race.date) date ||= race.date;
       starts.push({ id: `rs-${rn}-${ef.fleetId}`, fleetIds: [ef.fleetId], startTime: race.startTime ?? '18:55:00' });
       for (const f of race.finishers) {
         const cid = sailToComp.get(f.sail);
@@ -489,11 +526,11 @@ export function buildCombinedCruisersSeries(
     races.push({
       id: `race-${rn}`,
       raceNumber: rn,
-      date: date || '2026-01-01',
+      date,
       starts,
       finishes: assembleFinishes(rn, crossings),
     });
-  }
+  });
 
   return assembleSeries(fleets, competitors, races, {
     seriesId: opts.seriesId ?? 'dbsc-tuesday-cruisers-2026',
@@ -535,7 +572,7 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
   // VPRS fleet) becomes one competitor per fleet and scores in each — correct,
   // since HalSail publishes those as independent per-fleet results.
   const fleetCompId = (fleetId: string, sail: string) => `comp-${fleetId}-${sail.replace(/[^A-Za-z0-9]/g, '')}`;
-  const overridesByRace = new Map<number, FileRatingOverride[]>();
+  const overridesByDate = new Map<string, FileRatingOverride[]>();
   const competitors: FileCompetitor[] = [];
   const validIdsByFleet = new Map<string, Set<string>>();
   for (const spec of specs) {
@@ -563,10 +600,10 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
         if (rating != null) {
           const field = spec.system === 'irc' ? 'ircTcc' : 'vprsTcc';
           comp[field] = rating;
-          for (const { raceNumber, hcap } of hc) {
+          for (const { date, hcap } of hc) {
             if (hcap === rating) continue;
-            if (!overridesByRace.has(raceNumber)) overridesByRace.set(raceNumber, []);
-            overridesByRace.get(raceNumber)!.push({ id: `ro-${raceNumber}-${id}-${field}`, competitorId: id, field, value: hcap });
+            if (!overridesByDate.has(date)) overridesByDate.set(date, []);
+            overridesByDate.get(date)!.push({ id: `ro-${date}-${id}-${field}`, competitorId: id, field, value: hcap });
           }
         }
       } else if (spec.system === 'echo') {
@@ -580,16 +617,17 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
     }
   }
 
-  const raceNumbers = [...new Set(specs.flatMap((s) => s.fragment.races.map((r) => r.raceNumber)))].sort((a, b) => a - b);
+  // Merge races by (date, slot) across the fleets (see mergeRacesByDate).
+  const merger = mergeRacesByDate(specs.map((s) => s.fragment));
   const races: FileRace[] = [];
-  for (const rn of raceNumbers) {
+  merger.keys.forEach((key, idx) => {
+    const rn = idx + 1;
+    const date = merger.dateOf(key);
     const starts: FileRaceStart[] = [];
-    let date = '';
     const crossings: Crossing[] = [];
     for (const spec of specs) {
-      const race = spec.fragment.races.find((r) => r.raceNumber === rn);
+      const race = merger.byFragment.get(spec.fragment)?.get(key);
       if (!race) continue;
-      if (race.date) date ||= race.date;
       const valid = validIdsByFleet.get(spec.fleetId)!;
       starts.push({ id: `rs-${rn}-${spec.fleetId}`, fleetIds: [spec.fleetId], startTime: race.startTime ?? '18:45:00' });
       for (const f of race.finishers) {
@@ -599,16 +637,16 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
         crossings.push({ compId: id, sail: f.sail, finish: f.finish, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
       }
     }
-    const ratingOverrides = overridesByRace.get(rn);
+    const ratingOverrides = overridesByDate.get(date);
     races.push({
       id: `race-${rn}`,
       raceNumber: rn,
-      date: date || '2026-01-01',
+      date,
       starts,
       finishes: assembleFinishes(rn, crossings),
       ...(ratingOverrides?.length ? { ratingOverrides } : {}),
     });
-  }
+  });
 
   return assembleSeries(fleets, competitors, races, {
     seriesId: opts.seriesId ?? 'dbsc-day-fleets-2026',

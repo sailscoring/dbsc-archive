@@ -1,12 +1,6 @@
 {
-  "formatVersion": 7,
+  "formatVersion": 8,
   "seriesId": "7a511826-4e09-4406-88de-aa5d3a35b024",
-  "snapshotId": "1c27f2e7-f404-4680-9f78-6bce47ac6f36",
-  "snapshotHistory": [
-    "cd762308-6316-4d4a-9b7a-8e715cf7cbc7",
-    "1c20937b-7d6f-4c55-96a2-7511bdcd3413",
-    "1c27f2e7-f404-4680-9f78-6bce47ac6f36"
-  ],
   "exportedAt": "2026-06-02T00:00:00.000Z",
   "series": {
     "id": "7a511826-4e09-4406-88de-aa5d3a35b024",
@@ -241,19 +235,19 @@
       ]
     },
     {
-      "id": "race-4",
-      "raceNumber": 4,
+      "id": "race-2",
+      "raceNumber": 2,
       "date": "2026-05-19",
       "starts": [
         {
-          "id": "rs-4-cf-combined",
+          "id": "rs-2-cf-combined",
           "fleetIds": [
             "cf-combined"
           ],
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-4-cf-3-echo",
+          "id": "rs-2-cf-3-echo",
           "fleetIds": [
             "cf-3-echo"
           ],
@@ -262,7 +256,7 @@
       ],
       "finishes": [
         {
-          "id": "fin-4-comp-5795",
+          "id": "fin-2-comp-5795",
           "competitorId": "comp-5795",
           "sortOrder": 1,
           "finishTime": "19:44:50",
@@ -272,7 +266,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-4-comp-1038",
+          "id": "fin-2-comp-1038",
           "competitorId": "comp-1038",
           "sortOrder": 2,
           "finishTime": "19:50:50",
@@ -282,7 +276,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-4-comp-1792",
+          "id": "fin-2-comp-1792",
           "competitorId": "comp-1792",
           "sortOrder": 3,
           "finishTime": "19:51:35",
@@ -292,7 +286,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-4-comp-2855",
+          "id": "fin-2-comp-2855",
           "competitorId": "comp-2855",
           "sortOrder": 4,
           "finishTime": "19:55:15",
@@ -302,7 +296,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-4-comp-808",
+          "id": "fin-2-comp-808",
           "competitorId": "comp-808",
           "sortOrder": null,
           "resultCode": "OCS",
@@ -313,19 +307,19 @@
       ]
     },
     {
-      "id": "race-6",
-      "raceNumber": 6,
+      "id": "race-3",
+      "raceNumber": 3,
       "date": "2026-06-02",
       "starts": [
         {
-          "id": "rs-6-cf-combined",
+          "id": "rs-3-cf-combined",
           "fleetIds": [
             "cf-combined"
           ],
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-6-cf-3-echo",
+          "id": "rs-3-cf-3-echo",
           "fleetIds": [
             "cf-3-echo"
           ],
@@ -334,7 +328,7 @@
       ],
       "finishes": [
         {
-          "id": "fin-6-comp-5795",
+          "id": "fin-3-comp-5795",
           "competitorId": "comp-5795",
           "sortOrder": 1,
           "finishTime": "20:23:38",
@@ -344,7 +338,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2855",
+          "id": "fin-3-comp-2855",
           "competitorId": "comp-2855",
           "sortOrder": 2,
           "finishTime": "20:25:05",
@@ -354,7 +348,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1792",
+          "id": "fin-3-comp-1792",
           "competitorId": "comp-1792",
           "sortOrder": 3,
           "finishTime": "20:30:24",
@@ -364,7 +358,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1038",
+          "id": "fin-3-comp-1038",
           "competitorId": "comp-1038",
           "sortOrder": 4,
           "finishTime": "20:32:46",

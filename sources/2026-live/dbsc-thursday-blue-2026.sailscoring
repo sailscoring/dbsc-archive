@@ -1,15 +1,6 @@
 {
-  "formatVersion": 7,
+  "formatVersion": 8,
   "seriesId": "8c86e256-ed7e-49a7-a0e3-6ca4ac5465a9",
-  "snapshotId": "c81322bf-6b97-408c-abf2-9516bcfe0ead",
-  "snapshotHistory": [
-    "f9a1c0de-2026-4b1e-8c00-000000000001",
-    "7e168172-6d0f-4868-89d2-f1ad6a59018f",
-    "ffcb6ba7-72bd-47c3-993f-a3a39f07314c",
-    "73eb29cd-7ca9-437a-bf49-5a6d5f32bf8c",
-    "1b3db236-21f0-4205-af34-44e78497fd20",
-    "c81322bf-6b97-408c-abf2-9516bcfe0ead"
-  ],
   "exportedAt": "2026-06-02T00:00:00.000Z",
   "series": {
     "id": "8c86e256-ed7e-49a7-a0e3-6ca4ac5465a9",
@@ -1298,7 +1289,600 @@
       ],
       "ratingOverrides": [
         {
-          "id": "ro-1-comp-2160-ircTcc",
+          "id": "ro-2026-04-23-comp-2160-ircTcc",
+          "competitorId": "comp-2160",
+          "field": "ircTcc",
+          "value": 1.008
+        }
+      ]
+    },
+    {
+      "id": "race-2",
+      "raceNumber": 2,
+      "date": "2026-05-07",
+      "starts": [
+        {
+          "id": "rs-2-c0",
+          "fleetIds": [
+            "cf-0-echo",
+            "cf-0-irc"
+          ],
+          "startTime": "18:40:00"
+        },
+        {
+          "id": "rs-2-c1",
+          "fleetIds": [
+            "cf-1-echo",
+            "cf-1-irc",
+            "cf-j109"
+          ],
+          "startTime": "18:45:00"
+        },
+        {
+          "id": "rs-2-c2",
+          "fleetIds": [
+            "cf-2-echo",
+            "cf-2-irc",
+            "cf-sigma33"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-2-c3",
+          "fleetIds": [
+            "cf-3-echo"
+          ],
+          "startTime": "19:00:00"
+        },
+        {
+          "id": "rs-2-45a",
+          "fleetIds": [
+            "cf-45a-vprs",
+            "cf-5a-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-2-45b",
+          "fleetIds": [
+            "cf-45b-vprs",
+            "cf-5b-echo"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-2-comp-7887",
+          "competitorId": "comp-7887",
+          "sortOrder": 1,
+          "finishTime": "19:27:01",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-4240",
+          "competitorId": "comp-4240",
+          "sortOrder": 2,
+          "finishTime": "19:34:45",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-6888",
+          "competitorId": "comp-6888",
+          "sortOrder": 3,
+          "finishTime": "19:35:17",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2237",
+          "competitorId": "comp-2237",
+          "sortOrder": 4,
+          "finishTime": "19:35:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-35950",
+          "competitorId": "comp-35950",
+          "sortOrder": 5,
+          "finishTime": "19:36:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-29213",
+          "competitorId": "comp-29213",
+          "sortOrder": 6,
+          "finishTime": "19:42:25",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1242",
+          "competitorId": "comp-1242",
+          "sortOrder": 7,
+          "finishTime": "19:44:12",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-811",
+          "competitorId": "comp-811",
+          "sortOrder": 8,
+          "finishTime": "19:45:10",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2160",
+          "competitorId": "comp-2160",
+          "sortOrder": 9,
+          "finishTime": "19:45:31",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1383",
+          "competitorId": "comp-1383",
+          "sortOrder": 10,
+          "finishTime": "19:45:42",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-13500",
+          "competitorId": "comp-13500",
+          "sortOrder": 11,
+          "finishTime": "19:47:27",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1315",
+          "competitorId": "comp-1315",
+          "sortOrder": 12,
+          "finishTime": "19:47:39",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-28898",
+          "competitorId": "comp-28898",
+          "sortOrder": 13,
+          "finishTime": "19:49:08",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2597",
+          "competitorId": "comp-2597",
+          "sortOrder": 14,
+          "finishTime": "19:49:18",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-9898",
+          "competitorId": "comp-9898",
+          "sortOrder": 15,
+          "finishTime": "19:49:19",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1129",
+          "competitorId": "comp-1129",
+          "sortOrder": 16,
+          "finishTime": "19:49:25",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-111",
+          "competitorId": "comp-111",
+          "sortOrder": 17,
+          "finishTime": "19:49:42",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-3471",
+          "competitorId": "comp-3471",
+          "sortOrder": 18,
+          "finishTime": "19:49:47",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1206",
+          "competitorId": "comp-1206",
+          "sortOrder": 19,
+          "finishTime": "19:50:31",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1341",
+          "competitorId": "comp-1341",
+          "sortOrder": 20,
+          "finishTime": "19:51:10",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-4999",
+          "competitorId": "comp-4999",
+          "sortOrder": 21,
+          "finishTime": "19:51:30",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-9216",
+          "competitorId": "comp-9216",
+          "sortOrder": 22,
+          "finishTime": "19:51:37",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-53222",
+          "competitorId": "comp-53222",
+          "sortOrder": 23,
+          "finishTime": "19:51:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-3950",
+          "competitorId": "comp-3950",
+          "sortOrder": 24,
+          "finishTime": "19:52:03",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-4464",
+          "competitorId": "comp-4464",
+          "sortOrder": 25,
+          "finishTime": "19:52:25",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1792",
+          "competitorId": "comp-1792",
+          "sortOrder": 26,
+          "finishTime": "19:52:59",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2558",
+          "competitorId": "comp-2558",
+          "sortOrder": 27,
+          "finishTime": "19:53:08",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-5795",
+          "competitorId": "comp-5795",
+          "sortOrder": 28,
+          "finishTime": "19:53:12",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-242",
+          "competitorId": "comp-242",
+          "sortOrder": 29,
+          "finishTime": "19:53:12",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-5507",
+          "competitorId": "comp-5507",
+          "sortOrder": 30,
+          "finishTime": "19:53:46",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-4518",
+          "competitorId": "comp-4518",
+          "sortOrder": 31,
+          "finishTime": "19:53:55",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-216",
+          "competitorId": "comp-216",
+          "sortOrder": 32,
+          "finishTime": "19:53:56",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-8237",
+          "competitorId": "comp-8237",
+          "sortOrder": 33,
+          "finishTime": "19:54:22",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2918",
+          "competitorId": "comp-2918",
+          "sortOrder": 34,
+          "finishTime": "19:56:15",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-7677",
+          "competitorId": "comp-7677",
+          "sortOrder": 35,
+          "finishTime": "19:56:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-28284",
+          "competitorId": "comp-28284",
+          "sortOrder": 36,
+          "finishTime": "19:56:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1038",
+          "competitorId": "comp-1038",
+          "sortOrder": 37,
+          "finishTime": "19:58:03",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-3506",
+          "competitorId": "comp-3506",
+          "sortOrder": 38,
+          "finishTime": "19:58:25",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-9007",
+          "competitorId": "comp-9007",
+          "sortOrder": 39,
+          "finishTime": "19:59:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-3202",
+          "competitorId": "comp-3202",
+          "sortOrder": 40,
+          "finishTime": "19:59:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-3710",
+          "competitorId": "comp-3710",
+          "sortOrder": 41,
+          "finishTime": "19:59:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-46",
+          "competitorId": "comp-46",
+          "sortOrder": 42,
+          "finishTime": "20:00:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2855",
+          "competitorId": "comp-2855",
+          "sortOrder": 43,
+          "finishTime": "20:01:07",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-13778",
+          "competitorId": "comp-13778",
+          "sortOrder": 44,
+          "finishTime": "20:01:42",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-307",
+          "competitorId": "comp-307",
+          "sortOrder": 45,
+          "finishTime": "20:02:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-38631",
+          "competitorId": "comp-38631",
+          "sortOrder": 46,
+          "finishTime": "20:03:13",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-11",
+          "competitorId": "comp-11",
+          "sortOrder": 47,
+          "finishTime": "20:04:35",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-1646",
+          "competitorId": "comp-1646",
+          "sortOrder": 48,
+          "finishTime": "20:12:33",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2093",
+          "competitorId": "comp-2093",
+          "sortOrder": 49,
+          "finishTime": "20:14:08",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-7778",
+          "competitorId": "comp-7778",
+          "sortOrder": null,
+          "resultCode": "RDG",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null,
+          "redressMethod": "all_races_excl_dnc"
+        },
+        {
+          "id": "fin-2-comp-5373",
+          "competitorId": "comp-5373",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-2102",
+          "competitorId": "comp-2102",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-5032",
+          "competitorId": "comp-5032",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ],
+      "ratingOverrides": [
+        {
+          "id": "ro-2026-05-07-comp-2160-ircTcc",
           "competitorId": "comp-2160",
           "field": "ircTcc",
           "value": 1.008
@@ -1308,7 +1892,7 @@
     {
       "id": "race-3",
       "raceNumber": 3,
-      "date": "2026-05-07",
+      "date": "2026-05-21",
       "starts": [
         {
           "id": "rs-3-c0",
@@ -1334,14 +1918,14 @@
             "cf-2-irc",
             "cf-sigma33"
           ],
-          "startTime": "18:55:00"
+          "startTime": "18:59:00"
         },
         {
           "id": "rs-3-c3",
           "fleetIds": [
             "cf-3-echo"
           ],
-          "startTime": "19:00:00"
+          "startTime": "19:04:00"
         },
         {
           "id": "rs-3-45a",
@@ -1349,7 +1933,7 @@
             "cf-45a-vprs",
             "cf-5a-echo"
           ],
-          "startTime": "19:05:00"
+          "startTime": "19:09:00"
         },
         {
           "id": "rs-3-45b",
@@ -1357,605 +1941,12 @@
             "cf-45b-vprs",
             "cf-5b-echo"
           ],
-          "startTime": "19:05:00"
+          "startTime": "19:09:00"
         }
       ],
       "finishes": [
         {
           "id": "fin-3-comp-7887",
-          "competitorId": "comp-7887",
-          "sortOrder": 1,
-          "finishTime": "19:27:01",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-4240",
-          "competitorId": "comp-4240",
-          "sortOrder": 2,
-          "finishTime": "19:34:45",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-6888",
-          "competitorId": "comp-6888",
-          "sortOrder": 3,
-          "finishTime": "19:35:17",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2237",
-          "competitorId": "comp-2237",
-          "sortOrder": 4,
-          "finishTime": "19:35:58",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-35950",
-          "competitorId": "comp-35950",
-          "sortOrder": 5,
-          "finishTime": "19:36:58",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-29213",
-          "competitorId": "comp-29213",
-          "sortOrder": 6,
-          "finishTime": "19:42:25",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1242",
-          "competitorId": "comp-1242",
-          "sortOrder": 7,
-          "finishTime": "19:44:12",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-811",
-          "competitorId": "comp-811",
-          "sortOrder": 8,
-          "finishTime": "19:45:10",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2160",
-          "competitorId": "comp-2160",
-          "sortOrder": 9,
-          "finishTime": "19:45:31",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1383",
-          "competitorId": "comp-1383",
-          "sortOrder": 10,
-          "finishTime": "19:45:42",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-13500",
-          "competitorId": "comp-13500",
-          "sortOrder": 11,
-          "finishTime": "19:47:27",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1315",
-          "competitorId": "comp-1315",
-          "sortOrder": 12,
-          "finishTime": "19:47:39",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-28898",
-          "competitorId": "comp-28898",
-          "sortOrder": 13,
-          "finishTime": "19:49:08",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2597",
-          "competitorId": "comp-2597",
-          "sortOrder": 14,
-          "finishTime": "19:49:18",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-9898",
-          "competitorId": "comp-9898",
-          "sortOrder": 15,
-          "finishTime": "19:49:19",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1129",
-          "competitorId": "comp-1129",
-          "sortOrder": 16,
-          "finishTime": "19:49:25",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-111",
-          "competitorId": "comp-111",
-          "sortOrder": 17,
-          "finishTime": "19:49:42",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-3471",
-          "competitorId": "comp-3471",
-          "sortOrder": 18,
-          "finishTime": "19:49:47",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1206",
-          "competitorId": "comp-1206",
-          "sortOrder": 19,
-          "finishTime": "19:50:31",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1341",
-          "competitorId": "comp-1341",
-          "sortOrder": 20,
-          "finishTime": "19:51:10",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-4999",
-          "competitorId": "comp-4999",
-          "sortOrder": 21,
-          "finishTime": "19:51:30",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-9216",
-          "competitorId": "comp-9216",
-          "sortOrder": 22,
-          "finishTime": "19:51:37",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-53222",
-          "competitorId": "comp-53222",
-          "sortOrder": 23,
-          "finishTime": "19:51:38",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-3950",
-          "competitorId": "comp-3950",
-          "sortOrder": 24,
-          "finishTime": "19:52:03",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-4464",
-          "competitorId": "comp-4464",
-          "sortOrder": 25,
-          "finishTime": "19:52:25",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1792",
-          "competitorId": "comp-1792",
-          "sortOrder": 26,
-          "finishTime": "19:52:59",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2558",
-          "competitorId": "comp-2558",
-          "sortOrder": 27,
-          "finishTime": "19:53:08",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-5795",
-          "competitorId": "comp-5795",
-          "sortOrder": 28,
-          "finishTime": "19:53:12",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-242",
-          "competitorId": "comp-242",
-          "sortOrder": 29,
-          "finishTime": "19:53:12",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-5507",
-          "competitorId": "comp-5507",
-          "sortOrder": 30,
-          "finishTime": "19:53:46",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-4518",
-          "competitorId": "comp-4518",
-          "sortOrder": 31,
-          "finishTime": "19:53:55",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-216",
-          "competitorId": "comp-216",
-          "sortOrder": 32,
-          "finishTime": "19:53:56",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-8237",
-          "competitorId": "comp-8237",
-          "sortOrder": 33,
-          "finishTime": "19:54:22",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2918",
-          "competitorId": "comp-2918",
-          "sortOrder": 34,
-          "finishTime": "19:56:15",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-7677",
-          "competitorId": "comp-7677",
-          "sortOrder": 35,
-          "finishTime": "19:56:23",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-28284",
-          "competitorId": "comp-28284",
-          "sortOrder": 36,
-          "finishTime": "19:56:41",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1038",
-          "competitorId": "comp-1038",
-          "sortOrder": 37,
-          "finishTime": "19:58:03",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-3506",
-          "competitorId": "comp-3506",
-          "sortOrder": 38,
-          "finishTime": "19:58:25",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-9007",
-          "competitorId": "comp-9007",
-          "sortOrder": 39,
-          "finishTime": "19:59:11",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-3202",
-          "competitorId": "comp-3202",
-          "sortOrder": 40,
-          "finishTime": "19:59:38",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-3710",
-          "competitorId": "comp-3710",
-          "sortOrder": 41,
-          "finishTime": "19:59:58",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-46",
-          "competitorId": "comp-46",
-          "sortOrder": 42,
-          "finishTime": "20:00:11",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2855",
-          "competitorId": "comp-2855",
-          "sortOrder": 43,
-          "finishTime": "20:01:07",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-13778",
-          "competitorId": "comp-13778",
-          "sortOrder": 44,
-          "finishTime": "20:01:42",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-307",
-          "competitorId": "comp-307",
-          "sortOrder": 45,
-          "finishTime": "20:02:00",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-38631",
-          "competitorId": "comp-38631",
-          "sortOrder": 46,
-          "finishTime": "20:03:13",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-11",
-          "competitorId": "comp-11",
-          "sortOrder": 47,
-          "finishTime": "20:04:35",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-1646",
-          "competitorId": "comp-1646",
-          "sortOrder": 48,
-          "finishTime": "20:12:33",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2093",
-          "competitorId": "comp-2093",
-          "sortOrder": 49,
-          "finishTime": "20:14:08",
-          "resultCode": null,
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-7778",
-          "competitorId": "comp-7778",
-          "sortOrder": null,
-          "resultCode": "RDG",
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null,
-          "redressMethod": "all_races_excl_dnc"
-        },
-        {
-          "id": "fin-3-comp-5373",
-          "competitorId": "comp-5373",
-          "sortOrder": null,
-          "resultCode": "DNF",
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-2102",
-          "competitorId": "comp-2102",
-          "sortOrder": null,
-          "resultCode": "DNF",
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        },
-        {
-          "id": "fin-3-comp-5032",
-          "competitorId": "comp-5032",
-          "sortOrder": null,
-          "resultCode": "DNF",
-          "startPresent": true,
-          "penaltyCode": null,
-          "penaltyOverride": null
-        }
-      ],
-      "ratingOverrides": [
-        {
-          "id": "ro-3-comp-2160-ircTcc",
-          "competitorId": "comp-2160",
-          "field": "ircTcc",
-          "value": 1.008
-        }
-      ]
-    },
-    {
-      "id": "race-5",
-      "raceNumber": 5,
-      "date": "2026-05-21",
-      "starts": [
-        {
-          "id": "rs-5-c0",
-          "fleetIds": [
-            "cf-0-echo",
-            "cf-0-irc"
-          ],
-          "startTime": "18:40:00"
-        },
-        {
-          "id": "rs-5-c1",
-          "fleetIds": [
-            "cf-1-echo",
-            "cf-1-irc",
-            "cf-j109"
-          ],
-          "startTime": "18:45:00"
-        },
-        {
-          "id": "rs-5-c2",
-          "fleetIds": [
-            "cf-2-echo",
-            "cf-2-irc",
-            "cf-sigma33"
-          ],
-          "startTime": "18:59:00"
-        },
-        {
-          "id": "rs-5-c3",
-          "fleetIds": [
-            "cf-3-echo"
-          ],
-          "startTime": "19:04:00"
-        },
-        {
-          "id": "rs-5-45a",
-          "fleetIds": [
-            "cf-45a-vprs",
-            "cf-5a-echo"
-          ],
-          "startTime": "19:09:00"
-        },
-        {
-          "id": "rs-5-45b",
-          "fleetIds": [
-            "cf-45b-vprs",
-            "cf-5b-echo"
-          ],
-          "startTime": "19:09:00"
-        }
-      ],
-      "finishes": [
-        {
-          "id": "fin-5-comp-7887",
           "competitorId": "comp-7887",
           "sortOrder": 1,
           "finishTime": "19:37:44",
@@ -1965,7 +1956,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-6888",
+          "id": "fin-3-comp-6888",
           "competitorId": "comp-6888",
           "sortOrder": 2,
           "finishTime": "19:38:40",
@@ -1975,7 +1966,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-4007",
+          "id": "fin-3-comp-4007",
           "competitorId": "comp-4007",
           "sortOrder": 3,
           "finishTime": "19:45:12",
@@ -1985,7 +1976,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-4240",
+          "id": "fin-3-comp-4240",
           "competitorId": "comp-4240",
           "sortOrder": 4,
           "finishTime": "19:46:45",
@@ -1995,7 +1986,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1242",
+          "id": "fin-3-comp-1242",
           "competitorId": "comp-1242",
           "sortOrder": 5,
           "finishTime": "19:47:51",
@@ -2005,7 +1996,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-7778",
+          "id": "fin-3-comp-7778",
           "competitorId": "comp-7778",
           "sortOrder": 6,
           "finishTime": "19:50:23",
@@ -2015,7 +2006,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1383",
+          "id": "fin-3-comp-1383",
           "competitorId": "comp-1383",
           "sortOrder": 7,
           "finishTime": "19:50:33",
@@ -2025,7 +2016,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-53222",
+          "id": "fin-3-comp-53222",
           "competitorId": "comp-53222",
           "sortOrder": 8,
           "finishTime": "19:51:00",
@@ -2035,7 +2026,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-811",
+          "id": "fin-3-comp-811",
           "competitorId": "comp-811",
           "sortOrder": 9,
           "finishTime": "19:51:53",
@@ -2045,7 +2036,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-28898",
+          "id": "fin-3-comp-28898",
           "competitorId": "comp-28898",
           "sortOrder": 10,
           "finishTime": "19:52:40",
@@ -2055,7 +2046,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1206",
+          "id": "fin-3-comp-1206",
           "competitorId": "comp-1206",
           "sortOrder": 11,
           "finishTime": "19:52:42",
@@ -2065,7 +2056,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1129",
+          "id": "fin-3-comp-1129",
           "competitorId": "comp-1129",
           "sortOrder": 12,
           "finishTime": "19:53:55",
@@ -2075,7 +2066,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-9898",
+          "id": "fin-3-comp-9898",
           "competitorId": "comp-9898",
           "sortOrder": 13,
           "finishTime": "19:57:22",
@@ -2085,7 +2076,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-2597",
+          "id": "fin-3-comp-2597",
           "competitorId": "comp-2597",
           "sortOrder": 14,
           "finishTime": "19:59:14",
@@ -2095,7 +2086,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1367",
+          "id": "fin-3-comp-1367",
           "competitorId": "comp-1367",
           "sortOrder": 15,
           "finishTime": "20:00:13",
@@ -2105,7 +2096,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-111",
+          "id": "fin-3-comp-111",
           "competitorId": "comp-111",
           "sortOrder": 16,
           "finishTime": "20:01:34",
@@ -2115,7 +2106,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-5032",
+          "id": "fin-3-comp-5032",
           "competitorId": "comp-5032",
           "sortOrder": 17,
           "finishTime": "20:02:42",
@@ -2125,7 +2116,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-2558",
+          "id": "fin-3-comp-2558",
           "competitorId": "comp-2558",
           "sortOrder": 18,
           "finishTime": "20:03:32",
@@ -2135,7 +2126,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-3471",
+          "id": "fin-3-comp-3471",
           "competitorId": "comp-3471",
           "sortOrder": 19,
           "finishTime": "20:03:34",
@@ -2145,7 +2136,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1315",
+          "id": "fin-3-comp-1315",
           "competitorId": "comp-1315",
           "sortOrder": 20,
           "finishTime": "20:03:50",
@@ -2155,7 +2146,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-3950",
+          "id": "fin-3-comp-3950",
           "competitorId": "comp-3950",
           "sortOrder": 21,
           "finishTime": "20:04:58",
@@ -2165,7 +2156,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-7677",
+          "id": "fin-3-comp-7677",
           "competitorId": "comp-7677",
           "sortOrder": 22,
           "finishTime": "20:05:18",
@@ -2175,7 +2166,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-28284",
+          "id": "fin-3-comp-28284",
           "competitorId": "comp-28284",
           "sortOrder": 23,
           "finishTime": "20:05:51",
@@ -2185,7 +2176,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-5643",
+          "id": "fin-3-comp-5643",
           "competitorId": "comp-5643",
           "sortOrder": 24,
           "finishTime": "20:05:55",
@@ -2195,7 +2186,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-8237",
+          "id": "fin-3-comp-8237",
           "competitorId": "comp-8237",
           "sortOrder": 25,
           "finishTime": "20:06:19",
@@ -2205,7 +2196,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-2918",
+          "id": "fin-3-comp-2918",
           "competitorId": "comp-2918",
           "sortOrder": 26,
           "finishTime": "20:06:19",
@@ -2215,7 +2206,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1341",
+          "id": "fin-3-comp-1341",
           "competitorId": "comp-1341",
           "sortOrder": 27,
           "finishTime": "20:07:48",
@@ -2225,7 +2216,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-4518",
+          "id": "fin-3-comp-4518",
           "competitorId": "comp-4518",
           "sortOrder": 28,
           "finishTime": "20:08:05",
@@ -2235,7 +2226,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-13778",
+          "id": "fin-3-comp-13778",
           "competitorId": "comp-13778",
           "sortOrder": 29,
           "finishTime": "20:08:14",
@@ -2245,7 +2236,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-9007",
+          "id": "fin-3-comp-9007",
           "competitorId": "comp-9007",
           "sortOrder": 30,
           "finishTime": "20:08:42",
@@ -2255,7 +2246,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-5795",
+          "id": "fin-3-comp-5795",
           "competitorId": "comp-5795",
           "sortOrder": 31,
           "finishTime": "20:08:47",
@@ -2265,7 +2256,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-9216",
+          "id": "fin-3-comp-9216",
           "competitorId": "comp-9216",
           "sortOrder": 32,
           "finishTime": "20:08:49",
@@ -2275,7 +2266,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-2855",
+          "id": "fin-3-comp-2855",
           "competitorId": "comp-2855",
           "sortOrder": 33,
           "finishTime": "20:09:17",
@@ -2285,7 +2276,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1792",
+          "id": "fin-3-comp-1792",
           "competitorId": "comp-1792",
           "sortOrder": 34,
           "finishTime": "20:10:16",
@@ -2295,7 +2286,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-5507",
+          "id": "fin-3-comp-5507",
           "competitorId": "comp-5507",
           "sortOrder": 35,
           "finishTime": "20:11:16",
@@ -2305,7 +2296,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-3506",
+          "id": "fin-3-comp-3506",
           "competitorId": "comp-3506",
           "sortOrder": 36,
           "finishTime": "20:11:48",
@@ -2315,7 +2306,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-1038",
+          "id": "fin-3-comp-1038",
           "competitorId": "comp-1038",
           "sortOrder": 37,
           "finishTime": "20:12:17",
@@ -2325,7 +2316,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-8867",
+          "id": "fin-3-comp-8867",
           "competitorId": "comp-8867",
           "sortOrder": 38,
           "finishTime": "20:12:30",
@@ -2335,7 +2326,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-4464",
+          "id": "fin-3-comp-4464",
           "competitorId": "comp-4464",
           "sortOrder": 39,
           "finishTime": "20:12:35",
@@ -2345,7 +2336,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-246",
+          "id": "fin-3-comp-246",
           "competitorId": "comp-246",
           "sortOrder": 40,
           "finishTime": "20:12:54",
@@ -2355,7 +2346,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-3202",
+          "id": "fin-3-comp-3202",
           "competitorId": "comp-3202",
           "sortOrder": 41,
           "finishTime": "20:13:47",
@@ -2365,7 +2356,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-46",
+          "id": "fin-3-comp-46",
           "competitorId": "comp-46",
           "sortOrder": 42,
           "finishTime": "20:16:03",
@@ -2375,7 +2366,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-307",
+          "id": "fin-3-comp-307",
           "competitorId": "comp-307",
           "sortOrder": 43,
           "finishTime": "20:16:20",
@@ -2385,7 +2376,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-4999",
+          "id": "fin-3-comp-4999",
           "competitorId": "comp-4999",
           "sortOrder": 44,
           "finishTime": "20:16:40",
@@ -2395,7 +2386,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-11",
+          "id": "fin-3-comp-11",
           "competitorId": "comp-11",
           "sortOrder": 45,
           "finishTime": "20:24:46",
@@ -2405,7 +2396,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-2093",
+          "id": "fin-3-comp-2093",
           "competitorId": "comp-2093",
           "sortOrder": 46,
           "finishTime": "20:26:45",
@@ -2415,7 +2406,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-2160",
+          "id": "fin-3-comp-2160",
           "competitorId": "comp-2160",
           "sortOrder": null,
           "resultCode": "RET",
@@ -2424,7 +2415,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-5-comp-5373",
+          "id": "fin-3-comp-5373",
           "competitorId": "comp-5373",
           "sortOrder": null,
           "resultCode": "RET",
@@ -2435,12 +2426,12 @@
       ]
     },
     {
-      "id": "race-6",
-      "raceNumber": 6,
+      "id": "race-4",
+      "raceNumber": 4,
       "date": "2026-05-28",
       "starts": [
         {
-          "id": "rs-6-c0",
+          "id": "rs-4-c0",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -2448,7 +2439,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-6-c1",
+          "id": "rs-4-c1",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -2457,7 +2448,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-6-c2",
+          "id": "rs-4-c2",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -2466,14 +2457,14 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-6-c3",
+          "id": "rs-4-c3",
           "fleetIds": [
             "cf-3-echo"
           ],
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-6-45a",
+          "id": "rs-4-45a",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -2481,7 +2472,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-6-45b",
+          "id": "rs-4-45b",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -2491,7 +2482,7 @@
       ],
       "finishes": [
         {
-          "id": "fin-6-comp-2237",
+          "id": "fin-4-comp-2237",
           "competitorId": "comp-2237",
           "sortOrder": 1,
           "finishTime": "19:55:31",
@@ -2501,7 +2492,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-6888",
+          "id": "fin-4-comp-6888",
           "competitorId": "comp-6888",
           "sortOrder": 2,
           "finishTime": "19:56:58",
@@ -2511,7 +2502,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1242",
+          "id": "fin-4-comp-1242",
           "competitorId": "comp-1242",
           "sortOrder": 3,
           "finishTime": "20:00:02",
@@ -2521,7 +2512,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-29213",
+          "id": "fin-4-comp-29213",
           "competitorId": "comp-29213",
           "sortOrder": 4,
           "finishTime": "20:01:45",
@@ -2531,7 +2522,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2160",
+          "id": "fin-4-comp-2160",
           "competitorId": "comp-2160",
           "sortOrder": 5,
           "finishTime": "20:06:12",
@@ -2541,7 +2532,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1383",
+          "id": "fin-4-comp-1383",
           "competitorId": "comp-1383",
           "sortOrder": 6,
           "finishTime": "20:08:51",
@@ -2551,7 +2542,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2558",
+          "id": "fin-4-comp-2558",
           "competitorId": "comp-2558",
           "sortOrder": 7,
           "finishTime": "20:10:33",
@@ -2561,7 +2552,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-53222",
+          "id": "fin-4-comp-53222",
           "competitorId": "comp-53222",
           "sortOrder": 8,
           "finishTime": "20:10:58",
@@ -2571,7 +2562,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-9898",
+          "id": "fin-4-comp-9898",
           "competitorId": "comp-9898",
           "sortOrder": 9,
           "finishTime": "20:11:54",
@@ -2581,7 +2572,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-7677",
+          "id": "fin-4-comp-7677",
           "competitorId": "comp-7677",
           "sortOrder": 10,
           "finishTime": "20:12:10",
@@ -2591,7 +2582,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-9007",
+          "id": "fin-4-comp-9007",
           "competitorId": "comp-9007",
           "sortOrder": 11,
           "finishTime": "20:12:15",
@@ -2601,7 +2592,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1129",
+          "id": "fin-4-comp-1129",
           "competitorId": "comp-1129",
           "sortOrder": 12,
           "finishTime": "20:13:06",
@@ -2611,7 +2602,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-7778",
+          "id": "fin-4-comp-7778",
           "competitorId": "comp-7778",
           "sortOrder": 13,
           "finishTime": "20:14:01",
@@ -2621,7 +2612,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-28898",
+          "id": "fin-4-comp-28898",
           "competitorId": "comp-28898",
           "sortOrder": 14,
           "finishTime": "20:14:18",
@@ -2631,7 +2622,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-28284",
+          "id": "fin-4-comp-28284",
           "competitorId": "comp-28284",
           "sortOrder": 15,
           "finishTime": "20:14:30",
@@ -2641,7 +2632,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-13778",
+          "id": "fin-4-comp-13778",
           "competitorId": "comp-13778",
           "sortOrder": 16,
           "finishTime": "20:20:05",
@@ -2651,7 +2642,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-8867",
+          "id": "fin-4-comp-8867",
           "competitorId": "comp-8867",
           "sortOrder": 17,
           "finishTime": "20:21:00",
@@ -2661,7 +2652,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-3506",
+          "id": "fin-4-comp-3506",
           "competitorId": "comp-3506",
           "sortOrder": 18,
           "finishTime": "20:21:47",
@@ -2671,7 +2662,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-8342",
+          "id": "fin-4-comp-8342",
           "competitorId": "comp-8342",
           "sortOrder": 19,
           "finishTime": "20:22:04",
@@ -2681,7 +2672,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-5643",
+          "id": "fin-4-comp-5643",
           "competitorId": "comp-5643",
           "sortOrder": 20,
           "finishTime": "20:22:50",
@@ -2691,7 +2682,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-5032",
+          "id": "fin-4-comp-5032",
           "competitorId": "comp-5032",
           "sortOrder": 21,
           "finishTime": "20:25:13",
@@ -2701,7 +2692,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-3710",
+          "id": "fin-4-comp-3710",
           "competitorId": "comp-3710",
           "sortOrder": 22,
           "finishTime": "20:25:27",
@@ -2711,7 +2702,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1341",
+          "id": "fin-4-comp-1341",
           "competitorId": "comp-1341",
           "sortOrder": 23,
           "finishTime": "20:26:02",
@@ -2721,7 +2712,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2597",
+          "id": "fin-4-comp-2597",
           "competitorId": "comp-2597",
           "sortOrder": 24,
           "finishTime": "20:26:37",
@@ -2731,7 +2722,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1315",
+          "id": "fin-4-comp-1315",
           "competitorId": "comp-1315",
           "sortOrder": 25,
           "finishTime": "20:26:50",
@@ -2741,7 +2732,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-3471",
+          "id": "fin-4-comp-3471",
           "competitorId": "comp-3471",
           "sortOrder": 26,
           "finishTime": "20:28:57",
@@ -2751,7 +2742,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2918",
+          "id": "fin-4-comp-2918",
           "competitorId": "comp-2918",
           "sortOrder": 27,
           "finishTime": "20:30:12",
@@ -2761,7 +2752,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-111",
+          "id": "fin-4-comp-111",
           "competitorId": "comp-111",
           "sortOrder": 28,
           "finishTime": "20:31:30",
@@ -2771,7 +2762,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-4999",
+          "id": "fin-4-comp-4999",
           "competitorId": "comp-4999",
           "sortOrder": 29,
           "finishTime": "20:32:03",
@@ -2781,7 +2772,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-5507",
+          "id": "fin-4-comp-5507",
           "competitorId": "comp-5507",
           "sortOrder": 30,
           "finishTime": "20:33:07",
@@ -2791,7 +2782,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-242",
+          "id": "fin-4-comp-242",
           "competitorId": "comp-242",
           "sortOrder": 31,
           "finishTime": "20:34:10",
@@ -2801,7 +2792,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-4518",
+          "id": "fin-4-comp-4518",
           "competitorId": "comp-4518",
           "sortOrder": 32,
           "finishTime": "20:37:40",
@@ -2811,7 +2802,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2855",
+          "id": "fin-4-comp-2855",
           "competitorId": "comp-2855",
           "sortOrder": 33,
           "finishTime": "20:37:48",
@@ -2821,7 +2812,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-1038",
+          "id": "fin-4-comp-1038",
           "competitorId": "comp-1038",
           "sortOrder": 34,
           "finishTime": "20:39:27",
@@ -2831,7 +2822,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-9216",
+          "id": "fin-4-comp-9216",
           "competitorId": "comp-9216",
           "sortOrder": 35,
           "finishTime": "20:41:02",
@@ -2841,7 +2832,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-246",
+          "id": "fin-4-comp-246",
           "competitorId": "comp-246",
           "sortOrder": 36,
           "finishTime": "20:43:55",
@@ -2851,7 +2842,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-307",
+          "id": "fin-4-comp-307",
           "competitorId": "comp-307",
           "sortOrder": 37,
           "finishTime": "20:44:14",
@@ -2861,7 +2852,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-5013",
+          "id": "fin-4-comp-5013",
           "competitorId": "comp-5013",
           "sortOrder": 38,
           "finishTime": "20:45:05",
@@ -2871,7 +2862,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-4464",
+          "id": "fin-4-comp-4464",
           "competitorId": "comp-4464",
           "sortOrder": 39,
           "finishTime": "20:46:04",
@@ -2881,7 +2872,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-2093",
+          "id": "fin-4-comp-2093",
           "competitorId": "comp-2093",
           "sortOrder": 40,
           "finishTime": "20:50:37",
@@ -2891,7 +2882,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-11",
+          "id": "fin-4-comp-11",
           "competitorId": "comp-11",
           "sortOrder": 41,
           "finishTime": "21:03:49",
@@ -2901,7 +2892,7 @@
           "penaltyOverride": null
         },
         {
-          "id": "fin-6-comp-13500",
+          "id": "fin-4-comp-13500",
           "competitorId": "comp-13500",
           "sortOrder": null,
           "resultCode": "DNF",

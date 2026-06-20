@@ -205,10 +205,12 @@ interface SailscoringFile {
 interface OurRow {
   rank: number;
   net: number;
-  byRaceNumber: Map<number, { points: number; code: string | null; discarded: boolean }>;
+  // Keyed by race date — we renumber merged races sequentially, so HalSail's
+  // per-class race numbers no longer line up; the date is the stable key.
+  byDate: Map<string, { points: number; code: string | null; discarded: boolean }>;
 }
 
-function computeOurStandings(): { raceNumbers: number[]; byFleetName: Map<string, Map<string, OurRow>> } {
+function computeOurStandings(): { byFleetName: Map<string, Map<string, OurRow>> } {
   const file = JSON.parse(readFileSync(SAILSCORING, 'utf8')) as SailscoringFile;
   const races: Race[] = file.races.map((r) => ({ id: r.id, raceNumber: r.raceNumber, date: r.date }) as Race);
   const finishes: Finish[] = file.races.flatMap((r) => r.finishes.map((f) => ({ ...f, raceId: r.id }) as Finish));
@@ -218,7 +220,10 @@ function computeOurStandings(): { raceNumbers: number[]; byFleetName: Map<string
   const ratingOverrides: RaceRatingOverride[] = file.races.flatMap((r) =>
     (r.ratingOverrides ?? []).map((o) => ({ ...o, raceId: r.id }) as RaceRatingOverride),
   );
-  const raceNumbers = [...races].sort((a, b) => a.raceNumber - b.raceNumber).map((r) => r.raceNumber);
+  // racePoints are indexed in raceNumber order; align (date#slot) keys the same way.
+  const sorted = [...races].sort((a, b) => a.raceNumber - b.raceNumber);
+  const keyByNum = slotKeys(sorted);
+  const raceDates = sorted.map((r) => keyByNum.get(r.raceNumber)).filter((k): k is string => !!k);
 
   const { fleetStandings } = calculateFleetStandings(
     file.fleets,
@@ -235,9 +240,9 @@ function computeOurStandings(): { raceNumbers: number[]; byFleetName: Map<string
   for (const fs of fleetStandings) {
     const rows = new Map<string, OurRow>();
     for (const s of fs.standings as Standing[]) {
-      const byRaceNumber = new Map<number, { points: number; code: string | null; discarded: boolean }>();
-      raceNumbers.forEach((rn, i) => {
-        byRaceNumber.set(rn, {
+      const byDate = new Map<string, { points: number; code: string | null; discarded: boolean }>();
+      raceDates.forEach((date, i) => {
+        byDate.set(date, {
           points: s.racePoints[i],
           // HalSail shows a scoring penalty (SCP/ZFP/DPI) as the cell "code",
           // so fall back to our additive penalty code when there's no result
@@ -246,11 +251,11 @@ function computeOurStandings(): { raceNumbers: number[]; byFleetName: Map<string
           discarded: s.raceDiscards[i] ?? false,
         });
       });
-      rows.set(normSail(s.competitor.sailNumber), { rank: s.rank, net: s.netPoints, byRaceNumber });
+      rows.set(normSail(s.competitor.sailNumber), { rank: s.rank, net: s.netPoints, byDate });
     }
     byFleetName.set(fs.fleet.name, rows);
   }
-  return { raceNumbers, byFleetName };
+  return { byFleetName };
 }
 
 // ---- HalSail side: parse the published summary table ----
@@ -258,10 +263,25 @@ function computeOurStandings(): { raceNumbers: number[]; byFleetName: Map<string
 interface HalRow {
   rank: number;
   net: number;
-  byRaceNumber: Map<number, { points: number; code: string | null; discarded: boolean }>;
+  byDate: Map<string, { points: number; code: string | null; discarded: boolean }>;
 }
 
 const normSail = (s: string) => s.replace(/\s+/g, '').toUpperCase();
+
+/** Race number → "date#slot" key, mirroring the builder's mergeRacesByDate:
+ *  slot is the race's index among same-date races, in race-number order. A day
+ *  can hold more than one race, so date alone isn't a unique key. */
+function slotKeys(races: { raceNumber: number; date: string | null }[]): Map<number, string> {
+  const seqByDate = new Map<string, number>();
+  const out = new Map<number, string>();
+  for (const r of [...races].sort((a, b) => a.raceNumber - b.raceNumber)) {
+    if (!r.date) continue;
+    const seq = seqByDate.get(r.date) ?? 0;
+    seqByDate.set(r.date, seq + 1);
+    out.set(r.raceNumber, `${r.date}#${seq}`);
+  }
+  return out;
+}
 
 /** Decode a HalSail summary race cell: "2" | "(3)" | "9/RET" | "(10/DNC)". */
 function parseCell(text: string): { points: number; code: string | null; discarded: boolean } | null {
@@ -279,8 +299,14 @@ function parseCell(text: string): { points: number; code: string | null; discard
   return { points, code, discarded };
 }
 
-/** Parse the standings (Rank …) table out of a fragment into rows by sail. */
-function parseHalsailSummary(html: string): { raceNumbers: number[]; rows: Map<string, HalRow> } | null {
+/** Parse the standings (Rank …) table out of a fragment into rows by sail.
+ *  `numToDate` maps HalSail's per-class race number (from the detail-table
+ *  captions) to its date, so cells are keyed by date — the stable key once we
+ *  renumber merged races. */
+function parseHalsailSummary(
+  html: string,
+  numToDate: Map<number, string>,
+): { dates: string[]; rows: Map<string, HalRow> } | null {
   const tables = html.match(/<table[\s\S]*?<\/table>/gi) ?? [];
   for (const table of tables) {
     const ths = [...table.matchAll(/<th\b[^>]*>([\s\S]*?)<\/th>/gi)].map((m) =>
@@ -290,10 +316,11 @@ function parseHalsailSummary(html: string): { raceNumbers: number[]; rows: Map<s
 
     const sailIdx = ths.findIndex((x) => /^sail$/i.test(x));
     const scoreIdx = ths.findIndex((x) => /^score$/i.test(x));
-    const raceCols: { idx: number; raceNumber: number }[] = [];
+    const raceCols: { idx: number; date: string }[] = [];
     ths.forEach((x, i) => {
       const m = x.match(/^race\s*(\d+)$/i);
-      if (m) raceCols.push({ idx: i, raceNumber: Number(m[1]) });
+      const date = m ? numToDate.get(Number(m[1])) : undefined;
+      if (date) raceCols.push({ idx: i, date });
     });
     if (sailIdx < 0 || scoreIdx < 0 || raceCols.length === 0) return null;
 
@@ -310,14 +337,14 @@ function parseHalsailSummary(html: string): { raceNumbers: number[]; rows: Map<s
       // leading integer.
       const rank = parseInt(tds[0], 10);
       const net = Number(tds[scoreIdx]);
-      const byRaceNumber = new Map<number, { points: number; code: string | null; discarded: boolean }>();
-      for (const { idx, raceNumber } of raceCols) {
+      const byDate = new Map<string, { points: number; code: string | null; discarded: boolean }>();
+      for (const { idx, date } of raceCols) {
         const cell = parseCell(tds[idx] ?? '');
-        if (cell) byRaceNumber.set(raceNumber, cell);
+        if (cell) byDate.set(date, cell);
       }
-      rows.set(sail, { rank, net, byRaceNumber });
+      rows.set(sail, { rank, net, byDate });
     }
-    return { raceNumbers: raceCols.map((c) => c.raceNumber), rows };
+    return { dates: raceCols.map((c) => c.date), rows };
   }
   return null;
 }
@@ -327,7 +354,7 @@ function parseHalsailSummary(html: string): { raceNumbers: number[]; rows: Map<s
 function compareFleet(
   fleet: string,
   ours: Map<string, OurRow>,
-  hal: { raceNumbers: number[]; rows: Map<string, HalRow> },
+  hal: { dates: string[]; rows: Map<string, HalRow> },
 ): string[] {
   const diffs: string[] = [];
   const ourSails = new Set(ours.keys());
@@ -344,9 +371,9 @@ function compareFleet(
     if (o.rank !== h.rank) diffs.push(`  RANK ${sail}: ours=${o.rank} HalSail=${h.rank}`);
     if (Math.abs(o.net - h.net) > POINTS_TOLERANCE)
       diffs.push(`  NET  ${sail}: ours=${o.net} HalSail=${h.net}`);
-    for (const rn of hal.raceNumbers) {
-      const oc = o.byRaceNumber.get(rn);
-      const hc = h.byRaceNumber.get(rn);
+    for (const date of hal.dates) {
+      const oc = o.byDate.get(date);
+      const hc = h.byDate.get(date);
       if (!oc || !hc) continue;
       const probs: string[] = [];
       // Integrity guard: a code HalSail uses that the engine doesn't recognise
@@ -357,7 +384,7 @@ function compareFleet(
       if (Math.abs(oc.points - hc.points) > POINTS_TOLERANCE) probs.push(`pts ${oc.points}≠${hc.points}`);
       if ((oc.code ?? '') !== (hc.code ?? '')) probs.push(`code ${oc.code ?? '—'}≠${hc.code ?? '—'}`);
       if (oc.discarded !== hc.discarded) probs.push(`discard ${oc.discarded}≠${hc.discarded}`);
-      if (probs.length) diffs.push(`  R${rn} ${sail}: ${probs.join(', ')}`);
+      if (probs.length) diffs.push(`  ${date} ${sail}: ${probs.join(', ')}`);
     }
   }
   return diffs;
@@ -374,7 +401,11 @@ function main() {
       anyDiff = true;
       continue;
     }
-    const hal = parseHalsailSummary(readFileSync(join(HALSAIL_DIR, file), 'utf8'));
+    const html = readFileSync(join(HALSAIL_DIR, file), 'utf8');
+    // HalSail's summary has no per-column dates, but its per-race detail tables
+    // do — map race number → date so we can align by date.
+    const numToDate = slotKeys(parseHalsailFleet(html).races);
+    const hal = parseHalsailSummary(html, numToDate);
     if (!hal) {
       // No summary table = the fleet has no scored races yet on this day. If we
       // also have no boats for it, there's nothing to compare; only flag it if
@@ -393,7 +424,7 @@ function main() {
       console.log(`DIFF  ${fleet}  (${file})`);
       for (const d of diffs) console.log(d);
     } else {
-      console.log(`OK    ${fleet}  (${ours.size} boats, races ${hal.raceNumbers.join('/')})`);
+      console.log(`OK    ${fleet}  (${ours.size} boats, ${hal.dates.length} races)`);
     }
   }
 

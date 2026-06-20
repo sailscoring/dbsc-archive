@@ -48,10 +48,13 @@ describe('buildCruiserDaySeries', () => {
     expect(file.series.discardThresholds[0]).toEqual({ minRaces: 4, discardCount: 1 });
   });
 
-  it('includes only sailed races; Cruisers 2/3 absent from Race 1', () => {
-    expect(file.races.map((r) => r.raceNumber)).toEqual([1, 3, 5, 6]);
-    const r1 = file.races.find((r) => r.raceNumber === 1)!;
-    // Only Cruisers 0 and 1 start Race 1 (two starts), not C2/C3.
+  it('merges races by date, numbered sequentially; Cruisers 2/3 absent from Race 1', () => {
+    // Races are keyed by date and renumbered 1..N in date order (HalSail's
+    // per-class "Race N" maps to different dates across classes, so it can't be
+    // the merge key — see buildCruiserDaySeries).
+    expect(file.races.map((r) => r.raceNumber)).toEqual([1, 2, 3, 4]);
+    const r1 = file.races[0];
+    // Only Cruisers 0 and 1 started the first race day (two starts), not C2/C3.
     expect(r1.starts).toHaveLength(2);
   });
 });
