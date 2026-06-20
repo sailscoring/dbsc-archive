@@ -21,15 +21,21 @@ app repo under `../sailscoring/docs/` and `../sailscoring/reference/`.
 
 ```
 pnpm install
-pnpm capture --map-only     # Stage A: datasets + classes + class→series join
-pnpm capture                # Stage B: also every results table (~983 files)
+pnpm capture --map-only     # archive (archive.halsail.com): Stage A map
+pnpm capture                # archive: Stage B, every results table (~983 files)
 pnpm capture --year=2025    # one dataset
+
+pnpm fetch                  # 2026 live (halsail.com): refresh result fragments
+pnpm to-sailscoring [day]   # 2026 live: fragments → .sailscoring
+pnpm compare [day]          # 2026 live: parity check vs published standings
+pnpm test                   # vitest (parser + converter)
 ```
 
-The capture is plain TypeScript run via `tsx` (node built-ins + `fetch` only — no
-other deps, no build step). It is single-threaded with a 0.75 s delay and
-**resumable**: a file already on disk is reused, never re-fetched, so re-runs are
-cheap and safe.
+Two pipelines share this repo: the **archive** capture (2022–2025, frozen, under
+`sources/<year>/`) and the **2026 live-parity** loop (`sources/2026-live/`). All
+are TypeScript run via `tsx`/`vitest` — node built-ins + `fetch`, no build step.
+The capture is single-threaded with a 0.75 s delay and **resumable** (a file on
+disk is reused, never re-fetched), so re-runs are cheap.
 
 ## Rules that are easy to get wrong
 
@@ -50,12 +56,19 @@ cheap and safe.
 
 ## Relationship to the app repo
 
-Reconstruction and parity validation reuse the app's scoring engine
-(`../sailscoring/lib/scoring.ts`) rather than forking it — keep one canonical
-engine. The HalSail conversion tooling (`scripts/halsail-{fetch,to-sailscoring,
-compare}.ts`, `lib/halsail/`) and the 2026 live-parity dataset still live in the
-app repo and are slated to move here; until then, cross-reference them at
-`../sailscoring`.
+The capture, conversion, and parity tooling all live here now
+(`scripts/halsail-*.ts`, `lib/halsail/`, `tests/`). They **reuse** the app's
+scoring engine and types by relative import (`../sailscoring/lib/scoring`,
+`../sailscoring/lib/types`) rather than forking them — one canonical engine. This
+assumes the sibling app checkout exists at `../sailscoring` (the same assumption
+iodai-archive makes). The engine island is dependency-free, so `tsx`/`vitest`
+resolve it with no app `node_modules`.
+
+Two HalSail things deliberately **stay in the app** as the generic, club-agnostic
+layer: `reference/HalSail FAQ.pdf` (the product FAQ) and
+`docs/design/dbsc-parity-plan.md` (the parity design doc). The generic *parser*
+(`lib/halsail/parse-results.ts`) moved here with the rest of the pipeline; if a
+second HalSail club is ever onboarded, consider hoisting it back to a shared home.
 
 Importing a `.sailscoring` into the production workspace is a manual step a human
 performs in the app — this repo's job ends at a validated file.

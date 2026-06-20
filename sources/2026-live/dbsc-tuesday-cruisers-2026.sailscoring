@@ -1,0 +1,379 @@
+{
+  "formatVersion": 7,
+  "seriesId": "7a511826-4e09-4406-88de-aa5d3a35b024",
+  "snapshotId": "1c27f2e7-f404-4680-9f78-6bce47ac6f36",
+  "snapshotHistory": [
+    "cd762308-6316-4d4a-9b7a-8e715cf7cbc7",
+    "1c20937b-7d6f-4c55-96a2-7511bdcd3413",
+    "1c27f2e7-f404-4680-9f78-6bce47ac6f36"
+  ],
+  "exportedAt": "2026-06-02T00:00:00.000Z",
+  "series": {
+    "id": "7a511826-4e09-4406-88de-aa5d3a35b024",
+    "name": "DBSC Tuesday Cruisers (2026)",
+    "venue": "Dublin Bay Sailing Club",
+    "startDate": "2026-04-28",
+    "endDate": "2026-06-02",
+    "venueLogoUrl": "",
+    "eventLogoUrl": "",
+    "venueUrl": "",
+    "eventUrl": "",
+    "discardThresholds": [
+      {
+        "minRaces": 4,
+        "discardCount": 1
+      },
+      {
+        "minRaces": 7,
+        "discardCount": 2
+      },
+      {
+        "minRaces": 12,
+        "discardCount": 3
+      },
+      {
+        "minRaces": 18,
+        "discardCount": 4
+      },
+      {
+        "minRaces": 25,
+        "discardCount": 5
+      },
+      {
+        "minRaces": 32,
+        "discardCount": 6
+      }
+    ],
+    "dnfScoring": "startingAreaInclDnc",
+    "ftpHost": "",
+    "ftpPath": "",
+    "includeJsonExport": true,
+    "enabledCompetitorFields": [
+      "boatName",
+      "boatClass",
+      "helm",
+      "club"
+    ],
+    "primaryPersonLabel": "owner",
+    "subdivisionLabel": "Division",
+    "scoringMode": "handicap"
+  },
+  "fleets": [
+    {
+      "id": "cf-combined",
+      "name": "Combined Cruisers",
+      "displayOrder": 0,
+      "scoringSystem": "echo",
+      "echoAlpha": 0.25
+    },
+    {
+      "id": "cf-3-echo",
+      "name": "Cruisers 3 ECHO",
+      "displayOrder": 1,
+      "scoringSystem": "echo",
+      "echoAlpha": 0.25
+    }
+  ],
+  "competitors": [
+    {
+      "id": "comp-5795",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "5795",
+      "boatName": "Black Sheep",
+      "name": "Andrina O'Brien",
+      "owner": "Andrina O'Brien",
+      "helm": "Andrina O'Brien",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.92
+    },
+    {
+      "id": "comp-1241",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "1241",
+      "boatName": "Mayfly",
+      "name": "Patricia Heckmann",
+      "owner": "Patricia Heckmann",
+      "helm": "Patricia Heckmann",
+      "club": "Sailing In Dublin",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.96
+    },
+    {
+      "id": "comp-1038",
+      "fleetIds": [
+        "cf-3-echo"
+      ],
+      "sailNumber": "1038",
+      "boatName": "Grasshopper 2",
+      "name": "Kevin Glynn",
+      "owner": "Kevin Glynn",
+      "helm": "Kevin Glynn",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.841
+    },
+    {
+      "id": "comp-1792",
+      "fleetIds": [
+        "cf-3-echo"
+      ],
+      "sailNumber": "1792",
+      "boatName": "Papytoo",
+      "name": "Frank Guilfoyle",
+      "owner": "Frank Guilfoyle",
+      "helm": "Frank Guilfoyle",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.886
+    },
+    {
+      "id": "comp-2855",
+      "fleetIds": [
+        "cf-3-echo"
+      ],
+      "sailNumber": "2855",
+      "boatName": "Pamafe",
+      "name": "Gerry Costello",
+      "owner": "Gerry Costello",
+      "helm": "Gerry Costello",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.895
+    },
+    {
+      "id": "comp-808",
+      "fleetIds": [
+        "cf-3-echo"
+      ],
+      "sailNumber": "808",
+      "boatName": "Jiminy Cricket",
+      "name": "Mona Tyndall",
+      "owner": "Mona Tyndall",
+      "helm": "Mona Tyndall",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.754
+    }
+  ],
+  "races": [
+    {
+      "id": "race-1",
+      "raceNumber": 1,
+      "date": "2026-04-28",
+      "starts": [
+        {
+          "id": "rs-1-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-1-cf-3-echo",
+          "fleetIds": [
+            "cf-3-echo"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-1-comp-1241",
+          "competitorId": "comp-1241",
+          "sortOrder": 1,
+          "finishTime": "20:14:52",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-1038",
+          "competitorId": "comp-1038",
+          "sortOrder": 2,
+          "finishTime": "20:21:04",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-1792",
+          "competitorId": "comp-1792",
+          "sortOrder": 3,
+          "finishTime": "20:23:57",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-5795",
+          "competitorId": "comp-5795",
+          "sortOrder": 4,
+          "finishTime": "20:24:17",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-2855",
+          "competitorId": "comp-2855",
+          "sortOrder": 5,
+          "finishTime": "20:27:20",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-4",
+      "raceNumber": 4,
+      "date": "2026-05-19",
+      "starts": [
+        {
+          "id": "rs-4-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-4-cf-3-echo",
+          "fleetIds": [
+            "cf-3-echo"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-4-comp-5795",
+          "competitorId": "comp-5795",
+          "sortOrder": 1,
+          "finishTime": "19:44:50",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-1038",
+          "competitorId": "comp-1038",
+          "sortOrder": 2,
+          "finishTime": "19:50:50",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-1792",
+          "competitorId": "comp-1792",
+          "sortOrder": 3,
+          "finishTime": "19:51:35",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-2855",
+          "competitorId": "comp-2855",
+          "sortOrder": 4,
+          "finishTime": "19:55:15",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-808",
+          "competitorId": "comp-808",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-6",
+      "raceNumber": 6,
+      "date": "2026-06-02",
+      "starts": [
+        {
+          "id": "rs-6-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-6-cf-3-echo",
+          "fleetIds": [
+            "cf-3-echo"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-6-comp-5795",
+          "competitorId": "comp-5795",
+          "sortOrder": 1,
+          "finishTime": "20:23:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-2855",
+          "competitorId": "comp-2855",
+          "sortOrder": 2,
+          "finishTime": "20:25:05",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-1792",
+          "competitorId": "comp-1792",
+          "sortOrder": 3,
+          "finishTime": "20:30:24",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-1038",
+          "competitorId": "comp-1038",
+          "sortOrder": 4,
+          "finishTime": "20:32:46",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    }
+  ]
+}

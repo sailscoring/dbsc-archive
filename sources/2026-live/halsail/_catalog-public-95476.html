@@ -1,0 +1,991 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sailing results from Dublin Bay Sailing Club</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Sailing regatta results from Dublin Bay Sailing Club" />
+    <meta name="theme-color" content="#2196f3" />
+
+    
+    
+
+    
+    <link href="/Bundles/Hal_StyleBundle?v=cHuzNNwV4_ru9tQ5fkzAHomJpv3psVX1vTzt3Uv9Z9E1" rel="stylesheet"/>
+
+
+    
+    
+    <style>
+        .badge {
+            width: 100%;
+        }
+
+        .w80 {
+            max-width: 80px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .line2 {
+            display: block;
+            font-size: 80%;
+        }
+
+        .white {
+            color: white;
+        }
+
+        optgroup.optWithoutResults {
+            font-size: 80%;
+            font-weight: normal;
+            color: var(--bs-danger);
+        }
+
+        optgroup.optWithResults{
+
+            color: var(--bs-success);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td, th {
+            padding-left: 2px !important;
+            padding-right: 2px !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        td.place, td.rank, th.place, th.rank {
+            width: 70px;
+            font-weight: bold;
+        }
+
+        tfoot tr td {
+            background-color: azure;
+        }
+
+        .btn-sm {
+            padding: 1px 3px 1px 3px;
+            border: 0;
+        }
+
+        div.sailtext{
+            font-weight: bold;
+        }
+
+        td.individualpoints {
+            font-weight: bold;
+        }
+
+        img.countryflag {
+            height: 16px;
+            margin: 0 2px 0 2px;
+        }
+
+        .pdf {
+            color: var(--bs-light)
+        }
+
+
+    </style>
+
+
+
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2N7K91KX4L"></script>
+    <script src="/Scripts/BS5/bootstrap.bundle.min.js"></script>
+    <script src="/Bundles/HalEarly_ScriptBundle?v=j7EVPdURn8Ds-piyG0P8MNNmHqi3bY_afkglyKdwWLc1"></script>
+
+
+</head>
+
+<body>
+    
+    <div id="containertop" class="container-xxl">
+
+        <div class="halPanel" id="body">
+            
+
+
+
+
+
+
+
+    <div id="divClubName" class="row">
+        <div class="col text-center">
+            <h1 class="fs-4">
+                Results from
+                    <a href="http://www.dbsc.ie/" target="_blank">Dublin Bay Sailing Club</a>
+                            </h1>
+        </div>
+    </div>
+<div id="divSelectors" class="row halselectors">
+    
+        <div class="d-none d-md-block col-1 text-start">
+            <img src="https://www.dbsc.ie/wp-content/uploads/2022/05/Official-DBSC-Logo-high1-e1652778366727.png" alt="Logo left" style="max-width: 100%; max-height: 50px;" />
+        </div>
+    <div class="col" id="RacingClassSelector" style="padding-right: 1px">
+        <div class="badge bg-primary text-center" style="padding: 4px;">
+            <select id="ddRacingClasses" class="w-100 fs-5 fw-bold">
+                    <optgroup label="Classes with results" class="optWithResults">
+                                <option value="31845" class="c31845">
+                                    Beneteau 211 Echo (Sat)
+                                </option>
+                                <option value="31846" class="c31846">
+                                    Beneteau 211 Echo (Thu)
+                                </option>
+                                <option value="31847" class="c31847">
+                                    Beneteau 211 Echo (Tue)
+                                </option>
+                                <option value="31848" class="c31848" selected="selected">
+                                    Beneteau 211 Scratch
+                                </option>
+                                <option value="31850" class="c31850">
+                                    Beneteau 31.7 Echo (Sat)
+                                </option>
+                                <option value="31851" class="c31851">
+                                    Beneteau 31.7 Echo (Thu)
+                                </option>
+                                <option value="31852" class="c31852">
+                                    Beneteau 31.7 Scratch
+                                </option>
+                                <option value="31880" class="c31880">
+                                    Combined Cruisers (Tue)
+                                </option>
+                                <option value="31854" class="c31854">
+                                    Cruisers 0 Echo (Sat)
+                                </option>
+                                <option value="31855" class="c31855">
+                                    Cruisers 0 Echo (Thu)
+                                </option>
+                                <option value="31856" class="c31856">
+                                    Cruisers 0 IRC
+                                </option>
+                                <option value="31858" class="c31858">
+                                    Cruisers 1 - J109
+                                </option>
+                                <option value="31859" class="c31859">
+                                    Cruisers 1 Echo (Sat)
+                                </option>
+                                <option value="31860" class="c31860">
+                                    Cruisers 1 Echo (Thu)
+                                </option>
+                                <option value="31861" class="c31861">
+                                    Cruisers 1 IRC
+                                </option>
+                                <option value="31863" class="c31863">
+                                    Cruisers 2 - Sigma33
+                                </option>
+                                <option value="31864" class="c31864">
+                                    Cruisers 2 Echo (Sat)
+                                </option>
+                                <option value="31866" class="c31866">
+                                    Cruisers 2 Echo (Thu)
+                                </option>
+                                <option value="31867" class="c31867">
+                                    Cruisers 2 IRC
+                                </option>
+                                <option value="31869" class="c31869">
+                                    Cruisers 3 Echo (Sat)
+                                </option>
+                                <option value="31870" class="c31870">
+                                    Cruisers 3 Echo (Thu)
+                                </option>
+                                <option value="31871" class="c31871">
+                                    Cruisers 3 Echo (Tue)
+                                </option>
+                                <option value="31874" class="c31874">
+                                    Cruisers 4-5A NS VPRS
+                                </option>
+                                <option value="31875" class="c31875">
+                                    Cruisers 4-5B NS VPRS
+                                </option>
+                                <option value="31876" class="c31876">
+                                    Cruisers 5A Echo (Sat)
+                                </option>
+                                <option value="31877" class="c31877">
+                                    Cruisers 5A Echo (Thu)
+                                </option>
+                                <option value="31878" class="c31878">
+                                    Cruisers 5B Echo (Sat)
+                                </option>
+                                <option value="31879" class="c31879">
+                                    Cruisers 5B Echo (Thu)
+                                </option>
+                                <option value="31883" class="c31883">
+                                    Dragon
+                                </option>
+                                <option value="31884" class="c31884">
+                                    Dublin Bay 21
+                                </option>
+                                <option value="31894" class="c31894">
+                                    Fireball
+                                </option>
+                                <option value="31885" class="c31885">
+                                    Flying Fifteen
+                                </option>
+                                <option value="32082" class="c32082">
+                                    Glen
+                                </option>
+                                <option value="31886" class="c31886">
+                                    Glen-Mermaid PY
+                                </option>
+                                <option value="31895" class="c31895">
+                                    IDRA 14
+                                </option>
+                                <option value="31898" class="c31898">
+                                    ILCA 6
+                                </option>
+                                <option value="31897" class="c31897">
+                                    ILCA 7
+                                </option>
+                                <option value="34043" class="c34043">
+                                    J 80
+                                </option>
+                                <option value="31896" class="c31896">
+                                    PY Class
+                                </option>
+                                <option value="31887" class="c31887">
+                                    Ruffian 23
+                                </option>
+                                <option value="31888" class="c31888">
+                                    SB20
+                                </option>
+                                <option value="31889" class="c31889">
+                                    Shipman
+                                </option>
+                                <option value="31890" class="c31890">
+                                    Sportsboats
+                                </option>
+                                <option value="31892" class="c31892">
+                                    Water Wag
+                                </option>
+                                <option value="31882" class="c31882">
+                                    Women on the Water (Tue)
+                                </option>
+
+                    </optgroup>
+                            </select>
+        </div>
+    </div>
+
+    
+    <div class="col" id="SerySelector" style="padding-left: 1px">
+        <div class="badge bg-primary text-center" style="padding: 4px;">
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31845 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95479" class="c31845 text-success" data-cssclass="c31845 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31846 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95480" class="c31846 text-success" data-cssclass="c31846 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31847 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95481" class="c31847 text-success" data-cssclass="c31847 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31848 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95477" class="c31848 text-success" data-cssclass="c31848 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95476" class="c31848 text-success" data-cssclass="c31848 text-success" selected="selected">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95478" class="c31848 text-success" data-cssclass="c31848 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31850 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95470" class="c31850 text-success" data-cssclass="c31850 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31851 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95471" class="c31851 text-success" data-cssclass="c31851 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31852 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95469" class="c31852 text-success" data-cssclass="c31852 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95468" class="c31852 text-success" data-cssclass="c31852 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31880 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95502" class="c31880 text-success" data-cssclass="c31880 text-success">
+                                        2026 Summer Series
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31854 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95444" class="c31854 text-success" data-cssclass="c31854 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31855 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95445" class="c31855 text-success" data-cssclass="c31855 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31856 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95446" class="c31856 text-success" data-cssclass="c31856 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95443" class="c31856 text-success" data-cssclass="c31856 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31858 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95454" class="c31858 text-success" data-cssclass="c31858 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95453" class="c31858 text-success" data-cssclass="c31858 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31859 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95451" class="c31859 text-success" data-cssclass="c31859 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31860 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95452" class="c31860 text-success" data-cssclass="c31860 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31861 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95450" class="c31861 text-success" data-cssclass="c31861 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95449" class="c31861 text-success" data-cssclass="c31861 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31863 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95462" class="c31863 text-success" data-cssclass="c31863 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95461" class="c31863 text-success" data-cssclass="c31863 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31864 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95459" class="c31864 text-success" data-cssclass="c31864 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31866 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95460" class="c31866 text-success" data-cssclass="c31866 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31867 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95458" class="c31867 text-success" data-cssclass="c31867 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95457" class="c31867 text-success" data-cssclass="c31867 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31869 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95465" class="c31869 text-success" data-cssclass="c31869 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31870 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95466" class="c31870 text-success" data-cssclass="c31870 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31871 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95467" class="c31871 text-success" data-cssclass="c31871 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31874 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95884" class="c31874 text-success" data-cssclass="c31874 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95883" class="c31874 text-success" data-cssclass="c31874 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31875 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95886" class="c31875 text-success" data-cssclass="c31875 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95885" class="c31875 text-success" data-cssclass="c31875 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31876 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95472" class="c31876 text-success" data-cssclass="c31876 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31877 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95473" class="c31877 text-success" data-cssclass="c31877 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31878 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95474" class="c31878 text-success" data-cssclass="c31878 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31879 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95475" class="c31879 text-success" data-cssclass="c31879 text-success">
+                                        Thursday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31883 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95483" class="c31883 text-success" data-cssclass="c31883 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95482" class="c31883 text-success" data-cssclass="c31883 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                                    <option value="95484" class="c31883 text-danger" data-cssclass="c31883 text-danger">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31884 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95511" class="c31884 text-success" data-cssclass="c31884 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95517" class="c31884 text-success" data-cssclass="c31884 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31894 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95587" class="c31894 text-success" data-cssclass="c31894 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95586" class="c31894 text-success" data-cssclass="c31894 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31885 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95486" class="c31885 text-success" data-cssclass="c31885 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95485" class="c31885 text-success" data-cssclass="c31885 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95509" class="c31885 text-success" data-cssclass="c31885 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd32082 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95500" class="c32082 text-success" data-cssclass="c32082 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95499" class="c32082 text-success" data-cssclass="c32082 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                                    <option value="95501" class="c32082 text-danger" data-cssclass="c32082 text-danger">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31886 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95497" class="c31886 text-success" data-cssclass="c31886 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95496" class="c31886 text-success" data-cssclass="c31886 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                                    <option value="95498" class="c31886 text-danger" data-cssclass="c31886 text-danger">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31895 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95589" class="c31895 text-success" data-cssclass="c31895 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95588" class="c31895 text-success" data-cssclass="c31895 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31898 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95598" class="c31898 text-success" data-cssclass="c31898 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95596" class="c31898 text-success" data-cssclass="c31898 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31897 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95602" class="c31897 text-success" data-cssclass="c31897 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95600" class="c31897 text-success" data-cssclass="c31897 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd34043 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95876" class="c34043 text-success" data-cssclass="c34043 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95875" class="c34043 text-success" data-cssclass="c34043 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95877" class="c34043 text-success" data-cssclass="c34043 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31896 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95594" class="c31896 text-success" data-cssclass="c31896 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95592" class="c31896 text-success" data-cssclass="c31896 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31887 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95488" class="c31887 text-success" data-cssclass="c31887 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95487" class="c31887 text-success" data-cssclass="c31887 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95510" class="c31887 text-success" data-cssclass="c31887 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31888 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95490" class="c31888 text-success" data-cssclass="c31888 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95489" class="c31888 text-success" data-cssclass="c31888 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95508" class="c31888 text-success" data-cssclass="c31888 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31889 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95492" class="c31889 text-success" data-cssclass="c31889 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95491" class="c31889 text-success" data-cssclass="c31889 text-success">
+                                        Saturday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                                    <option value="95493" class="c31889 text-danger" data-cssclass="c31889 text-danger">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31890 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95495" class="c31890 text-success" data-cssclass="c31890 text-success">
+                                        Thursday Overall
+                                    </option>
+                                    <option value="95494" class="c31890 text-success" data-cssclass="c31890 text-success">
+                                        Saturday Overall
+                                    </option>
+                                    <option value="95507" class="c31890 text-success" data-cssclass="c31890 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31892 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95516" class="c31892 text-success" data-cssclass="c31892 text-success">
+                                        2026 Summer Series
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+                <select class="ddsery w-100 fs-5 fw-bold" id=dd31882 fw-bold style="display: none;">
+                        <optgroup label="Series with results" class="optWithResults">
+                                    <option value="95505" class="c31882 text-success" data-cssclass="c31882 text-success">
+                                        Tuesday Overall
+                                    </option>
+                        </optgroup>
+                                            <optgroup label="Series with no results yet" class="optWithoutResults">
+                        </optgroup>
+                </select>
+        </div>
+    </div>
+
+    
+        <div class="d-none d-md-block col-1 text-end">
+            <img src="https://www.dbsc.ie/wp-content/uploads/2020/10/image.png" alt="Logo right" style="max-width: 100%; max-height: 50px;" />
+        </div>
+</div>
+
+<div id="divSpinner" class="row" style="display: none;">
+    <div class="col text-center">
+        <i class="fs-1 bi-hourglass-split" style="cursor: pointer;"></i>
+    </div>
+</div>
+
+<div id="divResults"></div>
+
+
+            <span style="clear: both; display: block;"></span>
+        </div>
+
+        <div id="containerbottom" class="halFooterPanel d-print-none">
+            <a id="halfoot"></a>
+            <div class="float-start d-sm-inline-block">
+<a class="d-print-none btn-sm btn-outline-primary fs-5" data-bs-toggle="tooltip" href="/" title="Go to home page"><i class="bi-house" tabindex="-1"></i></a>                    &nbsp;
+                <div class="d-none d-lg-inline-block">
+                    &nbsp;<i class="bi-c-circle-fill" style="cursor: pointer;"></i>&nbsp;2026 - HalSail Ltd. Site code updated on 17 October 2025 at 09:51:31
+                </div>
+            </div>
+            <div class="float-end">
+                <button id="btnPrint" type="button" class="btn btn-sm btn-light d-none d-md-inline-block" title="Print this page" data-bs-toggle="tooltip">
+                    <i class="bi-printer-fill" style="cursor: pointer;"></i>
+                </button>
+            </div>
+            <span style="clear: both; display: block;"></span>
+        </div>
+
+        <div class="halFooterPanel d-none d-print-block">
+            <div id="logorow" class="row ">
+                <div class="col-2 text-start">
+                    <img src="/Images/Logos/HalLogo32x52.png" alt="logo" style="max-height: 16px;" />
+                </div>
+                <div class="col text-center">
+                    HalSail<span id="spanLayoutPrintDateTime"></span>
+                </div>
+                <div class="col-2 text-end">
+                    <img src="/Images/Logos/HalLogo32x52.png" alt="logo" style="max-height: 16px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="HalModal" class="modal" role="dialog">
+        
+    </div>
+
+    <div id="HalModalHelp" class="modal" role="dialog" data-bs-backdrop="static" style="z-index: 2000;">
+        
+    </div>
+
+    <div id="HalModalError" class="modal" role="dialog" style="z-index: 2500;">
+        
+    </div>
+
+    <div id="HalModalWait" class="modal" role="dialog" data-bs-backdrop="static">
+        
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <span><img alt="Loading" src="/Images/Loading/SpinnerSecondary-1s-200px.svg"></img></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="halsailLogoffModal" class="modal" role="dialog" data-bs-backdrop="static">
+        
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header"><div class="container-fluid"><div class="row"><div class="col"><h3 class="modal-title">Warning: you have not used this page for almost half an hour</h3></div><div class="col-1"><i data-bs-dismiss="modal" style="color: var(--bs-danger);"><i class="fs-3 bi-x-circle-fill" style="cursor: pointer;"></i></i></div></div></div></div>
+                <div class="modal-body text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col" style="border: 1px solid #999; padding: 0;">
+                                <div id="logoffProgressBar" class="progress-bar progress-bar-warning" role="progressbar" style="width: 0;">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="largespacer"></div>
+                        <div class="row">
+                            <div class="col">
+                                You will be logged off unless you refresh the page.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<form action="/Account/LogOff" class="d-none" id="frmLogoff" method="post"><input name="__RequestVerificationToken" type="hidden" value="9uk5qbMSYzR9NTmL4OUp6XR5dJ1VQexj5oM1KmAs9j9nAisbvmwwt7RzT-DJLx9irgOVPvNGiv_BwspgqYEFN0fzneH8Jfr5kyB7atR_0po1" /></form>
+</body>
+
+
+
+<script src="/Bundles/HalLate_ScriptBundle?v=LwlZDXGE2TYOzw5mi3l6P5QlGtc_wOxLGb5kgBsj7Lg1"></script>
+
+
+
+
+    <script>
+
+        $("#ddRacingClasses").change(function () {
+            var $this = $(this);
+            $(".ddsery").removeClass("changing").hide();
+            var seryDropdownId = "#dd" + $this.val();
+            $(seryDropdownId).addClass("changing").fadeIn(500, function () { $(seryDropdownId).removeClass("changing").trigger("change") });
+        });
+
+        $(".ddsery").change(function () {
+            ShowSery($(this).val());
+        });
+
+        function ShowSery(seryid) {
+            $("#divSpinner").show();
+            $("#divResults").slideUp(100, function () {
+                var urlResults = '/Result/_Boat' + '/' + seryid;   // url to use in the ajax call to get results
+                var urlToShow = urlResults.replace("_Boat", "Public");              // url to show in the browser's address bar
+                var separatorResults = "?";
+                var separatorToShow = "?";
+
+                // The following parameters need to be passed on in the ajax call and need to show in the browser address bar.
+
+                                
+                // The following parameters do not need to be passed on in the ajax call, but need to show in the browser address bar.
+                                                
+                $("#divResults").load(urlResults, function () {
+                    $(".sbhelm").click(function () {
+                        $("#divResults").load(urlResults.replace("_Boat", "_Helm"), function () {
+                            $(".sbboat").click(function () {
+                                LocationReload();
+                            });
+                        });
+                    });
+
+                    // Update the URL in the browser address bar
+                    window.history.pushState(null, null, urlToShow);
+                    $("#divSpinner").hide();
+                    $("#divResults").slideDown(1000, function() {
+                    });
+                });
+            });
+        }
+
+        $(document).ready(function () {
+            $("#ddRacingClasses").trigger("change");
+        });
+
+    </script>
+
+
+
+<script>
+    // Logout if the authentication cookie is about to expire
+    var msecsToLogoff = 25000;  // Give 25 seconds warning of logging off.
+    var logoffMsecs = msecsToLogoff;
+
+    function checkTimeout() {
+        // Check whether the user is inactive and should be timed out.
+        $.ajax("/Account/_CheckTimeout").done(function (data) {
+            var secondsToGo = parseInt(data);
+            if (secondsToGo >= 0) {
+                // NB. if secondsToGo is < 0 the user is not logged in.
+                if (secondsToGo <= 120) {
+                    // Less than 2 minutes to go before user is logged out by the system.
+                    setInterval(updateLogoffProgressBar, 1000);
+                    $("#halsailLogoffModal").modal("show");
+                } else {
+                    // Check again in 30 seconds.
+                    setTimeout(checkTimeout, 30000);
+                }
+            }
+        });
+    }
+
+    function updateLogoffProgressBar() {
+        var percentToGo = (100 - 100 * logoffMsecs / msecsToLogoff).toFixed(0);
+        $("#logoffProgressBar").attr("style", "width: " + percentToGo + "%;");
+        logoffMsecs = logoffMsecs - 1000;
+        if (logoffMsecs <= 0) { $("#frmLogoff").submit(); }
+    }
+
+    checkTimeout();
+</script>
+</html>

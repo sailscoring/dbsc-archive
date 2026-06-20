@@ -24,17 +24,33 @@ repo, where `reference/data/` is for small illustrative fixtures.
 
 ## What's here
 
+Two pipelines share the repo: the **archive** (2022–2025, frozen) and the
+**2026 live-parity** loop.
+
 ```
-sources/              verbatim HalSail captures + the normalized join
-  manifest.json         the four datasets (2022–2025)
-  <year>/
-    catalog.json        normalized class→series join (the deliverable)
-    _classdropdown.html raw class list
-    series/class-*.html raw per-class series dropdowns (the join, raw)
+sources/
+  manifest.json         the four archived datasets (2022–2025)
+  <year>/               archive capture (archive.halsail.com)
+    catalog.json          normalized class→series join (the deliverable)
+    _classdropdown.html   raw class list
+    series/class-*.html   raw per-class series dropdowns (the join, raw)
     results/series-*.html raw results tables, one per (class × series)
+  2026-live/            live-site (halsail.com) parity dataset
+    *.sailscoring         generated day/group series files
+    halsail/              captured live result fragments
+lib/halsail/           HalSail HTML parser + DBSC day-series builder
 scripts/
-  halsail-archive-fetch.ts   the capture tool (`pnpm capture`)
+  halsail-archive-fetch.ts   archive capture (`pnpm capture`)
+  halsail-fetch.ts           refresh 2026 live fragments (`pnpm fetch`)
+  halsail-to-sailscoring.ts  fragments → .sailscoring (`pnpm to-sailscoring`)
+  halsail-compare.ts         parity vs published (`pnpm compare`)
+tests/                 vitest for the parser + converter
 ```
+
+The conversion/parity tooling **reuses the app's scoring engine** by relative
+import (`../sailscoring/lib/scoring`), so it needs the sibling `../sailscoring`
+checkout. The generic HalSail FAQ and the parity design doc stay in the app repo
+(`reference/HalSail FAQ.pdf`, `docs/design/dbsc-parity-plan.md`).
 
 ## The HalSail archive model (what we learned)
 
@@ -58,17 +74,25 @@ subset, or discard rule, mapped in Sail Scoring onto **fleets** × **sub-series*
   Combined`, `RAYC Super League 1/2`. Never by collapsing a finish-sheet
   boundary; model such a table as its own named sub-series.
 
-## Capture
+## Commands
 
 ```sh
 pnpm install
+
+# Archive (2022–2025, archive.halsail.com)
 pnpm capture --map-only     # Stage A: datasets + classes + class→series join
-pnpm capture                # Stage B: also pull every results table (~983 files)
+pnpm capture                # Stage B: also every results table (~983 files)
 pnpm capture --year=2025    # restrict to one dataset
+
+# 2026 live parity (halsail.com)
+pnpm fetch                  # refresh the live result fragments
+pnpm to-sailscoring [day]   # fragments → .sailscoring
+pnpm compare [day]          # re-score with the app engine, diff vs published
+pnpm test                   # vitest (parser + converter)
 ```
 
-Single-threaded, 0.75 s between requests, resumable (a file already on disk is
-reused, never re-fetched). Read-only against a public archive.
+Captures are single-threaded, 0.75 s between requests, resumable (a file already
+on disk is reused, never re-fetched). Read-only against public servers.
 
 ## Status
 

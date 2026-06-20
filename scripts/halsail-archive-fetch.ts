@@ -18,7 +18,7 @@
  *
  * Resumable: a raw file already on disk is reused, not re-fetched. Run via
  * `pnpm capture` (add `--map-only` for Stage A). Network + file IO only.
- * See `../sailscoring/docs/notes/halsail/querying-public-results.md` for the
+ * See `docs/notes/halsail/querying-public-results.md` for the
  * live-site endpoint model that this archive variant parallels.
  */
 

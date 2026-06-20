@@ -39,5 +39,4 @@ records the exact `source`, `account`, `dsKey`, and `fetchedAt` for that dataset
 The verbatim `*.html` files are stored unmodified for reproducibility.
 
 The live-site (`halsail.com`) endpoint model, which this archive variant
-parallels, is documented in the app repo at
-`../sailscoring/docs/notes/halsail/querying-public-results.md`.
+parallels, is documented at `docs/notes/halsail/querying-public-results.md`.

@@ -4,9 +4,17 @@
   "private": true,
   "description": "Capture and reconstruction of DBSC's published HalSail results into Sail Scoring",
   "scripts": {
-    "capture": "tsx scripts/halsail-archive-fetch.ts"
+    "capture": "tsx scripts/halsail-archive-fetch.ts",
+    "fetch": "tsx scripts/halsail-fetch.ts",
+    "to-sailscoring": "tsx scripts/halsail-to-sailscoring.ts",
+    "compare": "tsx scripts/halsail-compare.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "tsx": "^4.22.4"
+    "@types/node": "^24.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.8"
   }
 }
