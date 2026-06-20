@@ -1,0 +1,1852 @@
+{
+  "formatVersion": 9,
+  "seriesId": "dbsc-2025-j109",
+  "exportedAt": "2026-06-20T18:43:35.574Z",
+  "series": {
+    "id": "dbsc-2025-j109",
+    "name": "DBSC Summer Series 2025 — J/109",
+    "venue": "Dublin Bay",
+    "startDate": "2025-04-24",
+    "endDate": "2025-08-28",
+    "venueLogoUrl": "",
+    "eventLogoUrl": "",
+    "venueUrl": "",
+    "eventUrl": "",
+    "discardThresholds": [
+      {
+        "minRaces": 4,
+        "discardCount": 1
+      },
+      {
+        "minRaces": 7,
+        "discardCount": 2
+      },
+      {
+        "minRaces": 12,
+        "discardCount": 3
+      },
+      {
+        "minRaces": 18,
+        "discardCount": 4
+      },
+      {
+        "minRaces": 25,
+        "discardCount": 5
+      },
+      {
+        "minRaces": 32,
+        "discardCount": 6
+      }
+    ],
+    "dnfScoring": "startingAreaInclDnc",
+    "ftpHost": "",
+    "ftpPath": "",
+    "includeJsonExport": false,
+    "scoringMode": "scratch",
+    "enabledCompetitorFields": [
+      "boatName",
+      "boatClass",
+      "helm"
+    ],
+    "primaryPersonLabel": "helm",
+    "subdivisionLabel": ""
+  },
+  "fleets": [
+    {
+      "id": "j109",
+      "name": "Cruisers 1 - J109",
+      "displayOrder": 0,
+      "scoringSystem": "scratch"
+    }
+  ],
+  "competitors": [
+    {
+      "id": "c-29213",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "29213",
+      "boatName": "Something Else",
+      "boatClass": "J109",
+      "name": "Brian Hall",
+      "helm": "Brian Hall",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-1242",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "1242",
+      "boatName": "White Mischief",
+      "boatClass": "J109",
+      "name": "Richard Goodbody",
+      "helm": "Richard Goodbody",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-2160",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "2160",
+      "boatName": "Chimaera",
+      "boatClass": "J109",
+      "name": "Barry Cunningham",
+      "helm": "Barry Cunningham",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-53222",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "53222",
+      "boatName": "Riders On The Storm",
+      "boatClass": "J109",
+      "name": "Bobby Kerr",
+      "helm": "Bobby Kerr",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-1383",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "1383",
+      "boatName": "Ruth",
+      "boatClass": "J109",
+      "name": "Tom Shanahan",
+      "helm": "Tom Shanahan",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-28898",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "28898",
+      "boatName": "Powder Monkey",
+      "boatClass": "J109",
+      "name": "Chris Moore",
+      "helm": "Chris Moore",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-1129",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "1129",
+      "boatName": "Jump the Gun",
+      "boatClass": "J109",
+      "name": "J Kelly/M Monaghan",
+      "helm": "J Kelly/M Monaghan",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-1206",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "1206",
+      "boatName": "Joker 2",
+      "boatClass": "J109",
+      "name": "John Maybury",
+      "helm": "John Maybury",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-1095",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "1095",
+      "boatName": "Dear Prudence",
+      "boatClass": "J109",
+      "name": "Jonathan Bourke",
+      "helm": "Jonathan Bourke",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "c-9898",
+      "fleetIds": [
+        "j109"
+      ],
+      "sailNumber": "9898",
+      "boatName": "Indecision",
+      "boatClass": "J109",
+      "name": "Declan Hayes",
+      "helm": "Declan Hayes",
+      "club": "",
+      "gender": "",
+      "age": null
+    }
+  ],
+  "races": [
+    {
+      "id": "r-1",
+      "raceNumber": 1,
+      "date": "2025-04-24",
+      "starts": [
+        {
+          "id": "rs-1",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-1-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-1-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-2",
+      "raceNumber": 2,
+      "date": "2025-05-08",
+      "starts": [
+        {
+          "id": "rs-2",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-2-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-2-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-3",
+      "raceNumber": 3,
+      "date": "2025-05-22",
+      "starts": [
+        {
+          "id": "rs-3",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-3-29213",
+          "competitorId": "c-29213",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-1206",
+          "competitorId": "c-1206",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-3-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-4",
+      "raceNumber": 4,
+      "date": "2025-05-29",
+      "starts": [
+        {
+          "id": "rs-4",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-4-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-1383",
+          "competitorId": "c-1383",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-1206",
+          "competitorId": "c-1206",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-4-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-5",
+      "raceNumber": 5,
+      "date": "2025-06-12",
+      "starts": [
+        {
+          "id": "rs-5",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-5-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-53222",
+          "competitorId": "c-53222",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-1383",
+          "competitorId": "c-1383",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-5-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-6",
+      "raceNumber": 6,
+      "date": "2025-06-19",
+      "starts": [
+        {
+          "id": "rs-6",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-6-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-53222",
+          "competitorId": "c-53222",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-1383",
+          "competitorId": "c-1383",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-6-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-7",
+      "raceNumber": 7,
+      "date": "2025-06-26",
+      "starts": [
+        {
+          "id": "rs-7",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-7-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-1242",
+          "competitorId": "c-1242",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-2160",
+          "competitorId": "c-2160",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-53222",
+          "competitorId": "c-53222",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-7-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-8",
+      "raceNumber": 8,
+      "date": "2025-07-03",
+      "starts": [
+        {
+          "id": "rs-8",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-8-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-1206",
+          "competitorId": "c-1206",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-8-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-9",
+      "raceNumber": 9,
+      "date": "2025-07-17",
+      "starts": [
+        {
+          "id": "rs-9",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-9-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-2160",
+          "competitorId": "c-2160",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-1206",
+          "competitorId": "c-1206",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-9-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-10",
+      "raceNumber": 10,
+      "date": "2025-07-24",
+      "starts": [
+        {
+          "id": "rs-10",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-10-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-2160",
+          "competitorId": "c-2160",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-53222",
+          "competitorId": "c-53222",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-1383",
+          "competitorId": "c-1383",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-10-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-11",
+      "raceNumber": 11,
+      "date": "2025-07-31",
+      "starts": [
+        {
+          "id": "rs-11",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-11-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-1383",
+          "competitorId": "c-1383",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-1206",
+          "competitorId": "c-1206",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-11-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-12",
+      "raceNumber": 12,
+      "date": "2025-08-07",
+      "starts": [
+        {
+          "id": "rs-12",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-12-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-12-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-13",
+      "raceNumber": 13,
+      "date": "2025-08-14",
+      "starts": [
+        {
+          "id": "rs-13",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "19:20:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-13-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-2160",
+          "competitorId": "c-2160",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNC",
+          "startPresent": false,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-1206",
+          "competitorId": "c-1206",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-13-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-14",
+      "raceNumber": 14,
+      "date": "2025-08-21",
+      "starts": [
+        {
+          "id": "rs-14",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-14-29213",
+          "competitorId": "c-29213",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-1242",
+          "competitorId": "c-1242",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-1383",
+          "competitorId": "c-1383",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-28898",
+          "competitorId": "c-28898",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-1129",
+          "competitorId": "c-1129",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-1095",
+          "competitorId": "c-1095",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-14-9898",
+          "competitorId": "c-9898",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "r-15",
+      "raceNumber": 15,
+      "date": "2025-08-28",
+      "starts": [
+        {
+          "id": "rs-15",
+          "fleetIds": [
+            "j109"
+          ],
+          "startTime": "18:45:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "f-15-29213",
+          "competitorId": "c-29213",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-1242",
+          "competitorId": "c-1242",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-2160",
+          "competitorId": "c-2160",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-53222",
+          "competitorId": "c-53222",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-1383",
+          "competitorId": "c-1383",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-28898",
+          "competitorId": "c-28898",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-1129",
+          "competitorId": "c-1129",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-1206",
+          "competitorId": "c-1206",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-1095",
+          "competitorId": "c-1095",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "f-15-9898",
+          "competitorId": "c-9898",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    }
+  ],
+  "subSeries": [
+    {
+      "id": "ss-0",
+      "name": "Thursday Overall",
+      "displayOrder": 0,
+      "raceIds": [
+        "r-1",
+        "r-2",
+        "r-3",
+        "r-4",
+        "r-5",
+        "r-6",
+        "r-7",
+        "r-8",
+        "r-9",
+        "r-10",
+        "r-11",
+        "r-12",
+        "r-13",
+        "r-14",
+        "r-15"
+      ],
+      "startingHandicapSource": "base"
+    },
+    {
+      "id": "ss-1",
+      "name": "Thursday Series A",
+      "displayOrder": 1,
+      "raceIds": [
+        "r-1",
+        "r-2",
+        "r-3",
+        "r-4",
+        "r-5",
+        "r-6"
+      ],
+      "startingHandicapSource": "base"
+    },
+    {
+      "id": "ss-2",
+      "name": "Thursday Series B",
+      "displayOrder": 2,
+      "raceIds": [
+        "r-7",
+        "r-8",
+        "r-9",
+        "r-10",
+        "r-11",
+        "r-12",
+        "r-13",
+        "r-14",
+        "r-15"
+      ],
+      "startingHandicapSource": "base"
+    }
+  ]
+}
