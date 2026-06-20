@@ -1,0 +1,111 @@
+        <table class="table table-condensed table-hover">
+            <caption>
+                <a id="pageTop" href="#pageBottom" class="halscroll btn btn-xs btn-default btn-block">Go to last race at the bottom of the page</a>
+                <span class="badge" style="text-align: center">
+                    <span class="hidden-xs hidden-xxs hidden-xxxs">Class 'SB20 Pre-Worlds', series 'Sat 3 Sep', </span>Overall Results
+                    <a class="glyphicon glyphicon-print pull-right btn btn-xs btn-default hidden-xs hidden-xxs hidden-xxxs" href="/Result/PrintSeries/3123/217" target="_blank"> </a>
+                </span>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Sail Number</th>
+                                                                                    <th class="hidden-xxxs">Name</th>
+                                            <th class="hidden-xxs hidden-xxxs">Owner</th>
+                                                                                                        <th class="hidden-xxs hidden-xxxs text-center">
+                            <a href="#race2939" class="halscroll">R1</a>
+                        </th>
+                    <th class="text-right">Net Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                        <tr class="hidden-xxs hidden-xxxs">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                                                                                                                    <td class="hidden-xxxs">&nbsp;</td>
+                                                            <td class="hidden-xxs hidden-xxxs">&nbsp;</td>
+                                                                                                                                                <td class="hidden-xxs hidden-xxxs text-center">3 Sep</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>1</b></td>
+                            <td class="text-left">3761</td>
+                                                                                                                    <td class="text-left hidden-xxxs">Carpe Diem</td>
+                                                            <td class="text-left hidden-xxs hidden-xxxs">Colin Galavan</td>
+                                                                                                                                                <td class="hidden-xxs hidden-xxxs">1</td>
+                            <td class="text-right">1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>2=</b></td>
+                            <td class="text-left">3040</td>
+                                                                                                                    <td class="text-left hidden-xxxs">Provident CRM</td>
+                                                            <td class="text-left hidden-xxs hidden-xxxs">John Malone</td>
+                                                                                                                                                <td class="hidden-xxs hidden-xxxs">4/DNF</td>
+                            <td class="text-right">4</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>2=</b></td>
+                            <td class="text-left">3343</td>
+                                                                                                                    <td class="text-left hidden-xxxs">Rubadubdub</td>
+                                                            <td class="text-left hidden-xxs hidden-xxxs">Nick Doherty</td>
+                                                                                                                                                <td class="hidden-xxs hidden-xxxs">4/DNF</td>
+                            <td class="text-right">4</td>
+                        </tr>
+            </tbody>
+        </table>
+            <table id="race2939" class="table table-condensed table-hover">
+                <caption>
+                    <span class="badge" style="text-align: center">
+                        <span class="hidden-xs hidden-xxs hidden-xxxs">Race 1 (provisional) 03/09/2022 14:18:00, race officer was Barry Oneill, wind was 21 to 27 knots SE</span>
+                        <span class="hidden-sm hidden-md hidden-lg">Race 1 (provisional) 03/09/2022 14:18:00</span>
+                        <a class="glyphicon glyphicon-print pull-right btn btn-xs btn-default hidden-xs hidden-xxs hidden-xxxs" href="/Result/PrintRace/3123/2939" target="_blank"> </a>
+                    </span>
+                </caption>
+                <thead>
+                    <tr>
+                        <th class="text-left">Place</th>
+                        <th class="text-left">Sail number</th>
+                                                                                                    <th class="text-left hidden-xxs hidden-xxxs">Name</th>
+                                                    <th class="text-left hidden-xxs hidden-xxxs">Owner</th>
+                                                                                                                        <th class="text-right">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td class="text-left"><b>1</b></td>
+                            <td class="text-left">3761</td>
+                                                                                                                    <td class="text-left hidden-xxs hidden-xxxs">Carpe Diem</td>
+                                                            <td class="text-left hidden-xxs hidden-xxxs">Colin Galavan</td>
+                                                                                                                
+                            <td class="text-right">1</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>DNF</b></td>
+                            <td class="text-left">3040</td>
+                                                                                                                    <td class="text-left hidden-xxs hidden-xxxs">Provident CRM</td>
+                                                            <td class="text-left hidden-xxs hidden-xxxs">John Malone</td>
+                                                                                                                
+                            <td class="text-right">4</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>DNF</b></td>
+                            <td class="text-left">3343</td>
+                                                                                                                    <td class="text-left hidden-xxs hidden-xxxs">Rubadubdub</td>
+                                                            <td class="text-left hidden-xxs hidden-xxxs">Nick Doherty</td>
+                                                                                                                
+                            <td class="text-right">4</td>
+
+                        </tr>
+                </tbody>
+            </table>
+        <a id="pageBottom" href="#divOuter" class="halscroll btn btn-xs btn-default btn-block">Go to the top of the page</a>
+        <script>
+            //$("#divLastRace").text("Results to 9/3/2022");
+            $("a.halscroll").click(function(e) {
+                e.preventDefault();
+                HalScrollTo($(this).attr("href"));
+            });
+        </script>
+

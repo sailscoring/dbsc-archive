@@ -1,0 +1,1611 @@
+{
+  "dsKey": "3413",
+  "name": "DBSC Summer Series 2025",
+  "year": "2025",
+  "account": "1426",
+  "source": "https://archive.halsail.com",
+  "fetchedAt": "2026-06-20T07:58:47.190Z",
+  "counts": {
+    "classes": 56,
+    "pairs": 252,
+    "distinctSeriesNames": 19
+  },
+  "classes": [
+    {
+      "key": "1",
+      "name": "Beneteau 211 Echo (Sat)",
+      "series": [
+        {
+          "key": "1",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-1.html"
+        }
+      ]
+    },
+    {
+      "key": "2",
+      "name": "Beneteau 211 Echo (Thu)",
+      "series": [
+        {
+          "key": "2",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-2.html"
+        }
+      ]
+    },
+    {
+      "key": "3",
+      "name": "Beneteau 211 Echo (Tue)",
+      "series": [
+        {
+          "key": "3",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-3.html"
+        },
+        {
+          "key": "4",
+          "name": "Tuesdays Overall",
+          "resultsPath": "results/series-4.html"
+        }
+      ]
+    },
+    {
+      "key": "4",
+      "name": "Beneteau 211 Master",
+      "series": [
+        {
+          "key": "5",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-5.html"
+        }
+      ]
+    },
+    {
+      "key": "5",
+      "name": "Beneteau 211 Scratch",
+      "series": [
+        {
+          "key": "8",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-8.html"
+        },
+        {
+          "key": "11",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-11.html"
+        },
+        {
+          "key": "7",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-7.html"
+        },
+        {
+          "key": "6",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-6.html"
+        },
+        {
+          "key": "9",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-9.html"
+        },
+        {
+          "key": "12",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-12.html"
+        },
+        {
+          "key": "10",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-10.html"
+        }
+      ]
+    },
+    {
+      "key": "6",
+      "name": "Beneteau 31.7 Echo (Sat)",
+      "series": [
+        {
+          "key": "14",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-14.html"
+        },
+        {
+          "key": "13",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-13.html"
+        },
+        {
+          "key": "15",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-15.html"
+        }
+      ]
+    },
+    {
+      "key": "7",
+      "name": "Beneteau 31.7 Echo (Thu)",
+      "series": [
+        {
+          "key": "17",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-17.html"
+        },
+        {
+          "key": "16",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-16.html"
+        },
+        {
+          "key": "18",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-18.html"
+        }
+      ]
+    },
+    {
+      "key": "8",
+      "name": "Beneteau 31.7 Master",
+      "series": [
+        {
+          "key": "19",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-19.html"
+        }
+      ]
+    },
+    {
+      "key": "9",
+      "name": "Beneteau 31.7 Scratch",
+      "series": [
+        {
+          "key": "26",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-26.html"
+        },
+        {
+          "key": "21",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-21.html"
+        },
+        {
+          "key": "20",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-20.html"
+        },
+        {
+          "key": "24",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-24.html"
+        },
+        {
+          "key": "22",
+          "name": "2025 RAYC Super League 1",
+          "resultsPath": "results/series-22.html"
+        },
+        {
+          "key": "23",
+          "name": "2025 RAYC Super League 2",
+          "resultsPath": "results/series-23.html"
+        },
+        {
+          "key": "27",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-27.html"
+        },
+        {
+          "key": "25",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-25.html"
+        }
+      ]
+    },
+    {
+      "key": "10",
+      "name": "Combined Cruisers (Tue)",
+      "series": [
+        {
+          "key": "28",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-28.html"
+        }
+      ]
+    },
+    {
+      "key": "11",
+      "name": "Combined Group 2 (Tue)",
+      "series": [
+        {
+          "key": "29",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-29.html"
+        }
+      ]
+    },
+    {
+      "key": "12",
+      "name": "Cruisers 0 Echo (Sat)",
+      "series": [
+        {
+          "key": "31",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-31.html"
+        },
+        {
+          "key": "30",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-30.html"
+        },
+        {
+          "key": "32",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-32.html"
+        }
+      ]
+    },
+    {
+      "key": "13",
+      "name": "Cruisers 0 Echo (Thu)",
+      "series": [
+        {
+          "key": "34",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-34.html"
+        },
+        {
+          "key": "33",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-33.html"
+        },
+        {
+          "key": "35",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-35.html"
+        }
+      ]
+    },
+    {
+      "key": "14",
+      "name": "Cruisers 0 IRC",
+      "series": [
+        {
+          "key": "42",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-42.html"
+        },
+        {
+          "key": "36",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-36.html"
+        },
+        {
+          "key": "37",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-37.html"
+        },
+        {
+          "key": "40",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-40.html"
+        },
+        {
+          "key": "38",
+          "name": "2025 RAYC Super League 1",
+          "resultsPath": "results/series-38.html"
+        },
+        {
+          "key": "39",
+          "name": "2025 RAYC Super League 2",
+          "resultsPath": "results/series-39.html"
+        },
+        {
+          "key": "43",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-43.html"
+        },
+        {
+          "key": "41",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-41.html"
+        }
+      ]
+    },
+    {
+      "key": "15",
+      "name": "Cruisers 0 Master",
+      "series": [
+        {
+          "key": "44",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-44.html"
+        }
+      ]
+    },
+    {
+      "key": "16",
+      "name": "Cruisers 0 ORC",
+      "series": [
+        {
+          "key": "45",
+          "name": "Thursday Overall Shadow",
+          "resultsPath": "results/series-45.html"
+        }
+      ]
+    },
+    {
+      "key": "17",
+      "name": "Cruisers 1 - J109",
+      "series": [
+        {
+          "key": "49",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-49.html"
+        },
+        {
+          "key": "47",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-47.html"
+        },
+        {
+          "key": "52",
+          "name": "Thursday &amp; Saturday Combined",
+          "resultsPath": "results/series-52.html"
+        },
+        {
+          "key": "50",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-50.html"
+        },
+        {
+          "key": "46",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-46.html"
+        },
+        {
+          "key": "48",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-48.html"
+        },
+        {
+          "key": "51",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-51.html"
+        }
+      ]
+    },
+    {
+      "key": "18",
+      "name": "Cruisers 1 Echo (Sat)",
+      "series": [
+        {
+          "key": "54",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-54.html"
+        },
+        {
+          "key": "53",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-53.html"
+        },
+        {
+          "key": "55",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-55.html"
+        }
+      ]
+    },
+    {
+      "key": "19",
+      "name": "Cruisers 1 Echo (Thu)",
+      "series": [
+        {
+          "key": "57",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-57.html"
+        },
+        {
+          "key": "56",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-56.html"
+        },
+        {
+          "key": "58",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-58.html"
+        }
+      ]
+    },
+    {
+      "key": "20",
+      "name": "Cruisers 1 IRC",
+      "series": [
+        {
+          "key": "65",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-65.html"
+        },
+        {
+          "key": "60",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-60.html"
+        },
+        {
+          "key": "59",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-59.html"
+        },
+        {
+          "key": "63",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-63.html"
+        },
+        {
+          "key": "61",
+          "name": "2025 RAYC Super League 1",
+          "resultsPath": "results/series-61.html"
+        },
+        {
+          "key": "62",
+          "name": "2025 RAYC Super League 2",
+          "resultsPath": "results/series-62.html"
+        },
+        {
+          "key": "66",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-66.html"
+        },
+        {
+          "key": "64",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-64.html"
+        }
+      ]
+    },
+    {
+      "key": "21",
+      "name": "Cruisers 1 Master",
+      "series": [
+        {
+          "key": "67",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-67.html"
+        }
+      ]
+    },
+    {
+      "key": "22",
+      "name": "Cruisers 1 ORC",
+      "series": [
+        {
+          "key": "68",
+          "name": "Thursday Overall Shadow",
+          "resultsPath": "results/series-68.html"
+        }
+      ]
+    },
+    {
+      "key": "23",
+      "name": "Cruisers 2 - Sigma33",
+      "series": [
+        {
+          "key": "73",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-73.html"
+        },
+        {
+          "key": "70",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-70.html"
+        },
+        {
+          "key": "69",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-69.html"
+        },
+        {
+          "key": "71",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-71.html"
+        },
+        {
+          "key": "74",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-74.html"
+        },
+        {
+          "key": "72",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-72.html"
+        }
+      ]
+    },
+    {
+      "key": "24",
+      "name": "Cruisers 2 Echo (Sat)",
+      "series": [
+        {
+          "key": "76",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-76.html"
+        },
+        {
+          "key": "75",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-75.html"
+        },
+        {
+          "key": "77",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-77.html"
+        }
+      ]
+    },
+    {
+      "key": "25",
+      "name": "Cruisers 2 Echo (Thu)",
+      "series": [
+        {
+          "key": "79",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-79.html"
+        },
+        {
+          "key": "78",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-78.html"
+        },
+        {
+          "key": "80",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-80.html"
+        }
+      ]
+    },
+    {
+      "key": "26",
+      "name": "Cruisers 2 IRC",
+      "series": [
+        {
+          "key": "87",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-87.html"
+        },
+        {
+          "key": "89",
+          "name": "Thursday &amp; Saturday Combined",
+          "resultsPath": "results/series-89.html"
+        },
+        {
+          "key": "82",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-82.html"
+        },
+        {
+          "key": "81",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-81.html"
+        },
+        {
+          "key": "85",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-85.html"
+        },
+        {
+          "key": "83",
+          "name": "2025 RAYC Super League 1",
+          "resultsPath": "results/series-83.html"
+        },
+        {
+          "key": "84",
+          "name": "2025 RAYC Super League 2",
+          "resultsPath": "results/series-84.html"
+        },
+        {
+          "key": "88",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-88.html"
+        },
+        {
+          "key": "86",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-86.html"
+        }
+      ]
+    },
+    {
+      "key": "27",
+      "name": "Cruisers 2 Master",
+      "series": [
+        {
+          "key": "90",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-90.html"
+        }
+      ]
+    },
+    {
+      "key": "28",
+      "name": "Cruisers 3 Echo (Sat)",
+      "series": [
+        {
+          "key": "92",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-92.html"
+        },
+        {
+          "key": "91",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-91.html"
+        },
+        {
+          "key": "93",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-93.html"
+        }
+      ]
+    },
+    {
+      "key": "29",
+      "name": "Cruisers 3 Echo (Thu)",
+      "series": [
+        {
+          "key": "95",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-95.html"
+        },
+        {
+          "key": "94",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-94.html"
+        },
+        {
+          "key": "96",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-96.html"
+        }
+      ]
+    },
+    {
+      "key": "30",
+      "name": "Cruisers 3 Echo (Tue)",
+      "series": [
+        {
+          "key": "97",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-97.html"
+        }
+      ]
+    },
+    {
+      "key": "31",
+      "name": "Cruisers 3 IRC",
+      "series": [
+        {
+          "key": "100",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-100.html"
+        },
+        {
+          "key": "103",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-103.html"
+        },
+        {
+          "key": "99",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-99.html"
+        },
+        {
+          "key": "98",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-98.html"
+        },
+        {
+          "key": "101",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-101.html"
+        },
+        {
+          "key": "104",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-104.html"
+        },
+        {
+          "key": "102",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-102.html"
+        }
+      ]
+    },
+    {
+      "key": "32",
+      "name": "Cruisers 3 Master",
+      "series": [
+        {
+          "key": "105",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-105.html"
+        }
+      ]
+    },
+    {
+      "key": "33",
+      "name": "Cruisers 4-5 Master",
+      "series": [
+        {
+          "key": "106",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-106.html"
+        }
+      ]
+    },
+    {
+      "key": "34",
+      "name": "Cruisers 4-5A NS VPRS",
+      "series": [
+        {
+          "key": "111",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-111.html"
+        },
+        {
+          "key": "108",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-108.html"
+        },
+        {
+          "key": "107",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-107.html"
+        },
+        {
+          "key": "109",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-109.html"
+        },
+        {
+          "key": "112",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-112.html"
+        },
+        {
+          "key": "110",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-110.html"
+        }
+      ]
+    },
+    {
+      "key": "35",
+      "name": "Cruisers 4-5B NS VPRS",
+      "series": [
+        {
+          "key": "117",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-117.html"
+        },
+        {
+          "key": "114",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-114.html"
+        },
+        {
+          "key": "113",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-113.html"
+        },
+        {
+          "key": "115",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-115.html"
+        },
+        {
+          "key": "118",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-118.html"
+        },
+        {
+          "key": "116",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-116.html"
+        }
+      ]
+    },
+    {
+      "key": "36",
+      "name": "Cruisers 5A Echo (Sat)",
+      "series": [
+        {
+          "key": "119",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-119.html"
+        },
+        {
+          "key": "121",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-121.html"
+        },
+        {
+          "key": "120",
+          "name": "2025 RAYC Super League 1",
+          "resultsPath": "results/series-120.html"
+        },
+        {
+          "key": "122",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-122.html"
+        }
+      ]
+    },
+    {
+      "key": "37",
+      "name": "Cruisers 5A Echo (Thu)",
+      "series": [
+        {
+          "key": "124",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-124.html"
+        },
+        {
+          "key": "123",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-123.html"
+        },
+        {
+          "key": "125",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-125.html"
+        }
+      ]
+    },
+    {
+      "key": "38",
+      "name": "Cruisers 5B Echo (Sat)",
+      "series": [
+        {
+          "key": "126",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-126.html"
+        },
+        {
+          "key": "128",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-128.html"
+        },
+        {
+          "key": "127",
+          "name": "2025 RAYC Super League 2",
+          "resultsPath": "results/series-127.html"
+        },
+        {
+          "key": "129",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-129.html"
+        }
+      ]
+    },
+    {
+      "key": "39",
+      "name": "Cruisers 5B Echo (Thu)",
+      "series": [
+        {
+          "key": "131",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-131.html"
+        },
+        {
+          "key": "130",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-130.html"
+        },
+        {
+          "key": "132",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-132.html"
+        }
+      ]
+    },
+    {
+      "key": "40",
+      "name": "Dragon",
+      "series": [
+        {
+          "key": "135",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-135.html"
+        },
+        {
+          "key": "136",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-136.html"
+        },
+        {
+          "key": "140",
+          "name": "Thursday &amp; Saturday Combined",
+          "resultsPath": "results/series-140.html"
+        },
+        {
+          "key": "134",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-134.html"
+        },
+        {
+          "key": "133",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-133.html"
+        },
+        {
+          "key": "138",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-138.html"
+        },
+        {
+          "key": "139",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-139.html"
+        },
+        {
+          "key": "137",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-137.html"
+        }
+      ]
+    },
+    {
+      "key": "41",
+      "name": "Dublin Bay 21",
+      "series": [
+        {
+          "key": "143",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-143.html"
+        },
+        {
+          "key": "141",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-141.html"
+        },
+        {
+          "key": "144",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-144.html"
+        },
+        {
+          "key": "142",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-142.html"
+        },
+        {
+          "key": "145",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-145.html"
+        }
+      ]
+    },
+    {
+      "key": "42",
+      "name": "Fireball",
+      "series": [
+        {
+          "key": "146",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-146.html"
+        },
+        {
+          "key": "149",
+          "name": "Tuesday Series A",
+          "resultsPath": "results/series-149.html"
+        },
+        {
+          "key": "148",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-148.html"
+        },
+        {
+          "key": "152",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-152.html"
+        },
+        {
+          "key": "147",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-147.html"
+        },
+        {
+          "key": "150",
+          "name": "Tuesday Series B",
+          "resultsPath": "results/series-150.html"
+        },
+        {
+          "key": "151",
+          "name": "Tuesday Series C",
+          "resultsPath": "results/series-151.html"
+        }
+      ]
+    },
+    {
+      "key": "43",
+      "name": "Flying Fifteen",
+      "series": [
+        {
+          "key": "155",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-155.html"
+        },
+        {
+          "key": "158",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-158.html"
+        },
+        {
+          "key": "156",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-156.html"
+        },
+        {
+          "key": "153",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-153.html"
+        },
+        {
+          "key": "154",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-154.html"
+        },
+        {
+          "key": "160",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-160.html"
+        },
+        {
+          "key": "159",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-159.html"
+        },
+        {
+          "key": "157",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-157.html"
+        }
+      ]
+    },
+    {
+      "key": "44",
+      "name": "Glen",
+      "series": [
+        {
+          "key": "161",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-161.html"
+        },
+        {
+          "key": "166",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-166.html"
+        },
+        {
+          "key": "162",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-162.html"
+        },
+        {
+          "key": "164",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-164.html"
+        },
+        {
+          "key": "163",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-163.html"
+        },
+        {
+          "key": "167",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-167.html"
+        },
+        {
+          "key": "165",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-165.html"
+        }
+      ]
+    },
+    {
+      "key": "45",
+      "name": "Glen-Mermaid PY",
+      "series": [
+        {
+          "key": "171",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-171.html"
+        },
+        {
+          "key": "168",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-168.html"
+        },
+        {
+          "key": "173",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-173.html"
+        },
+        {
+          "key": "169",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-169.html"
+        },
+        {
+          "key": "170",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-170.html"
+        },
+        {
+          "key": "174",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-174.html"
+        },
+        {
+          "key": "172",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-172.html"
+        },
+        {
+          "key": "175",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-175.html"
+        }
+      ]
+    },
+    {
+      "key": "46",
+      "name": "IDRA 14",
+      "series": [
+        {
+          "key": "181",
+          "name": "Tuesday Series A",
+          "resultsPath": "results/series-181.html"
+        },
+        {
+          "key": "178",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-178.html"
+        },
+        {
+          "key": "176",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-176.html"
+        },
+        {
+          "key": "179",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-179.html"
+        },
+        {
+          "key": "177",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-177.html"
+        },
+        {
+          "key": "180",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-180.html"
+        },
+        {
+          "key": "182",
+          "name": "Tuesday Series B",
+          "resultsPath": "results/series-182.html"
+        },
+        {
+          "key": "183",
+          "name": "Tuesday Series C",
+          "resultsPath": "results/series-183.html"
+        }
+      ]
+    },
+    {
+      "key": "47",
+      "name": "ILCA 6",
+      "series": [
+        {
+          "key": "184",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-184.html"
+        },
+        {
+          "key": "187",
+          "name": "Tuesday Series A",
+          "resultsPath": "results/series-187.html"
+        },
+        {
+          "key": "186",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-186.html"
+        },
+        {
+          "key": "185",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-185.html"
+        },
+        {
+          "key": "190",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-190.html"
+        },
+        {
+          "key": "191",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-191.html"
+        },
+        {
+          "key": "188",
+          "name": "Tuesday Series B",
+          "resultsPath": "results/series-188.html"
+        },
+        {
+          "key": "189",
+          "name": "Tuesday Series C",
+          "resultsPath": "results/series-189.html"
+        }
+      ]
+    },
+    {
+      "key": "48",
+      "name": "ILCA 7",
+      "series": [
+        {
+          "key": "197",
+          "name": "Tuesday Series A",
+          "resultsPath": "results/series-197.html"
+        },
+        {
+          "key": "194",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-194.html"
+        },
+        {
+          "key": "192",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-192.html"
+        },
+        {
+          "key": "195",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-195.html"
+        },
+        {
+          "key": "193",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-193.html"
+        },
+        {
+          "key": "196",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-196.html"
+        },
+        {
+          "key": "198",
+          "name": "Tuesday Series B",
+          "resultsPath": "results/series-198.html"
+        },
+        {
+          "key": "199",
+          "name": "Tuesday Series C",
+          "resultsPath": "results/series-199.html"
+        }
+      ]
+    },
+    {
+      "key": "49",
+      "name": "Melges 15",
+      "series": [
+        {
+          "key": "205",
+          "name": "Tuesday Series A",
+          "resultsPath": "results/series-205.html"
+        },
+        {
+          "key": "202",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-202.html"
+        },
+        {
+          "key": "200",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-200.html"
+        },
+        {
+          "key": "203",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-203.html"
+        },
+        {
+          "key": "201",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-201.html"
+        },
+        {
+          "key": "204",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-204.html"
+        },
+        {
+          "key": "206",
+          "name": "Tuesday Series B",
+          "resultsPath": "results/series-206.html"
+        },
+        {
+          "key": "207",
+          "name": "Tuesday Series C",
+          "resultsPath": "results/series-207.html"
+        }
+      ]
+    },
+    {
+      "key": "50",
+      "name": "PY Class",
+      "series": [
+        {
+          "key": "213",
+          "name": "Tuesday Series A",
+          "resultsPath": "results/series-213.html"
+        },
+        {
+          "key": "210",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-210.html"
+        },
+        {
+          "key": "208",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-208.html"
+        },
+        {
+          "key": "211",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-211.html"
+        },
+        {
+          "key": "209",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-209.html"
+        },
+        {
+          "key": "212",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-212.html"
+        },
+        {
+          "key": "214",
+          "name": "Tuesday Series B",
+          "resultsPath": "results/series-214.html"
+        },
+        {
+          "key": "215",
+          "name": "Tuesday Series C",
+          "resultsPath": "results/series-215.html"
+        }
+      ]
+    },
+    {
+      "key": "51",
+      "name": "Ruffian 23",
+      "series": [
+        {
+          "key": "218",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-218.html"
+        },
+        {
+          "key": "216",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-216.html"
+        },
+        {
+          "key": "220",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-220.html"
+        },
+        {
+          "key": "219",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-219.html"
+        },
+        {
+          "key": "217",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-217.html"
+        },
+        {
+          "key": "222",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-222.html"
+        },
+        {
+          "key": "221",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-221.html"
+        },
+        {
+          "key": "223",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-223.html"
+        }
+      ]
+    },
+    {
+      "key": "52",
+      "name": "SB20",
+      "series": [
+        {
+          "key": "227",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-227.html"
+        },
+        {
+          "key": "225",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-225.html"
+        },
+        {
+          "key": "230",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-230.html"
+        },
+        {
+          "key": "228",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-228.html"
+        },
+        {
+          "key": "224",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-224.html"
+        },
+        {
+          "key": "226",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-226.html"
+        },
+        {
+          "key": "231",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-231.html"
+        },
+        {
+          "key": "229",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-229.html"
+        }
+      ]
+    },
+    {
+      "key": "53",
+      "name": "Shipman",
+      "series": [
+        {
+          "key": "234",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-234.html"
+        },
+        {
+          "key": "239",
+          "name": "Thursday &amp; Saturday Combined",
+          "resultsPath": "results/series-239.html"
+        },
+        {
+          "key": "235",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-235.html"
+        },
+        {
+          "key": "232",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-232.html"
+        },
+        {
+          "key": "233",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-233.html"
+        },
+        {
+          "key": "237",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-237.html"
+        },
+        {
+          "key": "236",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-236.html"
+        },
+        {
+          "key": "238",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-238.html"
+        }
+      ]
+    },
+    {
+      "key": "54",
+      "name": "Sportsboats",
+      "series": [
+        {
+          "key": "242",
+          "name": "Tuesday Overall",
+          "resultsPath": "results/series-242.html"
+        },
+        {
+          "key": "244",
+          "name": "Thursday Series A",
+          "resultsPath": "results/series-244.html"
+        },
+        {
+          "key": "243",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-243.html"
+        },
+        {
+          "key": "241",
+          "name": "Thursday Overall",
+          "resultsPath": "results/series-241.html"
+        },
+        {
+          "key": "246",
+          "name": "Saturday Series A",
+          "resultsPath": "results/series-246.html"
+        },
+        {
+          "key": "240",
+          "name": "Saturday Overall",
+          "resultsPath": "results/series-240.html"
+        },
+        {
+          "key": "245",
+          "name": "Thursday Series B",
+          "resultsPath": "results/series-245.html"
+        },
+        {
+          "key": "247",
+          "name": "Saturday Series B",
+          "resultsPath": "results/series-247.html"
+        }
+      ]
+    },
+    {
+      "key": "55",
+      "name": "Water Wag",
+      "series": [
+        {
+          "key": "249",
+          "name": "2025 Series A",
+          "resultsPath": "results/series-249.html"
+        },
+        {
+          "key": "248",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-248.html"
+        },
+        {
+          "key": "250",
+          "name": "2025 Series B",
+          "resultsPath": "results/series-250.html"
+        },
+        {
+          "key": "251",
+          "name": "2025 Series C",
+          "resultsPath": "results/series-251.html"
+        }
+      ]
+    },
+    {
+      "key": "56",
+      "name": "Women on the Water (Tue)",
+      "series": [
+        {
+          "key": "252",
+          "name": "2025 Summer Series",
+          "resultsPath": "results/series-252.html"
+        }
+      ]
+    }
+  ]
+}

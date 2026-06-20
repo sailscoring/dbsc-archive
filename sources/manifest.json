@@ -1,0 +1,27 @@
+{
+  "account": "1426",
+  "source": "https://archive.halsail.com",
+  "fetchedAt": "2026-06-20T08:22:07.334Z",
+  "datasets": [
+    {
+      "dsKey": "3413",
+      "name": "DBSC Summer Series 2025",
+      "year": "2025"
+    },
+    {
+      "dsKey": "3264",
+      "name": "DBSC Summer Series 2024",
+      "year": "2024"
+    },
+    {
+      "dsKey": "3206",
+      "name": "DBSC Summer Series 2023",
+      "year": "2023"
+    },
+    {
+      "dsKey": "3123",
+      "name": "DBSC Summer Series 2022",
+      "year": "2022"
+    }
+  ]
+}

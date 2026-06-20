@@ -1,0 +1,94 @@
+        <table class="table table-condensed table-hover">
+            <caption>
+                <a id="pageTop" href="#pageBottom" class="halscroll btn btn-xs btn-default btn-block">Go to last race at the bottom of the page</a>
+                <span class="badge" style="text-align: center">
+                    <span class="hidden-xs hidden-xxs hidden-xxxs">Class 'Melges 15', series 'Saturday Series B', </span>Overall Results
+                    <a class="glyphicon glyphicon-print pull-right btn btn-xs btn-default hidden-xs hidden-xxs hidden-xxxs" href="/Result/PrintSeries/3413/204" target="_blank"> </a>
+                </span>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Sail Number</th>
+                                                                                    <th class="hidden-xxxs">Name</th>
+                                                                <th class="hidden-xxs hidden-xxxs">Helm</th>
+                                                                                    <th class="hidden-xxs hidden-xxxs text-center">
+                            <a href="#race2397" class="halscroll">R1</a>
+                        </th>
+                    <th class="text-right">Net Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                        <tr class="hidden-xxs hidden-xxxs">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                                                                                                                    <td class="hidden-xxxs">&nbsp;</td>
+                                                                                        <td class="hidden-xxs hidden-xxxs">&nbsp;</td>
+                                                                                                                    <td class="hidden-xxs hidden-xxxs text-center">7 Jun</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>1</b></td>
+                            <td class="text-left">566</td>
+                                                                                                                    <td class="text-left hidden-xxxs">Ice Ice Baby 2</td>
+                                                                                        <td class="text-left hidden-xxs hidden-xxxs">Morgan Lyttle</td>
+                                                                                                                    <td class="hidden-xxs hidden-xxxs">1</td>
+                            <td class="text-right">1</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>2</b></td>
+                            <td class="text-left">567</td>
+                                                                                                                    <td class="text-left hidden-xxxs">Ronan Murphy</td>
+                                                                                        <td class="text-left hidden-xxs hidden-xxxs">Ronan Murphy</td>
+                                                                                                                    <td class="hidden-xxs hidden-xxxs">3/DNF</td>
+                            <td class="text-right">3</td>
+                        </tr>
+            </tbody>
+        </table>
+            <table id="race2397" class="table table-condensed table-hover">
+                <caption>
+                    <span class="badge" style="text-align: center">
+                        <span class="hidden-xs hidden-xxs hidden-xxxs">Race 1 (provisional) 07/06/2025 14:03:00, race officer was Brian mulkeen, wind was 10 to 25 knots NW</span>
+                        <span class="hidden-sm hidden-md hidden-lg">Race 1 (provisional) 07/06/2025 14:03:00</span>
+                        <a class="glyphicon glyphicon-print pull-right btn btn-xs btn-default hidden-xs hidden-xxs hidden-xxxs" href="/Result/PrintRace/3413/2397" target="_blank"> </a>
+                    </span>
+                </caption>
+                <thead>
+                    <tr>
+                        <th class="text-left">Place</th>
+                        <th class="text-left">Sail number</th>
+                                                                                                    <th class="text-left hidden-xxs hidden-xxxs">Name</th>
+                                                                            <th class="text-left hidden-xxs hidden-xxxs">Helm</th>
+                                                                                                <th class="text-right">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td class="text-left"><b>1</b></td>
+                            <td class="text-left">566</td>
+                                                                                                                    <td class="text-left hidden-xxs hidden-xxxs">Ice Ice Baby 2</td>
+                                                                                        <td class="text-left hidden-xxs hidden-xxxs">Morgan Lyttle</td>
+                                                                                    
+                            <td class="text-right">1</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-left"><b>DNF</b></td>
+                            <td class="text-left">567</td>
+                                                                                                                    <td class="text-left hidden-xxs hidden-xxxs">Ronan Murphy</td>
+                                                                                        <td class="text-left hidden-xxs hidden-xxxs">Ronan Murphy</td>
+                                                                                    
+                            <td class="text-right">3</td>
+
+                        </tr>
+                </tbody>
+            </table>
+        <a id="pageBottom" href="#divOuter" class="halscroll btn btn-xs btn-default btn-block">Go to the top of the page</a>
+        <script>
+            //$("#divLastRace").text("Results to 6/7/2025");
+            $("a.halscroll").click(function(e) {
+                e.preventDefault();
+                HalScrollTo($(this).attr("href"));
+            });
+        </script>
+

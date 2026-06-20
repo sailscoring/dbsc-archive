@@ -1,0 +1,36 @@
+        <table class="table table-condensed table-hover">
+            <caption>
+                <a id="pageTop" href="#pageBottom" class="halscroll btn btn-xs btn-default btn-block">Go to last race at the bottom of the page</a>
+                <span class="badge" style="text-align: center">
+                    <span class="hidden-xs hidden-xxs hidden-xxxs">Class 'Beneteau 211 Scratch', series '2024 Tuesday Series C', </span>Overall Results
+                    <a class="glyphicon glyphicon-print pull-right btn btn-xs btn-default hidden-xs hidden-xxs hidden-xxxs" href="/Result/PrintSeries/3264/16" target="_blank"> </a>
+                </span>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Sail Number</th>
+                                                                                    <th class="hidden-xxxs">Name</th>
+                                                                <th class="hidden-xxs hidden-xxxs">Helm</th>
+                                                                                <th class="text-right">Net Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                        <tr class="hidden-xxs hidden-xxxs">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                                                                                                                    <td class="hidden-xxxs">&nbsp;</td>
+                                                                                        <td class="hidden-xxs hidden-xxxs">&nbsp;</td>
+                                                                                                                <td>&nbsp;</td>
+                        </tr>
+            </tbody>
+        </table>
+        <a id="pageBottom" href="#divOuter" class="halscroll btn btn-xs btn-default btn-block">Go to the top of the page</a>
+        <script>
+            //$("#divLastRace").text("Results to 1/1/1900");
+            $("a.halscroll").click(function(e) {
+                e.preventDefault();
+                HalScrollTo($(this).attr("href"));
+            });
+        </script>
+
