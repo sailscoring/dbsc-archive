@@ -10,7 +10,8 @@
     "compare": "tsx scripts/halsail-compare.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "to-sailscoring:archive": "tsx scripts/halsail-archive-to-sailscoring.ts"
+    "to-sailscoring:archive": "tsx scripts/halsail-archive-to-sailscoring.ts",
+    "archive:2025": "tsx scripts/halsail-archive-2025.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
