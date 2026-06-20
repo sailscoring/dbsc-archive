@@ -75,9 +75,15 @@ function stripTags(s: string): string {
 }
 
 /** Canonical column key: lowercase, alphanumerics only. "Corr- ected" →
- *  "corrected", "Next Hcap" → "nexthcap", "Boat note" → "boatnote". */
+ *  "corrected", "Next Hcap" → "nexthcap", "Boat note" → "boatnote".
+ *  Normalises archive-vs-live header variants: the archive labels the sail
+ *  column "Sail number" (live: "Sail") and race columns "R1" (live: "Race 1"). */
 function colKey(headerText: string): string {
-  return headerText.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const k = headerText.toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (k === 'sailnumber') return 'sail';
+  const r = k.match(/^r(\d+)$/);
+  if (r) return `race${r[1]}`;
+  return k;
 }
 
 function num(s: string | undefined): number | null {
@@ -125,7 +131,9 @@ function dataRows(table: string, keys: string[]): Row[] {
 }
 
 function parseIsoDate(s: string): string | null {
-  // "23 Apr 2026" → "2026-04-23"
+  // Live fragments: "23 Apr 2026". Archive fragments: "24/04/2025".
+  const dmy = s.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+  if (dmy) return `${dmy[3]}-${dmy[2]}-${dmy[1]}`;
   const m = s.match(/(\d{1,2})\s+([A-Za-z]{3})[a-z]*\s+(\d{4})/);
   if (!m) return null;
   const mon = MONTHS[m[2].toLowerCase()];
