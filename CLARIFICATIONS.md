@@ -11,36 +11,37 @@ a HalSail/scoring decision rather than a bug on our side.
 
 ## 1. Single-competitor races — excluded for Cruisers 3 IRC, kept for ECHO (2025)
 
-**What we see — now confirmed on two independent fleets:**
-- **Cruisers 3 IRC** (2 boats — 5795, 35) is scored over only the **9** race-days
-  where **both** boats came; the 6 single-boat days are absent from its table.
-- **Cruisers 2 - Sigma 33** (3 boats) is scored over only the days **≥2** of its
-  boats came: of the 5 Thursday days it's missing, **4 are single-boat days**
-  (12 Jun=0, 26 Jun=1, 31 Jul=1, 28 Aug=1) — exactly the same pattern.
-- By contrast **Cruisers 0 ECHO** *keeps* its single-boat day (26 Jun, boat 6888
-  scores 1st, the other six score DNC).
+**What we see — confirmed on three independent fleets, with a clear pattern:**
 
-That two unrelated fleets drop *precisely* their single-competitor days leans
-toward an **automatic** behaviour rather than hand-curation.
+| Fleet | What it is | Its single-boat day(s) |
+|---|---|---|
+| Cruisers 3 IRC | IRC tandem (the 2 IRC-rated boats of Cruisers 3) | **excluded** (9 of 15 days kept) |
+| Cruisers 2 - Sigma 33 | one-design split of Cruisers 2 | **excluded** (12 Jun, 26 Jun, 31 Jul, 28 Aug) |
+| Cruisers 5A ECHO | ECHO sub-fleet of the combined 4-5A VPRS pool | **excluded** (05 Jun — only boat 8237 of the 5A boats raced) |
+| Cruisers 0 ECHO | the Cruisers 0 class's own series (own start) | **kept** (26 Jun — boat 6888 scores 1st, the rest DNC) |
+| Cruisers 3 ECHO | the Cruisers 3 class's own series | **kept** |
 
-**Why we can't just code a rule for it.** "A race doesn't count for a fleet with
-fewer than two of its boats" reproduces those two, but it is demonstrably **not**
-a general rule:
-- it deletes Cruisers 0 ECHO's 26 Jun race, which HalSail keeps; and
-- scoped to only fixed-handicap fleets, it still breaks several **2026** IRC /
-  VPRS / one-design fleets that likewise keep their single-boat races.
+The three that **exclude** are all **secondary tandems / splits / sub-fleets**
+drawn from a larger combined start; the two that **keep** are **primary classes
+with their own start**. So the distinction is *not* IRC-vs-ECHO or
+fixed-vs-progressive (5A ECHO and 0 ECHO are both ECHO, yet differ) — it tracks
+**tandem/sub-fleet vs primary class**.
 
-So whatever the mechanism, it treats some fleets/tandems differently from others,
-and not along the obvious IRC-vs-ECHO or fixed-vs-progressive lines.
+**Why we can't just code a rule for it.** A blanket "a race needs ≥2 of a fleet's
+boats" deletes Cruisers 0 ECHO's 26 Jun (which HalSail keeps), and even scoped to
+fixed-handicap fleets it breaks several **2026** primary fleets that keep their
+single-boat races. Only the tandem/sub-fleet distinction fits all the data — and
+the engine doesn't currently know which fleets are secondary tandems.
 
-**Question for DBSC.** In 2025, Cruisers 3 IRC and Sigma 33 exclude their
-single-competitor races while Cruisers 0 ECHO (and 2026 fixed fleets) keep theirs
-— is this a **manual** removal of races from those tandems, or an **automatic**
-rule? If automatic, what decides which tandems it applies to?
+**Question for DBSC.** In 2025, the secondary tandems / one-design splits /
+sub-fleets (Cruisers 3 IRC, Sigma 33, Cruisers 5A ECHO) drop their
+single-competitor races, while the primary class series (Cruisers 0/3 ECHO) keep
+theirs. Is that a **manual** removal of those races from the tandems, or an
+**automatic** rule that fires for secondary tandems but not primary classes?
 
-**Impact / status.** Until answered, those fleets over-score (they count the
-single-boat days as DNCs). Everything else in the Thursday cruiser group is
-parity-green. By agreement we leave Cruisers 3 IRC at its full 15-race set for now.
+**Impact / status.** Until answered, those three fleets over-score (they count
+the single-boat days, as DNCs). Everything else in the Thursday cruiser group is
+parity-green. By agreement we leave them at their full race-sets for now.
 
 ---
 
