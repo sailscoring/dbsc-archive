@@ -82,3 +82,67 @@ matched.
 **Question for DBSC.** On 05 Jun the Cruisers 3 race had no finishers (all
 RET/TLE/DNC). Was it abandoned? If so, should it be excluded from *all* its tables
 — i.e. is its appearance in Series A (but not Overall) a slip, or intended?
+
+---
+
+## 4. One-design classes split the same calendar into Series A/B differently (2025)
+
+On the one-design days (Saturday, Tuesday), each class keeps its **own** Series A
+/ Series B boundary, because the sparse classes (ILCA, IDRA, Melges, …) sail only
+a handful of races. The split can fall on the **same physical start**: on the **07 Jun 2025** 14:03
+start, Fireball scores it **Series A** while IDRA 14 and Melges 15 (who started
+alongside it) score it **Series B**.
+
+In Sail Scoring we model a day as one series with the tandems as **sub-series**,
+where a sub-series is a single shared set of races scored across every fleet. That
+cannot represent two classes assigning the *same* start to different series. The
+day's **Overall** reproduces exactly (each fleet scores only the races it sailed);
+the per-class **Series A/B cells** diverge for the classes whose boundary differs
+from their start-mates'.
+
+Three classes (Dragon, SB20, Sportsboats) additionally have **one race that is in
+their Series A/B but not their Overall** — the same Overall-vs-tandem inconsistency
+as question 3; our Overall-sourced build can't see those races at all.
+
+**Question for DBSC.** Are the one-design Series A/B intended as independent
+per-class race subsets (so two classes on one start can land in different series),
+or is there a single intended A/B calendar boundary that some published tables
+depart from?
+
+**Impact / status.** Accepted as a modelling divergence (it is not a scoring bug):
+the combined day-file reproduces every Overall and most A/B cells, but cannot
+reproduce A/B for classes whose boundary disagrees with their start-mates'. See
+the Saturday/Tuesday one-design groups.
+
+---
+
+## 5. Single-competitor heats — Thursday excludes them, Saturday keeps them (2025)
+
+Question 1 found that the secondary tandems drop heats with fewer than two of
+their boats. **Saturday Cruisers 3 IRC contradicts that.** The same two-boat IRC
+tandem (998, 5795):
+
+- **Thursday**: 15 days sailed, **9 kept** — its single-boat days are excluded
+  (question 1), and all 9 kept heats have both boats finishing.
+- **Saturday**: **5 kept**, and two of them are single-finisher heats that are
+  **kept**: 21 Jun (`998` 1st, `5795` DNF) and 20 Sep (`998` 1st, `5795`
+  DNC, scored `2/DNC`).
+
+So the *same fleet* drops single-boat heats on Thursday but keeps them on
+Saturday. No single rule keyed on "how many of the fleet's boats came / finished"
+fits both days from the data alone. A start-scoped "exclude a heat with < 2 of the
+fleet's boats" (`sailscoring`#232) matches Thursday but **over-excludes** Saturday's
+20 Jun heat (it drops 5795's `2/DNC`, netting it 3 instead of the published 5).
+
+This ripples into the progressive **ECHO** tables on Saturday (Cruisers 1/5A/5B
+ECHO): excluding a mid-chain heat shifts every later corrected handicap, so those
+fleets show small (±1) net offsets that trace back to the same question.
+
+**Question for DBSC.** What determines whether a single-competitor heat counts for
+a fleet? It is excluded on Thursday but kept on Saturday for Cruisers 3 IRC — is
+that an intended difference (e.g. a per-series setting), or an inconsistency?
+
+**Impact / status.** Directly relevant to the `sailscoring`#232 exclusion rule:
+Saturday is a counterexample to the blanket start-scoped exclusion. The Saturday
+cruiser group's residual divergences (Cruisers 3 IRC, Sigma 33, the ECHO chains)
+all trace here; they will move once the rule is settled.
