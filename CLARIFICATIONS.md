@@ -60,3 +60,25 @@ parent class continued.
 
 **Question for DBSC.** Did the Sigma 33 one-design series deliberately end after
 14 Aug (so 21 Aug and 28 Aug aren't part of it), or is something else going on?
+
+---
+
+## 3. Cruisers 3 ECHO — an abandoned race kept in Series A but dropped from Overall (2025)
+
+On **05 Jun**, the Cruisers 3 race was effectively **abandoned** — all ten boats
+are `RET` / `TLE` / `DNC`, **nobody finished**:
+
+> 46 RET · 246 RET · 1038 RET · 2102 RET · 5795 RET · 307 TLE · 11 DNC · 35 DNC · 1792 DNC · 2855 DNC
+
+HalSail's own published Cruisers 3 ECHO tables treat that day **inconsistently**:
+- **Overall** doesn't include 05 Jun at all (it runs 29 May → 12 Jun).
+- **Series A** *does* include 05 Jun, scoring those boats their RET/TLE points.
+
+So Series A contains a race the Overall excludes, for the same fleet. We drop a
+heat that nobody finished, which matches the **Overall** (parity-green) but not
+**Series A** (the RET/TLE boats diverge). The two published tables can't both be
+matched.
+
+**Question for DBSC.** On 05 Jun the Cruisers 3 race had no finishers (all
+RET/TLE/DNC). Was it abandoned? If so, should it be excluded from *all* its tables
+— i.e. is its appearance in Series A (but not Overall) a slip, or intended?
