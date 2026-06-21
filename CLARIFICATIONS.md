@@ -39,9 +39,13 @@ single-competitor races, while the primary class series (Cruisers 0/3 ECHO) keep
 theirs. Is that a **manual** removal of those races from the tandems, or an
 **automatic** rule that fires for secondary tandems but not primary classes?
 
-**Impact / status.** Until answered, those three fleets over-score (they count
-the single-boat days, as DNCs). Everything else in the Thursday cruiser group is
-parity-green. By agreement we leave them at their full race-sets for now.
+**Impact / status.** Those three fleets currently over-score (they count the
+single-boat days, as DNCs); everything else in the Thursday cruiser group is
+parity-green. We can reproduce the published tables with a **start-scoped
+single-competitor race exclusion** — a fleet doesn't race a heat with <2 of its
+boats unless it's the whole field of the start. Tracked for the engine in
+`sailscoring/sailscoring`#232. The question above (DBSC's *intent* — automatic or
+manual) is still worth confirming, but the rule reproduces the numbers either way.
 
 ---
 
