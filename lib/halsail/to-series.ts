@@ -633,8 +633,8 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
       for (const f of race.finishers) {
         const id = fleetCompId(spec.fleetId, f.sail);
         if (!valid.has(id)) continue; // a sail in the detail but not the summary roster
-        if (!f.finish && (f.code === 'DNC' || !f.code)) continue;
-        crossings.push({ compId: id, sail: f.sail, finish: f.finish, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
+        if (!f.finish && f.place == null && (f.code === 'DNC' || !f.code)) continue;
+        crossings.push({ compId: id, sail: f.sail, finish: f.finish, place: f.place, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
       }
     }
     const ratingOverrides = overridesByDate.get(date);
@@ -661,6 +661,9 @@ interface Crossing {
   sail: string;
   finish: string | null;
   code: string | null;
+  // Finishing place from a place-only (scratch one-design) table, used to order
+  // finishers when there is no finish time. Null/absent for timed tables.
+  place?: number | null;
   redressType: number | null;
   penaltyCode?: string | null;
   penaltyPercent?: number | null;
@@ -668,17 +671,22 @@ interface Crossing {
 
 /** Crossing order (by finish time of day) into ordered finishes, with coded
  *  non-finishers (DNF/RET/RDG…) appended. Shared by the cruiser-day builders. */
+// A place-only finisher: no finish time, no result code, but a numeric place
+// (scratch one-design table). Ordered after any timed finishers, by place.
+const isPlaced = (c: Crossing) => !c.finish && !c.code && c.place != null;
+
 function assembleFinishes(rn: number, crossings: Crossing[]): FileFinish[] {
-  const finished = crossings.filter((c) => c.finish).sort((a, b) => a.finish!.localeCompare(b.finish!));
+  const timed = crossings.filter((c) => c.finish).sort((a, b) => a.finish!.localeCompare(b.finish!));
+  const placed = crossings.filter(isPlaced).sort((a, b) => a.place! - b.place!);
   const finishes: FileFinish[] = [];
   let sortOrder = 0;
-  for (const c of finished) {
+  for (const c of [...timed, ...placed]) {
     sortOrder++;
     finishes.push({
       id: `fin-${rn}-${c.compId}`,
       competitorId: c.compId,
       sortOrder,
-      finishTime: c.finish!,
+      ...(c.finish ? { finishTime: c.finish } : {}),
       resultCode: null,
       startPresent: true,
       // A finisher may carry an additive scoring penalty (e.g. SCP 20%); the
@@ -687,7 +695,7 @@ function assembleFinishes(rn: number, crossings: Crossing[]): FileFinish[] {
       penaltyOverride: c.penaltyCode ? (c.penaltyPercent ?? null) : null,
     });
   }
-  for (const c of crossings.filter((x) => !x.finish)) {
+  for (const c of crossings.filter((x) => !x.finish && !isPlaced(x))) {
     let redress: { redressMethod?: 'all_races' | 'all_races_excl_dnc' | 'races_before' } = {};
     if (c.code === 'RDG') {
       const method = c.redressType != null ? RDG_TYPE_TO_METHOD[c.redressType] : undefined;

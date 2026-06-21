@@ -187,7 +187,10 @@ function parseRaceTable(table: string, cap: string): HalsailRace | null {
   if (/cancelled|abandoned/i.test(cap)) return null;
   const raceNumber = Number(m[1]);
   const keys = headerKeys(table);
-  if (!keys.includes('finish') && !keys.includes('elapsed')) return null;
+  // A results detail table always has Place + Sail. Scratch one-designs publish
+  // place-only tables (no Finish/Elapsed/Corrected); accept those too, not just
+  // timed-handicap tables — ordering then comes from the Place column.
+  if (!keys.includes('place') || !keys.includes('sail')) return null;
   const startMatch = cap.match(/(\d{1,2}:\d{2}:\d{2})/);
   const finishers: HalsailFinisher[] = [];
   for (const row of dataRows(table, keys)) {
