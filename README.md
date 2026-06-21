@@ -9,6 +9,10 @@ It is the DBSC counterpart of [`iodai-archive`](https://github.com/sailscoring/i
 same shape of work (reconstruct *published* race history into `.sailscoring`),
 same payoff.
 
+> 📋 **[CLARIFICATIONS.md](CLARIFICATIONS.md)** — open questions for DBSC about how
+> their results were modelled (things we can't resolve from the data alone). Add
+> to it whenever a divergence comes down to a DBSC/HalSail decision, not our bug.
+
 ## Why
 
 The payoff is the **cross-series identity and ranking** work on the Sail Scoring

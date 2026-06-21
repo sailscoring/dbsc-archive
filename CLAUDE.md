@@ -54,6 +54,11 @@ disk is reused, never re-fetched), so re-runs are cheap.
 4. **Only real published data.** If a result is missing from the archive, leave
    it missing — do not fabricate, interpolate, or guess. Partial coverage is fine.
 
+5. **When a parity divergence is a DBSC/HalSail modelling decision (not our bug),
+   record it in [`CLARIFICATIONS.md`](CLARIFICATIONS.md)** rather than coding a
+   speculative rule. Don't guess at intent (e.g. "the scorer must have removed
+   those races") — state what's verified and ask DBSC.
+
 ## Relationship to the app repo
 
 The capture, conversion, and parity tooling all live here now
