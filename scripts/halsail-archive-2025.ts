@@ -46,12 +46,17 @@ function frag(className: string, seriesName: string): HalsailFleet {
   if (!key) throw new Error(`no fragment for "${className}" / "${seriesName}"`);
   return parseHalsailFleet(readFileSync(join(RESULTS, `series-${key}.html`), 'utf8'));
 }
-/** Dates of a (class, series) fragment, or [] if absent. */
-function fragDates(className: string, seriesName: string): string[] {
+/** `date#startTime` keys of a (class, series) fragment's races, or [] if absent.
+ *  The start time identifies the physical race a class actually sailed — robust
+ *  where date alone is not (two races a day, classes with different A/B
+ *  boundaries, a class sailing only one of a day's races). */
+function fragStartKeys(className: string, seriesName: string): string[] {
   const key = seriesKey(className, seriesName);
   if (!key) return [];
   const f = parseHalsailFleet(readFileSync(join(RESULTS, `series-${key}.html`), 'utf8'));
-  return f.races.map((r) => r.date).filter((d): d is string => !!d);
+  return f.races
+    .filter((r) => r.date && r.startTime)
+    .map((r) => `${r.date}#${r.startTime}`);
 }
 
 const DBSC_DISCARDS: DiscardThreshold[] = [
@@ -61,20 +66,32 @@ const DBSC_DISCARDS: DiscardThreshold[] = [
 ];
 
 /** Build Overall/A/B sub-series for a day-group: Overall = all races; A/B select
- *  by the date union of each member class's "Series A"/"Series B" fragment.
+ *  the physical races each member class sailed in its "Series A"/"Series B"
+ *  tandem, matched by (date, start-time) against the merged file. Matching on the
+ *  start a class actually sailed — not the date — is what makes this correct when
+ *  a day holds two races and classes keep different A/B boundaries.
  *  Series B `continue`s the progressive (ECHO) chain from Series A — HalSail
  *  scores a tandem over the shared chain, so the late block resumes mid-chain
  *  rather than re-seeding from base. */
 function buildSubSeries(file: SeriesFile, day: string, classNames: string[]): SubSeries[] {
-  const aDates = new Set(classNames.flatMap((c) => fragDates(c, `${day} Series A`)));
-  const bDates = new Set(classNames.flatMap((c) => fragDates(c, `${day} Series B`)));
-  const ids = (pred: (date: string) => boolean) =>
-    file.races.filter((r) => pred(r.date)).map((r) => r.id);
+  // date#startTime → race id, for every per-class start in the merged file.
+  const keyToRace = new Map<string, string>();
+  for (const r of file.races) {
+    for (const s of r.starts) keyToRace.set(`${r.date}#${s.startTime}`, r.id);
+  }
+  const raceIdsFor = (series: string): string[] => {
+    const keys = new Set(classNames.flatMap((c) => fragStartKeys(c, `${day} ${series}`)));
+    const ids = new Set<string>();
+    for (const k of keys) { const id = keyToRace.get(k); if (id) ids.add(id); }
+    return file.races.filter((r) => ids.has(r.id)).map((r) => r.id);
+  };
+  const aIds = raceIdsFor('Series A');
+  const bIds = raceIdsFor('Series B');
   const list: SubSeries[] = [
     { id: 'ss-overall', seriesId: file.seriesId, name: `${day} Overall`, displayOrder: 0, raceIds: file.races.map((r) => r.id), startingHandicapSource: 'base' },
   ];
-  if (aDates.size) list.push({ id: 'ss-a', seriesId: file.seriesId, name: `${day} Series A`, displayOrder: 1, raceIds: ids((d) => aDates.has(d)), startingHandicapSource: 'base' });
-  if (bDates.size) list.push({ id: 'ss-b', seriesId: file.seriesId, name: `${day} Series B`, displayOrder: 2, raceIds: ids((d) => bDates.has(d)), startingHandicapSource: list.some((s) => s.id === 'ss-a') ? 'continue' : 'base', continueFromSubSeriesId: list.some((s) => s.id === 'ss-a') ? 'ss-a' : null });
+  if (aIds.length) list.push({ id: 'ss-a', seriesId: file.seriesId, name: `${day} Series A`, displayOrder: 1, raceIds: aIds, startingHandicapSource: 'base' });
+  if (bIds.length) list.push({ id: 'ss-b', seriesId: file.seriesId, name: `${day} Series B`, displayOrder: 2, raceIds: bIds, startingHandicapSource: aIds.length ? 'continue' : 'base', continueFromSubSeriesId: aIds.length ? 'ss-a' : null });
   return list;
 }
 
@@ -229,9 +246,87 @@ const THURSDAY_OD: Group = {
   ),
 };
 
+// Saturday cruisers — identical structure to Thursday, Saturday fragments.
+const SATURDAY_CRUISERS: Group = {
+  out: 'dbsc-2025-saturday-cruisers', name: 'DBSC 2025 — Saturday Cruisers',
+  day: 'Saturday', echoSuffix: 'Sat',
+  classNames: [
+    'Cruisers 0 IRC', 'Cruisers 0 Echo (Sat)', 'Cruisers 1 IRC', 'Cruisers 1 Echo (Sat)',
+    'Cruisers 2 IRC', 'Cruisers 2 Echo (Sat)', 'Cruisers 3 IRC', 'Cruisers 3 Echo (Sat)',
+    'Cruisers 1 - J109', 'Cruisers 2 - Sigma33', 'Cruisers 4-5A NS VPRS', 'Cruisers 4-5B NS VPRS',
+    'Cruisers 5A Echo (Sat)', 'Cruisers 5B Echo (Sat)',
+  ],
+  fleetClassOverride: {
+    'J/109': 'Cruisers 1 - J109', 'Sigma 33': 'Cruisers 2 - Sigma33',
+    'Cruisers 4-5A VPRS': 'Cruisers 4-5A NS VPRS', 'Cruisers 4-5B VPRS': 'Cruisers 4-5B NS VPRS',
+    'Cruisers 5A ECHO': 'Cruisers 5A Echo (Sat)', 'Cruisers 5B ECHO': 'Cruisers 5B Echo (Sat)',
+  },
+  build: (opts) => buildCruiserDaySeries(
+    [
+      { classNum: 0, echo: frag('Cruisers 0 Echo (Sat)', 'Saturday Overall'), irc: frag('Cruisers 0 IRC', 'Saturday Overall') },
+      { classNum: 1, echo: frag('Cruisers 1 Echo (Sat)', 'Saturday Overall'), irc: frag('Cruisers 1 IRC', 'Saturday Overall') },
+      { classNum: 2, echo: frag('Cruisers 2 Echo (Sat)', 'Saturday Overall'), irc: frag('Cruisers 2 IRC', 'Saturday Overall') },
+      { classNum: 3, echo: frag('Cruisers 3 Echo (Sat)', 'Saturday Overall'), irc: frag('Cruisers 3 IRC', 'Saturday Overall') },
+    ],
+    [
+      { fleetId: 'cf-j109', name: 'J/109', parentClass: 1, fleet: frag('Cruisers 1 - J109', 'Saturday Overall') },
+      { fleetId: 'cf-sigma33', name: 'Sigma 33', parentClass: 2, fleet: frag('Cruisers 2 - Sigma33', 'Saturday Overall') },
+    ],
+    opts,
+    [
+      { vprsFleetId: 'cf-45a-vprs', vprsName: 'Cruisers 4-5A VPRS', startKey: '45a', vprs: frag('Cruisers 4-5A NS VPRS', 'Saturday Overall'), echoFleets: [{ fleetId: 'cf-5a-echo', name: 'Cruisers 5A ECHO', echo: frag('Cruisers 5A Echo (Sat)', 'Saturday Overall') }] },
+      { vprsFleetId: 'cf-45b-vprs', vprsName: 'Cruisers 4-5B VPRS', startKey: '45b', vprs: frag('Cruisers 4-5B NS VPRS', 'Saturday Overall'), echoFleets: [{ fleetId: 'cf-5b-echo', name: 'Cruisers 5B ECHO', echo: frag('Cruisers 5B Echo (Sat)', 'Saturday Overall') }] },
+    ],
+  ),
+};
+
+// Saturday "One-designs, Sportsboats & PY" sheet — the biggest day. Mirrors the
+// 2026 saturday-od, minus J/80; plus Melges 15 (a 2025 scratch one-design).
+const SATURDAY_OD: Group = {
+  out: 'dbsc-2025-saturday-od', name: 'DBSC 2025 — Saturday One-designs, Sportsboats & PY',
+  day: 'Saturday', echoSuffix: 'Sat',
+  classNames: [
+    'Dragon', 'Flying Fifteen', 'Ruffian 23', 'SB20', 'Shipman', 'Sportsboats',
+    'Glen', 'Glen-Mermaid PY', 'Beneteau 211 Scratch', 'Beneteau 211 Echo (Sat)',
+    'Beneteau 31.7 Scratch', 'Beneteau 31.7 Echo (Sat)', 'Dublin Bay 21', 'Fireball',
+    'IDRA 14', 'ILCA 7', 'ILCA 6', 'PY Class', 'Melges 15',
+  ],
+  fleetClassOverride: {
+    'Mixed Sportsboats': 'Sportsboats',
+    'Beneteau 211': 'Beneteau 211 Scratch', 'Beneteau 211 ECHO': 'Beneteau 211 Echo (Sat)',
+    'Beneteau 31.7': 'Beneteau 31.7 Scratch', 'Beneteau 31.7 ECHO': 'Beneteau 31.7 Echo (Sat)',
+  },
+  build: (opts) => buildFleetSeries(
+    [
+      { fleetId: 'fl-dragon', name: 'Dragon', system: 'scratch', fragment: frag('Dragon', 'Saturday Overall') },
+      { fleetId: 'fl-ff', name: 'Flying Fifteen', system: 'scratch', fragment: frag('Flying Fifteen', 'Saturday Overall') },
+      { fleetId: 'fl-ruffian', name: 'Ruffian 23', system: 'scratch', fragment: frag('Ruffian 23', 'Saturday Overall') },
+      { fleetId: 'fl-sb20', name: 'SB20', system: 'scratch', fragment: frag('SB20', 'Saturday Overall') },
+      { fleetId: 'fl-shipman', name: 'Shipman', system: 'scratch', fragment: frag('Shipman', 'Saturday Overall') },
+      { fleetId: 'fl-sportsboats', name: 'Mixed Sportsboats', system: 'vprs', fragment: frag('Sportsboats', 'Saturday Overall') },
+      { fleetId: 'fl-glen', name: 'Glen', system: 'scratch', fragment: frag('Glen', 'Saturday Overall') },
+      { fleetId: 'fl-glenmermaid-py', name: 'Glen-Mermaid PY', system: 'py', fragment: frag('Glen-Mermaid PY', 'Saturday Overall') },
+      { fleetId: 'fl-b211', name: 'Beneteau 211', system: 'scratch', fragment: frag('Beneteau 211 Scratch', 'Saturday Overall') },
+      { fleetId: 'fl-b211-echo', name: 'Beneteau 211 ECHO', system: 'echo', fragment: frag('Beneteau 211 Echo (Sat)', 'Saturday Overall') },
+      { fleetId: 'fl-b317', name: 'Beneteau 31.7', system: 'scratch', fragment: frag('Beneteau 31.7 Scratch', 'Saturday Overall') },
+      { fleetId: 'fl-b317-echo', name: 'Beneteau 31.7 ECHO', system: 'echo', fragment: frag('Beneteau 31.7 Echo (Sat)', 'Saturday Overall') },
+      { fleetId: 'fl-db21', name: 'Dublin Bay 21', system: 'scratch', fragment: frag('Dublin Bay 21', 'Saturday Overall') },
+      { fleetId: 'fl-fireball', name: 'Fireball', system: 'scratch', fragment: frag('Fireball', 'Saturday Overall') },
+      { fleetId: 'fl-idra14', name: 'IDRA 14', system: 'scratch', fragment: frag('IDRA 14', 'Saturday Overall') },
+      { fleetId: 'fl-ilca7', name: 'ILCA 7', system: 'scratch', fragment: frag('ILCA 7', 'Saturday Overall') },
+      { fleetId: 'fl-ilca6', name: 'ILCA 6', system: 'scratch', fragment: frag('ILCA 6', 'Saturday Overall') },
+      { fleetId: 'fl-pyclass', name: 'PY Class', system: 'py', fragment: frag('PY Class', 'Saturday Overall') },
+      { fleetId: 'fl-melges15', name: 'Melges 15', system: 'scratch', fragment: frag('Melges 15', 'Saturday Overall') },
+    ] satisfies DayFleetSpec[],
+    opts,
+  ),
+};
+
 const GROUPS: Record<string, Group> = {
   'thursday-cruisers': THURSDAY_CRUISERS,
   'thursday-od': THURSDAY_OD,
+  'saturday-cruisers': SATURDAY_CRUISERS,
+  'saturday-od': SATURDAY_OD,
 };
 
 function run(key: string, group: Group, doValidate: boolean): boolean {
