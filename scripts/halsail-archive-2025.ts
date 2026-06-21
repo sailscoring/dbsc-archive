@@ -194,7 +194,45 @@ const THURSDAY_CRUISERS: Group = {
   ),
 };
 
-const GROUPS: Record<string, Group> = { 'thursday-cruisers': THURSDAY_CRUISERS };
+/** Thursday "Red" sheet: one-design / sportsboat / PY classes scored on their
+ *  own (scratch / VPRS / PY / progressive-ECHO), each from its own fragment.
+ *  Mirrors the 2026 live `thursday-red` build, minus J/80 (no 2025 class). */
+const THURSDAY_OD: Group = {
+  out: 'dbsc-2025-thursday-od', name: 'DBSC 2025 — Thursday One-designs & Sportsboats',
+  day: 'Thursday', echoSuffix: 'Thu',
+  classNames: [
+    'Dragon', 'Flying Fifteen', 'Ruffian 23', 'SB20', 'Shipman', 'Sportsboats',
+    'Glen', 'Glen-Mermaid PY', 'Beneteau 211 Scratch', 'Beneteau 211 Echo (Thu)',
+    'Beneteau 31.7 Scratch', 'Beneteau 31.7 Echo (Thu)',
+  ],
+  fleetClassOverride: {
+    'Mixed Sportsboats': 'Sportsboats',
+    'Beneteau 211': 'Beneteau 211 Scratch', 'Beneteau 211 ECHO': 'Beneteau 211 Echo (Thu)',
+    'Beneteau 31.7': 'Beneteau 31.7 Scratch', 'Beneteau 31.7 ECHO': 'Beneteau 31.7 Echo (Thu)',
+  },
+  build: (opts) => buildFleetSeries(
+    [
+      { fleetId: 'fl-dragon', name: 'Dragon', system: 'scratch', fragment: frag('Dragon', 'Thursday Overall') },
+      { fleetId: 'fl-ff', name: 'Flying Fifteen', system: 'scratch', fragment: frag('Flying Fifteen', 'Thursday Overall') },
+      { fleetId: 'fl-ruffian', name: 'Ruffian 23', system: 'scratch', fragment: frag('Ruffian 23', 'Thursday Overall') },
+      { fleetId: 'fl-sb20', name: 'SB20', system: 'scratch', fragment: frag('SB20', 'Thursday Overall') },
+      { fleetId: 'fl-shipman', name: 'Shipman', system: 'scratch', fragment: frag('Shipman', 'Thursday Overall') },
+      { fleetId: 'fl-sportsboats', name: 'Mixed Sportsboats', system: 'vprs', fragment: frag('Sportsboats', 'Thursday Overall') },
+      { fleetId: 'fl-glen', name: 'Glen', system: 'scratch', fragment: frag('Glen', 'Thursday Overall') },
+      { fleetId: 'fl-glenmermaid-py', name: 'Glen-Mermaid PY', system: 'py', fragment: frag('Glen-Mermaid PY', 'Thursday Overall') },
+      { fleetId: 'fl-b211', name: 'Beneteau 211', system: 'scratch', fragment: frag('Beneteau 211 Scratch', 'Thursday Overall') },
+      { fleetId: 'fl-b211-echo', name: 'Beneteau 211 ECHO', system: 'echo', fragment: frag('Beneteau 211 Echo (Thu)', 'Thursday Overall') },
+      { fleetId: 'fl-b317', name: 'Beneteau 31.7', system: 'scratch', fragment: frag('Beneteau 31.7 Scratch', 'Thursday Overall') },
+      { fleetId: 'fl-b317-echo', name: 'Beneteau 31.7 ECHO', system: 'echo', fragment: frag('Beneteau 31.7 Echo (Thu)', 'Thursday Overall') },
+    ] satisfies DayFleetSpec[],
+    opts,
+  ),
+};
+
+const GROUPS: Record<string, Group> = {
+  'thursday-cruisers': THURSDAY_CRUISERS,
+  'thursday-od': THURSDAY_OD,
+};
 
 function run(key: string, group: Group, doValidate: boolean): boolean {
   const base = group.build({ seriesName: group.name, seriesId: group.out, exportedAt: '2025-09-01T00:00:00.000Z' });
