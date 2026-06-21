@@ -11,36 +11,47 @@ a HalSail/scoring decision rather than a bug on our side.
 
 ## 1. Single-competitor races — excluded for Cruisers 3 IRC, kept for ECHO (2025)
 
-**What we see.** In 2025, **Cruisers 3 IRC** (2 boats — sails 5795 and 35) is
-scored over only the **9** race-days where **both** boats came to the line; the 6
-days when only one of them raced are absent from its published table. But
-**Cruisers 0 ECHO** *keeps* its single-boat day — 26 Jun, where only boat 6888
-came: it scores 1st and the other six boats score DNC.
+**What we see — now confirmed on two independent fleets:**
+- **Cruisers 3 IRC** (2 boats — 5795, 35) is scored over only the **9** race-days
+  where **both** boats came; the 6 single-boat days are absent from its table.
+- **Cruisers 2 - Sigma 33** (3 boats) is scored over only the days **≥2** of its
+  boats came: of the 5 Thursday days it's missing, **4 are single-boat days**
+  (12 Jun=0, 26 Jun=1, 31 Jul=1, 28 Aug=1) — exactly the same pattern.
+- By contrast **Cruisers 0 ECHO** *keeps* its single-boat day (26 Jun, boat 6888
+  scores 1st, the other six score DNC).
+
+That two unrelated fleets drop *precisely* their single-competitor days leans
+toward an **automatic** behaviour rather than hand-curation.
 
 **Why we can't just code a rule for it.** "A race doesn't count for a fleet with
-fewer than two of its boats" reproduces Cruisers 3 IRC, but it is demonstrably
-**not** a general rule:
+fewer than two of its boats" reproduces those two, but it is demonstrably **not**
+a general rule:
 - it deletes Cruisers 0 ECHO's 26 Jun race, which HalSail keeps; and
 - scoped to only fixed-handicap fleets, it still breaks several **2026** IRC /
   VPRS / one-design fleets that likewise keep their single-boat races.
 
-So the exclusion is narrower than "fixed vs progressive" or "IRC vs ECHO".
+So whatever the mechanism, it treats some fleets/tandems differently from others,
+and not along the obvious IRC-vs-ECHO or fixed-vs-progressive lines.
 
-**Question for DBSC.** In 2025, Cruisers 3 IRC excludes single-competitor races
-while Cruisers 0 ECHO doesn't — was that a **manual** exclusion (races removed
-from the Cruisers 3 IRC tandem), or an **automatic** rule? If automatic, what
-decides it, given other fixed-handicap fleets keep their single-boat races?
+**Question for DBSC.** In 2025, Cruisers 3 IRC and Sigma 33 exclude their
+single-competitor races while Cruisers 0 ECHO (and 2026 fixed fleets) keep theirs
+— is this a **manual** removal of races from those tandems, or an **automatic**
+rule? If automatic, what decides which tandems it applies to?
 
-**Impact / status.** Until answered, our Cruisers 3 IRC reconstruction
-over-scores (it counts all 15 cruiser-3 days, with DNCs, instead of the published
-9). Everything else in the Thursday cruiser group is parity-green.
+**Impact / status.** Until answered, those fleets over-score (they count the
+single-boat days as DNCs). Everything else in the Thursday cruiser group is
+parity-green. By agreement we leave Cruisers 3 IRC at its full 15-race set for now.
 
 ---
 
-## 2. Sigma 33 — diverges with no single-competitor races (2025) — *investigating*
+## 2. Sigma 33 one-design — series ends 14 Aug (2025)
 
-**Cruisers 2 - Sigma 33** (3 boats) has ≥2 boats in every race, so question 1
-doesn't apply, yet our reconstructed net diverges from the published table. We
-have **not** yet pinned down whether this is a HalSail modelling decision or a bug
-on our side, so it's parked here as a candidate question pending our own
-investigation. Don't raise with DBSC until we've ruled out our own converter.
+Separate from the single-competitor exclusion above (question 1), the **Sigma 33**
+one-design table simply **stops at 14 Aug**, even though all three boats keep
+racing in Cruisers 2 ECHO through 28 Aug. In particular **21 Aug** is excluded
+*despite all three Sigma boats sailing it* (≥2 — so it's not the question-1
+exclusion). The one-design split looks like it was wound up mid-August while the
+parent class continued.
+
+**Question for DBSC.** Did the Sigma 33 one-design series deliberately end after
+14 Aug (so 21 Aug and 28 Aug aren't part of it), or is something else going on?
