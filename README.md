@@ -88,6 +88,10 @@ pnpm capture --map-only     # Stage A: datasets + classes + class→series join
 pnpm capture                # Stage B: also every results table (~983 files)
 pnpm capture --year=2025    # restrict to one dataset
 
+# Archive reconstruction → .sailscoring (validates vs published)
+pnpm archive:2025           # build + validate every 2025 day-group
+pnpm archive:2025 [group]   # one group (e.g. thursday-cruisers, saturday-od)
+
 # 2026 live parity (halsail.com)
 pnpm fetch                  # refresh the live result fragments
 pnpm to-sailscoring [day]   # fragments → .sailscoring
@@ -100,15 +104,42 @@ on disk is reused, never re-fetched). Read-only against public servers.
 
 ## Status
 
-| Year | Catalog (class→series join) | Results tables | Reconstructed `.sailscoring` |
-|------|:--:|:--:|:--:|
-| 2022 | ✅ | ✅ | ◻️ |
-| 2023 | ✅ | ✅ | ◻️ |
-| 2024 | ✅ | ✅ | ◻️ |
-| 2025 | ✅ | ✅ | ◻️ |
+**Capture** — every year fully captured (catalog + results tables); the evidence base.
 
-Reconstruction into `.sailscoring` (and parity validation against the published
-tables) is future work; the captures above are the evidence base.
+| Year | Catalog (class→series join) | Results tables |
+|------|:--:|:--:|
+| 2022 | ✅ | ✅ |
+| 2023 | ✅ | ✅ |
+| 2024 | ✅ | ✅ |
+| 2025 | ✅ | ✅ |
+
+**Reconstruction** — `archive.halsail.com` → `.sailscoring`, validating each
+(sub-series × fleet) Net against the published table (`pnpm archive:2025 [group]`,
+builders in `scripts/halsail-archive-2025.ts`). Started with **2025** (it has the
+fullest Series A/B structure). One `.sailscoring` per finish-sheet day-group, with
+the HalSail tandems carried as sub-series (Overall / Series A / B).
+
+| 2025 day-group | Overall | Series A/B | Notes |
+|---|:--:|:--:|---|
+| Thursday cruisers | ✅ | ✅ | residual 2 = Q2 (Sigma ends 14 Aug) + Q3 (abandoned 05 Jun) |
+| Thursday one-designs | ✅ | ✅ | parity-green |
+| Saturday cruisers | ✅ | ⚠️ | A/B residuals = **Q5** (single-competitor heats / `sailscoring`#232) |
+| Saturday one-designs | ✅ | ⚠️ | A/B residuals = **Q4** (per-class A/B boundaries) |
+| Tuesday (cruisers + OD) | — | — | not started — needs N-block (Series A/B/**C**) sub-series; introduces Combined Cruisers / Combined Group 2 / Women on the Water (Phase-B concepts) |
+| Water Wags | — | — | not started — `2025 Series A/B/C`, also N-block |
+| 2024 / 2023 / 2022 | — | — | not started |
+
+Every **Overall** reproduces exactly. The remaining A/B divergences are *DBSC/HalSail
+modelling decisions, not scoring bugs* — see [`CLARIFICATIONS.md`](CLARIFICATIONS.md)
+Q1–Q5. Two reusable wins landed along the way: the parser now reads **place-only
+scratch one-design tables**, and sub-series are assigned by **(date, start-time)**
+so multi-race days split correctly.
+
+> **Paused (Jun 2026)** pending a deeper look at how HalSail itself decides these
+> cases — chiefly **Q5**: the same fleet (Cruisers 3 IRC) *excludes* single-competitor
+> heats on Thursday but *keeps* them on Saturday, which contradicts the blanket
+> start-scoped exclusion in `sailscoring`#232. The Saturday cruiser parity is a moving
+> target until that rule is settled, so Tuesday's cruiser/Combined groups are held.
 
 ## Licensing
 
