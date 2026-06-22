@@ -123,7 +123,7 @@ the HalSail tandems carried as sub-series (Overall / Series A / B).
 |---|:--:|:--:|---|
 | Thursday cruisers | ✅ | ✅ | residual 2 = Q2 (Sigma ends 14 Aug) + Q3 (abandoned 05 Jun) |
 | Thursday one-designs | ✅ | ✅ | parity-green |
-| Saturday cruisers | ✅ | ⚠️ | A/B residuals = **Q5** (single-competitor heats / `sailscoring`#232) |
+| Saturday cruisers | ✅ | ⚠️ | A/B residuals = **Q5** (manual single-competitor exclusions — see Q1) |
 | Saturday one-designs | ✅ | ⚠️ | A/B residuals = **Q4** (per-class A/B boundaries) |
 | Tuesday (cruisers + OD) | — | — | not started — needs N-block (Series A/B/**C**) sub-series; introduces Combined Cruisers / Combined Group 2 / Women on the Water (Phase-B concepts) |
 | Water Wags | — | — | not started — `2025 Series A/B/C`, also N-block |
@@ -135,11 +135,13 @@ Q1–Q5. Two reusable wins landed along the way: the parser now reads **place-on
 scratch one-design tables**, and sub-series are assigned by **(date, start-time)**
 so multi-race days split correctly.
 
-> **Paused (Jun 2026)** pending a deeper look at how HalSail itself decides these
-> cases — chiefly **Q5**: the same fleet (Cruisers 3 IRC) *excludes* single-competitor
-> heats on Thursday but *keeps* them on Saturday, which contradicts the blanket
-> start-scoped exclusion in `sailscoring`#232. The Saturday cruiser parity is a moving
-> target until that rule is settled, so Tuesday's cruiser/Combined groups are held.
+> **Paused (Jun 2026).** The single-competitor question (Q1/Q5) is now **answered**:
+> it is **manual enforcement of a DBSC SI clause** by the results manager, not an
+> automatable rule — and Cruisers 0 ECHO's "kept" 26 Jun heat was a manager miss, not
+> evidence of a "full-field keeps" rule. The proposed engine rule
+> (`sailscoring`#232) is closed not-planned. So the affected sub-fleets will keep
+> over-scoring their single-boat days until/unless we model **per-heat manual
+> exclusions**; that, plus the Tuesday cruiser/Combined groups, is the resume point.
 
 ## Licensing
 

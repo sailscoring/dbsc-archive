@@ -9,43 +9,37 @@ a HalSail/scoring decision rather than a bug on our side.
 
 ---
 
-## 1. Single-competitor races — excluded for Cruisers 3 IRC, kept for ECHO (2025)
+## 1. Single-competitor races — ✅ ANSWERED: manual SI enforcement (2025)
 
-**What we see — confirmed on three independent fleets, with a clear pattern:**
+**Answer (Jun 2026).** It is **100% manual enforcement of a DBSC Sailing
+Instructions clause** by the results manager — a per-heat human decision, *not* an
+automatic rule. Every single-competitor heat is *meant* to be struck. The
+"kept" cases below that suggested a "primary class keeps its own start" rule were
+a **results-manager miss**: Cruisers 0 ECHO's 26 Jun one-boat heat should have been
+excluded too; it simply wasn't. So there is no tandem-vs-primary distinction — just
+the SI clause, applied by hand, with the occasional miss.
+
+**What we saw (the evidence that misled us):**
 
 | Fleet | What it is | Its single-boat day(s) |
 |---|---|---|
 | Cruisers 3 IRC | IRC tandem (the 2 IRC-rated boats of Cruisers 3) | **excluded** (9 of 15 days kept) |
 | Cruisers 2 - Sigma 33 | one-design split of Cruisers 2 | **excluded** (12 Jun, 26 Jun, 31 Jul, 28 Aug) |
 | Cruisers 5A ECHO | ECHO sub-fleet of the combined 4-5A VPRS pool | **excluded** (05 Jun — only boat 8237 of the 5A boats raced) |
-| Cruisers 0 ECHO | the Cruisers 0 class's own series (own start) | **kept** (26 Jun — boat 6888 scores 1st, the rest DNC) |
+| Cruisers 0 ECHO | the Cruisers 0 class's own series (own start) | **kept** (26 Jun) — ⚠ **this is the error**: should have been excluded |
 | Cruisers 3 ECHO | the Cruisers 3 class's own series | **kept** |
 
-The three that **exclude** are all **secondary tandems / splits / sub-fleets**
-drawn from a larger combined start; the two that **keep** are **primary classes
-with their own start**. So the distinction is *not* IRC-vs-ECHO or
-fixed-vs-progressive (5A ECHO and 0 ECHO are both ECHO, yet differ) — it tracks
-**tandem/sub-fleet vs primary class**.
+We had reverse-engineered a "start-scoped, full-field-keeps" rule to fit the
+"kept" row — but it was fitting a mistake. The proposed engine rule
+(`sailscoring/sailscoring`#232) is therefore **abandoned** (closed not-planned; the
+prototype lives on the local `dbsc-single-competitor-rule-wrong` branch).
 
-**Why we can't just code a rule for it.** A blanket "a race needs ≥2 of a fleet's
-boats" deletes Cruisers 0 ECHO's 26 Jun (which HalSail keeps), and even scoped to
-fixed-handicap fleets it breaks several **2026** primary fleets that keep their
-single-boat races. Only the tandem/sub-fleet distinction fits all the data — and
-the engine doesn't currently know which fleets are secondary tandems.
-
-**Question for DBSC.** In 2025, the secondary tandems / one-design splits /
-sub-fleets (Cruisers 3 IRC, Sigma 33, Cruisers 5A ECHO) drop their
-single-competitor races, while the primary class series (Cruisers 0/3 ECHO) keep
-theirs. Is that a **manual** removal of those races from the tandems, or an
-**automatic** rule that fires for secondary tandems but not primary classes?
-
-**Impact / status.** Those three fleets currently over-score (they count the
-single-boat days, as DNCs); everything else in the Thursday cruiser group is
-parity-green. We can reproduce the published tables with a **start-scoped
-single-competitor race exclusion** — a fleet doesn't race a heat with <2 of its
-boats unless it's the whole field of the start. Tracked for the engine in
-`sailscoring/sailscoring`#232. The question above (DBSC's *intent* — automatic or
-manual) is still worth confirming, but the rule reproduces the numbers either way.
+**Consequence for reconstruction.** There is no rule to encode. To reproduce these
+tables exactly we'd have to replicate the manager's manual exclusions heat-by-heat
+(including their misses and inconsistencies) — best modelled as an **explicit
+per-heat manual exclusion**, not inferred scoring. Until that exists, the affected
+sub-fleets over-score the single-boat days (they count them as DNCs), and Cruisers
+0 ECHO's 26 Jun is a published error we won't reproduce.
 
 ---
 
@@ -116,33 +110,26 @@ the Saturday/Tuesday one-design groups.
 
 ---
 
-## 5. Single-competitor heats — Thursday excludes them, Saturday keeps them (2025)
+## 5. Single-competitor heats — Thursday excludes, Saturday keeps — ✅ ANSWERED (2025)
 
-Question 1 found that the secondary tandems drop heats with fewer than two of
-their boats. **Saturday Cruisers 3 IRC contradicts that.** The same two-boat IRC
-tandem (998, 5795):
+**Answer (Jun 2026).** Same resolution as question 1: the exclusion is **manual SI
+enforcement**, so the Thursday-vs-Saturday difference for the *same* fleet is just
+human inconsistency, not a rule. There is nothing to reverse-engineer.
 
-- **Thursday**: 15 days sailed, **9 kept** — its single-boat days are excluded
-  (question 1), and all 9 kept heats have both boats finishing.
-- **Saturday**: **5 kept**, and two of them are single-finisher heats that are
-  **kept**: 21 Jun (`998` 1st, `5795` DNF) and 20 Sep (`998` 1st, `5795`
-  DNC, scored `2/DNC`).
+The evidence, for the record — Cruisers 3 IRC (boats 998, 5795):
 
-So the *same fleet* drops single-boat heats on Thursday but keeps them on
-Saturday. No single rule keyed on "how many of the fleet's boats came / finished"
-fits both days from the data alone. A start-scoped "exclude a heat with < 2 of the
-fleet's boats" (`sailscoring`#232) matches Thursday but **over-excludes** Saturday's
-20 Jun heat (it drops 5795's `2/DNC`, netting it 3 instead of the published 5).
+- **Thursday**: 15 days sailed, **9 kept** — its single-boat days were struck, and
+  all 9 kept heats have both boats finishing.
+- **Saturday**: **5 kept**, including two single-finisher heats that were **not**
+  struck: 21 Jun (`998` 1st, `5795` DNF) and 20 Sep (`998` 1st, `5795` DNC, scored
+  `2/DNC`).
 
-This ripples into the progressive **ECHO** tables on Saturday (Cruisers 1/5A/5B
-ECHO): excluding a mid-chain heat shifts every later corrected handicap, so those
-fleets show small (±1) net offsets that trace back to the same question.
+The same fleet's single-boat heats were struck on Thursday but left on Saturday —
+a manual application that varied by day. This confirmed question 1's answer (a
+hand-applied SI clause with misses) rather than posing a separate puzzle.
 
-**Question for DBSC.** What determines whether a single-competitor heat counts for
-a fleet? It is excluded on Thursday but kept on Saturday for Cruisers 3 IRC — is
-that an intended difference (e.g. a per-series setting), or an inconsistency?
-
-**Impact / status.** Directly relevant to the `sailscoring`#232 exclusion rule:
-Saturday is a counterexample to the blanket start-scoped exclusion. The Saturday
-cruiser group's residual divergences (Cruisers 3 IRC, Sigma 33, the ECHO chains)
-all trace here; they will move once the rule is settled.
+**Impact / status.** No engine rule (`sailscoring`#232 closed not-planned). The
+Saturday cruiser residuals — Cruisers 3 IRC, Sigma 33, and the small (±1) net
+offsets that ripple through the progressive **ECHO** chains (Cruisers 1/5A/5B ECHO)
+when a mid-chain heat is or isn't struck — all trace here, and would only resolve
+by replicating the manager's manual exclusions heat-by-heat (see question 1).
