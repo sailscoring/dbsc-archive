@@ -7,6 +7,27 @@ us reproduce the affected results exactly and informs the general reconstruction
 Add to this list whenever the reconstruction hits a divergence that comes down to
 a HalSail/scoring decision rather than a bug on our side.
 
+## The mechanism behind all of these: per-class tandem series (DBSC, Jun 2026)
+
+In HalSail, DBSC runs a **tandem series per class/fleet**, and each tandem has
+**explicit, per-class control over which races it includes**. The results manager
+chooses, class by class, exactly which heats land in each (class × tandem) cell.
+
+That single mechanism is behind **every** divergence below:
+
+- **Q1 / Q5** — "flicking" single-competitor heats out of a class's tandem.
+- **Q2** — winding up the Sigma 33 one-design at 14 Aug (later heats just not included).
+- **Q3** — the abandoned 05 Jun heat included in Cruisers 3 ECHO's Series A but not its Overall.
+- **Q4** — one-design classes that share a start placing it in different series.
+
+The per-case *rationale / intent* (deliberate vs oversight) is unclear and not
+material; the mechanism is the point. **Implication for Sail Scoring:** a sub-series
+here is one **shared** race set scored across all fleets, whereas a HalSail tandem's
+race membership is **per-class**. Reproducing these tables exactly therefore needs
+**per-fleet (per-class) race membership within a sub-series** — the gap that makes
+Q4 unrepresentable today and that the manual single-competitor exclusions (Q1) also
+land in.
+
 ---
 
 ## 1. Single-competitor races — ✅ ANSWERED: manual SI enforcement (2025)
@@ -52,8 +73,9 @@ racing in Cruisers 2 ECHO through 28 Aug. In particular **21 Aug** is excluded
 exclusion). The one-design split looks like it was wound up mid-August while the
 parent class continued.
 
-**Question for DBSC.** Did the Sigma 33 one-design series deliberately end after
-14 Aug (so 21 Aug and 28 Aug aren't part of it), or is something else going on?
+**Mechanism (Jun 2026).** Per-class tandem race membership (see the overview): the
+Sigma 33 tandem simply didn't include the post-14-Aug heats. Whether that wind-up
+was deliberate is unclear and not material.
 
 ---
 
@@ -73,9 +95,9 @@ heat that nobody finished, which matches the **Overall** (parity-green) but not
 **Series A** (the RET/TLE boats diverge). The two published tables can't both be
 matched.
 
-**Question for DBSC.** On 05 Jun the Cruisers 3 race had no finishers (all
-RET/TLE/DNC). Was it abandoned? If so, should it be excluded from *all* its tables
-— i.e. is its appearance in Series A (but not Overall) a slip, or intended?
+**Mechanism (Jun 2026).** Per-class tandem race membership (see the overview): the
+05 Jun heat was included in the Series A tandem but not the Overall tandem. Slip or
+intent is unclear and not material; the two tandems just carry different race sets.
 
 ---
 
@@ -98,15 +120,17 @@ Three classes (Dragon, SB20, Sportsboats) additionally have **one race that is i
 their Series A/B but not their Overall** — the same Overall-vs-tandem inconsistency
 as question 3; our Overall-sourced build can't see those races at all.
 
-**Question for DBSC.** Are the one-design Series A/B intended as independent
-per-class race subsets (so two classes on one start can land in different series),
-or is there a single intended A/B calendar boundary that some published tables
-depart from?
+**Mechanism (Jun 2026).** Confirmed: the one-design Series A/B *are* independent
+per-class race subsets (per-class tandem race membership — see the overview), so
+two classes on one start genuinely land it in different series. There is no single
+intended A/B calendar boundary.
 
 **Impact / status.** Accepted as a modelling divergence (it is not a scoring bug):
 the combined day-file reproduces every Overall and most A/B cells, but cannot
-reproduce A/B for classes whose boundary disagrees with their start-mates'. See
-the Saturday/Tuesday one-design groups.
+reproduce A/B for classes whose boundary disagrees with their start-mates' — because
+our sub-series share one race set across fleets, while HalSail's tandems are
+per-class. Closing this gap needs per-fleet race membership in a sub-series (see
+the overview's implication). See the Saturday/Tuesday one-design groups.
 
 ---
 
