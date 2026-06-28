@@ -1,5 +1,5 @@
 {
-  "formatVersion": 9,
+  "formatVersion": 11,
   "seriesId": "dbsc-2025-saturday-cruisers",
   "exportedAt": "2025-09-01T00:00:00.000Z",
   "series": {
@@ -7631,6 +7631,104 @@
         "race-19",
         "race-20"
       ],
+      "raceFleetExclusions": [
+        {
+          "raceId": "race-1",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-2",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-3",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-4",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-5",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-6",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-7",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-8",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-11",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-14",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-15",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-16",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-17",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-20",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-5",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-6",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-7",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-8",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-10",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-12",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-14",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-18",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-11",
+          "fleetId": "cf-45b-vprs"
+        }
+      ],
       "startingHandicapSource": "base"
     },
     {
@@ -7651,6 +7749,68 @@
         "race-10",
         "race-11"
       ],
+      "raceFleetExclusions": [
+        {
+          "raceId": "race-1",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-2",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-3",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-4",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-5",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-6",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-7",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-8",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-11",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-5",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-6",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-7",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-8",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-10",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-11",
+          "fleetId": "cf-45b-vprs"
+        }
+      ],
       "startingHandicapSource": "base"
     },
     {
@@ -7668,6 +7828,44 @@
         "race-18",
         "race-19",
         "race-20"
+      ],
+      "raceFleetExclusions": [
+        {
+          "raceId": "race-14",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-15",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-16",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-17",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-20",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-12",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-14",
+          "fleetId": "cf-sigma33"
+        },
+        {
+          "raceId": "race-18",
+          "fleetId": "cf-sigma33"
+        }
       ],
       "startingHandicapSource": "continue",
       "continueFromSubSeriesId": "ss-a"

@@ -1,5 +1,5 @@
 {
-  "formatVersion": 9,
+  "formatVersion": 11,
   "seriesId": "dbsc-2025-saturday-od",
   "exportedAt": "2025-09-01T00:00:00.000Z",
   "series": {
@@ -20908,6 +20908,7 @@
         "race-36",
         "race-37"
       ],
+      "raceFleetExclusions": [],
       "startingHandicapSource": "base"
     },
     {
@@ -20937,6 +20938,92 @@
         "race-19",
         "race-20"
       ],
+      "raceFleetExclusions": [
+        {
+          "raceId": "race-1",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-2",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-3",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-4",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-5",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-6",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-7",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-9",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-10",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-11",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-12",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-14",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-15",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-16",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-17",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-18",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-19",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-idra14"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-pyclass"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-melges15"
+        }
+      ],
       "startingHandicapSource": "base"
     },
     {
@@ -20963,6 +21050,112 @@
         "race-35",
         "race-36",
         "race-37"
+      ],
+      "raceFleetExclusions": [
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-dragon"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-ff"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-ruffian"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-sb20"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-shipman"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-sportsboats"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-b211"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-21",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-22",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-23",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-24",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-25",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-26",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-27",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-28",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-30",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-31",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-33",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-34",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-36",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-37",
+          "fleetId": "fl-b211-echo"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-b317"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-b317-echo"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-db21"
+        },
+        {
+          "raceId": "race-13",
+          "fleetId": "fl-fireball"
+        }
       ],
       "startingHandicapSource": "continue",
       "continueFromSubSeriesId": "ss-a"

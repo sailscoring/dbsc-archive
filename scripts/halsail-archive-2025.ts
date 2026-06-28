@@ -25,6 +25,7 @@ import {
 import { calculateSubSeriesFleetStandings } from '../../sailscoring/lib/scoring';
 import type {
   Competitor, DiscardThreshold, Fleet, Finish, Race, RaceStart, Standing, SubSeries,
+  SubSeriesRaceExclusion,
 } from '../../sailscoring/lib/types';
 
 const SRC = join(__dirname, '..', 'sources', '2025');
@@ -70,33 +71,80 @@ const DBSC_DISCARDS: DiscardThreshold[] = [
  *  tandem, matched by (date, start-time) against the merged file. Matching on the
  *  start a class actually sailed — not the date — is what makes this correct when
  *  a day holds two races and classes keep different A/B boundaries.
+ *
+ *  A tandem's `raceIds` is the *union* of the races its member classes sailed in
+ *  that tandem, so the merged race list covers every class. But a fleet is scored
+ *  on every race it has a *start* in, so a shared start that one class put in
+ *  Series A and another in Series B lands in both unions — and each fleet would
+ *  wrongly be scored on it in the tandem it didn't assign it to. So each tandem
+ *  also carries **per-fleet race exclusions** (#203): for fleet F, strike the
+ *  union races F actually sailed but did **not** include in its own F-tandem
+ *  fragment. This reproduces HalSail's per-class tandem race membership exactly —
+ *  the Q4 divergent A/B boundaries and the Q1/Q5 single-competitor "flicks"
+ *  (including DBSC's manual misses, since we read each fleet's real fragment).
+ *
  *  Series B `continue`s the progressive (ECHO) chain from Series A — HalSail
  *  scores a tandem over the shared chain, so the late block resumes mid-chain
  *  rather than re-seeding from base. */
-function buildSubSeries(file: SeriesFile, day: string, classNames: string[]): SubSeries[] {
+function buildSubSeries(file: SeriesFile, group: Group): SubSeries[] {
+  const { day, classNames, fleetClassOverride, echoSuffix } = group;
   // date#startTime → race id, for every per-class start in the merged file.
   const keyToRace = new Map<string, string>();
   for (const r of file.races) {
     for (const s of r.starts) keyToRace.set(`${r.date}#${s.startTime}`, r.id);
   }
-  const raceIdsFor = (series: string): string[] => {
+  // race id → fleet ids that have a start in it (a fleet is scored on a race
+  // only where it has a start, so this is the set that an exclusion can affect).
+  const startFleetsByRace = new Map<string, Set<string>>();
+  for (const r of file.races) {
+    const set = new Set<string>();
+    for (const s of r.starts) for (const fid of s.fleetIds) set.add(fid);
+    startFleetsByRace.set(r.id, set);
+  }
+  // The union of the races a set of classes sailed in the named tandem.
+  const unionRaceIds = (series: string): string[] => {
     const keys = new Set(classNames.flatMap((c) => fragStartKeys(c, `${day} ${series}`)));
     const ids = new Set<string>();
     for (const k of keys) { const id = keyToRace.get(k); if (id) ids.add(id); }
     return file.races.filter((r) => ids.has(r.id)).map((r) => r.id);
   };
-  const aIds = raceIdsFor('Series A');
-  const bIds = raceIdsFor('Series B');
+  // The races a single fleet included in the named tandem, from its own class
+  // fragment (the class name resolved exactly as validation resolves it).
+  const fleetTandemRaceIds = (fleetName: string, series: string): Set<string> => {
+    const className = fleetClassOverride[fleetName] ?? classNameForFleet(fleetName, echoSuffix);
+    const ids = new Set<string>();
+    for (const k of fragStartKeys(className, `${day} ${series}`)) {
+      const id = keyToRace.get(k);
+      if (id) ids.add(id);
+    }
+    return ids;
+  };
+  // Per-fleet exclusions for a tandem: union races a fleet sailed (has a start
+  // in) but did not assign to its own tandem.
+  const exclusionsFor = (series: string, raceIds: string[]): SubSeriesRaceExclusion[] => {
+    const out: SubSeriesRaceExclusion[] = [];
+    for (const fleet of file.fleets) {
+      const own = fleetTandemRaceIds(fleet.name, series);
+      for (const raceId of raceIds) {
+        if (own.has(raceId)) continue;
+        if (startFleetsByRace.get(raceId)?.has(fleet.id)) out.push({ raceId, fleetId: fleet.id });
+      }
+    }
+    return out;
+  };
+  const overallIds = file.races.map((r) => r.id);
+  const aIds = unionRaceIds('Series A');
+  const bIds = unionRaceIds('Series B');
   const list: SubSeries[] = [
-    { id: 'ss-overall', seriesId: file.seriesId, name: `${day} Overall`, displayOrder: 0, raceIds: file.races.map((r) => r.id), startingHandicapSource: 'base' },
+    { id: 'ss-overall', seriesId: file.seriesId, name: `${day} Overall`, displayOrder: 0, raceIds: overallIds, raceFleetExclusions: exclusionsFor('Overall', overallIds), startingHandicapSource: 'base' },
   ];
-  if (aIds.length) list.push({ id: 'ss-a', seriesId: file.seriesId, name: `${day} Series A`, displayOrder: 1, raceIds: aIds, startingHandicapSource: 'base' });
-  if (bIds.length) list.push({ id: 'ss-b', seriesId: file.seriesId, name: `${day} Series B`, displayOrder: 2, raceIds: bIds, startingHandicapSource: aIds.length ? 'continue' : 'base', continueFromSubSeriesId: aIds.length ? 'ss-a' : null });
+  if (aIds.length) list.push({ id: 'ss-a', seriesId: file.seriesId, name: `${day} Series A`, displayOrder: 1, raceIds: aIds, raceFleetExclusions: exclusionsFor('Series A', aIds), startingHandicapSource: 'base' });
+  if (bIds.length) list.push({ id: 'ss-b', seriesId: file.seriesId, name: `${day} Series B`, displayOrder: 2, raceIds: bIds, raceFleetExclusions: exclusionsFor('Series B', bIds), startingHandicapSource: aIds.length ? 'continue' : 'base', continueFromSubSeriesId: aIds.length ? 'ss-a' : null });
   return list;
 }
 
 function attachSubSeries(file: SeriesFile, subs: SubSeries[]): unknown {
-  return { ...file, formatVersion: 9, subSeries: subs };
+  return { ...file, formatVersion: 11, subSeries: subs };
 }
 
 // ---- validation: each (sub-series × fleet) Net vs the published summary ----
@@ -331,7 +379,7 @@ const GROUPS: Record<string, Group> = {
 
 function run(key: string, group: Group, doValidate: boolean): boolean {
   const base = group.build({ seriesName: group.name, seriesId: group.out, exportedAt: '2025-09-01T00:00:00.000Z' });
-  const subs = buildSubSeries(base, group.day, group.classNames);
+  const subs = buildSubSeries(base, group);
   const fileObj = attachSubSeries(base, subs) as any;
   mkdirSync(OUT_DIR, { recursive: true });
   writeFileSync(join(OUT_DIR, `${group.out}.sailscoring`), JSON.stringify(fileObj, null, 2) + '\n');
