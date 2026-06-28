@@ -47,6 +47,15 @@ function frag(className: string, seriesName: string): HalsailFleet {
   if (!key) throw new Error(`no fragment for "${className}" / "${seriesName}"`);
   return parseHalsailFleet(readFileSync(join(RESULTS, `series-${key}.html`), 'utf8'));
 }
+/** The Series A/B tandem fragments that exist for a (class, day) — for feeding
+ *  tandem-only races (a heat in a tandem the class's Overall omits) into the
+ *  builder. Skips tandems with no published fragment. */
+function tandemFrags(className: string, day: string): HalsailFleet[] {
+  return ['Series A', 'Series B']
+    .filter((s) => seriesKey(className, `${day} ${s}`))
+    .map((s) => frag(className, `${day} ${s}`));
+}
+
 /** `date#startTime` keys of a (class, series) fragment's races, or [] if absent.
  *  The start time identifies the physical race a class actually sailed — robust
  *  where date alone is not (two races a day, classes with different A/B
@@ -346,12 +355,12 @@ const SATURDAY_OD: Group = {
   },
   build: (opts) => buildFleetSeries(
     [
-      { fleetId: 'fl-dragon', name: 'Dragon', system: 'scratch', fragment: frag('Dragon', 'Saturday Overall') },
+      { fleetId: 'fl-dragon', name: 'Dragon', system: 'scratch', fragment: frag('Dragon', 'Saturday Overall'), tandemFragments: tandemFrags('Dragon', 'Saturday') },
       { fleetId: 'fl-ff', name: 'Flying Fifteen', system: 'scratch', fragment: frag('Flying Fifteen', 'Saturday Overall') },
       { fleetId: 'fl-ruffian', name: 'Ruffian 23', system: 'scratch', fragment: frag('Ruffian 23', 'Saturday Overall') },
-      { fleetId: 'fl-sb20', name: 'SB20', system: 'scratch', fragment: frag('SB20', 'Saturday Overall') },
+      { fleetId: 'fl-sb20', name: 'SB20', system: 'scratch', fragment: frag('SB20', 'Saturday Overall'), tandemFragments: tandemFrags('SB20', 'Saturday') },
       { fleetId: 'fl-shipman', name: 'Shipman', system: 'scratch', fragment: frag('Shipman', 'Saturday Overall') },
-      { fleetId: 'fl-sportsboats', name: 'Mixed Sportsboats', system: 'vprs', fragment: frag('Sportsboats', 'Saturday Overall') },
+      { fleetId: 'fl-sportsboats', name: 'Mixed Sportsboats', system: 'vprs', fragment: frag('Sportsboats', 'Saturday Overall'), tandemFragments: tandemFrags('Sportsboats', 'Saturday') },
       { fleetId: 'fl-glen', name: 'Glen', system: 'scratch', fragment: frag('Glen', 'Saturday Overall') },
       { fleetId: 'fl-glenmermaid-py', name: 'Glen-Mermaid PY', system: 'py', fragment: frag('Glen-Mermaid PY', 'Saturday Overall') },
       { fleetId: 'fl-b211', name: 'Beneteau 211', system: 'scratch', fragment: frag('Beneteau 211 Scratch', 'Saturday Overall') },

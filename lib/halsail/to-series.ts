@@ -547,6 +547,15 @@ export interface DayFleetSpec {
   name: string;
   system: 'scratch' | 'echo' | 'irc' | 'vprs' | 'py';
   fragment: HalsailFleet;
+  // Optional tandem (Series A/B) fragments. A HalSail tandem may include a race
+  // the fleet's Overall omits (an Overall-vs-tandem inconsistency — DBSC
+  // CLARIFICATIONS Q3/Q4). The Overall fragment is the authoritative roster +
+  // rating source; these supply only the *races* the Overall misses, so the
+  // merged race list is complete and the sub-series builder can score them. A
+  // tandem-only race is injected against the merged race on its date whose start
+  // time is nearest (robust where a date holds two races), and the sub-series
+  // exclusions then keep it out of the fleets/tandems that don't include it.
+  tandemFragments?: HalsailFleet[];
 }
 
 /** General day-series builder for the one-design / sportsboat / PY sheets
@@ -617,35 +626,81 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
     }
   }
 
-  // Merge races by (date, slot) across the fleets (see mergeRacesByDate).
+  // Merge races by (date, slot) across the fleets (see mergeRacesByDate). Collect
+  // each merged race's starts + crossings first, so tandem-only races can be
+  // injected before finishes are assembled (finish sort order is per-race across
+  // all fleets, so a late injection has to re-assemble, not append).
   const merger = mergeRacesByDate(specs.map((s) => s.fragment));
-  const races: FileRace[] = [];
-  merger.keys.forEach((key, idx) => {
-    const rn = idx + 1;
+  interface Pending { date: string; starts: FileRaceStart[]; crossings: Crossing[] }
+  const crossingsFor = (fleetId: string, race: HalsailRace): Crossing[] => {
+    const valid = validIdsByFleet.get(fleetId)!;
+    const out: Crossing[] = [];
+    for (const f of race.finishers) {
+      const id = fleetCompId(fleetId, f.sail);
+      if (!valid.has(id)) continue; // a sail in the detail but not the summary roster
+      if (!f.finish && f.place == null && (f.code === 'DNC' || !f.code)) continue;
+      out.push({ compId: id, sail: f.sail, finish: f.finish, place: f.place, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
+    }
+    return out;
+  };
+  const pending: Pending[] = merger.keys.map((key) => {
     const date = merger.dateOf(key);
     const starts: FileRaceStart[] = [];
     const crossings: Crossing[] = [];
     for (const spec of specs) {
       const race = merger.byFragment.get(spec.fragment)?.get(key);
       if (!race) continue;
-      const valid = validIdsByFleet.get(spec.fleetId)!;
-      starts.push({ id: `rs-${rn}-${spec.fleetId}`, fleetIds: [spec.fleetId], startTime: race.startTime ?? '18:45:00' });
-      for (const f of race.finishers) {
-        const id = fleetCompId(spec.fleetId, f.sail);
-        if (!valid.has(id)) continue; // a sail in the detail but not the summary roster
-        if (!f.finish && f.place == null && (f.code === 'DNC' || !f.code)) continue;
-        crossings.push({ compId: id, sail: f.sail, finish: f.finish, place: f.place, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
+      starts.push({ id: `rs-${spec.fleetId}`, fleetIds: [spec.fleetId], startTime: race.startTime ?? '18:45:00' });
+      crossings.push(...crossingsFor(spec.fleetId, race));
+    }
+    return { date, starts, crossings };
+  });
+
+  // Inject tandem-only races: a race a fleet sailed in a Series A/B tandem but
+  // not in its Overall (so absent above). Attach to the merged race on its date
+  // with the nearest start time; if the date has no merged race at all, add one.
+  const toSec = (t: string) => { const [h, m, s] = t.split(':').map(Number); return (h * 3600) + (m * 60) + (s || 0); };
+  for (const spec of specs) {
+    for (const tf of spec.tandemFragments ?? []) {
+      for (const race of tf.races) {
+        if (!race.date || !race.startTime) continue;
+        const present = pending.some((p) => p.date === race.date && p.starts.some((s) => s.fleetIds.includes(spec.fleetId) && s.startTime === race.startTime));
+        if (present) continue; // already sourced from the Overall (not tandem-only)
+        const crossings = crossingsFor(spec.fleetId, race);
+        if (!crossings.length) continue;
+        const onDate = pending.filter((p) => p.date === race.date);
+        const target = onDate.length
+          ? onDate.reduce((best, p) => {
+              const d = (q: Pending) => Math.min(...q.starts.map((s) => Math.abs(toSec(s.startTime) - toSec(race.startTime!))));
+              return d(p) < d(best) ? p : best;
+            })
+          : (() => { const p: Pending = { date: race.date, starts: [], crossings: [] }; pending.push(p); return p; })();
+        // One start per fleet per merged race. If the fleet already has a start
+        // here, this tandem race shares a date#slot with the fleet's other race
+        // that day (e.g. an afternoon Overall heat mis-slotted onto the morning):
+        // it can't be represented without splitting the slot, so leave it (a
+        // documented per-fleet A/B delta) rather than double-count.
+        if (target.starts.some((s) => s.fleetIds.includes(spec.fleetId))) continue;
+        target.starts.push({ id: `rs-${spec.fleetId}`, fleetIds: [spec.fleetId], startTime: race.startTime });
+        target.crossings.push(...crossings);
       }
     }
-    const ratingOverrides = overridesByDate.get(date);
-    races.push({
+  }
+
+  // Order by date then earliest start time, number sequentially, assemble.
+  pending.sort((a, b) => a.date.localeCompare(b.date)
+    || Math.min(...a.starts.map((s) => toSec(s.startTime))) - Math.min(...b.starts.map((s) => toSec(s.startTime))));
+  const races: FileRace[] = pending.map((p, idx) => {
+    const rn = idx + 1;
+    const ratingOverrides = overridesByDate.get(p.date);
+    return {
       id: `race-${rn}`,
       raceNumber: rn,
-      date,
-      starts,
-      finishes: assembleFinishes(rn, crossings),
+      date: p.date,
+      starts: p.starts.map((s) => ({ ...s, id: `rs-${rn}-${s.fleetIds[0]}` })),
+      finishes: assembleFinishes(rn, p.crossings),
       ...(ratingOverrides?.length ? { ratingOverrides } : {}),
-    });
+    };
   });
 
   return assembleSeries(fleets, competitors, races, {
