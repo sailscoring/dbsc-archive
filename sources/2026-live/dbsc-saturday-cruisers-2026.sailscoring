@@ -7,7 +7,7 @@
     "name": "DBSC Saturday Cruisers (2026)",
     "venue": "Dublin Bay Sailing Club",
     "startDate": "2026-04-25",
-    "endDate": "2026-05-30",
+    "endDate": "2026-06-20",
     "venueLogoUrl": "",
     "eventLogoUrl": "",
     "venueUrl": "",
@@ -225,42 +225,6 @@
       "echoStartingTcf": 0.988
     },
     {
-      "id": "comp-7778",
-      "fleetIds": [
-        "cf-1-echo",
-        "cf-1-irc"
-      ],
-      "sailNumber": "7778",
-      "boatName": "Gringo",
-      "name": "Anthony Fox",
-      "owner": "Anthony Fox",
-      "helm": "Anthony Fox",
-      "club": "National Yacht Club",
-      "gender": "",
-      "age": null,
-      "ircTcc": 1.018,
-      "echoStartingTcf": 1.01
-    },
-    {
-      "id": "comp-1242",
-      "fleetIds": [
-        "cf-1-echo",
-        "cf-1-irc",
-        "cf-j109"
-      ],
-      "sailNumber": "1242",
-      "boatName": "White Mischief",
-      "boatClass": "J109",
-      "name": "R & T Goodbody",
-      "owner": "R & T Goodbody",
-      "helm": "R & T Goodbody",
-      "club": "Royal Irish Yacht Club",
-      "gender": "",
-      "age": null,
-      "ircTcc": 1.002,
-      "echoStartingTcf": 1.076
-    },
-    {
       "id": "comp-53222",
       "fleetIds": [
         "cf-1-echo",
@@ -280,23 +244,21 @@
       "echoStartingTcf": 1.042
     },
     {
-      "id": "comp-29213",
+      "id": "comp-7778",
       "fleetIds": [
         "cf-1-echo",
-        "cf-1-irc",
-        "cf-j109"
+        "cf-1-irc"
       ],
-      "sailNumber": "29213",
-      "boatName": "Something Else",
-      "boatClass": "J109",
-      "name": "Brian Hall",
-      "owner": "Brian Hall",
-      "helm": "Brian Hall",
+      "sailNumber": "7778",
+      "boatName": "Gringo",
+      "name": "Anthony Fox",
+      "owner": "Anthony Fox",
+      "helm": "Anthony Fox",
       "club": "National Yacht Club",
       "gender": "",
       "age": null,
-      "ircTcc": 1,
-      "echoStartingTcf": 1.07
+      "ircTcc": 1.018,
+      "echoStartingTcf": 1.01
     },
     {
       "id": "comp-1129",
@@ -318,23 +280,42 @@
       "echoStartingTcf": 0.994
     },
     {
-      "id": "comp-2160",
+      "id": "comp-29213",
       "fleetIds": [
         "cf-1-echo",
         "cf-1-irc",
         "cf-j109"
       ],
-      "sailNumber": "2160",
-      "boatName": "Chimaera",
+      "sailNumber": "29213",
+      "boatName": "Something Else",
       "boatClass": "J109",
-      "name": "Barry Cunningham",
-      "owner": "Barry Cunningham",
-      "helm": "Barry Cunningham",
+      "name": "Brian Hall",
+      "owner": "Brian Hall",
+      "helm": "Brian Hall",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 1,
+      "echoStartingTcf": 1.07
+    },
+    {
+      "id": "comp-1242",
+      "fleetIds": [
+        "cf-1-echo",
+        "cf-1-irc",
+        "cf-j109"
+      ],
+      "sailNumber": "1242",
+      "boatName": "White Mischief",
+      "boatClass": "J109",
+      "name": "R & T Goodbody",
+      "owner": "R & T Goodbody",
+      "helm": "R & T Goodbody",
       "club": "Royal Irish Yacht Club",
       "gender": "",
       "age": null,
-      "ircTcc": 1.008,
-      "echoStartingTcf": 1.06
+      "ircTcc": 1.002,
+      "echoStartingTcf": 1.076
     },
     {
       "id": "comp-9898",
@@ -371,6 +352,25 @@
       "age": null,
       "ircTcc": 1.002,
       "echoStartingTcf": 1.013
+    },
+    {
+      "id": "comp-2160",
+      "fleetIds": [
+        "cf-1-echo",
+        "cf-1-irc",
+        "cf-j109"
+      ],
+      "sailNumber": "2160",
+      "boatName": "Chimaera",
+      "boatClass": "J109",
+      "name": "Barry Cunningham",
+      "owner": "Barry Cunningham",
+      "helm": "Barry Cunningham",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 1.008,
+      "echoStartingTcf": 1.06
     },
     {
       "id": "comp-13500",
@@ -481,6 +481,23 @@
       "echoStartingTcf": 0.955
     },
     {
+      "id": "comp-9216",
+      "fleetIds": [
+        "cf-2-echo",
+        "cf-2-irc"
+      ],
+      "sailNumber": "9216",
+      "boatName": "Cojones",
+      "name": "Paul Keelan",
+      "owner": "Paul Keelan",
+      "helm": "Paul Keelan",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 0.959,
+      "echoStartingTcf": 1.001
+    },
+    {
       "id": "comp-4464",
       "fleetIds": [
         "cf-2-echo",
@@ -498,23 +515,6 @@
       "age": null,
       "ircTcc": 0.902,
       "echoStartingTcf": 0.886
-    },
-    {
-      "id": "comp-9216",
-      "fleetIds": [
-        "cf-2-echo",
-        "cf-2-irc"
-      ],
-      "sailNumber": "9216",
-      "boatName": "Cojones",
-      "name": "Paul Keelan",
-      "owner": "Paul Keelan",
-      "helm": "Paul Keelan",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null,
-      "ircTcc": 0.959,
-      "echoStartingTcf": 1.001
     },
     {
       "id": "comp-998",
@@ -562,21 +562,6 @@
       "echoStartingTcf": 0.845
     },
     {
-      "id": "comp-11",
-      "fleetIds": [
-        "cf-3-echo"
-      ],
-      "sailNumber": "11",
-      "boatName": "Maranda",
-      "name": "Eric Leonard",
-      "owner": "Eric Leonard",
-      "helm": "Eric Leonard",
-      "club": "Dun Laoghaire Motor Yacht Club",
-      "gender": "",
-      "age": null,
-      "echoStartingTcf": 0.764
-    },
-    {
       "id": "comp-307",
       "fleetIds": [
         "cf-3-echo"
@@ -590,6 +575,21 @@
       "gender": "",
       "age": null,
       "echoStartingTcf": 0.844
+    },
+    {
+      "id": "comp-11",
+      "fleetIds": [
+        "cf-3-echo"
+      ],
+      "sailNumber": "11",
+      "boatName": "Maranda",
+      "name": "Eric Leonard",
+      "owner": "Eric Leonard",
+      "helm": "Eric Leonard",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.764
     },
     {
       "id": "comp-246",
@@ -675,6 +675,23 @@
       "echoStartingTcf": 1.024
     },
     {
+      "id": "comp-7677",
+      "fleetIds": [
+        "cf-45a-vprs",
+        "cf-5a-echo"
+      ],
+      "sailNumber": "7677",
+      "boatName": "Shearwater",
+      "name": "Eamonn Doyle",
+      "owner": "Eamonn Doyle",
+      "helm": "Eamonn Doyle",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null,
+      "vprsTcc": 0.951,
+      "echoStartingTcf": 1.063
+    },
+    {
       "id": "comp-9007",
       "fleetIds": [
         "cf-45a-vprs",
@@ -722,6 +739,21 @@
       "echoStartingTcf": 0.965
     },
     {
+      "id": "comp-38631",
+      "fleetIds": [
+        "cf-5a-echo"
+      ],
+      "sailNumber": "38631",
+      "boatName": "Vohirana",
+      "name": "Alan O'Hara",
+      "owner": "Alan O'Hara",
+      "helm": "Alan O'Hara",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 1
+    },
+    {
       "id": "comp-5032",
       "fleetIds": [
         "cf-45b-vprs",
@@ -756,23 +788,6 @@
       "echoStartingTcf": 0.941
     },
     {
-      "id": "comp-5643",
-      "fleetIds": [
-        "cf-45b-vprs",
-        "cf-5b-echo"
-      ],
-      "sailNumber": "5643",
-      "boatName": "Calypso",
-      "name": "Howard Knott",
-      "owner": "Howard Knott",
-      "helm": "Howard Knott",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null,
-      "vprsTcc": 0.873,
-      "echoStartingTcf": 0.944
-    },
-    {
       "id": "comp-216",
       "fleetIds": [
         "cf-45b-vprs",
@@ -788,6 +803,23 @@
       "age": null,
       "vprsTcc": 0.805,
       "echoStartingTcf": 0.921
+    },
+    {
+      "id": "comp-5643",
+      "fleetIds": [
+        "cf-45b-vprs",
+        "cf-5b-echo"
+      ],
+      "sailNumber": "5643",
+      "boatName": "Calypso",
+      "name": "Howard Knott",
+      "owner": "Howard Knott",
+      "helm": "Howard Knott",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null,
+      "vprsTcc": 0.873,
+      "echoStartingTcf": 0.944
     },
     {
       "id": "comp-5013",
@@ -2459,6 +2491,326 @@
           "competitorId": "comp-9898",
           "sortOrder": 10,
           "finishTime": "16:07:31",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-7",
+      "raceNumber": 7,
+      "date": "2026-06-20",
+      "starts": [
+        {
+          "id": "rs-7-cf-1-echo",
+          "fleetIds": [
+            "cf-1-echo",
+            "cf-1-irc",
+            "cf-j109"
+          ],
+          "startTime": "14:10:00"
+        },
+        {
+          "id": "rs-7-cf-2-echo",
+          "fleetIds": [
+            "cf-2-echo",
+            "cf-2-irc",
+            "cf-sigma33"
+          ],
+          "startTime": "14:20:00"
+        },
+        {
+          "id": "rs-7-cf-3-echo",
+          "fleetIds": [
+            "cf-3-echo"
+          ],
+          "startTime": "14:15:00"
+        },
+        {
+          "id": "rs-7-cf-45a-vprs",
+          "fleetIds": [
+            "cf-45a-vprs",
+            "cf-5a-echo"
+          ],
+          "startTime": "14:25:00"
+        },
+        {
+          "id": "rs-7-cf-45b-vprs",
+          "fleetIds": [
+            "cf-45b-vprs",
+            "cf-5b-echo"
+          ],
+          "startTime": "14:25:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-7-comp-2597",
+          "competitorId": "comp-2597",
+          "sortOrder": 1,
+          "finishTime": "15:27:22",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-9216",
+          "competitorId": "comp-9216",
+          "sortOrder": 2,
+          "finishTime": "15:29:43",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-4518",
+          "competitorId": "comp-4518",
+          "sortOrder": 3,
+          "finishTime": "15:32:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-5507",
+          "competitorId": "comp-5507",
+          "sortOrder": 4,
+          "finishTime": "15:33:05",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-4999",
+          "competitorId": "comp-4999",
+          "sortOrder": 5,
+          "finishTime": "15:34:13",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-29213",
+          "competitorId": "comp-29213",
+          "sortOrder": 6,
+          "finishTime": "15:39:53",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-8237",
+          "competitorId": "comp-8237",
+          "sortOrder": 7,
+          "finishTime": "15:40:21",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-53222",
+          "competitorId": "comp-53222",
+          "sortOrder": 8,
+          "finishTime": "15:41:07",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-7677",
+          "competitorId": "comp-7677",
+          "sortOrder": 9,
+          "finishTime": "15:41:22",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-1383",
+          "competitorId": "comp-1383",
+          "sortOrder": 10,
+          "finishTime": "15:42:32",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-28898",
+          "competitorId": "comp-28898",
+          "sortOrder": 11,
+          "finishTime": "15:43:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-28284",
+          "competitorId": "comp-28284",
+          "sortOrder": 12,
+          "finishTime": "15:43:24",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-3950",
+          "competitorId": "comp-3950",
+          "sortOrder": 13,
+          "finishTime": "15:44:39",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-9898",
+          "competitorId": "comp-9898",
+          "sortOrder": 14,
+          "finishTime": "15:45:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-3506",
+          "competitorId": "comp-3506",
+          "sortOrder": 15,
+          "finishTime": "15:45:45",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-38631",
+          "competitorId": "comp-38631",
+          "sortOrder": 16,
+          "finishTime": "15:45:54",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-1129",
+          "competitorId": "comp-1129",
+          "sortOrder": 17,
+          "finishTime": "15:46:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-5643",
+          "competitorId": "comp-5643",
+          "sortOrder": 18,
+          "finishTime": "15:46:34",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-3710",
+          "competitorId": "comp-3710",
+          "sortOrder": 19,
+          "finishTime": "15:47:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-13500",
+          "competitorId": "comp-13500",
+          "sortOrder": 20,
+          "finishTime": "15:48:04",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-3202",
+          "competitorId": "comp-3202",
+          "sortOrder": 21,
+          "finishTime": "15:49:16",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-216",
+          "competitorId": "comp-216",
+          "sortOrder": 22,
+          "finishTime": "15:49:26",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-5013",
+          "competitorId": "comp-5013",
+          "sortOrder": 23,
+          "finishTime": "15:59:40",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-1792",
+          "competitorId": "comp-1792",
+          "sortOrder": 24,
+          "finishTime": "16:09:12",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-2855",
+          "competitorId": "comp-2855",
+          "sortOrder": 25,
+          "finishTime": "16:09:29",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-998",
+          "competitorId": "comp-998",
+          "sortOrder": 26,
+          "finishTime": "16:20:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-307",
+          "competitorId": "comp-307",
+          "sortOrder": 27,
+          "finishTime": "16:23:03",
           "resultCode": null,
           "startPresent": true,
           "penaltyCode": null,

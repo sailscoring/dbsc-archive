@@ -7,7 +7,7 @@
     "name": "DBSC Water Wags (2026)",
     "venue": "Dublin Bay Sailing Club",
     "startDate": "2026-04-29",
-    "endDate": "2026-05-20",
+    "endDate": "2026-06-24",
     "venueLogoUrl": "",
     "eventLogoUrl": "",
     "venueUrl": "",
@@ -76,76 +76,6 @@
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-55",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "55",
-      "boatName": "Jenny Wren",
-      "name": "June O'Beirne",
-      "owner": "June O'Beirne",
-      "helm": "June O'Beirne",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-15",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "15",
-      "boatName": "Moosmie",
-      "name": "John O'Driscoll",
-      "owner": "John O'Driscoll",
-      "helm": "John O'Driscoll",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-6",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "6",
-      "boatName": "Mary Kate",
-      "name": "Ian Magowan",
-      "owner": "Ian Magowan",
-      "helm": "Ian Magowan",
-      "club": "Royal Irish Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-21",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "21",
-      "boatName": "Jacqueline",
-      "name": "Hugh Delap",
-      "owner": "Hugh Delap",
-      "helm": "Hugh Delap",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-50",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "50",
-      "boatName": "Siskin",
-      "name": "Amanda Chambers",
-      "owner": "Amanda Chambers",
-      "helm": "Amanda Chambers",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
       "id": "comp-fl-waterwag-45",
       "fleetIds": [
         "fl-waterwag"
@@ -174,16 +104,30 @@
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-34",
+      "id": "comp-fl-waterwag-15",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "34",
-      "boatName": "Chloe",
-      "name": "Kate O'Leary",
-      "owner": "Kate O'Leary",
-      "helm": "Kate O'Leary",
-      "club": "Royal Irish Yacht Club",
+      "sailNumber": "15",
+      "boatName": "Moosmie",
+      "name": "John O'Driscoll",
+      "owner": "John O'Driscoll",
+      "helm": "John O'Driscoll",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-55",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "55",
+      "boatName": "Jenny Wren",
+      "name": "June O'Beirne",
+      "owner": "June O'Beirne",
+      "helm": "June O'Beirne",
+      "club": "Royal St. George Yacht Club",
       "gender": "",
       "age": null
     },
@@ -215,58 +159,16 @@
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-56",
+      "id": "comp-fl-waterwag-6",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "56",
-      "boatName": "Sphinx",
-      "name": "Andrew Craig",
-      "owner": "Andrew Craig",
-      "helm": "Andrew Craig",
-      "club": "Royal St. George Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-16",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "16",
-      "boatName": "Penelope",
-      "name": "Catherine Hilliard",
-      "owner": "Catherine Hilliard",
-      "helm": "Catherine Hilliard",
-      "club": "National Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-30",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "30",
-      "boatName": "Sara",
-      "name": "Paul Smith",
-      "owner": "Paul Smith",
-      "helm": "Paul Smith",
+      "sailNumber": "6",
+      "boatName": "Mary Kate",
+      "name": "Ian Magowan",
+      "owner": "Ian Magowan",
+      "helm": "Ian Magowan",
       "club": "Royal Irish Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-31",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "31",
-      "boatName": "Polly",
-      "name": "Henry Rooke",
-      "owner": "Henry Rooke",
-      "helm": "Henry Rooke",
-      "club": "Royal St. George Yacht Club",
       "gender": "",
       "age": null
     },
@@ -285,57 +187,43 @@
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-48",
+      "id": "comp-fl-waterwag-50",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "48",
-      "boatName": "Dipper",
-      "name": "David A Williams",
-      "owner": "David A Williams",
-      "helm": "David A Williams",
+      "sailNumber": "50",
+      "boatName": "Siskin",
+      "name": "Amanda Chambers",
+      "owner": "Amanda Chambers",
+      "helm": "Amanda Chambers",
       "club": "Royal St. George Yacht Club",
       "gender": "",
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-14",
+      "id": "comp-fl-waterwag-49",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "14",
-      "boatName": "Phyllis",
-      "name": "Fraser Mitchell",
-      "owner": "Fraser Mitchell",
-      "helm": "Fraser Mitchell",
-      "club": "National Yacht Club",
+      "sailNumber": "49",
+      "boatName": "Hilda",
+      "name": "Martin Byrne",
+      "owner": "Martin Byrne",
+      "helm": "Martin Byrne",
+      "club": "Royal St. George Yacht Club",
       "gender": "",
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-17",
+      "id": "comp-fl-waterwag-21",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "17",
-      "boatName": "Coquette",
-      "name": "Seymour Cresswell",
-      "owner": "Seymour Cresswell",
-      "helm": "Seymour Cresswell",
-      "club": "Royal Irish Yacht Club",
-      "gender": "",
-      "age": null
-    },
-    {
-      "id": "comp-fl-waterwag-53",
-      "fleetIds": [
-        "fl-waterwag"
-      ],
-      "sailNumber": "53",
-      "boatName": "Nekhbet",
-      "name": "Drewry Pearson",
-      "owner": "Drewry Pearson",
-      "helm": "Drewry Pearson",
+      "sailNumber": "21",
+      "boatName": "Jacqueline",
+      "name": "Hugh Delap",
+      "owner": "Hugh Delap",
+      "helm": "Hugh Delap",
       "club": "Royal St. George Yacht Club",
       "gender": "",
       "age": null
@@ -355,30 +243,58 @@
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-43",
+      "id": "comp-fl-waterwag-16",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "43",
-      "boatName": "Freddie",
-      "name": "Bairbre Stewart",
-      "owner": "Bairbre Stewart",
-      "helm": "Bairbre Stewart",
-      "club": "Royal Irish Yacht Club",
+      "sailNumber": "16",
+      "boatName": "Penelope",
+      "name": "Catherine Hilliard",
+      "owner": "Catherine Hilliard",
+      "helm": "Catherine Hilliard",
+      "club": "National Yacht Club",
       "gender": "",
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-44",
+      "id": "comp-fl-waterwag-29",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "44",
-      "boatName": "Scallywag",
-      "name": "Fergus Cullen",
-      "owner": "Fergus Cullen",
-      "helm": "Fergus Cullen",
-      "club": "National Yacht Club",
+      "sailNumber": "29",
+      "boatName": "Patricia",
+      "name": "Harry Croxon",
+      "owner": "Harry Croxon",
+      "helm": "Harry Croxon",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-48",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "48",
+      "boatName": "Dipper",
+      "name": "David A Williams",
+      "owner": "David A Williams",
+      "helm": "David A Williams",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-34",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "34",
+      "boatName": "Chloe",
+      "name": "Kate O'Leary",
+      "owner": "Kate O'Leary",
+      "helm": "Kate O'Leary",
+      "club": "Royal Irish Yacht Club",
       "gender": "",
       "age": null
     },
@@ -397,6 +313,146 @@
       "age": null
     },
     {
+      "id": "comp-fl-waterwag-31",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "31",
+      "boatName": "Polly",
+      "name": "Henry Rooke",
+      "owner": "Henry Rooke",
+      "helm": "Henry Rooke",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-14",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "14",
+      "boatName": "Phyllis",
+      "name": "Fraser Mitchell",
+      "owner": "Fraser Mitchell",
+      "helm": "Fraser Mitchell",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-30",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "30",
+      "boatName": "Sara",
+      "name": "Paul Smith",
+      "owner": "Paul Smith",
+      "helm": "Paul Smith",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-56",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "56",
+      "boatName": "Sphinx",
+      "name": "Andrew Craig",
+      "owner": "Andrew Craig",
+      "helm": "Andrew Craig",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-17",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "17",
+      "boatName": "Coquette",
+      "name": "Seymour Cresswell",
+      "owner": "Seymour Cresswell",
+      "helm": "Seymour Cresswell",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-43",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "43",
+      "boatName": "Freddie",
+      "name": "Bairbre Stewart",
+      "owner": "Bairbre Stewart",
+      "helm": "Bairbre Stewart",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-53",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "53",
+      "boatName": "Nekhbet",
+      "name": "Drewry Pearson",
+      "owner": "Drewry Pearson",
+      "helm": "Drewry Pearson",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-44",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "44",
+      "boatName": "Scallywag",
+      "name": "Fergus Cullen",
+      "owner": "Fergus Cullen",
+      "helm": "Fergus Cullen",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-36",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "36",
+      "boatName": "Little Tern",
+      "name": "Tim Pearson",
+      "owner": "Tim Pearson",
+      "helm": "Tim Pearson",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-4",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "4",
+      "boatName": "Vela",
+      "name": "Kieran Kingston",
+      "owner": "Kieran Kingston",
+      "helm": "Kieran Kingston",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
       "id": "comp-fl-waterwag-47",
       "fleetIds": [
         "fl-waterwag"
@@ -411,15 +467,29 @@
       "age": null
     },
     {
-      "id": "comp-fl-waterwag-4",
+      "id": "comp-fl-waterwag-22",
       "fleetIds": [
         "fl-waterwag"
       ],
-      "sailNumber": "4",
-      "boatName": "Vela",
-      "name": "Kieran Kingston",
-      "owner": "Kieran Kingston",
-      "helm": "Kieran Kingston",
+      "sailNumber": "22",
+      "boatName": "Saryalis",
+      "name": "Andrew McCraith",
+      "owner": "Andrew McCraith",
+      "helm": "Andrew McCraith",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-18",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "18",
+      "boatName": "Good Hope",
+      "name": "Aisling Costello",
+      "owner": "Aisling Costello",
+      "helm": "Aisling Costello",
       "club": "Royal St. George Yacht Club",
       "gender": "",
       "age": null
@@ -1120,6 +1190,955 @@
           "competitorId": "comp-fl-waterwag-54",
           "sortOrder": null,
           "resultCode": "DNS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-4",
+      "raceNumber": 4,
+      "date": "2026-06-10",
+      "starts": [
+        {
+          "id": "rs-4-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-4-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 1,
+          "finishTime": "19:01:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 2,
+          "finishTime": "19:02:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 3,
+          "finishTime": "19:03:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 4,
+          "finishTime": "19:04:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 5,
+          "finishTime": "19:05:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-52",
+          "competitorId": "comp-fl-waterwag-52",
+          "sortOrder": 6,
+          "finishTime": "19:06:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 7,
+          "finishTime": "19:07:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 8,
+          "finishTime": "19:08:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 9,
+          "finishTime": "19:09:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 10,
+          "finishTime": "19:10:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-20",
+          "competitorId": "comp-fl-waterwag-20",
+          "sortOrder": 11,
+          "finishTime": "19:11:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 12,
+          "finishTime": "19:12:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 13,
+          "finishTime": "19:13:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 14,
+          "finishTime": "19:14:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 15,
+          "finishTime": "19:15:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 16,
+          "finishTime": "19:16:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 17,
+          "finishTime": "19:17:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 18,
+          "finishTime": "19:18:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-4",
+          "competitorId": "comp-fl-waterwag-4",
+          "sortOrder": 19,
+          "finishTime": "19:19:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-22",
+          "competitorId": "comp-fl-waterwag-22",
+          "sortOrder": 20,
+          "finishTime": "19:20:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 21,
+          "finishTime": "19:21:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-55",
+          "competitorId": "comp-fl-waterwag-55",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-5",
+      "raceNumber": 5,
+      "date": "2026-06-10",
+      "starts": [
+        {
+          "id": "rs-5-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "20:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-5-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 1,
+          "finishTime": "20:01:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 2,
+          "finishTime": "20:02:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 3,
+          "finishTime": "20:03:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 4,
+          "finishTime": "20:04:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-55",
+          "competitorId": "comp-fl-waterwag-55",
+          "sortOrder": 5,
+          "finishTime": "20:05:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 6,
+          "finishTime": "20:06:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 7,
+          "finishTime": "20:07:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-52",
+          "competitorId": "comp-fl-waterwag-52",
+          "sortOrder": 8,
+          "finishTime": "20:08:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-20",
+          "competitorId": "comp-fl-waterwag-20",
+          "sortOrder": 9,
+          "finishTime": "20:09:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 10,
+          "finishTime": "20:10:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 11,
+          "finishTime": "20:11:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 12,
+          "finishTime": "20:12:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 13,
+          "finishTime": "20:13:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 14,
+          "finishTime": "20:14:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 15,
+          "finishTime": "20:15:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-4",
+          "competitorId": "comp-fl-waterwag-4",
+          "sortOrder": 16,
+          "finishTime": "20:16:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 17,
+          "finishTime": "20:17:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-6",
+      "raceNumber": 6,
+      "date": "2026-06-17",
+      "starts": [
+        {
+          "id": "rs-6-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-6-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 1,
+          "finishTime": "19:01:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-52",
+          "competitorId": "comp-fl-waterwag-52",
+          "sortOrder": 2,
+          "finishTime": "19:02:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 3,
+          "finishTime": "19:03:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 4,
+          "finishTime": "19:04:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 5,
+          "finishTime": "19:05:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 6,
+          "finishTime": "19:06:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 7,
+          "finishTime": "19:07:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 8,
+          "finishTime": "19:08:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-20",
+          "competitorId": "comp-fl-waterwag-20",
+          "sortOrder": 9,
+          "finishTime": "19:09:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-55",
+          "competitorId": "comp-fl-waterwag-55",
+          "sortOrder": 10,
+          "finishTime": "19:10:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 11,
+          "finishTime": "19:11:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 12,
+          "finishTime": "19:12:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 13,
+          "finishTime": "19:13:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 14,
+          "finishTime": "19:14:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 15,
+          "finishTime": "19:15:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 16,
+          "finishTime": "19:16:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 17,
+          "finishTime": "19:17:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 18,
+          "finishTime": "19:18:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-53",
+          "competitorId": "comp-fl-waterwag-53",
+          "sortOrder": 19,
+          "finishTime": "19:19:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-4",
+          "competitorId": "comp-fl-waterwag-4",
+          "sortOrder": 20,
+          "finishTime": "19:20:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-54",
+          "competitorId": "comp-fl-waterwag-54",
+          "sortOrder": 21,
+          "finishTime": "19:21:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-22",
+          "competitorId": "comp-fl-waterwag-22",
+          "sortOrder": 22,
+          "finishTime": "19:22:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 23,
+          "finishTime": "19:23:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-7",
+      "raceNumber": 7,
+      "date": "2026-06-24",
+      "starts": [
+        {
+          "id": "rs-7-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-7-comp-fl-waterwag-52",
+          "competitorId": "comp-fl-waterwag-52",
+          "sortOrder": 1,
+          "finishTime": "19:01:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 2,
+          "finishTime": "19:02:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-55",
+          "competitorId": "comp-fl-waterwag-55",
+          "sortOrder": 3,
+          "finishTime": "19:03:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 4,
+          "finishTime": "19:04:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 5,
+          "finishTime": "19:05:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 6,
+          "finishTime": "19:06:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 7,
+          "finishTime": "19:07:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 8,
+          "finishTime": "19:08:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 9,
+          "finishTime": "19:09:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 10,
+          "finishTime": "19:10:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 11,
+          "finishTime": "19:11:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-56",
+          "competitorId": "comp-fl-waterwag-56",
+          "sortOrder": 12,
+          "finishTime": "19:12:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 13,
+          "finishTime": "19:13:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-20",
+          "competitorId": "comp-fl-waterwag-20",
+          "sortOrder": 14,
+          "finishTime": "19:14:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 15,
+          "finishTime": "19:15:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 16,
+          "finishTime": "19:16:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 17,
+          "finishTime": "19:17:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 18,
+          "finishTime": "19:18:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-4",
+          "competitorId": "comp-fl-waterwag-4",
+          "sortOrder": 19,
+          "finishTime": "19:19:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 20,
+          "finishTime": "19:20:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-53",
+          "competitorId": "comp-fl-waterwag-53",
+          "sortOrder": 21,
+          "finishTime": "19:21:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 22,
+          "finishTime": "19:22:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 23,
+          "finishTime": "19:23:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-54",
+          "competitorId": "comp-fl-waterwag-54",
+          "sortOrder": null,
+          "resultCode": "DNF",
           "startPresent": true,
           "penaltyCode": null,
           "penaltyOverride": null
