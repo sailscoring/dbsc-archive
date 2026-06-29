@@ -1,0 +1,5637 @@
+{
+  "formatVersion": 11,
+  "seriesId": "dbsc-2022-water-wags",
+  "exportedAt": "2022-09-01T00:00:00.000Z",
+  "series": {
+    "id": "dbsc-2022-water-wags",
+    "name": "DBSC 2022 — Water Wags",
+    "venue": "Dublin Bay Sailing Club",
+    "startDate": "2022-04-27",
+    "endDate": "2022-09-21",
+    "venueLogoUrl": "",
+    "eventLogoUrl": "",
+    "venueUrl": "",
+    "eventUrl": "",
+    "discardThresholds": [
+      {
+        "minRaces": 4,
+        "discardCount": 1
+      },
+      {
+        "minRaces": 7,
+        "discardCount": 2
+      },
+      {
+        "minRaces": 12,
+        "discardCount": 3
+      },
+      {
+        "minRaces": 18,
+        "discardCount": 4
+      },
+      {
+        "minRaces": 25,
+        "discardCount": 5
+      },
+      {
+        "minRaces": 32,
+        "discardCount": 6
+      }
+    ],
+    "dnfScoring": "startingAreaInclDnc",
+    "ftpHost": "",
+    "ftpPath": "",
+    "includeJsonExport": true,
+    "enabledCompetitorFields": [
+      "boatName",
+      "boatClass",
+      "helm",
+      "club"
+    ],
+    "primaryPersonLabel": "owner",
+    "subdivisionLabel": "Division",
+    "scoringMode": "handicap"
+  },
+  "fleets": [
+    {
+      "id": "fl-waterwag",
+      "name": "Water Wag",
+      "displayOrder": 0,
+      "scoringSystem": "scratch"
+    }
+  ],
+  "competitors": [
+    {
+      "id": "comp-fl-waterwag-38",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "38",
+      "boatName": "Swift",
+      "name": "Guy Kilroy",
+      "owner": "Guy Kilroy",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-45",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "45",
+      "boatName": "Mariposa",
+      "name": "Cathy Mac Aleavey",
+      "owner": "Cathy Mac Aleavey",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-15",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "15",
+      "boatName": "Moosmie",
+      "name": "John O'Driscoll",
+      "owner": "John O'Driscoll",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-3",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "3",
+      "boatName": "Pansy",
+      "name": "Vincent Delany",
+      "owner": "Vincent Delany",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-42",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "42",
+      "boatName": "Tortoise",
+      "name": "William Prentice",
+      "owner": "William Prentice",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-1",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "1",
+      "boatName": "Ethne",
+      "name": "David Sommerville",
+      "owner": "David Sommerville",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-40",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "40",
+      "boatName": "Swallow",
+      "name": "Justin Geoghegan",
+      "owner": "Justin Geoghegan",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-21",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "21",
+      "boatName": "Jacqueline",
+      "name": "Hugh Delap",
+      "owner": "Hugh Delap",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-8",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "8",
+      "boatName": "Barbara",
+      "name": "Ian Malcolm",
+      "owner": "Ian Malcolm",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-49",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "49",
+      "boatName": "Hilda",
+      "name": "Martin Byrne",
+      "owner": "Martin Byrne",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-46",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "46",
+      "boatName": "Mademoiselle",
+      "name": "Adam Winkelmann",
+      "owner": "Adam Winkelmann",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-47",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "47",
+      "boatName": "Peggy",
+      "name": "David Corcoran",
+      "owner": "David Corcoran",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-6",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "6",
+      "boatName": "Mary Kate",
+      "name": "Ian Magowan",
+      "owner": "Ian Magowan",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-44",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "44",
+      "boatName": "Scallywag",
+      "name": "Daniel O'Connor",
+      "owner": "Daniel O'Connor",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-30",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "30",
+      "boatName": "Sara",
+      "name": "Paul Smith",
+      "owner": "Paul Smith",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-43",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "43",
+      "boatName": "Freddie",
+      "name": "Bairbre Stewart",
+      "owner": "Bairbre Stewart",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-34",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "34",
+      "boatName": "Chloe",
+      "name": "Kate O’Leary",
+      "owner": "Kate O’Leary",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-36",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "36",
+      "boatName": "Little Tern",
+      "name": "Tim Pearson",
+      "owner": "Tim Pearson",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-19",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "19",
+      "boatName": "Shindilla",
+      "name": "Alistair Kissane",
+      "owner": "Alistair Kissane",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-48",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "48",
+      "boatName": "Dipper",
+      "name": "David A. Williams",
+      "owner": "David A. Williams",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-12",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "12",
+      "boatName": "Alfa",
+      "name": "Drewry Pearson",
+      "owner": "Drewry Pearson",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-24",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "24",
+      "boatName": "Gavotte",
+      "name": "Anne Marie Cox",
+      "owner": "Anne Marie Cox",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-50",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "50",
+      "boatName": "Siskin",
+      "name": "Amanda Chambers",
+      "owner": "Amanda Chambers",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-17",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "17",
+      "boatName": "Coquette",
+      "name": "Seymour",
+      "owner": "Seymour",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-41",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "41",
+      "boatName": "Mollie",
+      "name": "Claudine Murphy",
+      "owner": "Claudine Murphy",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-25",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "25",
+      "boatName": "Beatrice",
+      "name": "Ben Ryan",
+      "owner": "Ben Ryan",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-14",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "14",
+      "boatName": "Phyllis",
+      "name": "Fraser Mitchell",
+      "owner": "Fraser Mitchell",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-31",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "31",
+      "boatName": "Polly",
+      "name": "Henry Rooke",
+      "owner": "Henry Rooke",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-33",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "33",
+      "boatName": "Eva",
+      "name": "David Kelly",
+      "owner": "David Kelly",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-16",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "16",
+      "boatName": "Penelope",
+      "name": "Fergus Cullen",
+      "owner": "Fergus Cullen",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-51",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "51",
+      "boatName": "Gretta",
+      "name": "Denis Bergin",
+      "owner": "Denis Bergin",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-29",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "29",
+      "boatName": "Patricia",
+      "name": "Harold Croxon",
+      "owner": "Harold Croxon",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-18",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "18",
+      "boatName": "Good Hope",
+      "name": "Robert Dix",
+      "owner": "Robert Dix",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-08",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "08",
+      "boatName": "Eros",
+      "name": "Gavin Johnson",
+      "owner": "Gavin Johnson",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-10",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "10",
+      "boatName": "Sprite",
+      "name": "Adrian Masterson",
+      "owner": "Adrian Masterson",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-9",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "9",
+      "boatName": "Marie Louise",
+      "name": "Sonya Boyce",
+      "owner": "Sonya Boyce",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-52",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "52",
+      "boatName": "Miss Scarlet",
+      "name": "Jean-Pierre Cave",
+      "owner": "Jean-Pierre Cave",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-11",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "11",
+      "boatName": "Anne II",
+      "name": "Stratos Boumpoukis",
+      "owner": "Stratos Boumpoukis",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-4",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "4",
+      "boatName": "Vela",
+      "name": "Philip Mayne",
+      "owner": "Philip Mayne",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-20",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "20",
+      "boatName": "Badger",
+      "name": "Mary Cox",
+      "owner": "Mary Cox",
+      "club": "",
+      "gender": "",
+      "age": null
+    },
+    {
+      "id": "comp-fl-waterwag-37",
+      "fleetIds": [
+        "fl-waterwag"
+      ],
+      "sailNumber": "37",
+      "boatName": "Marcia",
+      "name": "Brendan McCormack",
+      "owner": "Brendan McCormack",
+      "club": "",
+      "gender": "",
+      "age": null
+    }
+  ],
+  "races": [
+    {
+      "id": "race-1",
+      "raceNumber": 1,
+      "date": "2022-04-27",
+      "starts": [
+        {
+          "id": "rs-1-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-1-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-10",
+          "competitorId": "comp-fl-waterwag-10",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-2",
+      "raceNumber": 2,
+      "date": "2022-05-04",
+      "starts": [
+        {
+          "id": "rs-2-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-2-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-10",
+          "competitorId": "comp-fl-waterwag-10",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-3",
+      "raceNumber": 3,
+      "date": "2022-05-11",
+      "starts": [
+        {
+          "id": "rs-3-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-3-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-4",
+      "raceNumber": 4,
+      "date": "2022-05-25",
+      "starts": [
+        {
+          "id": "rs-4-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-4-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-5",
+      "raceNumber": 5,
+      "date": "2022-06-01",
+      "starts": [
+        {
+          "id": "rs-5-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-5-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-10",
+          "competitorId": "comp-fl-waterwag-10",
+          "sortOrder": 26,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 27,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-6",
+      "raceNumber": 6,
+      "date": "2022-06-01",
+      "starts": [
+        {
+          "id": "rs-6-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:30:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-6-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-7",
+      "raceNumber": 7,
+      "date": "2022-06-15",
+      "starts": [
+        {
+          "id": "rs-7-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-7-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 26,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 27,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 28,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-8",
+      "raceNumber": 8,
+      "date": "2022-06-15",
+      "starts": [
+        {
+          "id": "rs-8-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:30:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-8-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 26,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": null,
+          "resultCode": "DNS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-9",
+      "raceNumber": 9,
+      "date": "2022-06-22",
+      "starts": [
+        {
+          "id": "rs-9-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-9-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 26,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 27,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 28,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-10",
+          "competitorId": "comp-fl-waterwag-10",
+          "sortOrder": 29,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-10",
+      "raceNumber": 10,
+      "date": "2022-06-29",
+      "starts": [
+        {
+          "id": "rs-10-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-10-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-10",
+          "competitorId": "comp-fl-waterwag-10",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-11",
+      "raceNumber": 11,
+      "date": "2022-07-13",
+      "starts": [
+        {
+          "id": "rs-11-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-11-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-12",
+      "raceNumber": 12,
+      "date": "2022-07-20",
+      "starts": [
+        {
+          "id": "rs-12-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-12-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-13",
+      "raceNumber": 13,
+      "date": "2022-07-27",
+      "starts": [
+        {
+          "id": "rs-13-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-13-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-14",
+      "raceNumber": 14,
+      "date": "2022-08-03",
+      "starts": [
+        {
+          "id": "rs-14-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-14-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-15",
+      "raceNumber": 15,
+      "date": "2022-08-10",
+      "starts": [
+        {
+          "id": "rs-15-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-15-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-16",
+      "raceNumber": 16,
+      "date": "2022-08-17",
+      "starts": [
+        {
+          "id": "rs-16-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-16-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-17",
+      "raceNumber": 17,
+      "date": "2022-08-24",
+      "starts": [
+        {
+          "id": "rs-17-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-17-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-31",
+          "competitorId": "comp-fl-waterwag-31",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 26,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-17-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 27,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-18",
+      "raceNumber": 18,
+      "date": "2022-08-31",
+      "starts": [
+        {
+          "id": "rs-18-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-18-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-8",
+          "competitorId": "comp-fl-waterwag-8",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-41",
+          "competitorId": "comp-fl-waterwag-41",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-9",
+          "competitorId": "comp-fl-waterwag-9",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-16",
+          "competitorId": "comp-fl-waterwag-16",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 25,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 26,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-11",
+          "competitorId": "comp-fl-waterwag-11",
+          "sortOrder": 27,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 28,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 29,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 30,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 31,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-18-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 32,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-19",
+      "raceNumber": 19,
+      "date": "2022-09-07",
+      "starts": [
+        {
+          "id": "rs-19-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-19-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-30",
+          "competitorId": "comp-fl-waterwag-30",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-33",
+          "competitorId": "comp-fl-waterwag-33",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-49",
+          "competitorId": "comp-fl-waterwag-49",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-19-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-20",
+      "raceNumber": 20,
+      "date": "2022-09-14",
+      "starts": [
+        {
+          "id": "rs-20-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-20-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-21",
+          "competitorId": "comp-fl-waterwag-21",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-40",
+          "competitorId": "comp-fl-waterwag-40",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-34",
+          "competitorId": "comp-fl-waterwag-34",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-20-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-21",
+      "raceNumber": 21,
+      "date": "2022-09-21",
+      "starts": [
+        {
+          "id": "rs-21-fl-waterwag",
+          "fleetIds": [
+            "fl-waterwag"
+          ],
+          "startTime": "19:00:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-21-comp-fl-waterwag-15",
+          "competitorId": "comp-fl-waterwag-15",
+          "sortOrder": 1,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-45",
+          "competitorId": "comp-fl-waterwag-45",
+          "sortOrder": 2,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-36",
+          "competitorId": "comp-fl-waterwag-36",
+          "sortOrder": 3,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-38",
+          "competitorId": "comp-fl-waterwag-38",
+          "sortOrder": 4,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-44",
+          "competitorId": "comp-fl-waterwag-44",
+          "sortOrder": 5,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-6",
+          "competitorId": "comp-fl-waterwag-6",
+          "sortOrder": 6,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-43",
+          "competitorId": "comp-fl-waterwag-43",
+          "sortOrder": 7,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-50",
+          "competitorId": "comp-fl-waterwag-50",
+          "sortOrder": 8,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-1",
+          "competitorId": "comp-fl-waterwag-1",
+          "sortOrder": 9,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-48",
+          "competitorId": "comp-fl-waterwag-48",
+          "sortOrder": 10,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-3",
+          "competitorId": "comp-fl-waterwag-3",
+          "sortOrder": 11,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-47",
+          "competitorId": "comp-fl-waterwag-47",
+          "sortOrder": 12,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-17",
+          "competitorId": "comp-fl-waterwag-17",
+          "sortOrder": 13,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-18",
+          "competitorId": "comp-fl-waterwag-18",
+          "sortOrder": 14,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-14",
+          "competitorId": "comp-fl-waterwag-14",
+          "sortOrder": 15,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-29",
+          "competitorId": "comp-fl-waterwag-29",
+          "sortOrder": 16,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-46",
+          "competitorId": "comp-fl-waterwag-46",
+          "sortOrder": 17,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-51",
+          "competitorId": "comp-fl-waterwag-51",
+          "sortOrder": 18,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-25",
+          "competitorId": "comp-fl-waterwag-25",
+          "sortOrder": 19,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-52",
+          "competitorId": "comp-fl-waterwag-52",
+          "sortOrder": 20,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-12",
+          "competitorId": "comp-fl-waterwag-12",
+          "sortOrder": 21,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-08",
+          "competitorId": "comp-fl-waterwag-08",
+          "sortOrder": 22,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-24",
+          "competitorId": "comp-fl-waterwag-24",
+          "sortOrder": 23,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-19",
+          "competitorId": "comp-fl-waterwag-19",
+          "sortOrder": 24,
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-21-comp-fl-waterwag-42",
+          "competitorId": "comp-fl-waterwag-42",
+          "sortOrder": null,
+          "resultCode": "OCS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    }
+  ],
+  "subSeries": [
+    {
+      "id": "ss-0",
+      "seriesId": "dbsc-2022-water-wags",
+      "name": "Wednesday Overall",
+      "displayOrder": 0,
+      "raceIds": [
+        "race-1",
+        "race-2",
+        "race-3",
+        "race-4",
+        "race-5",
+        "race-6",
+        "race-7",
+        "race-8",
+        "race-9",
+        "race-10",
+        "race-11",
+        "race-12",
+        "race-13",
+        "race-14",
+        "race-15",
+        "race-16",
+        "race-17",
+        "race-18",
+        "race-19",
+        "race-20",
+        "race-21"
+      ],
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
+    },
+    {
+      "id": "ss-1",
+      "seriesId": "dbsc-2022-water-wags",
+      "name": "Wednesday Series A",
+      "displayOrder": 1,
+      "raceIds": [
+        "race-1",
+        "race-2",
+        "race-3",
+        "race-4"
+      ],
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
+    },
+    {
+      "id": "ss-2",
+      "seriesId": "dbsc-2022-water-wags",
+      "name": "Wednesday Series B",
+      "displayOrder": 2,
+      "raceIds": [
+        "race-5",
+        "race-6",
+        "race-7",
+        "race-8",
+        "race-9",
+        "race-10",
+        "race-11",
+        "race-12",
+        "race-13"
+      ],
+      "startingHandicapSource": "continue",
+      "continueFromSubSeriesId": "ss-1"
+    },
+    {
+      "id": "ss-3",
+      "seriesId": "dbsc-2022-water-wags",
+      "name": "Wednesday Series C",
+      "displayOrder": 3,
+      "raceIds": [
+        "race-14",
+        "race-15",
+        "race-16",
+        "race-17",
+        "race-18",
+        "race-19",
+        "race-20",
+        "race-21"
+      ],
+      "startingHandicapSource": "continue",
+      "continueFromSubSeriesId": "ss-2"
+    }
+  ]
+}
