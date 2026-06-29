@@ -126,8 +126,15 @@ the HalSail tandems carried as sub-series (Overall / Series A / B / …).
 | Saturday cruisers | ✅ | ⚠️ | Overall + most blocks green; residuals are the **Q5** ±1 ripples through the progressive ECHO/VPRS chains, plus the DNC-only-entrant case (a boat that DNCs every block heat — HalSail ranks it, we drop it). Documented deltas |
 | Saturday one-designs | ✅ | ✅* | Q4 per-class A/B boundaries reproduced (Dragon, SB20, IDRA, Melges, PY all green). *One delta: Mixed Sportsboats Series A — a `date#slot` collision (its only Overall heat that day is mis-slotted onto the morning slot) |
 | Water Wags | ✅ | ✅ | **fully green** — first three-block group (2025 Summer Series + Series A/B/C) |
-| Tuesday (cruisers + OD) | — | — | not started — N-block builder exists; needs Combined Cruisers / Combined Group 2 / Women on the Water pooled fleets + the Tuesday one-design A/B/C |
+| Tuesday one-designs | ✅ | ✅ | **fully green** — Tuesday Overall + Series A/B/C; Women on the Water (its own "2025 Summer Series" combine, a vprs-style coefficient) green too |
+| Tuesday cruisers | ✅ | ✅ | **fully green** — Combined Cruisers (ECHO pool) + Combined Group 2 (vprs pool) under "2025 Summer Series"; Cruisers 3 ECHO + IRC under "Tuesday Overall" |
 | 2024 / 2023 / 2022 | — | — | not started — needs the older `_CrsResults` archive markup in the parser |
+
+**2025 is complete** — `pnpm archive:2025` is **203 OK / 12 FAIL**, the 12 being
+the Saturday-cruiser Q5 ECHO/VPRS ±1 ripples + the one Sportsboats slot delta.
+Sub-series are auto-scoped to the fleets that publish each series name, so a day
+mixing "Tuesday Overall"/"Series A/B/C" with the pooled fleets' "2025 Summer
+Series" models cleanly via #203 fleet-scoping.
 
 The model that unlocked this is the `sailscoring`#203 sub-series feature: a
 sub-series may be **fleet-scoped** and carry **per-fleet race exclusions**, so a
@@ -145,8 +152,9 @@ scratch one-design tables**, and sub-series are assigned by **(date, start-time)
 > (Q1/Q5) are now reproduced exactly as **per-fleet exclusions** (no engine rule —
 > `sailscoring`#232 stays closed). 2025 Thursday, Saturday one-designs and Water
 > Wags are green bar documented deltas; Saturday cruisers carries the Q5 ECHO/VPRS
-> ripples + the DNC-only-entrant boundary. **Next:** the 2025 Tuesday combine, then
-> 2024 → 2022 (older-markup parser), then import into a DBSC workspace.
+> ripples + the DNC-only-entrant boundary. **All 2025 day-groups are now built
+> (203/12).** **Next:** 2024 → 2022 (older-markup parser), then import into a DBSC
+> workspace.
 
 ## Licensing
 
