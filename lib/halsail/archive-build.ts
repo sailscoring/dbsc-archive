@@ -261,5 +261,5 @@ export function archiveBuilder(year: string) {
 }
 
 function attachSubSeries(file: SeriesFile, subs: SubSeries[]): unknown {
-  return { ...file, formatVersion: 11, subSeries: subs };
+  return { ...file, formatVersion: 12, subSeries: subs };
 }

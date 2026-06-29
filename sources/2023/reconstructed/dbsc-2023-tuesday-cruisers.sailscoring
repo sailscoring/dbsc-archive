@@ -1,5 +1,5 @@
 {
-  "formatVersion": 11,
+  "formatVersion": 12,
   "seriesId": "dbsc-2023-tuesday-cruisers",
   "exportedAt": "2023-09-01T00:00:00.000Z",
   "series": {
@@ -2106,7 +2106,8 @@
         "cf-c3-irc"
       ],
       "startingHandicapSource": "base",
-      "continueFromSubSeriesId": null
+      "continueFromSubSeriesId": null,
+      "excludeDncOnlyCompetitors": false
     },
     {
       "id": "ss-1",
@@ -2133,7 +2134,8 @@
         "cf-combined"
       ],
       "startingHandicapSource": "base",
-      "continueFromSubSeriesId": null
+      "continueFromSubSeriesId": null,
+      "excludeDncOnlyCompetitors": false
     }
   ]
 }

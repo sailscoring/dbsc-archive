@@ -1,5 +1,5 @@
 {
-  "formatVersion": 11,
+  "formatVersion": 12,
   "seriesId": "dbsc-2025-water-wags",
   "exportedAt": "2025-09-01T00:00:00.000Z",
   "series": {
@@ -5314,7 +5314,8 @@
         "race-19"
       ],
       "startingHandicapSource": "base",
-      "continueFromSubSeriesId": null
+      "continueFromSubSeriesId": null,
+      "excludeDncOnlyCompetitors": false
     },
     {
       "id": "ss-1",
@@ -5327,7 +5328,8 @@
         "race-3"
       ],
       "startingHandicapSource": "base",
-      "continueFromSubSeriesId": null
+      "continueFromSubSeriesId": null,
+      "excludeDncOnlyCompetitors": true
     },
     {
       "id": "ss-2",
@@ -5346,7 +5348,8 @@
         "race-12"
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-1"
+      "continueFromSubSeriesId": "ss-1",
+      "excludeDncOnlyCompetitors": true
     },
     {
       "id": "ss-3",
@@ -5363,7 +5366,8 @@
         "race-19"
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-2"
+      "continueFromSubSeriesId": "ss-2",
+      "excludeDncOnlyCompetitors": true
     }
   ]
 }

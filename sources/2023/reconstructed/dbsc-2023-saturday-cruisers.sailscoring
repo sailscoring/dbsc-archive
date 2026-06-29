@@ -1,5 +1,5 @@
 {
-  "formatVersion": 11,
+  "formatVersion": 12,
   "seriesId": "dbsc-2023-saturday-cruisers",
   "exportedAt": "2023-09-01T00:00:00.000Z",
   "series": {
@@ -12790,7 +12790,8 @@
         }
       ],
       "startingHandicapSource": "base",
-      "continueFromSubSeriesId": null
+      "continueFromSubSeriesId": null,
+      "excludeDncOnlyCompetitors": false
     },
     {
       "id": "ss-1",
@@ -12807,7 +12808,8 @@
         "race-7"
       ],
       "startingHandicapSource": "base",
-      "continueFromSubSeriesId": null
+      "continueFromSubSeriesId": null,
+      "excludeDncOnlyCompetitors": false
     },
     {
       "id": "ss-2",
@@ -12826,7 +12828,8 @@
         "race-16"
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-1"
+      "continueFromSubSeriesId": "ss-1",
+      "excludeDncOnlyCompetitors": false
     }
   ]
 }
