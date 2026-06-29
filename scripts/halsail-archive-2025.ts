@@ -473,6 +473,31 @@ const TUESDAY_OD: Group = {
   ),
 };
 
+// Tuesday cruisers: no IRC/one-design splits — the boats fold into pools. The
+// "Combined Cruisers" (C0/1/2 progressive ECHO) and "Combined Group 2" (a fixed
+// time-on-time coefficient, like VPRS) pools publish under "2025 Summer Series";
+// Cruisers 3 keeps its own ECHO + IRC under "Tuesday Overall". A boat can sit in
+// a pool and in its class fleet at once, scored independently in each.
+const TUESDAY_CRUISERS: Group = {
+  out: 'dbsc-2025-tuesday-cruisers', name: 'DBSC 2025 — Tuesday Cruisers',
+  day: 'Tuesday', echoSuffix: 'Tue',
+  subSeriesNames: ['Tuesday Overall', { name: '2025 Summer Series', fleetIds: ['cf-combined', 'cf-cg2'] }],
+  classNames: [],
+  fleetClassOverride: {
+    'Combined Cruisers': 'Combined Cruisers (Tue)',
+    'Combined Group 2': 'Combined Group 2 (Tue)',
+  },
+  build: (opts) => buildFleetSeries(
+    [
+      { fleetId: 'cf-combined', name: 'Combined Cruisers', system: 'echo', fragment: frag('Combined Cruisers (Tue)', '2025 Summer Series') },
+      { fleetId: 'cf-cg2', name: 'Combined Group 2', system: 'vprs', fragment: frag('Combined Group 2 (Tue)', '2025 Summer Series') },
+      { fleetId: 'cf-c3-echo', name: 'Cruisers 3 ECHO', system: 'echo', fragment: frag('Cruisers 3 Echo (Tue)', 'Tuesday Overall') },
+      { fleetId: 'cf-c3-irc', name: 'Cruisers 3 IRC', system: 'irc', fragment: frag('Cruisers 3 IRC', 'Tuesday Overall') },
+    ] satisfies DayFleetSpec[],
+    opts,
+  ),
+};
+
 const GROUPS: Record<string, Group> = {
   'thursday-cruisers': THURSDAY_CRUISERS,
   'thursday-od': THURSDAY_OD,
@@ -480,6 +505,7 @@ const GROUPS: Record<string, Group> = {
   'saturday-od': SATURDAY_OD,
   'water-wags': WATER_WAGS,
   'tuesday-od': TUESDAY_OD,
+  'tuesday-cruisers': TUESDAY_CRUISERS,
 };
 
 function run(key: string, group: Group, doValidate: boolean): boolean {
