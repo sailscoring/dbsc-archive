@@ -117,31 +117,36 @@ on disk is reused, never re-fetched). Read-only against public servers.
 (sub-series × fleet) Net against the published table (`pnpm archive:2025 [group]`,
 builders in `scripts/halsail-archive-2025.ts`). Started with **2025** (it has the
 fullest Series A/B structure). One `.sailscoring` per finish-sheet day-group, with
-the HalSail tandems carried as sub-series (Overall / Series A / B).
+the HalSail tandems carried as sub-series (Overall / Series A / B / …).
 
-| 2025 day-group | Overall | Series A/B | Notes |
+| 2025 day-group | Overall | Blocks | Notes |
 |---|:--:|:--:|---|
-| Thursday cruisers | ✅ | ✅ | residual 2 = Q2 (Sigma ends 14 Aug) + Q3 (abandoned 05 Jun) |
+| Thursday cruisers | ✅ | ✅ | **fully green** — Q1/Q2 single-competitor flicks + Sigma wind-up reproduced as per-fleet exclusions; Q3 (abandoned 05 Jun, kept in Series A) sourced as a tandem-only race |
 | Thursday one-designs | ✅ | ✅ | parity-green |
-| Saturday cruisers | ✅ | ⚠️ | A/B residuals = **Q5** (manual single-competitor exclusions — see Q1) |
-| Saturday one-designs | ✅ | ⚠️ | A/B residuals = **Q4** (per-class A/B boundaries) |
-| Tuesday (cruisers + OD) | — | — | not started — needs N-block (Series A/B/**C**) sub-series; introduces Combined Cruisers / Combined Group 2 / Women on the Water (Phase-B concepts) |
-| Water Wags | — | — | not started — `2025 Series A/B/C`, also N-block |
-| 2024 / 2023 / 2022 | — | — | not started |
+| Saturday cruisers | ✅ | ⚠️ | Overall + most blocks green; residuals are the **Q5** ±1 ripples through the progressive ECHO/VPRS chains, plus the DNC-only-entrant case (a boat that DNCs every block heat — HalSail ranks it, we drop it). Documented deltas |
+| Saturday one-designs | ✅ | ✅* | Q4 per-class A/B boundaries reproduced (Dragon, SB20, IDRA, Melges, PY all green). *One delta: Mixed Sportsboats Series A — a `date#slot` collision (its only Overall heat that day is mis-slotted onto the morning slot) |
+| Water Wags | ✅ | ✅ | **fully green** — first three-block group (2025 Summer Series + Series A/B/C) |
+| Tuesday (cruisers + OD) | — | — | not started — N-block builder exists; needs Combined Cruisers / Combined Group 2 / Women on the Water pooled fleets + the Tuesday one-design A/B/C |
+| 2024 / 2023 / 2022 | — | — | not started — needs the older `_CrsResults` archive markup in the parser |
 
-Every **Overall** reproduces exactly. The remaining A/B divergences are *DBSC/HalSail
-modelling decisions, not scoring bugs* — see [`CLARIFICATIONS.md`](CLARIFICATIONS.md)
-Q1–Q5. Two reusable wins landed along the way: the parser now reads **place-only
-scratch one-design tables**, and sub-series are assigned by **(date, start-time)**
-so multi-race days split correctly.
+The model that unlocked this is the `sailscoring`#203 sub-series feature: a
+sub-series may be **fleet-scoped** and carry **per-fleet race exclusions**, so a
+heat that counts for one fleet/tandem but not another is representable. The
+builder reproduces HalSail's per-class tandem race membership by striking, per
+fleet, the union heats a fleet was scored in but did not include in its own
+published tandem — covering Q1/Q2/Q4/Q5 (including DBSC's manual misses, since we
+read each fleet's real fragment). Genuinely tandem-only heats — a heat in a
+tandem the Overall omits (Q3) — are sourced from the tandem fragments. The output
+is format **v11**. Reusable wins along the way: the parser reads **place-only
+scratch one-design tables**, and sub-series are assigned by **(date, start-time)**.
 
-> **Paused (Jun 2026).** The single-competitor question (Q1/Q5) is now **answered**:
-> it is **manual enforcement of a DBSC SI clause** by the results manager, not an
-> automatable rule — and Cruisers 0 ECHO's "kept" 26 Jun heat was a manager miss, not
-> evidence of a "full-field keeps" rule. The proposed engine rule
-> (`sailscoring`#232) is closed not-planned. So the affected sub-fleets will keep
-> over-scoring their single-boat days until/unless we model **per-heat manual
-> exclusions**; that, plus the Tuesday cruiser/Combined groups, is the resume point.
+> **Resumed (Jun 2026).** The pause is over: `sailscoring`#203 landed the
+> fleet-scoped sub-series + per-fleet exclusions, and the single-competitor flicks
+> (Q1/Q5) are now reproduced exactly as **per-fleet exclusions** (no engine rule —
+> `sailscoring`#232 stays closed). 2025 Thursday, Saturday one-designs and Water
+> Wags are green bar documented deltas; Saturday cruisers carries the Q5 ECHO/VPRS
+> ripples + the DNC-only-entrant boundary. **Next:** the 2025 Tuesday combine, then
+> 2024 → 2022 (older-markup parser), then import into a DBSC workspace.
 
 ## Licensing
 
