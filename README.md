@@ -128,13 +128,35 @@ the HalSail tandems carried as sub-series (Overall / Series A / B / …).
 | Water Wags | ✅ | ✅ | **fully green** — first three-block group (2025 Summer Series + Series A/B/C) |
 | Tuesday one-designs | ✅ | ✅ | **fully green** — Tuesday Overall + Series A/B/C; Women on the Water (its own "2025 Summer Series" combine, a vprs-style coefficient) green too |
 | Tuesday cruisers | ✅ | ✅ | **fully green** — Combined Cruisers (ECHO pool) + Combined Group 2 (vprs pool) under "2025 Summer Series"; Cruisers 3 ECHO + IRC under "Tuesday Overall" |
-| 2024 / 2023 / 2022 | — | — | not started — needs the older `_CrsResults` archive markup in the parser |
 
-**2025 is complete** — `pnpm archive:2025` is **203 OK / 12 FAIL**, the 12 being
-the Saturday-cruiser Q5 ECHO/VPRS ±1 ripples + the one Sportsboats slot delta.
-Sub-series are auto-scoped to the fleets that publish each series name, so a day
-mixing "Tuesday Overall"/"Series A/B/C" with the pooled fleets' "2025 Summer
-Series" models cleanly via #203 fleet-scoping.
+**All four seasons reconstructed.** Each year is a thin
+`scripts/halsail-archive-<year>.ts` over the shared `lib/halsail/archive-build.ts`
+(`pnpm archive:<year> [group]`). Sub-series are auto-scoped to the fleets that
+publish each series name, so a day mixing "Tuesday Overall"/"Series A/B/C" with
+the pooled fleets' "Summer Series" models cleanly via #203 fleet-scoping.
+
+| Year | Parity | Structure notes |
+|------|:--:|---|
+| 2025 | **204 / 11** | VPRS pools (C4-5A/B); Combined Cruisers + Combined Group 2 + WOW |
+| 2024 | **204 / 7**  | day-blocks carry the year ("2024 Thursday Series A"); VPRS pools renamed 4A-5A/4B-5B |
+| 2023 | **196 / 11** | no VPRS — C5 under IRC + ECHO; Laser (not ILCA); Water Wags "Weds"/"Summer Series" |
+| 2022 | **182 / 22** | C4(+5A) / C5(A+B) IRC+ECHO pools; Water Wags "Wednesday Overall"; Combined Cruisers under "Tuesday Overall" |
+
+The remaining **51 diffs (of 837 cells)** are documented residual families, **not
+DNC-only-entrant** (that's solved — see below): per-fleet **ECHO/VPRS ±1 ripples**
+through the progressive chains, and a **multi-race-day discard offset** for
+one-design fleets that sail several heats per day (Flying Fifteen, PY Class, ILCA,
+Laser, Squib-Mermaid) at high race counts — plus the one Sportsboats `date#slot`
+delta.
+
+**DNC-only-entrant — solved (engine).** A boat on a class entry list that DNC'd
+every heat is ranked by HalSail (all-DNC) but was dropped by our engine, which
+inferred sub-series entrants from finishes. This dominated the older seasons
+(2023 was 120/87 before the fix). `sailscoring`#203's sub-series scoring now
+**scores all-DNC competitors by default** — like a plain series — with an opt-in
+`excludeDncOnlyCompetitors` flag for HalSail's "exclude boats with only DNC"
+toggle. Because we ingest each fleet's published roster, the per-fleet include
+(cruiser entry lists) / exclude (one-designs) variation reproduces automatically.
 
 The model that unlocked this is the `sailscoring`#203 sub-series feature: a
 sub-series may be **fleet-scoped** and carry **per-fleet race exclusions**, so a
@@ -150,11 +172,11 @@ scratch one-design tables**, and sub-series are assigned by **(date, start-time)
 > **Resumed (Jun 2026).** The pause is over: `sailscoring`#203 landed the
 > fleet-scoped sub-series + per-fleet exclusions, and the single-competitor flicks
 > (Q1/Q5) are now reproduced exactly as **per-fleet exclusions** (no engine rule —
-> `sailscoring`#232 stays closed). 2025 Thursday, Saturday one-designs and Water
-> Wags are green bar documented deltas; Saturday cruisers carries the Q5 ECHO/VPRS
-> ripples + the DNC-only-entrant boundary. **All 2025 day-groups are now built
-> (203/12).** **Next:** 2024 → 2022 (older-markup parser), then import into a DBSC
-> workspace.
+> `sailscoring`#232 stays closed). **All four seasons (2022–2025) are now built**
+> (786 OK / 51 FAIL); the DNC-only-entrant boundary was resolved by the engine's
+> default flip (above). The remaining diffs are ECHO/VPRS ±1 ripples and the
+> multi-race-day discard offset. **Next:** the multi-race-day discard residual,
+> then import into a DBSC workspace.
 
 ## Licensing
 
