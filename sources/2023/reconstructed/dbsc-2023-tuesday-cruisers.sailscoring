@@ -1,0 +1,2139 @@
+{
+  "formatVersion": 11,
+  "seriesId": "dbsc-2023-tuesday-cruisers",
+  "exportedAt": "2023-09-01T00:00:00.000Z",
+  "series": {
+    "id": "dbsc-2023-tuesday-cruisers",
+    "name": "DBSC 2023 — Tuesday Cruisers",
+    "venue": "Dublin Bay Sailing Club",
+    "startDate": "2023-04-25",
+    "endDate": "2023-08-29",
+    "venueLogoUrl": "",
+    "eventLogoUrl": "",
+    "venueUrl": "",
+    "eventUrl": "",
+    "discardThresholds": [
+      {
+        "minRaces": 4,
+        "discardCount": 1
+      },
+      {
+        "minRaces": 7,
+        "discardCount": 2
+      },
+      {
+        "minRaces": 12,
+        "discardCount": 3
+      },
+      {
+        "minRaces": 18,
+        "discardCount": 4
+      },
+      {
+        "minRaces": 25,
+        "discardCount": 5
+      },
+      {
+        "minRaces": 32,
+        "discardCount": 6
+      }
+    ],
+    "dnfScoring": "startingAreaInclDnc",
+    "ftpHost": "",
+    "ftpPath": "",
+    "includeJsonExport": true,
+    "enabledCompetitorFields": [
+      "boatName",
+      "boatClass",
+      "helm",
+      "club"
+    ],
+    "primaryPersonLabel": "owner",
+    "subdivisionLabel": "Division",
+    "scoringMode": "handicap"
+  },
+  "fleets": [
+    {
+      "id": "cf-combined",
+      "name": "Combined Cruisers",
+      "displayOrder": 0,
+      "scoringSystem": "echo",
+      "echoAlpha": 0.25
+    },
+    {
+      "id": "cf-c3-echo",
+      "name": "Cruisers 3 ECHO",
+      "displayOrder": 1,
+      "scoringSystem": "echo",
+      "echoAlpha": 0.25
+    },
+    {
+      "id": "cf-c3-irc",
+      "name": "Cruisers 3 IRC",
+      "displayOrder": 2,
+      "scoringSystem": "irc"
+    }
+  ],
+  "competitors": [
+    {
+      "id": "comp-cf-combined-7536",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "7536",
+      "boatName": "Hot Cookie",
+      "name": "John O'Gorman",
+      "owner": "John O'Gorman",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 1.019
+    },
+    {
+      "id": "comp-cf-combined-13500",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "13500",
+      "boatName": "D-TOX",
+      "name": "Kyran McStay",
+      "owner": "Kyran McStay",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 1.001
+    },
+    {
+      "id": "comp-cf-combined-28898",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "28898",
+      "boatName": "Powder Monkey",
+      "name": "Christopher Moore",
+      "owner": "Christopher Moore",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.991
+    },
+    {
+      "id": "comp-cf-combined-2970",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "2970",
+      "boatName": "Kernach",
+      "name": "Eoin O’Driscoll",
+      "owner": "Eoin O’Driscoll",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.95
+    },
+    {
+      "id": "comp-cf-combined-2474",
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "sailNumber": "2474",
+      "boatName": "Camira",
+      "name": "Neil McSherry",
+      "owner": "Neil McSherry",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.95
+    },
+    {
+      "id": "comp-cf-c3-echo-808",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "808",
+      "boatName": "Jiminy Cricket",
+      "name": "Mona Tyndall",
+      "owner": "Mona Tyndall",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.699
+    },
+    {
+      "id": "comp-cf-c3-echo-1792",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "1792",
+      "boatName": "Papytoo",
+      "name": "Frank Guilfoyle",
+      "owner": "Frank Guilfoyle",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.879
+    },
+    {
+      "id": "comp-cf-c3-echo-2855",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "2855",
+      "boatName": "Pamafe",
+      "name": "Gerry Costello",
+      "owner": "Gerry Costello",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.899
+    },
+    {
+      "id": "comp-cf-c3-echo-1038",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "1038",
+      "boatName": "Grasshopper 2",
+      "name": "Kevin Glynn",
+      "owner": "Kevin Glynn",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.913
+    },
+    {
+      "id": "comp-cf-c3-echo-11",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "11",
+      "boatName": "Maranda",
+      "name": "Myles Kelly",
+      "owner": "Myles Kelly",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.819
+    },
+    {
+      "id": "comp-cf-c3-echo-35",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "35",
+      "boatName": "Eleint",
+      "name": "Michael Matulka",
+      "owner": "Michael Matulka",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.822
+    },
+    {
+      "id": "comp-cf-c3-echo-2216",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "2216",
+      "boatName": "Polly Anna",
+      "name": "Domhnall Murray",
+      "owner": "Domhnall Murray",
+      "club": "Royal St. George Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.825
+    },
+    {
+      "id": "comp-cf-c3-echo-2600",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "2600",
+      "boatName": "Krypton",
+      "name": "Alan Turner",
+      "owner": "Alan Turner",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.867
+    },
+    {
+      "id": "comp-cf-c3-echo-246",
+      "fleetIds": [
+        "cf-c3-echo"
+      ],
+      "sailNumber": "246",
+      "boatName": "Saki",
+      "name": "Michael Ryan",
+      "owner": "Michael Ryan",
+      "club": "Royal Irish Yacht Club",
+      "gender": "",
+      "age": null,
+      "echoStartingTcf": 0.79
+    },
+    {
+      "id": "comp-cf-c3-irc-11",
+      "fleetIds": [
+        "cf-c3-irc"
+      ],
+      "sailNumber": "11",
+      "boatName": "Maranda",
+      "name": "Myles Kelly",
+      "owner": "Myles Kelly",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 0.805
+    },
+    {
+      "id": "comp-cf-c3-irc-35",
+      "fleetIds": [
+        "cf-c3-irc"
+      ],
+      "sailNumber": "35",
+      "boatName": "Eleint",
+      "name": "Michael Matulka",
+      "owner": "Michael Matulka",
+      "club": "Dun Laoghaire Motor Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 0.83
+    },
+    {
+      "id": "comp-cf-c3-irc-2600",
+      "fleetIds": [
+        "cf-c3-irc"
+      ],
+      "sailNumber": "2600",
+      "boatName": "Krypton",
+      "name": "Alan Turner",
+      "owner": "Alan Turner",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 0.876
+    },
+    {
+      "id": "comp-cf-c3-irc-998",
+      "fleetIds": [
+        "cf-c3-irc"
+      ],
+      "sailNumber": "998",
+      "boatName": "Ceol na Mara",
+      "name": "Ed Melvin",
+      "owner": "Ed Melvin",
+      "club": "National Yacht Club",
+      "gender": "",
+      "age": null,
+      "ircTcc": 0.818
+    },
+    {
+      "id": "comp-cf-c3-irc-8245",
+      "fleetIds": [
+        "cf-c3-irc"
+      ],
+      "sailNumber": "8245",
+      "boatName": "Asterix",
+      "name": "Frazer Meredith",
+      "owner": "Frazer Meredith",
+      "club": "Other",
+      "gender": "",
+      "age": null,
+      "ircTcc": 0.818
+    }
+  ],
+  "races": [
+    {
+      "id": "race-1",
+      "raceNumber": 1,
+      "date": "2023-04-25",
+      "starts": [
+        {
+          "id": "rs-1-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-1-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-1-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "19:44:39",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-cf-combined-2474",
+          "competitorId": "comp-cf-combined-2474",
+          "sortOrder": 2,
+          "finishTime": "20:00:19",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-cf-combined-2970",
+          "competitorId": "comp-cf-combined-2970",
+          "sortOrder": 3,
+          "finishTime": "20:02:10",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 4,
+          "finishTime": "20:06:10",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 5,
+          "finishTime": "20:06:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-1-comp-cf-c3-echo-2216",
+          "competitorId": "comp-cf-c3-echo-2216",
+          "sortOrder": 6,
+          "finishTime": "20:21:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-2",
+      "raceNumber": 2,
+      "date": "2023-05-02",
+      "starts": [
+        {
+          "id": "rs-2-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-2-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-2-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "19:56:25",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 2,
+          "finishTime": "20:03:02",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 3,
+          "finishTime": "20:03:05",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 4,
+          "finishTime": "20:03:29",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": 5,
+          "finishTime": "20:07:55",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 6,
+          "finishTime": "20:09:45",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-2-comp-cf-c3-echo-2216",
+          "competitorId": "comp-cf-c3-echo-2216",
+          "sortOrder": 7,
+          "finishTime": "20:23:03",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-3",
+      "raceNumber": 3,
+      "date": "2023-05-09",
+      "starts": [
+        {
+          "id": "rs-3-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-3-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-3-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-3-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 1,
+          "finishTime": "20:11:49",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 2,
+          "finishTime": "20:13:45",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 3,
+          "finishTime": "20:15:03",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 4,
+          "finishTime": "20:16:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 5,
+          "finishTime": "20:17:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 6,
+          "finishTime": "20:17:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": 7,
+          "finishTime": "20:18:31",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 8,
+          "finishTime": "20:21:53",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-3-comp-cf-combined-2474",
+          "competitorId": "comp-cf-combined-2474",
+          "sortOrder": 9,
+          "finishTime": "20:33:19",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-4",
+      "raceNumber": 4,
+      "date": "2023-05-16",
+      "starts": [
+        {
+          "id": "rs-4-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-4-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "20:20:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-4-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-5",
+      "raceNumber": 5,
+      "date": "2023-05-23",
+      "starts": [
+        {
+          "id": "rs-5-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-5-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-5-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-5-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 1,
+          "finishTime": "21:04:59",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 2,
+          "finishTime": "21:05:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-echo-35",
+          "competitorId": "comp-cf-c3-echo-35",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-cf-c3-irc-35",
+          "competitorId": "comp-cf-c3-irc-35",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-6",
+      "raceNumber": 6,
+      "date": "2023-05-30",
+      "starts": [
+        {
+          "id": "rs-6-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-6-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-6-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-6-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "20:36:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 2,
+          "finishTime": "20:43:40",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 3,
+          "finishTime": "20:48:48",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 4,
+          "finishTime": "20:49:16",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 5,
+          "finishTime": "20:53:22",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 6,
+          "finishTime": "20:54:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 7,
+          "finishTime": "20:55:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 8,
+          "finishTime": "20:55:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-echo-2600",
+          "competitorId": "comp-cf-c3-echo-2600",
+          "sortOrder": 9,
+          "finishTime": "20:56:33",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-c3-irc-2600",
+          "competitorId": "comp-cf-c3-irc-2600",
+          "sortOrder": 10,
+          "finishTime": "20:56:33",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-6-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-7",
+      "raceNumber": 7,
+      "date": "2023-06-06",
+      "starts": [
+        {
+          "id": "rs-7-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-7-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-7-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-7-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": 1,
+          "finishTime": "20:17:15",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 2,
+          "finishTime": "20:17:48",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 3,
+          "finishTime": "20:25:18",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 4,
+          "finishTime": "20:26:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 5,
+          "finishTime": "20:28:20",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-35",
+          "competitorId": "comp-cf-c3-echo-35",
+          "sortOrder": 6,
+          "finishTime": "20:29:37",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-irc-35",
+          "competitorId": "comp-cf-c3-irc-35",
+          "sortOrder": 7,
+          "finishTime": "20:29:37",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 8,
+          "finishTime": "20:30:13",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-2600",
+          "competitorId": "comp-cf-c3-echo-2600",
+          "sortOrder": 9,
+          "finishTime": "20:35:32",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-irc-2600",
+          "competitorId": "comp-cf-c3-irc-2600",
+          "sortOrder": 10,
+          "finishTime": "20:35:32",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 11,
+          "finishTime": "20:45:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 12,
+          "finishTime": "20:45:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-7-comp-cf-c3-echo-2216",
+          "competitorId": "comp-cf-c3-echo-2216",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-8",
+      "raceNumber": 8,
+      "date": "2023-06-27",
+      "starts": [
+        {
+          "id": "rs-8-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-8-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-8-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 1,
+          "finishTime": "20:07:09",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 2,
+          "finishTime": "20:09:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 3,
+          "finishTime": "20:13:03",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-echo-35",
+          "competitorId": "comp-cf-c3-echo-35",
+          "sortOrder": 4,
+          "finishTime": "20:14:29",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-irc-35",
+          "competitorId": "comp-cf-c3-irc-35",
+          "sortOrder": 5,
+          "finishTime": "20:14:29",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 6,
+          "finishTime": "20:15:38",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 7,
+          "finishTime": "20:15:49",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 8,
+          "finishTime": "20:15:49",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-echo-2600",
+          "competitorId": "comp-cf-c3-echo-2600",
+          "sortOrder": 9,
+          "finishTime": "20:15:59",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-8-comp-cf-c3-irc-2600",
+          "competitorId": "comp-cf-c3-irc-2600",
+          "sortOrder": 10,
+          "finishTime": "20:15:59",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-9",
+      "raceNumber": 9,
+      "date": "2023-07-04",
+      "starts": [
+        {
+          "id": "rs-9-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-9-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-9-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 1,
+          "finishTime": "20:21:01",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-cf-c3-echo-2216",
+          "competitorId": "comp-cf-c3-echo-2216",
+          "sortOrder": 2,
+          "finishTime": "20:47:51",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 3,
+          "finishTime": "20:48:48",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-9-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-10",
+      "raceNumber": 10,
+      "date": "2023-07-11",
+      "starts": [
+        {
+          "id": "rs-10-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-10-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-10-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-10-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "20:06:18",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 2,
+          "finishTime": "20:19:05",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 3,
+          "finishTime": "20:21:14",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-echo-35",
+          "competitorId": "comp-cf-c3-echo-35",
+          "sortOrder": 4,
+          "finishTime": "20:22:20",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-irc-35",
+          "competitorId": "comp-cf-c3-irc-35",
+          "sortOrder": 5,
+          "finishTime": "20:22:20",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 6,
+          "finishTime": "20:24:46",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 7,
+          "finishTime": "20:26:06",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-c3-echo-2216",
+          "competitorId": "comp-cf-c3-echo-2216",
+          "sortOrder": 8,
+          "finishTime": "20:34:26",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-10-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": null,
+          "resultCode": "DNS",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-11",
+      "raceNumber": 11,
+      "date": "2023-07-25",
+      "starts": [
+        {
+          "id": "rs-11-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-11-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "20:59:53",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-11-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-12",
+      "raceNumber": 12,
+      "date": "2023-08-01",
+      "starts": [
+        {
+          "id": "rs-12-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-12-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-12-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-12-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 1,
+          "finishTime": "19:45:17",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": 2,
+          "finishTime": "19:48:02",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 3,
+          "finishTime": "20:10:07",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-echo-35",
+          "competitorId": "comp-cf-c3-echo-35",
+          "sortOrder": 4,
+          "finishTime": "20:11:52",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-irc-35",
+          "competitorId": "comp-cf-c3-irc-35",
+          "sortOrder": 5,
+          "finishTime": "20:11:52",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 6,
+          "finishTime": "20:13:03",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 7,
+          "finishTime": "20:13:39",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 8,
+          "finishTime": "20:16:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 9,
+          "finishTime": "20:25:02",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-12-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 10,
+          "finishTime": "20:25:02",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-13",
+      "raceNumber": 13,
+      "date": "2023-08-08",
+      "starts": [
+        {
+          "id": "rs-13-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-13-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-13-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-13-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 1,
+          "finishTime": "19:57:50",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 2,
+          "finishTime": "20:00:17",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 3,
+          "finishTime": "20:22:09",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 4,
+          "finishTime": "20:22:49",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 5,
+          "finishTime": "20:23:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 6,
+          "finishTime": "20:24:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 7,
+          "finishTime": "20:24:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-13-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 8,
+          "finishTime": "20:27:07",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-14",
+      "raceNumber": 14,
+      "date": "2023-08-15",
+      "starts": [
+        {
+          "id": "rs-14-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-14-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-14-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-14-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "20:34:43",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 2,
+          "finishTime": "20:35:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 3,
+          "finishTime": "20:37:57",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 4,
+          "finishTime": "20:38:40",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-combined-2970",
+          "competitorId": "comp-cf-combined-2970",
+          "sortOrder": 5,
+          "finishTime": "20:46:41",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-2216",
+          "competitorId": "comp-cf-c3-echo-2216",
+          "sortOrder": 6,
+          "finishTime": "20:48:42",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 7,
+          "finishTime": "20:52:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 8,
+          "finishTime": "20:52:58",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 9,
+          "finishTime": "20:53:10",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-35",
+          "competitorId": "comp-cf-c3-echo-35",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-246",
+          "competitorId": "comp-cf-c3-echo-246",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-14-comp-cf-c3-irc-35",
+          "competitorId": "comp-cf-c3-irc-35",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-15",
+      "raceNumber": 15,
+      "date": "2023-08-22",
+      "starts": [
+        {
+          "id": "rs-15-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-15-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-15-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-15-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "19:42:53",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 2,
+          "finishTime": "19:47:16",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": 3,
+          "finishTime": "19:48:40",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 4,
+          "finishTime": "20:00:11",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 5,
+          "finishTime": "20:03:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 6,
+          "finishTime": "20:05:01",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 7,
+          "finishTime": "20:07:44",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 8,
+          "finishTime": "20:19:07",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-15-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 9,
+          "finishTime": "20:19:07",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    },
+    {
+      "id": "race-16",
+      "raceNumber": 16,
+      "date": "2023-08-29",
+      "starts": [
+        {
+          "id": "rs-16-cf-combined",
+          "fleetIds": [
+            "cf-combined"
+          ],
+          "startTime": "18:55:00"
+        },
+        {
+          "id": "rs-16-cf-c3-echo",
+          "fleetIds": [
+            "cf-c3-echo"
+          ],
+          "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-16-cf-c3-irc",
+          "fleetIds": [
+            "cf-c3-irc"
+          ],
+          "startTime": "19:05:00"
+        }
+      ],
+      "finishes": [
+        {
+          "id": "fin-16-comp-cf-combined-7536",
+          "competitorId": "comp-cf-combined-7536",
+          "sortOrder": 1,
+          "finishTime": "19:36:14",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-combined-28898",
+          "competitorId": "comp-cf-combined-28898",
+          "sortOrder": 2,
+          "finishTime": "19:42:23",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-combined-13500",
+          "competitorId": "comp-cf-combined-13500",
+          "sortOrder": 3,
+          "finishTime": "19:47:29",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-c3-echo-1038",
+          "competitorId": "comp-cf-c3-echo-1038",
+          "sortOrder": 4,
+          "finishTime": "19:57:47",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-c3-echo-2855",
+          "competitorId": "comp-cf-c3-echo-2855",
+          "sortOrder": 5,
+          "finishTime": "19:58:02",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-c3-echo-1792",
+          "competitorId": "comp-cf-c3-echo-1792",
+          "sortOrder": 6,
+          "finishTime": "20:02:04",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-c3-echo-11",
+          "competitorId": "comp-cf-c3-echo-11",
+          "sortOrder": 7,
+          "finishTime": "20:04:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-c3-irc-11",
+          "competitorId": "comp-cf-c3-irc-11",
+          "sortOrder": 8,
+          "finishTime": "20:04:00",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-16-comp-cf-c3-echo-808",
+          "competitorId": "comp-cf-c3-echo-808",
+          "sortOrder": 9,
+          "finishTime": "20:07:19",
+          "resultCode": null,
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        }
+      ]
+    }
+  ],
+  "subSeries": [
+    {
+      "id": "ss-0",
+      "seriesId": "dbsc-2023-tuesday-cruisers",
+      "name": "Tuesday Overall",
+      "displayOrder": 0,
+      "raceIds": [
+        "race-1",
+        "race-2",
+        "race-3",
+        "race-5",
+        "race-6",
+        "race-7",
+        "race-8",
+        "race-9",
+        "race-10",
+        "race-12",
+        "race-13",
+        "race-14",
+        "race-15",
+        "race-16"
+      ],
+      "fleetIds": [
+        "cf-c3-echo",
+        "cf-c3-irc"
+      ],
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
+    },
+    {
+      "id": "ss-1",
+      "seriesId": "dbsc-2023-tuesday-cruisers",
+      "name": "2023 Summer Series",
+      "displayOrder": 1,
+      "raceIds": [
+        "race-1",
+        "race-2",
+        "race-3",
+        "race-4",
+        "race-5",
+        "race-6",
+        "race-7",
+        "race-10",
+        "race-11",
+        "race-12",
+        "race-13",
+        "race-14",
+        "race-15",
+        "race-16"
+      ],
+      "fleetIds": [
+        "cf-combined"
+      ],
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
+    }
+  ]
+}
