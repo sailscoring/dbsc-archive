@@ -137,26 +137,31 @@ the pooled fleets' "Summer Series" models cleanly via #203 fleet-scoping.
 
 | Year | Parity | Structure notes |
 |------|:--:|---|
-| 2025 | **204 / 11** | VPRS pools (C4-5A/B); Combined Cruisers + Combined Group 2 + WOW |
-| 2024 | **204 / 7**  | day-blocks carry the year ("2024 Thursday Series A"); VPRS pools renamed 4A-5A/4B-5B |
-| 2023 | **196 / 11** | no VPRS — C5 under IRC + ECHO; Laser (not ILCA); Water Wags "Weds"/"Summer Series" |
+| 2025 | **198 / 17** | VPRS pools (C4-5A/B); Combined Cruisers + Combined Group 2 + WOW |
+| 2024 | **203 / 8**  | day-blocks carry the year ("2024 Thursday Series A"); VPRS pools renamed 4A-5A/4B-5B |
+| 2023 | **166 / 41** | no VPRS — C5 under IRC + ECHO; Laser (not ILCA); the DNC-listing transition year |
 | 2022 | **182 / 22** | C4(+5A) / C5(A+B) IRC+ECHO pools; Water Wags "Wednesday Overall"; Combined Cruisers under "Tuesday Overall" |
 
-The remaining **51 diffs (of 837 cells)** are documented residual families, **not
-DNC-only-entrant** (that's solved — see below): per-fleet **ECHO/VPRS ±1 ripples**
-through the progressive chains, and a **multi-race-day discard offset** for
-one-design fleets that sail several heats per day (Flying Fifteen, PY Class, ILCA,
-Laser, Squib-Mermaid) at high race counts — plus the one Sportsboats `date#slot`
-delta.
+(Validation is two-directional — it flags both missing and **extra** boats. Two
+families of residual remain: a **multi-race-day discard offset** for one-design
+fleets that sail several heats per day (Flying Fifteen, PY Class, ILCA, Laser,
+Squib-Mermaid) at high race counts; per-fleet **ECHO/VPRS ±1 ripples**; plus
+**roster deltas** where DBSC's per-class config deviated from their own intent —
+see below — which are left unreproduced by design.)
 
-**DNC-only-entrant — solved (engine).** A boat on a class entry list that DNC'd
-every heat is ranked by HalSail (all-DNC) but was dropped by our engine, which
-inferred sub-series entrants from finishes. This dominated the older seasons
-(2023 was 120/87 before the fix). `sailscoring`#203's sub-series scoring now
-**scores all-DNC competitors by default** — like a plain series — with an opt-in
-`excludeDncOnlyCompetitors` flag for HalSail's "exclude boats with only DNC"
-toggle. Because we ingest each fleet's published roster, the per-fleet include
-(cruiser entry lists) / exclude (one-designs) variation reproduces automatically.
+**Who appears in a tandem — DBSC's DNC-listing intent.** Each published table's
+entrant set is HalSail's curated per-(class, tandem) entry list — whether a boat
+that never started is *listed* (all-DNC) or *omitted* — and it is **not derivable
+from the finishes** (our builder discards the DNC-vs-absent distinction). The
+rosters reveal a clear migration: **2022** listed the full entry list everywhere;
+**one-design blocks** began ranking only participants in **2023**; by **2024–25**
+every **block** excludes non-starters while the season **Overall** still lists the
+entry list. We model that *intent* per sub-series (`excludeDncIntent` →
+`SubSeries.excludeDncOnlyCompetitors`), not DBSC's per-class config — so a future
+scorer can't reproduce the manual slips, and the residual roster deltas are
+exactly those slips. The engine backs this: a sub-series **scores all-DNC
+competitors by default** (like a plain series), with `excludeDncOnlyCompetitors`
+to rank only participants (HalSail's "exclude boats with only DNC" toggle).
 
 The model that unlocked this is the `sailscoring`#203 sub-series feature: a
 sub-series may be **fleet-scoped** and carry **per-fleet race exclusions**, so a
@@ -173,10 +178,11 @@ scratch one-design tables**, and sub-series are assigned by **(date, start-time)
 > fleet-scoped sub-series + per-fleet exclusions, and the single-competitor flicks
 > (Q1/Q5) are now reproduced exactly as **per-fleet exclusions** (no engine rule —
 > `sailscoring`#232 stays closed). **All four seasons (2022–2025) are now built**
-> (786 OK / 51 FAIL); the DNC-only-entrant boundary was resolved by the engine's
-> default flip (above). The remaining diffs are ECHO/VPRS ±1 ripples and the
-> multi-race-day discard offset. **Next:** the multi-race-day discard residual,
-> then import into a DBSC workspace.
+> (749 OK / 88 FAIL, two-directional validation); who-appears-in-a-tandem is
+> modelled from DBSC's DNC-listing *intent* (above), leaving their manual
+> per-class slips as deltas. The remaining scoring diffs are ECHO/VPRS ±1 ripples
+> and the multi-race-day discard offset. **Next:** the multi-race-day discard
+> residual, then import into a DBSC workspace.
 
 ## Licensing
 
