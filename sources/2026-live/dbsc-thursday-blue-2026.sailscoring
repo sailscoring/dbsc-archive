@@ -1144,7 +1144,7 @@
       "date": "2026-04-23",
       "starts": [
         {
-          "id": "rs-1-c0",
+          "id": "rs-1-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -1152,7 +1152,7 @@
           "startTime": "18:42:00"
         },
         {
-          "id": "rs-1-c1",
+          "id": "rs-1-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -1302,7 +1302,7 @@
       "date": "2026-05-07",
       "starts": [
         {
-          "id": "rs-2-c0",
+          "id": "rs-2-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -1310,7 +1310,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-2-c1",
+          "id": "rs-2-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -1319,7 +1319,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-2-c2",
+          "id": "rs-2-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -1328,14 +1328,14 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-2-c3",
+          "id": "rs-2-cf-3-echo",
           "fleetIds": [
             "cf-3-echo"
           ],
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-2-45a",
+          "id": "rs-2-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -1343,7 +1343,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-2-45b",
+          "id": "rs-2-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -1895,7 +1895,7 @@
       "date": "2026-05-21",
       "starts": [
         {
-          "id": "rs-3-c0",
+          "id": "rs-3-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -1903,7 +1903,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-3-c1",
+          "id": "rs-3-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -1912,7 +1912,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-3-c2",
+          "id": "rs-3-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -1921,14 +1921,14 @@
           "startTime": "18:59:00"
         },
         {
-          "id": "rs-3-c3",
+          "id": "rs-3-cf-3-echo",
           "fleetIds": [
             "cf-3-echo"
           ],
           "startTime": "19:04:00"
         },
         {
-          "id": "rs-3-45a",
+          "id": "rs-3-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -1936,7 +1936,7 @@
           "startTime": "19:09:00"
         },
         {
-          "id": "rs-3-45b",
+          "id": "rs-3-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -2431,7 +2431,7 @@
       "date": "2026-05-28",
       "starts": [
         {
-          "id": "rs-4-c0",
+          "id": "rs-4-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -2439,7 +2439,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-4-c1",
+          "id": "rs-4-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -2448,7 +2448,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-4-c2",
+          "id": "rs-4-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -2457,14 +2457,14 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-4-c3",
+          "id": "rs-4-cf-3-echo",
           "fleetIds": [
             "cf-3-echo"
           ],
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-4-45a",
+          "id": "rs-4-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -2472,7 +2472,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-4-45b",
+          "id": "rs-4-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"

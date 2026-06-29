@@ -102,13 +102,17 @@ function buildSubSeries(file: SeriesFile, group: Group): SubSeries[] {
   for (const r of file.races) {
     for (const s of r.starts) keyToRace.set(`${r.date}#${s.startTime}`, r.id);
   }
-  // race id → fleet ids that have a start in it (a fleet is scored on a race
-  // only where it has a start, so this is the set that an exclusion can affect).
-  const startFleetsByRace = new Map<string, Set<string>>();
+  // race id → fleet ids that would be scored there: any fleet with a start, plus
+  // any fleet that has a competitor finishing the race (a boat can finish a heat
+  // via a start it shares — e.g. a Cruisers 3 IRC boat in the Cruisers 3 ECHO
+  // start — so a finish, not just a start, makes the heat count for the fleet).
+  const fleetsByComp = new Map<string, string[]>(file.competitors.map((c) => [c.id, c.fleetIds]));
+  const scoredFleetsByRace = new Map<string, Set<string>>();
   for (const r of file.races) {
     const set = new Set<string>();
     for (const s of r.starts) for (const fid of s.fleetIds) set.add(fid);
-    startFleetsByRace.set(r.id, set);
+    for (const fi of r.finishes) for (const fid of fleetsByComp.get(fi.competitorId ?? '') ?? []) set.add(fid);
+    scoredFleetsByRace.set(r.id, set);
   }
   // The union of the races a set of classes sailed in the named tandem.
   const unionRaceIds = (series: string): string[] => {
@@ -136,7 +140,7 @@ function buildSubSeries(file: SeriesFile, group: Group): SubSeries[] {
       const own = fleetTandemRaceIds(fleet.name, series);
       for (const raceId of raceIds) {
         if (own.has(raceId)) continue;
-        if (startFleetsByRace.get(raceId)?.has(fleet.id)) out.push({ raceId, fleetId: fleet.id });
+        if (scoredFleetsByRace.get(raceId)?.has(fleet.id)) out.push({ raceId, fleetId: fleet.id });
       }
     }
     return out;
@@ -254,7 +258,7 @@ const THURSDAY_CRUISERS: Group = {
       { classNum: 0, echo: frag('Cruisers 0 Echo (Thu)', 'Thursday Overall'), irc: frag('Cruisers 0 IRC', 'Thursday Overall') },
       { classNum: 1, echo: frag('Cruisers 1 Echo (Thu)', 'Thursday Overall'), irc: frag('Cruisers 1 IRC', 'Thursday Overall') },
       { classNum: 2, echo: frag('Cruisers 2 Echo (Thu)', 'Thursday Overall'), irc: frag('Cruisers 2 IRC', 'Thursday Overall') },
-      { classNum: 3, echo: frag('Cruisers 3 Echo (Thu)', 'Thursday Overall'), irc: frag('Cruisers 3 IRC', 'Thursday Overall') },
+      { classNum: 3, echo: frag('Cruisers 3 Echo (Thu)', 'Thursday Overall'), irc: frag('Cruisers 3 IRC', 'Thursday Overall'), echoTandems: tandemFrags('Cruisers 3 Echo (Thu)', 'Thursday') },
     ],
     [
       { fleetId: 'cf-j109', name: 'J/109', parentClass: 1, fleet: frag('Cruisers 1 - J109', 'Thursday Overall') },

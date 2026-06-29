@@ -1192,7 +1192,7 @@
       "date": "2025-04-24",
       "starts": [
         {
-          "id": "rs-1-c0",
+          "id": "rs-1-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -1200,7 +1200,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-1-c1",
+          "id": "rs-1-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -1209,7 +1209,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-1-c2",
+          "id": "rs-1-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -1218,7 +1218,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-1-c3",
+          "id": "rs-1-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -1226,7 +1226,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-1-45a",
+          "id": "rs-1-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -1234,7 +1234,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-1-45b",
+          "id": "rs-1-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -1725,7 +1725,7 @@
       "date": "2025-05-08",
       "starts": [
         {
-          "id": "rs-2-c0",
+          "id": "rs-2-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -1733,7 +1733,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-2-c1",
+          "id": "rs-2-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -1742,7 +1742,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-2-c2",
+          "id": "rs-2-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -1751,7 +1751,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-2-c3",
+          "id": "rs-2-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -1759,7 +1759,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-2-45a",
+          "id": "rs-2-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -1767,7 +1767,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-2-45b",
+          "id": "rs-2-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -2309,7 +2309,7 @@
       "date": "2025-05-22",
       "starts": [
         {
-          "id": "rs-3-c0",
+          "id": "rs-3-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -2317,7 +2317,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-3-c1",
+          "id": "rs-3-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -2326,7 +2326,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-3-c2",
+          "id": "rs-3-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -2335,7 +2335,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-3-c3",
+          "id": "rs-3-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -2343,7 +2343,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-3-45a",
+          "id": "rs-3-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -2351,7 +2351,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-3-45b",
+          "id": "rs-3-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -2946,7 +2946,7 @@
       "date": "2025-05-29",
       "starts": [
         {
-          "id": "rs-4-c0",
+          "id": "rs-4-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -2954,7 +2954,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-4-c1",
+          "id": "rs-4-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -2963,7 +2963,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-4-c2",
+          "id": "rs-4-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -2972,7 +2972,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-4-c3",
+          "id": "rs-4-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -2980,7 +2980,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-4-45a",
+          "id": "rs-4-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -2988,7 +2988,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-4-45b",
+          "id": "rs-4-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -3479,7 +3479,7 @@
       "date": "2025-06-05",
       "starts": [
         {
-          "id": "rs-5-c0",
+          "id": "rs-5-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -3487,7 +3487,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-5-c2",
+          "id": "rs-5-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -3496,7 +3496,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-5-45a",
+          "id": "rs-5-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -3504,12 +3504,19 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-5-45b",
+          "id": "rs-5-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
           ],
           "startTime": "19:05:00"
+        },
+        {
+          "id": "rs-5-cf-3-echo",
+          "fleetIds": [
+            "cf-3-echo"
+          ],
+          "startTime": "19:00:00"
         }
       ],
       "finishes": [
@@ -3726,6 +3733,60 @@
           "startPresent": true,
           "penaltyCode": null,
           "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-46",
+          "competitorId": "comp-46",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-246",
+          "competitorId": "comp-246",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-1038",
+          "competitorId": "comp-1038",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-2102",
+          "competitorId": "comp-2102",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-5795",
+          "competitorId": "comp-5795",
+          "sortOrder": null,
+          "resultCode": "RET",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
+        },
+        {
+          "id": "fin-5-comp-307",
+          "competitorId": "comp-307",
+          "sortOrder": null,
+          "resultCode": "DNF",
+          "startPresent": true,
+          "penaltyCode": null,
+          "penaltyOverride": null
         }
       ],
       "ratingOverrides": [
@@ -3749,7 +3810,7 @@
       "date": "2025-06-12",
       "starts": [
         {
-          "id": "rs-6-c1",
+          "id": "rs-6-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -3758,7 +3819,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-6-c2",
+          "id": "rs-6-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -3767,7 +3828,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-6-c3",
+          "id": "rs-6-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -3775,7 +3836,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-6-45a",
+          "id": "rs-6-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -3783,7 +3844,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-6-45b",
+          "id": "rs-6-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -4100,7 +4161,7 @@
       "date": "2025-06-19",
       "starts": [
         {
-          "id": "rs-7-c0",
+          "id": "rs-7-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -4108,7 +4169,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-7-c1",
+          "id": "rs-7-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -4117,7 +4178,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-7-c2",
+          "id": "rs-7-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -4126,7 +4187,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-7-c3",
+          "id": "rs-7-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -4134,7 +4195,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-7-45a",
+          "id": "rs-7-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -4142,7 +4203,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-7-45b",
+          "id": "rs-7-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -4675,7 +4736,7 @@
       "date": "2025-06-26",
       "starts": [
         {
-          "id": "rs-8-c0",
+          "id": "rs-8-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -4683,7 +4744,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-8-c1",
+          "id": "rs-8-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -4692,7 +4753,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-8-c2",
+          "id": "rs-8-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -4701,7 +4762,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-8-c3",
+          "id": "rs-8-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -4709,7 +4770,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-8-45a",
+          "id": "rs-8-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -4717,7 +4778,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-8-45b",
+          "id": "rs-8-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -5137,7 +5198,7 @@
       "date": "2025-07-03",
       "starts": [
         {
-          "id": "rs-9-c0",
+          "id": "rs-9-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -5145,7 +5206,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-9-c1",
+          "id": "rs-9-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -5154,7 +5215,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-9-c2",
+          "id": "rs-9-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -5163,7 +5224,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-9-c3",
+          "id": "rs-9-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -5171,7 +5232,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-9-45a",
+          "id": "rs-9-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -5179,7 +5240,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-9-45b",
+          "id": "rs-9-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -5723,7 +5784,7 @@
       "date": "2025-07-17",
       "starts": [
         {
-          "id": "rs-10-c0",
+          "id": "rs-10-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -5731,7 +5792,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-10-c1",
+          "id": "rs-10-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -5740,7 +5801,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-10-c2",
+          "id": "rs-10-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -5749,7 +5810,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-10-c3",
+          "id": "rs-10-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -5757,7 +5818,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-10-45a",
+          "id": "rs-10-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -5765,7 +5826,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-10-45b",
+          "id": "rs-10-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -6294,7 +6355,7 @@
       "date": "2025-07-24",
       "starts": [
         {
-          "id": "rs-11-c0",
+          "id": "rs-11-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -6302,7 +6363,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-11-c1",
+          "id": "rs-11-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -6311,7 +6372,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-11-c2",
+          "id": "rs-11-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -6320,7 +6381,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-11-c3",
+          "id": "rs-11-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -6328,7 +6389,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-11-45a",
+          "id": "rs-11-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -6336,7 +6397,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-11-45b",
+          "id": "rs-11-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -6873,7 +6934,7 @@
       "date": "2025-07-31",
       "starts": [
         {
-          "id": "rs-12-c0",
+          "id": "rs-12-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -6881,7 +6942,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-12-c1",
+          "id": "rs-12-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -6890,7 +6951,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-12-c2",
+          "id": "rs-12-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -6899,7 +6960,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-12-c3",
+          "id": "rs-12-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -6907,7 +6968,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-12-45a",
+          "id": "rs-12-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -6915,7 +6976,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-12-45b",
+          "id": "rs-12-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -7364,7 +7425,7 @@
       "date": "2025-08-07",
       "starts": [
         {
-          "id": "rs-13-c1",
+          "id": "rs-13-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -7373,7 +7434,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-13-c2",
+          "id": "rs-13-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -7382,7 +7443,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-13-c3",
+          "id": "rs-13-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -7390,7 +7451,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-13-45a",
+          "id": "rs-13-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -7398,7 +7459,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-13-45b",
+          "id": "rs-13-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -7811,7 +7872,7 @@
       "date": "2025-08-14",
       "starts": [
         {
-          "id": "rs-14-c0",
+          "id": "rs-14-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -7819,7 +7880,7 @@
           "startTime": "19:15:00"
         },
         {
-          "id": "rs-14-c1",
+          "id": "rs-14-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -7828,7 +7889,7 @@
           "startTime": "19:20:00"
         },
         {
-          "id": "rs-14-c2",
+          "id": "rs-14-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -7837,7 +7898,7 @@
           "startTime": "19:25:00"
         },
         {
-          "id": "rs-14-c3",
+          "id": "rs-14-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -7845,7 +7906,7 @@
           "startTime": "19:30:00"
         },
         {
-          "id": "rs-14-45a",
+          "id": "rs-14-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -7853,7 +7914,7 @@
           "startTime": "19:35:00"
         },
         {
-          "id": "rs-14-45b",
+          "id": "rs-14-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -8314,7 +8375,7 @@
       "date": "2025-08-21",
       "starts": [
         {
-          "id": "rs-15-c0",
+          "id": "rs-15-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -8322,7 +8383,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-15-c1",
+          "id": "rs-15-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -8331,7 +8392,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-15-c2",
+          "id": "rs-15-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -8340,7 +8401,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-15-c3",
+          "id": "rs-15-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -8348,7 +8409,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-15-45a",
+          "id": "rs-15-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -8356,7 +8417,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-15-45b",
+          "id": "rs-15-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -8896,7 +8957,7 @@
       "date": "2025-08-28",
       "starts": [
         {
-          "id": "rs-16-c0",
+          "id": "rs-16-cf-0-echo",
           "fleetIds": [
             "cf-0-echo",
             "cf-0-irc"
@@ -8904,7 +8965,7 @@
           "startTime": "18:40:00"
         },
         {
-          "id": "rs-16-c1",
+          "id": "rs-16-cf-1-echo",
           "fleetIds": [
             "cf-1-echo",
             "cf-1-irc",
@@ -8913,7 +8974,7 @@
           "startTime": "18:45:00"
         },
         {
-          "id": "rs-16-c2",
+          "id": "rs-16-cf-2-echo",
           "fleetIds": [
             "cf-2-echo",
             "cf-2-irc",
@@ -8922,7 +8983,7 @@
           "startTime": "18:55:00"
         },
         {
-          "id": "rs-16-c3",
+          "id": "rs-16-cf-3-echo",
           "fleetIds": [
             "cf-3-echo",
             "cf-3-irc"
@@ -8930,7 +8991,7 @@
           "startTime": "19:00:00"
         },
         {
-          "id": "rs-16-45a",
+          "id": "rs-16-cf-45a-vprs",
           "fleetIds": [
             "cf-45a-vprs",
             "cf-5a-echo"
@@ -8938,7 +8999,7 @@
           "startTime": "19:05:00"
         },
         {
-          "id": "rs-16-45b",
+          "id": "rs-16-cf-45b-vprs",
           "fleetIds": [
             "cf-45b-vprs",
             "cf-5b-echo"
@@ -9491,6 +9552,10 @@
           "fleetId": "cf-3-irc"
         },
         {
+          "raceId": "race-5",
+          "fleetId": "cf-3-irc"
+        },
+        {
           "raceId": "race-6",
           "fleetId": "cf-3-irc"
         },
@@ -9509,6 +9574,10 @@
         {
           "raceId": "race-16",
           "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-5",
+          "fleetId": "cf-3-echo"
         },
         {
           "raceId": "race-6",
@@ -9554,6 +9623,10 @@
       "raceFleetExclusions": [
         {
           "raceId": "race-1",
+          "fleetId": "cf-3-irc"
+        },
+        {
+          "raceId": "race-5",
           "fleetId": "cf-3-irc"
         },
         {

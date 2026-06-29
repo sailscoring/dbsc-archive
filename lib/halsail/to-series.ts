@@ -121,6 +121,10 @@ export interface ClassInput {
   classNum: 0 | 1 | 2 | 3;
   echo: HalsailFleet; // Cruisers N ECHO (Thu) — authoritative roster + finishes + ECHO seed
   irc?: HalsailFleet; // Cruisers N IRC (classes 0–2) — IRC TCC
+  // ECHO Series A/B tandem fragments, to source a heat the ECHO class sailed in
+  // a tandem but not its Overall (CLARIFICATIONS Q3, e.g. an abandoned heat kept
+  // in Series A). Roster/seed still come from `echo`; these supply only races.
+  echoTandems?: HalsailFleet[];
 }
 
 export interface OneDesignInput {
@@ -220,6 +224,69 @@ function mergeRacesByDate(fragments: HalsailFleet[]): {
     return da.localeCompare(db) || Number(sa) - Number(sb);
   });
   return { keys, dateOf: (key) => key.split('#')[0], byFragment };
+}
+
+/** A merged race under assembly: its date, per-fleet starts, and the crossings
+ *  collected from every fleet that sailed it, before finishes are assembled. */
+interface PendingRace { date: string; starts: FileRaceStart[]; crossings: Crossing[] }
+
+const startSecond = (t: string) => { const [h, m, s] = t.split(':').map(Number); return (h * 3600) + (m * 60) + (s || 0); };
+
+/** Inject a fleet's tandem-only races — a heat it sailed in a Series A/B tandem
+ *  but not in its Overall (an Overall-vs-tandem inconsistency, DBSC
+ *  CLARIFICATIONS Q3/Q4). Each is attached to the merged race on its date with
+ *  the nearest start time (robust where a date holds two races), or its own race
+ *  if the date has none. A heat the fleet already has (same date#startTime) is
+ *  skipped, and one it can't be added to without a second start for the fleet on
+ *  the same merged race (an Overall heat mis-slotted onto the tandem heat's slot)
+ *  is left as a documented per-fleet A/B delta rather than double-counted. The
+ *  sub-series builder's per-fleet exclusions then keep the heat out of the
+ *  tandems that don't include it. */
+function injectTandemOnlyRaces(
+  pending: PendingRace[],
+  fleetId: string,
+  tandems: HalsailFleet[],
+  crossingsOf: (race: HalsailRace) => Crossing[],
+): void {
+  for (const tf of tandems) {
+    for (const race of tf.races) {
+      if (!race.date || !race.startTime) continue;
+      const present = pending.some((p) => p.date === race.date && p.starts.some((s) => s.fleetIds.includes(fleetId) && s.startTime === race.startTime));
+      if (present) continue;
+      const crossings = crossingsOf(race);
+      if (!crossings.length) continue;
+      const onDate = pending.filter((p) => p.date === race.date);
+      const target = onDate.length
+        ? onDate.reduce((best, p) => {
+            const d = (q: PendingRace) => Math.min(...q.starts.map((s) => Math.abs(startSecond(s.startTime) - startSecond(race.startTime!))));
+            return d(p) < d(best) ? p : best;
+          })
+        : (() => { const p: PendingRace = { date: race.date, starts: [], crossings: [] }; pending.push(p); return p; })();
+      if (target.starts.some((s) => s.fleetIds.includes(fleetId))) continue;
+      target.starts.push({ id: `rs-${fleetId}`, fleetIds: [fleetId], startTime: race.startTime });
+      target.crossings.push(...crossings);
+    }
+  }
+}
+
+/** Order pending races by date then earliest start time, number them
+ *  sequentially, and assemble each one's finishes (sort order is per-race across
+ *  all fleets, so this happens once, after any tandem-only injection). */
+function assemblePendingRaces(pending: PendingRace[], overridesByDate: Map<string, FileRatingOverride[]>): FileRace[] {
+  pending.sort((a, b) => a.date.localeCompare(b.date)
+    || Math.min(...a.starts.map((s) => startSecond(s.startTime))) - Math.min(...b.starts.map((s) => startSecond(s.startTime))));
+  return pending.map((p, idx) => {
+    const rn = idx + 1;
+    const ratingOverrides = overridesByDate.get(p.date);
+    return {
+      id: `race-${rn}`,
+      raceNumber: rn,
+      date: p.date,
+      starts: p.starts.map((s) => ({ ...s, id: `rs-${rn}-${s.fleetIds[0]}` })),
+      finishes: assembleFinishes(rn, p.crossings),
+      ...(ratingOverrides?.length ? { ratingOverrides } : {}),
+    };
+  });
 }
 
 /** Per-class cruiser day series (Thursday Blue, Saturday): Cruisers 0/1/2 under
@@ -383,9 +450,21 @@ export function buildCruiserDaySeries(
     ...vprsClasses.flatMap((vc) => [vc.vprs, ...(vc.echoFleets ?? []).map((e) => e.echo)]),
   ]);
 
-  const races: FileRace[] = [];
-  merger.keys.forEach((key, idx) => {
-    const rn = idx + 1;
+  // A class ECHO fleet's crossings for one race (DNC omitted — the engine scores
+  // a no-finish entrant as DNC; coded non-finishers are kept for the "came to the
+  // start" tally). Shared by the main merge and tandem-only injection.
+  const echoClassCrossings = (race: HalsailRace): Crossing[] => {
+    const out: Crossing[] = [];
+    for (const f of race.finishers) {
+      const cid = sailToComp.get(f.sail);
+      if (!cid) continue; // a sail in detail but not in the summary roster
+      if (!f.finish && (f.code === 'DNC' || !f.code)) continue;
+      out.push({ compId: cid, sail: f.sail, finish: f.finish, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
+    }
+    return out;
+  };
+
+  const pending: PendingRace[] = merger.keys.map((key) => {
     const date = merger.dateOf(key);
     const starts: FileRaceStart[] = [];
     const crossings: Crossing[] = [];
@@ -396,22 +475,8 @@ export function buildCruiserDaySeries(
       const startFleets = [echoFleetId(cl.classNum)];
       if (cl.irc) startFleets.push(ircFleetId(cl.classNum));
       startFleets.push(...(extraStartFleets.get(cl.classNum) ?? []));
-      starts.push({
-        id: `rs-${rn}-c${cl.classNum}`,
-        fleetIds: startFleets,
-        startTime: race.startTime ?? '18:45:00',
-      });
-      for (const f of race.finishers) {
-        const cid = sailToComp.get(f.sail);
-        if (!cid) continue; // a sail in detail but not in the summary roster
-        // Record DNC implicitly: a boat that did not come to the start is
-        // simply omitted, and the engine scores any competitor with no finish
-        // record in a counted race as DNC. Boats that came but didn't finish
-        // (DNF/RET/OCS/…) are kept as explicit coded finishes so they count
-        // toward the "came to the starting area" tally.
-        if (!f.finish && (f.code === 'DNC' || !f.code)) continue;
-        crossings.push({ compId: cid, sail: f.sail, finish: f.finish, code: f.code, redressType: f.redressType, penaltyCode: f.penaltyCode, penaltyPercent: f.penaltyPercent });
-      }
+      starts.push({ id: `rs-c${cl.classNum}`, fleetIds: startFleets, startTime: race.startTime ?? '18:45:00' });
+      crossings.push(...echoClassCrossings(race));
     }
 
     for (const vc of vprsClasses) {
@@ -425,7 +490,7 @@ export function buildCruiserDaySeries(
       if (raceObjs.length === 0) continue;
       const r0 = raceObjs.find((r) => r.startTime) ?? raceObjs[0];
       starts.push({
-        id: `rs-${rn}-${vc.startKey}`,
+        id: `rs-${vc.startKey}`,
         fleetIds: [vc.vprsFleetId, ...(vc.echoFleets ?? []).map((e) => e.fleetId)],
         startTime: r0.startTime ?? '18:45:00',
       });
@@ -441,16 +506,14 @@ export function buildCruiserDaySeries(
       }
     }
 
-    const ratingOverrides = overridesByDate.get(date);
-    races.push({
-      id: `race-${rn}`,
-      raceNumber: rn,
-      date,
-      starts,
-      finishes: assembleFinishes(rn, crossings),
-      ...(ratingOverrides?.length ? { ratingOverrides } : {}),
-    });
+    return { date, starts, crossings };
   });
+
+  // Tandem-only heats for the ECHO classes (CLARIFICATIONS Q3). The start carries
+  // the ECHO fleet only (a tandem-only heat is an ECHO-table artifact); the
+  // sub-series builder's per-fleet exclusions place it in the right tandem.
+  for (const cl of classes) injectTandemOnlyRaces(pending, echoFleetId(cl.classNum), cl.echoTandems ?? [], echoClassCrossings);
+  const races = assemblePendingRaces(pending, overridesByDate);
 
   return assembleSeries(fleets, competitors, races, {
     seriesId: opts.seriesId ?? 'dbsc-thursday-blue-2026',
@@ -631,7 +694,6 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
   // injected before finishes are assembled (finish sort order is per-race across
   // all fleets, so a late injection has to re-assemble, not append).
   const merger = mergeRacesByDate(specs.map((s) => s.fragment));
-  interface Pending { date: string; starts: FileRaceStart[]; crossings: Crossing[] }
   const crossingsFor = (fleetId: string, race: HalsailRace): Crossing[] => {
     const valid = validIdsByFleet.get(fleetId)!;
     const out: Crossing[] = [];
@@ -643,7 +705,7 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
     }
     return out;
   };
-  const pending: Pending[] = merger.keys.map((key) => {
+  const pending: PendingRace[] = merger.keys.map((key) => {
     const date = merger.dateOf(key);
     const starts: FileRaceStart[] = [];
     const crossings: Crossing[] = [];
@@ -655,53 +717,8 @@ export function buildFleetSeries(specs: DayFleetSpec[], opts: BuildOptions = {})
     }
     return { date, starts, crossings };
   });
-
-  // Inject tandem-only races: a race a fleet sailed in a Series A/B tandem but
-  // not in its Overall (so absent above). Attach to the merged race on its date
-  // with the nearest start time; if the date has no merged race at all, add one.
-  const toSec = (t: string) => { const [h, m, s] = t.split(':').map(Number); return (h * 3600) + (m * 60) + (s || 0); };
-  for (const spec of specs) {
-    for (const tf of spec.tandemFragments ?? []) {
-      for (const race of tf.races) {
-        if (!race.date || !race.startTime) continue;
-        const present = pending.some((p) => p.date === race.date && p.starts.some((s) => s.fleetIds.includes(spec.fleetId) && s.startTime === race.startTime));
-        if (present) continue; // already sourced from the Overall (not tandem-only)
-        const crossings = crossingsFor(spec.fleetId, race);
-        if (!crossings.length) continue;
-        const onDate = pending.filter((p) => p.date === race.date);
-        const target = onDate.length
-          ? onDate.reduce((best, p) => {
-              const d = (q: Pending) => Math.min(...q.starts.map((s) => Math.abs(toSec(s.startTime) - toSec(race.startTime!))));
-              return d(p) < d(best) ? p : best;
-            })
-          : (() => { const p: Pending = { date: race.date, starts: [], crossings: [] }; pending.push(p); return p; })();
-        // One start per fleet per merged race. If the fleet already has a start
-        // here, this tandem race shares a date#slot with the fleet's other race
-        // that day (e.g. an afternoon Overall heat mis-slotted onto the morning):
-        // it can't be represented without splitting the slot, so leave it (a
-        // documented per-fleet A/B delta) rather than double-count.
-        if (target.starts.some((s) => s.fleetIds.includes(spec.fleetId))) continue;
-        target.starts.push({ id: `rs-${spec.fleetId}`, fleetIds: [spec.fleetId], startTime: race.startTime });
-        target.crossings.push(...crossings);
-      }
-    }
-  }
-
-  // Order by date then earliest start time, number sequentially, assemble.
-  pending.sort((a, b) => a.date.localeCompare(b.date)
-    || Math.min(...a.starts.map((s) => toSec(s.startTime))) - Math.min(...b.starts.map((s) => toSec(s.startTime))));
-  const races: FileRace[] = pending.map((p, idx) => {
-    const rn = idx + 1;
-    const ratingOverrides = overridesByDate.get(p.date);
-    return {
-      id: `race-${rn}`,
-      raceNumber: rn,
-      date: p.date,
-      starts: p.starts.map((s) => ({ ...s, id: `rs-${rn}-${s.fleetIds[0]}` })),
-      finishes: assembleFinishes(rn, p.crossings),
-      ...(ratingOverrides?.length ? { ratingOverrides } : {}),
-    };
-  });
+  for (const spec of specs) injectTandemOnlyRaces(pending, spec.fleetId, spec.tandemFragments ?? [], (r) => crossingsFor(spec.fleetId, r));
+  const races = assemblePendingRaces(pending, overridesByDate);
 
   return assembleSeries(fleets, competitors, races, {
     seriesId: opts.seriesId ?? 'dbsc-day-fleets-2026',
