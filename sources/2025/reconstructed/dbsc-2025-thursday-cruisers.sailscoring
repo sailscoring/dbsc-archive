@@ -9520,7 +9520,7 @@
   ],
   "subSeries": [
     {
-      "id": "ss-overall",
+      "id": "ss-0",
       "seriesId": "dbsc-2025-thursday-cruisers",
       "name": "Thursday Overall",
       "displayOrder": 0,
@@ -9604,10 +9604,11 @@
           "fleetId": "cf-5a-echo"
         }
       ],
-      "startingHandicapSource": "base"
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-0",
+      "id": "ss-1",
       "seriesId": "dbsc-2025-thursday-cruisers",
       "name": "Thursday Series A",
       "displayOrder": 1,
@@ -9650,7 +9651,7 @@
       "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-1",
+      "id": "ss-2",
       "seriesId": "dbsc-2025-thursday-cruisers",
       "name": "Thursday Series B",
       "displayOrder": 2,
@@ -9700,7 +9701,7 @@
         }
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-0"
+      "continueFromSubSeriesId": "ss-1"
     }
   ]
 }

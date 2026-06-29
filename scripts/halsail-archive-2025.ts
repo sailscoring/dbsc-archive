@@ -95,8 +95,14 @@ const DBSC_DISCARDS: DiscardThreshold[] = [
  *  Series B `continue`s the progressive (ECHO) chain from Series A — HalSail
  *  scores a tandem over the shared chain, so the late block resumes mid-chain
  *  rather than re-seeding from base. */
+/** The catalog series names a class publishes (its tandems). */
+function classSeriesNames(className: string): string[] {
+  return catalog.classes.find((c) => c.name === className)?.series.map((s) => s.name) ?? [];
+}
+
 function buildSubSeries(file: SeriesFile, group: Group): SubSeries[] {
-  const { day, classNames, fleetClassOverride, echoSuffix } = group;
+  const { day, fleetClassOverride, echoSuffix } = group;
+  const fleetClassName = (fleet: { id: string; name: string }) => fleetClassOverride[fleet.name] ?? classNameForFleet(fleet.name, echoSuffix);
   // date#startTime → race id, for every per-class start in the merged file.
   const keyToRace = new Map<string, string>();
   for (const r of file.races) {
@@ -114,58 +120,60 @@ function buildSubSeries(file: SeriesFile, group: Group): SubSeries[] {
     for (const fi of r.finishes) for (const fid of fleetsByComp.get(fi.competitorId ?? '') ?? []) set.add(fid);
     scoredFleetsByRace.set(r.id, set);
   }
-  // The union of the races a set of classes sailed in the named tandem.
-  const unionRaceIds = (series: string): string[] => {
-    const keys = new Set(classNames.flatMap((c) => fragStartKeys(c, `${day} ${series}`)));
+  // The races a fleet included in a published series, by its own class fragment.
+  const fleetTandemRaceIds = (fleet: { id: string; name: string }, seriesName: string): Set<string> => {
     const ids = new Set<string>();
-    for (const k of keys) { const id = keyToRace.get(k); if (id) ids.add(id); }
-    return file.races.filter((r) => ids.has(r.id)).map((r) => r.id);
-  };
-  // The races a single fleet included in the named tandem, from its own class
-  // fragment (the class name resolved exactly as validation resolves it).
-  const fleetTandemRaceIds = (fleetName: string, series: string): Set<string> => {
-    const className = fleetClassOverride[fleetName] ?? classNameForFleet(fleetName, echoSuffix);
-    const ids = new Set<string>();
-    for (const k of fragStartKeys(className, `${day} ${series}`)) {
+    for (const k of fragStartKeys(fleetClassName(fleet), seriesName)) {
       const id = keyToRace.get(k);
       if (id) ids.add(id);
     }
     return ids;
   };
-  // Per-fleet exclusions for a tandem: union races a fleet sailed (has a start
-  // in) but did not assign to its own tandem.
-  const exclusionsFor = (series: string, raceIds: string[]): SubSeriesRaceExclusion[] => {
-    const out: SubSeriesRaceExclusion[] = [];
-    for (const fleet of file.fleets) {
-      const own = fleetTandemRaceIds(fleet.name, series);
-      for (const raceId of raceIds) {
-        if (own.has(raceId)) continue;
-        if (scoredFleetsByRace.get(raceId)?.has(fleet.id)) out.push({ raceId, fleetId: fleet.id });
-      }
-    }
-    return out;
-  };
-  // Overall + N race-subset blocks (Series A/B[/C]). Each block continues the
-  // previous block's progressive (ECHO) chain — HalSail scores a tandem over the
-  // shared chain, so a late block resumes mid-chain rather than re-seeding.
+
+  // A sub-series is one published series name (e.g. "Thursday Series A", "2025
+  // Summer Series"), scoped to the fleets that publish it. Its race set is the
+  // union of those fleets' tandem heats; per-fleet exclusions then strike, from
+  // each scoped fleet, a union heat it was scored in but did not include in its
+  // own tandem (per-class membership — CLARIFICATIONS Q1/Q2/Q4/Q5).
   const overallName = group.overallName ?? 'Overall';
   const blockNames = group.blockNames ?? ['Series A', 'Series B'];
-  const overallIds = file.races.map((r) => r.id);
-  const list: SubSeries[] = [
-    { id: 'ss-overall', seriesId: file.seriesId, name: `${day} ${overallName}`, displayOrder: 0, raceIds: overallIds, raceFleetExclusions: exclusionsFor(overallName, overallIds), startingHandicapSource: 'base' },
-  ];
-  let prevId: string | null = null;
-  blockNames.forEach((blockName, i) => {
-    const ids = unionRaceIds(blockName);
-    if (!ids.length) return;
+  const entries: (string | { name: string; fleetIds: string[] })[] =
+    group.subSeriesNames ?? [`${day} ${overallName}`, ...blockNames.map((b) => `${day} ${b}`)];
+
+  const nameToId = new Map<string, string>();
+  const list: SubSeries[] = [];
+  entries.forEach((entry, i) => {
+    const name = typeof entry === 'string' ? entry : entry.name;
+    const pinned = typeof entry === 'string' ? null : new Set(entry.fleetIds);
+    const scope = file.fleets.filter((f) =>
+      pinned ? pinned.has(f.id) : classSeriesNames(fleetClassName(f)).includes(name));
+    if (!scope.length) return; // no fleet in this group publishes this series
+    const classNames = [...new Set(scope.map(fleetClassName))];
+    const keys = new Set(classNames.flatMap((cn) => fragStartKeys(cn, name)));
+    const raceIds = file.races.filter((r) => [...keys].some((k) => keyToRace.get(k) === r.id)).map((r) => r.id);
+    const exclusions: SubSeriesRaceExclusion[] = [];
+    for (const fleet of scope) {
+      const own = fleetTandemRaceIds(fleet, name);
+      for (const raceId of raceIds) {
+        if (own.has(raceId)) continue;
+        if (scoredFleetsByRace.get(raceId)?.has(fleet.id)) exclusions.push({ raceId, fleetId: fleet.id });
+      }
+    }
+    // Chain a "… Series B/C/…" block onto the previous letter's sub-series, so a
+    // progressive (ECHO) tandem resumes mid-chain rather than re-seeding.
+    const m = name.match(/^(.*Series) ([B-Z])$/);
+    const prevName = m ? `${m[1]} ${String.fromCharCode(m[2].charCodeAt(0) - 1)}` : null;
+    const continueFrom = prevName ? nameToId.get(prevName) ?? null : null;
     const id = `ss-${i}`;
+    nameToId.set(name, id);
     list.push({
-      id, seriesId: file.seriesId, name: `${day} ${blockName}`, displayOrder: i + 1,
-      raceIds: ids, raceFleetExclusions: exclusionsFor(blockName, ids),
-      startingHandicapSource: prevId ? 'continue' : 'base',
-      continueFromSubSeriesId: prevId,
+      id, seriesId: file.seriesId, name, displayOrder: i,
+      raceIds,
+      ...(exclusions.length ? { raceFleetExclusions: exclusions } : {}),
+      ...(scope.length < file.fleets.length ? { fleetIds: scope.map((f) => f.id) } : {}),
+      startingHandicapSource: continueFrom ? 'continue' : 'base',
+      continueFromSubSeriesId: continueFrom,
     });
-    prevId = id;
   });
   return list;
 }
@@ -252,6 +260,12 @@ interface Group {
   fleetClassOverride: Record<string, string>;  // our-fleet-name → catalog class
   overallName?: string;   // the "Overall" tandem's name (default); Wags use "Summer Series"
   blockNames?: string[];  // race-subset tandems (default Series A/B); Tuesday/Wags add Series C
+  // Explicit published series names to build as sub-series. Each auto-scopes to
+  // the fleets that publish it, unless an entry pins `fleetIds` — needed where a
+  // name is ambiguous: most classes also publish a whole-season "2025 Summer
+  // Series" that spans more than this day, so the Tuesday women's combine pins
+  // its scope to just that fleet. Overrides day/overallName/blockNames.
+  subSeriesNames?: (string | { name: string; fleetIds: string[] })[];
   build: (opts: BuildOptions) => SeriesFile;
 }
 
@@ -421,12 +435,51 @@ const WATER_WAGS: Group = {
   ),
 };
 
+// Tuesday "One-designs, Sportsboats & PY" sheet. One vessel / one sheet, so all
+// these fleets share the Tuesday races. The one-designs publish Tuesday Overall +
+// Series A/B/C; Women on the Water re-scores the same finishes under a PY-style
+// time-on-time handicap and publishes under "2025 Summer Series" — hence the
+// explicit subSeriesNames (each auto-scopes to the fleets that publish it).
+const TUESDAY_OD: Group = {
+  out: 'dbsc-2025-tuesday-od', name: 'DBSC 2025 — Tuesday One-designs, Sportsboats & PY',
+  day: 'Tuesday', echoSuffix: 'Tue',
+  subSeriesNames: ['Tuesday Overall', 'Tuesday Series A', 'Tuesday Series B', 'Tuesday Series C', { name: '2025 Summer Series', fleetIds: ['fl-wow'] }],
+  classNames: [],
+  fleetClassOverride: {
+    'Mixed Sportsboats': 'Sportsboats',
+    'Beneteau 211': 'Beneteau 211 Scratch', 'Beneteau 211 ECHO': 'Beneteau 211 Echo (Tue)',
+    'Women on the Water': 'Women on the Water (Tue)',
+  },
+  build: (opts) => buildFleetSeries(
+    [
+      { fleetId: 'fl-fireball', name: 'Fireball', system: 'scratch', fragment: frag('Fireball', 'Tuesday Overall'), tandemFragments: tandemFrags('Fireball', 'Tuesday', ['Series A', 'Series B', 'Series C']) },
+      { fleetId: 'fl-idra14', name: 'IDRA 14', system: 'scratch', fragment: frag('IDRA 14', 'Tuesday Overall'), tandemFragments: tandemFrags('IDRA 14', 'Tuesday', ['Series A', 'Series B', 'Series C']) },
+      { fleetId: 'fl-ilca7', name: 'ILCA 7', system: 'scratch', fragment: frag('ILCA 7', 'Tuesday Overall'), tandemFragments: tandemFrags('ILCA 7', 'Tuesday', ['Series A', 'Series B', 'Series C']) },
+      { fleetId: 'fl-ilca6', name: 'ILCA 6', system: 'scratch', fragment: frag('ILCA 6', 'Tuesday Overall'), tandemFragments: tandemFrags('ILCA 6', 'Tuesday', ['Series A', 'Series B', 'Series C']) },
+      { fleetId: 'fl-melges15', name: 'Melges 15', system: 'scratch', fragment: frag('Melges 15', 'Tuesday Overall'), tandemFragments: tandemFrags('Melges 15', 'Tuesday', ['Series A', 'Series B', 'Series C']) },
+      { fleetId: 'fl-pyclass', name: 'PY Class', system: 'py', fragment: frag('PY Class', 'Tuesday Overall'), tandemFragments: tandemFrags('PY Class', 'Tuesday', ['Series A', 'Series B', 'Series C']) },
+      { fleetId: 'fl-db21', name: 'Dublin Bay 21', system: 'scratch', fragment: frag('Dublin Bay 21', 'Tuesday Overall') },
+      { fleetId: 'fl-ff', name: 'Flying Fifteen', system: 'scratch', fragment: frag('Flying Fifteen', 'Tuesday Overall') },
+      { fleetId: 'fl-glen', name: 'Glen', system: 'scratch', fragment: frag('Glen', 'Tuesday Overall') },
+      { fleetId: 'fl-glenmermaid-py', name: 'Glen-Mermaid PY', system: 'py', fragment: frag('Glen-Mermaid PY', 'Tuesday Overall') },
+      { fleetId: 'fl-ruffian', name: 'Ruffian 23', system: 'scratch', fragment: frag('Ruffian 23', 'Tuesday Overall') },
+      { fleetId: 'fl-sb20', name: 'SB20', system: 'scratch', fragment: frag('SB20', 'Tuesday Overall') },
+      { fleetId: 'fl-sportsboats', name: 'Mixed Sportsboats', system: 'vprs', fragment: frag('Sportsboats', 'Tuesday Overall') },
+      { fleetId: 'fl-b211', name: 'Beneteau 211', system: 'scratch', fragment: frag('Beneteau 211 Scratch', 'Tuesday Overall') },
+      { fleetId: 'fl-b211-echo', name: 'Beneteau 211 ECHO', system: 'echo', fragment: frag('Beneteau 211 Echo (Tue)', 'Tuesday Overall') },
+      { fleetId: 'fl-wow', name: 'Women on the Water', system: 'vprs', fragment: frag('Women on the Water (Tue)', '2025 Summer Series') },
+    ] satisfies DayFleetSpec[],
+    opts,
+  ),
+};
+
 const GROUPS: Record<string, Group> = {
   'thursday-cruisers': THURSDAY_CRUISERS,
   'thursday-od': THURSDAY_OD,
   'saturday-cruisers': SATURDAY_CRUISERS,
   'saturday-od': SATURDAY_OD,
   'water-wags': WATER_WAGS,
+  'tuesday-od': TUESDAY_OD,
 };
 
 function run(key: string, group: Group, doValidate: boolean): boolean {

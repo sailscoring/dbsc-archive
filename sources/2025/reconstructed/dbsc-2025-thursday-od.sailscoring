@@ -14238,7 +14238,7 @@
   ],
   "subSeries": [
     {
-      "id": "ss-overall",
+      "id": "ss-0",
       "seriesId": "dbsc-2025-thursday-od",
       "name": "Thursday Overall",
       "displayOrder": 0,
@@ -14260,11 +14260,11 @@
         "race-15",
         "race-16"
       ],
-      "raceFleetExclusions": [],
-      "startingHandicapSource": "base"
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-0",
+      "id": "ss-1",
       "seriesId": "dbsc-2025-thursday-od",
       "name": "Thursday Series A",
       "displayOrder": 1,
@@ -14277,41 +14277,24 @@
         "race-6",
         "race-7"
       ],
-      "raceFleetExclusions": [
-        {
-          "raceId": "race-1",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-2",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-3",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-4",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-5",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-6",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-7",
-          "fleetId": "fl-b211-echo"
-        }
+      "fleetIds": [
+        "fl-dragon",
+        "fl-ff",
+        "fl-ruffian",
+        "fl-sb20",
+        "fl-shipman",
+        "fl-sportsboats",
+        "fl-glen",
+        "fl-glenmermaid-py",
+        "fl-b211",
+        "fl-b317",
+        "fl-b317-echo"
       ],
       "startingHandicapSource": "base",
       "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-1",
+      "id": "ss-2",
       "seriesId": "dbsc-2025-thursday-od",
       "name": "Thursday Series B",
       "displayOrder": 2,
@@ -14326,46 +14309,21 @@
         "race-15",
         "race-16"
       ],
-      "raceFleetExclusions": [
-        {
-          "raceId": "race-8",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-9",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-10",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-11",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-12",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-13",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-14",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-15",
-          "fleetId": "fl-b211-echo"
-        },
-        {
-          "raceId": "race-16",
-          "fleetId": "fl-b211-echo"
-        }
+      "fleetIds": [
+        "fl-dragon",
+        "fl-ff",
+        "fl-ruffian",
+        "fl-sb20",
+        "fl-shipman",
+        "fl-sportsboats",
+        "fl-glen",
+        "fl-glenmermaid-py",
+        "fl-b211",
+        "fl-b317",
+        "fl-b317-echo"
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-0"
+      "continueFromSubSeriesId": "ss-1"
     }
   ]
 }

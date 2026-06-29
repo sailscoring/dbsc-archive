@@ -5288,7 +5288,7 @@
   ],
   "subSeries": [
     {
-      "id": "ss-overall",
+      "id": "ss-0",
       "seriesId": "dbsc-2025-water-wags",
       "name": "2025 Summer Series",
       "displayOrder": 0,
@@ -5313,11 +5313,11 @@
         "race-18",
         "race-19"
       ],
-      "raceFleetExclusions": [],
-      "startingHandicapSource": "base"
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-0",
+      "id": "ss-1",
       "seriesId": "dbsc-2025-water-wags",
       "name": "2025 Series A",
       "displayOrder": 1,
@@ -5326,12 +5326,11 @@
         "race-2",
         "race-3"
       ],
-      "raceFleetExclusions": [],
       "startingHandicapSource": "base",
       "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-1",
+      "id": "ss-2",
       "seriesId": "dbsc-2025-water-wags",
       "name": "2025 Series B",
       "displayOrder": 2,
@@ -5346,12 +5345,11 @@
         "race-11",
         "race-12"
       ],
-      "raceFleetExclusions": [],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-0"
+      "continueFromSubSeriesId": "ss-1"
     },
     {
-      "id": "ss-2",
+      "id": "ss-3",
       "seriesId": "dbsc-2025-water-wags",
       "name": "2025 Series C",
       "displayOrder": 3,
@@ -5364,9 +5362,8 @@
         "race-18",
         "race-19"
       ],
-      "raceFleetExclusions": [],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-1"
+      "continueFromSubSeriesId": "ss-2"
     }
   ]
 }
