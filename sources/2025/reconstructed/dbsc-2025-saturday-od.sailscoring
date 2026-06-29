@@ -20980,7 +20980,7 @@
       "startingHandicapSource": "base"
     },
     {
-      "id": "ss-a",
+      "id": "ss-0",
       "seriesId": "dbsc-2025-saturday-od",
       "name": "Saturday Series A",
       "displayOrder": 1,
@@ -21092,10 +21092,11 @@
           "fleetId": "fl-melges15"
         }
       ],
-      "startingHandicapSource": "base"
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-b",
+      "id": "ss-1",
       "seriesId": "dbsc-2025-saturday-od",
       "name": "Saturday Series B",
       "displayOrder": 2,
@@ -21226,7 +21227,7 @@
         }
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-a"
+      "continueFromSubSeriesId": "ss-0"
     }
   ]
 }

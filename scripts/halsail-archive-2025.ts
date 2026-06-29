@@ -50,10 +50,10 @@ function frag(className: string, seriesName: string): HalsailFleet {
 /** The Series A/B tandem fragments that exist for a (class, day) — for feeding
  *  tandem-only races (a heat in a tandem the class's Overall omits) into the
  *  builder. Skips tandems with no published fragment. */
-function tandemFrags(className: string, day: string): HalsailFleet[] {
-  return ['Series A', 'Series B']
-    .filter((s) => seriesKey(className, `${day} ${s}`))
-    .map((s) => frag(className, `${day} ${s}`));
+function tandemFrags(className: string, prefix: string, blocks: string[] = ['Series A', 'Series B']): HalsailFleet[] {
+  return blocks
+    .filter((s) => seriesKey(className, `${prefix} ${s}`))
+    .map((s) => frag(className, `${prefix} ${s}`));
 }
 
 /** `date#startTime` keys of a (class, series) fragment's races, or [] if absent.
@@ -145,14 +145,28 @@ function buildSubSeries(file: SeriesFile, group: Group): SubSeries[] {
     }
     return out;
   };
+  // Overall + N race-subset blocks (Series A/B[/C]). Each block continues the
+  // previous block's progressive (ECHO) chain — HalSail scores a tandem over the
+  // shared chain, so a late block resumes mid-chain rather than re-seeding.
+  const overallName = group.overallName ?? 'Overall';
+  const blockNames = group.blockNames ?? ['Series A', 'Series B'];
   const overallIds = file.races.map((r) => r.id);
-  const aIds = unionRaceIds('Series A');
-  const bIds = unionRaceIds('Series B');
   const list: SubSeries[] = [
-    { id: 'ss-overall', seriesId: file.seriesId, name: `${day} Overall`, displayOrder: 0, raceIds: overallIds, raceFleetExclusions: exclusionsFor('Overall', overallIds), startingHandicapSource: 'base' },
+    { id: 'ss-overall', seriesId: file.seriesId, name: `${day} ${overallName}`, displayOrder: 0, raceIds: overallIds, raceFleetExclusions: exclusionsFor(overallName, overallIds), startingHandicapSource: 'base' },
   ];
-  if (aIds.length) list.push({ id: 'ss-a', seriesId: file.seriesId, name: `${day} Series A`, displayOrder: 1, raceIds: aIds, raceFleetExclusions: exclusionsFor('Series A', aIds), startingHandicapSource: 'base' });
-  if (bIds.length) list.push({ id: 'ss-b', seriesId: file.seriesId, name: `${day} Series B`, displayOrder: 2, raceIds: bIds, raceFleetExclusions: exclusionsFor('Series B', bIds), startingHandicapSource: aIds.length ? 'continue' : 'base', continueFromSubSeriesId: aIds.length ? 'ss-a' : null });
+  let prevId: string | null = null;
+  blockNames.forEach((blockName, i) => {
+    const ids = unionRaceIds(blockName);
+    if (!ids.length) return;
+    const id = `ss-${i}`;
+    list.push({
+      id, seriesId: file.seriesId, name: `${day} ${blockName}`, displayOrder: i + 1,
+      raceIds: ids, raceFleetExclusions: exclusionsFor(blockName, ids),
+      startingHandicapSource: prevId ? 'continue' : 'base',
+      continueFromSubSeriesId: prevId,
+    });
+    prevId = id;
+  });
   return list;
 }
 
@@ -209,11 +223,11 @@ function validate(fileObj: any, subs: SubSeries[], day: string, echoSuffix: stri
   );
   let allOk = true;
   for (const block of result) {
-    const seriesName = block.subSeries.name.replace(`${day} `, '');     // "Overall"/"Series A"/"Series B"
+    const seriesName = block.subSeries.name;     // the published series name, e.g. "Thursday Series A" / "2025 Series C"
     for (const fs of block.fleetStandings) {
       const className = fleetClassOverride[fs.fleet.name] ?? classNameForFleet(fs.fleet.name, echoSuffix);
-      const pub = publishedNet(className, `${day} ${seriesName}`);
-      if (!pub) { console.log(`    ?  ${block.subSeries.name} / ${fs.fleet.name}: no published "${className}/${day} ${seriesName}"`); continue; }
+      const pub = publishedNet(className, seriesName);
+      if (!pub) { console.log(`    ?  ${block.subSeries.name} / ${fs.fleet.name}: no published "${className}/${seriesName}"`); continue; }
       const ours = new Map((fs.standings as Standing[]).map((s) => [normSail(s.competitor.sailNumber), s.netPoints]));
       let diffs = 0;
       for (const [sail, net] of pub) {
@@ -236,6 +250,8 @@ interface Group {
   echoSuffix: string;
   classNames: string[];   // member catalog classes (for sub-series date union)
   fleetClassOverride: Record<string, string>;  // our-fleet-name → catalog class
+  overallName?: string;   // the "Overall" tandem's name (default); Wags use "Summer Series"
+  blockNames?: string[];  // race-subset tandems (default Series A/B); Tuesday/Wags add Series C
   build: (opts: BuildOptions) => SeriesFile;
 }
 
@@ -383,11 +399,34 @@ const SATURDAY_OD: Group = {
   ),
 };
 
+// Water Wags (Wednesday): one scratch one-design fleet. The "Overall" tandem is
+// named "2025 Summer Series" and the race-subset tandems are 2025 Series A/B/C —
+// the first N-block (three-block) group, exercising the generalised sub-series.
+const WATER_WAGS: Group = {
+  out: 'dbsc-2025-water-wags', name: 'DBSC 2025 — Water Wags',
+  day: '2025', echoSuffix: '',
+  overallName: 'Summer Series',
+  blockNames: ['Series A', 'Series B', 'Series C'],
+  classNames: ['Water Wag'],
+  fleetClassOverride: {},
+  build: (opts) => buildFleetSeries(
+    [
+      {
+        fleetId: 'fl-waterwag', name: 'Water Wag', system: 'scratch',
+        fragment: frag('Water Wag', '2025 Summer Series'),
+        tandemFragments: tandemFrags('Water Wag', '2025', ['Series A', 'Series B', 'Series C']),
+      },
+    ] satisfies DayFleetSpec[],
+    opts,
+  ),
+};
+
 const GROUPS: Record<string, Group> = {
   'thursday-cruisers': THURSDAY_CRUISERS,
   'thursday-od': THURSDAY_OD,
   'saturday-cruisers': SATURDAY_CRUISERS,
   'saturday-od': SATURDAY_OD,
+  'water-wags': WATER_WAGS,
 };
 
 function run(key: string, group: Group, doValidate: boolean): boolean {

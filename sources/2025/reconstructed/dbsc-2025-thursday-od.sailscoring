@@ -14264,7 +14264,7 @@
       "startingHandicapSource": "base"
     },
     {
-      "id": "ss-a",
+      "id": "ss-0",
       "seriesId": "dbsc-2025-thursday-od",
       "name": "Thursday Series A",
       "displayOrder": 1,
@@ -14307,10 +14307,11 @@
           "fleetId": "fl-b211-echo"
         }
       ],
-      "startingHandicapSource": "base"
+      "startingHandicapSource": "base",
+      "continueFromSubSeriesId": null
     },
     {
-      "id": "ss-b",
+      "id": "ss-1",
       "seriesId": "dbsc-2025-thursday-od",
       "name": "Thursday Series B",
       "displayOrder": 2,
@@ -14364,7 +14365,7 @@
         }
       ],
       "startingHandicapSource": "continue",
-      "continueFromSubSeriesId": "ss-a"
+      "continueFromSubSeriesId": "ss-0"
     }
   ]
 }
