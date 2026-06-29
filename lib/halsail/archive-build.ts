@@ -53,6 +53,21 @@ export function classNameForFleet(fleetName: string, echoSuffix: string): string
 
 const normSail = (s: string) => s.toUpperCase().replace(/\s+/g, '');
 
+/** Whether a sub-series should drop all-DNC competitors, by DBSC's *intent* (not
+ *  their per-class HalSail config, which carries manual mistakes). The published
+ *  rosters show a clear migration: 2022 listed the full entry list everywhere
+ *  (include); one-design blocks began ranking only participants in 2023; by
+ *  2024–25 every block excludes non-starters while the season "Overall" still
+ *  lists the entry list. Modelling the intent per sub-series (not per class)
+ *  stops a future scorer reproducing those manual slips. */
+function excludeDncIntent(year: string, group: Group, subSeriesName: string): boolean {
+  const isBlock = /Series [A-Z]$/.test(subSeriesName);
+  const oneDesign = !group.out.endsWith('-cruisers');
+  if (year === '2022') return false;             // full entry list everywhere
+  if (year === '2023') return isBlock && oneDesign; // one-design blocks switch first
+  return isBlock;                                // 2024+: blocks exclude, Overall includes
+}
+
 /** Bind the reconstruction machinery to one season's catalog + fragments. */
 export function archiveBuilder(year: string) {
   const SRC = join(__dirname, '..', '..', 'sources', year);
@@ -150,6 +165,7 @@ export function archiveBuilder(year: string) {
         ...(scope.length < file.fleets.length ? { fleetIds: scope.map((f) => f.id) } : {}),
         startingHandicapSource: continueFrom ? 'continue' : 'base',
         continueFromSubSeriesId: continueFrom,
+        excludeDncOnlyCompetitors: excludeDncIntent(year, group, name),
       });
     });
     return list;
@@ -201,6 +217,11 @@ export function archiveBuilder(year: string) {
         for (const [sail, net] of pub) {
           const o = ours.get(sail);
           if (o == null || Math.abs(o - net) > 0.05) { diffs++; if (diffs <= 2) console.log(`       ✗ ${fs.fleet.name} ${sail}: ours=${o} pub=${net}`); }
+        }
+        // Boats in our standings the published table doesn't list — e.g. an
+        // all-DNC boat we scored that HalSail excluded from this tandem.
+        for (const sail of ours.keys()) {
+          if (!pub.has(sail)) { diffs++; if (diffs <= 2) console.log(`       ✗ ${fs.fleet.name} ${sail}: ours=${ours.get(sail)} pub=(absent)`); }
         }
         console.log(`    ${diffs === 0 ? 'OK  ' : 'FAIL'} ${block.subSeries.name} / ${fs.fleet.name}: ${pub.size} boats${diffs ? `, ${diffs} diffs` : ''}`);
         if (diffs) allOk = false;
