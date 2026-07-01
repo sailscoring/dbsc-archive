@@ -45,7 +45,7 @@ sources/
 lib/halsail/           HalSail HTML parser + DBSC day-series builder
 scripts/
   halsail-archive-fetch.ts   archive capture (`pnpm capture`)
-  halsail-fetch.ts           refresh 2026 live fragments (`pnpm fetch`)
+  halsail-fetch.ts           refresh 2026 live fragments (`pnpm run fetch`)
   halsail-to-sailscoring.ts  fragments → .sailscoring (`pnpm to-sailscoring`)
   halsail-compare.ts         parity vs published (`pnpm compare`)
 tests/                 vitest for the parser + converter
@@ -53,8 +53,9 @@ tests/                 vitest for the parser + converter
 
 The conversion/parity tooling **reuses the app's scoring engine** by relative
 import (`../sailscoring/lib/scoring`), so it needs the sibling `../sailscoring`
-checkout. The generic HalSail FAQ and the parity design doc stay in the app repo
-(`reference/HalSail FAQ.pdf`, `docs/design/dbsc-parity-plan.md`).
+checkout. The parity design doc stays in the app repo
+(`docs/design/dbsc-parity-plan.md`); the generic HalSail FAQ lives in the
+`../reference-docs` sibling (`tool-manuals/`).
 
 ## The HalSail archive model (what we learned)
 
@@ -93,7 +94,7 @@ pnpm archive:2025           # build + validate every 2025 day-group
 pnpm archive:2025 [group]   # one group (e.g. thursday-cruisers, saturday-od)
 
 # 2026 live parity (halsail.com)
-pnpm fetch                  # refresh the live result fragments
+pnpm run fetch              # refresh the live fragments (NB: `run` — `pnpm fetch` hits pnpm's builtin)
 pnpm to-sailscoring [day]   # fragments → .sailscoring
 pnpm compare [day]          # re-score with the app engine, diff vs published
 pnpm test                   # vitest (parser + converter)
@@ -171,18 +172,26 @@ fleet, the union heats a fleet was scored in but did not include in its own
 published tandem — covering Q1/Q2/Q4/Q5 (including DBSC's manual misses, since we
 read each fleet's real fragment). Genuinely tandem-only heats — a heat in a
 tandem the Overall omits (Q3) — are sourced from the tandem fragments. The output
-is format **v11**. Reusable wins along the way: the parser reads **place-only
-scratch one-design tables**, and sub-series are assigned by **(date, start-time)**.
+is format **v12** (carries `SubSeries.excludeDncOnlyCompetitors`). Reusable wins
+along the way: the parser reads **place-only scratch one-design tables**, and
+sub-series are assigned by **(date, start-time)**.
 
-> **Resumed (Jun 2026).** The pause is over: `sailscoring`#203 landed the
-> fleet-scoped sub-series + per-fleet exclusions, and the single-competitor flicks
-> (Q1/Q5) are now reproduced exactly as **per-fleet exclusions** (no engine rule —
-> `sailscoring`#232 stays closed). **All four seasons (2022–2025) are now built**
-> (749 OK / 88 FAIL, two-directional validation); who-appears-in-a-tandem is
-> modelled from DBSC's DNC-listing *intent* (above), leaving their manual
-> per-class slips as deltas. The remaining scoring diffs are ECHO/VPRS ±1 ripples
-> and the multi-race-day discard offset. **Next:** the multi-race-day discard
-> residual, then import into a DBSC workspace.
+> **Reconstructed, imported, published (Jun–Jul 2026).** The pause is over:
+> `sailscoring`#203 landed the fleet-scoped sub-series + per-fleet exclusions, and
+> the single-competitor flicks (Q1/Q5) are now reproduced exactly as **per-fleet
+> exclusions** (no engine rule — `sailscoring`#232 stays closed). **All four
+> seasons (2022–2025) are built** (749 OK / 88 FAIL, two-directional validation)
+> and the **2026 live season refreshes green** (75 / 0). Who-appears-in-a-tandem is
+> modelled from DBSC's DNC-listing *intent* (above), leaving their manual per-class
+> slips as deltas; the remaining scoring diffs are ECHO/VPRS ±1 ripples and the
+> multi-race-day discard offset.
+>
+> All five seasons are **imported into the `dbsc` workspace** and **published** at
+> `app.sailscoring.ie/p/dbsc/{year}` (35 series, ~900 pages;
+> `sailscoring series import/publish`, one year-slug per season). The 2026 files
+> are `--adopt`ed to their workspace UUIDs so weekly refreshes land as in-app
+> "Update from file", not fresh imports. **Next:** chip at the multi-race-day
+> discard residual.
 
 ## Licensing
 
