@@ -78,6 +78,7 @@ interface ConfigSeries {
   venue: string;
   startDate: string;
   source: 'halsail';
+  category: string;
   fleets: ConfigFleet[];
 }
 
@@ -122,6 +123,8 @@ function run(): number {
         // season starts, and the year is what the app's grouping reads.
         startDate: `${year}-04-27`,
         source: 'halsail',
+        // Initial in-app filing: one category per season year.
+        category: year,
         fleets,
       });
     }
