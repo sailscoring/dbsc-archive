@@ -14,7 +14,8 @@
     "archive:2025": "tsx scripts/halsail-archive-2025.ts",
     "archive:2024": "tsx scripts/halsail-archive-2024.ts",
     "archive:2023": "tsx scripts/halsail-archive-2023.ts",
-    "archive:2022": "tsx scripts/halsail-archive-2022.ts"
+    "archive:2022": "tsx scripts/halsail-archive-2022.ts",
+    "emit-as-published": "tsx scripts/emit-as-published-config.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
