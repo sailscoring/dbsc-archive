@@ -77,6 +77,8 @@ interface ConfigSeries {
   name: string;
   venue: string;
   startDate: string;
+  venueUrl: string;
+  venueLogoUrl: string;
   source: 'halsail';
   category: string;
   fleets: ConfigFleet[];
@@ -119,6 +121,8 @@ function run(): number {
         publishedSlug: key,
         name: `${cls.name} — ${catalog.name}`,
         venue: 'Dublin Bay',
+        venueUrl: 'https://www.dbsc.org',
+        venueLogoUrl: 'https://logos.sailscoring.ie/dbsc.png',
         // The catalog carries no dates; late April is when the DBSC summer
         // season starts, and the year is what the app's grouping reads.
         startDate: `${year}-04-27`,
