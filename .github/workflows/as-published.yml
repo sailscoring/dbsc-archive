@@ -55,9 +55,8 @@ jobs:
         run: pnpm archive-generate ${{ github.workspace }}/as-published.config.json
 
       - name: Push to the workspace
-        if: ${{ env.TOKEN != '' }}
+        if: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN != '' }}
         working-directory: app
         env:
-          TOKEN: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN }}
           SAILSCORING_TOKEN: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN }}
         run: pnpm cli as-published push ${{ github.workspace }}/as-published --workspace dbsc
