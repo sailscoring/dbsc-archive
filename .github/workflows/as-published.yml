@@ -27,6 +27,8 @@ on:
 jobs:
   ingest:
     runs-on: ubuntu-latest
+    env:
+      SAILSCORING_TOKEN: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -54,9 +56,10 @@ jobs:
         working-directory: app
         run: pnpm archive-generate ${{ github.workspace }}/as-published.config.json
 
+      # The `secrets` context isn't available in `if:` expressions, so the
+      # arming gate tests the secret through the job env instead: unset
+      # secret -> empty env var -> step skipped.
       - name: Push to the workspace
-        if: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN != '' }}
+        if: env.SAILSCORING_TOKEN != ''
         working-directory: app
-        env:
-          SAILSCORING_TOKEN: ${{ secrets.SAILSCORING_ARCHIVIST_TOKEN }}
         run: pnpm cli as-published push ${{ github.workspace }}/as-published --workspace dbsc
