@@ -1,0 +1,5003 @@
+{
+  "_comment": "Original public page paths of the reconstructed 2022-2025 series, dumped from the production dbsc workspace before their retirement (sailscoring ADR-010: URL stability is data, never derived). year+subSeries+fleet identify the page as the reconstruction named it; emit-as-published-config.ts joins these to the HalSail catalog names.",
+  "pages": [
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-overall/beneteau-211"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 4 (+5A) ECHO",
+      "subPath": "saturday-overall/cruisers-4-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 4 (+5A) IRC",
+      "subPath": "saturday-overall/cruisers-4-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5 ECHO",
+      "subPath": "saturday-overall/cruisers-5-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5 IRC",
+      "subPath": "saturday-overall/cruisers-5-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dragon",
+      "subPath": "saturday-overall/dragon"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Fireball",
+      "subPath": "saturday-overall/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-overall/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Glen",
+      "subPath": "saturday-overall/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-overall/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "J/109",
+      "subPath": "saturday-overall/j-109"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Laser Radial",
+      "subPath": "saturday-overall/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "PY Class",
+      "subPath": "saturday-overall/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-overall/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "SB20",
+      "subPath": "saturday-overall/sb20"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Shipman",
+      "subPath": "saturday-overall/shipman"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-overall/sigma-33"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Overall",
+      "fleet": "Squib-Mermaid",
+      "subPath": "saturday-overall/squib-mermaid"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-series-a/beneteau-211"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-series-a/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 4 (+5A) ECHO",
+      "subPath": "saturday-series-a/cruisers-4-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 4 (+5A) IRC",
+      "subPath": "saturday-series-a/cruisers-4-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5 ECHO",
+      "subPath": "saturday-series-a/cruisers-5-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5 IRC",
+      "subPath": "saturday-series-a/cruisers-5-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Dragon",
+      "subPath": "saturday-series-a/dragon"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-series-a/dublin-bay-21"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Fireball",
+      "subPath": "saturday-series-a/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Glen",
+      "subPath": "saturday-series-a/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-series-a/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "J/109",
+      "subPath": "saturday-series-a/j-109"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Laser Radial",
+      "subPath": "saturday-series-a/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "PY Class",
+      "subPath": "saturday-series-a/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-series-a/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "SB20",
+      "subPath": "saturday-series-a/sb20"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Shipman",
+      "subPath": "saturday-series-a/shipman"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-series-a/sigma-33"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series A",
+      "fleet": "Squib-Mermaid",
+      "subPath": "saturday-series-a/squib-mermaid"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-series-b/beneteau-211"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-series-b/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 4 (+5A) ECHO",
+      "subPath": "saturday-series-b/cruisers-4-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 4 (+5A) IRC",
+      "subPath": "saturday-series-b/cruisers-4-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5 ECHO",
+      "subPath": "saturday-series-b/cruisers-5-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5 IRC",
+      "subPath": "saturday-series-b/cruisers-5-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Dragon",
+      "subPath": "saturday-series-b/dragon"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-series-b/dublin-bay-21"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Fireball",
+      "subPath": "saturday-series-b/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Glen",
+      "subPath": "saturday-series-b/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-series-b/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "J/109",
+      "subPath": "saturday-series-b/j-109"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Laser Radial",
+      "subPath": "saturday-series-b/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "PY Class",
+      "subPath": "saturday-series-b/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-series-b/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "SB20",
+      "subPath": "saturday-series-b/sb20"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Shipman",
+      "subPath": "saturday-series-b/shipman"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-series-b/sigma-33"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Saturday Series B",
+      "fleet": "Squib-Mermaid",
+      "subPath": "saturday-series-b/squib-mermaid"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-overall/beneteau-211"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 4 (+5A) ECHO",
+      "subPath": "thursday-overall/cruisers-4-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 4 (+5A) IRC",
+      "subPath": "thursday-overall/cruisers-4-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "thursday-overall/cruisers-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Dragon",
+      "subPath": "thursday-overall/dragon"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-overall/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Glen",
+      "subPath": "thursday-overall/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "J/109",
+      "subPath": "thursday-overall/j-109"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-overall/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "SB20",
+      "subPath": "thursday-overall/sb20"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Shipman",
+      "subPath": "thursday-overall/shipman"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-overall/sigma-33"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-series-a/beneteau-211"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-series-a/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 4 (+5A) ECHO",
+      "subPath": "thursday-series-a/cruisers-4-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 4 (+5A) IRC",
+      "subPath": "thursday-series-a/cruisers-4-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "thursday-series-a/cruisers-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Dragon",
+      "subPath": "thursday-series-a/dragon"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Glen",
+      "subPath": "thursday-series-a/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "J/109",
+      "subPath": "thursday-series-a/j-109"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-series-a/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "SB20",
+      "subPath": "thursday-series-a/sb20"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Shipman",
+      "subPath": "thursday-series-a/shipman"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-series-a/sigma-33"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-series-b/beneteau-211"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-series-b/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 4 (+5A) ECHO",
+      "subPath": "thursday-series-b/cruisers-4-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 4 (+5A) IRC",
+      "subPath": "thursday-series-b/cruisers-4-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "thursday-series-b/cruisers-5a-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Dragon",
+      "subPath": "thursday-series-b/dragon"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Glen",
+      "subPath": "thursday-series-b/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "J/109",
+      "subPath": "thursday-series-b/j-109"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-series-b/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "SB20",
+      "subPath": "thursday-series-b/sb20"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Shipman",
+      "subPath": "thursday-series-b/shipman"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Thursday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-series-b/sigma-33"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "tuesday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Combined Cruisers",
+      "subPath": "tuesday-overall/combined-cruisers"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "tuesday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "tuesday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Fireball",
+      "subPath": "tuesday-overall/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "tuesday-overall/flying-fifteen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Glen",
+      "subPath": "tuesday-overall/glen"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-overall/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-overall/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-overall/laser-standard"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "tuesday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "PY Class",
+      "subPath": "tuesday-overall/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "tuesday-overall/ruffian-23"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-a/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-a/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-series-a/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-series-a/laser-standard"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series A",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-a/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-b/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-b/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-series-b/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-series-b/laser-standard"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series B",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-b/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-c/fireball"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series C",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-c/idra-14"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-series-c/laser-radial"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-series-c/laser-standard"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Tuesday Series C",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-c/py-class"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Wednesday Overall",
+      "fleet": "Water Wag",
+      "subPath": "wednesday-overall/water-wag"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Wednesday Series A",
+      "fleet": "Water Wag",
+      "subPath": "wednesday-series-a/water-wag"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Wednesday Series B",
+      "fleet": "Water Wag",
+      "subPath": "wednesday-series-b/water-wag"
+    },
+    {
+      "year": "2022",
+      "subSeries": "Wednesday Series C",
+      "fleet": "Water Wag",
+      "subPath": "wednesday-series-c/water-wag"
+    },
+    {
+      "year": "2023",
+      "subSeries": "2023 Summer Series",
+      "fleet": "Combined Cruisers",
+      "subPath": "2023-summer-series/combined-cruisers"
+    },
+    {
+      "year": "2023",
+      "subSeries": "2023 Summer Series",
+      "fleet": "Water Wag",
+      "subPath": "2023-summer-series/water-wag"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-overall/beneteau-211"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5 ECHO",
+      "subPath": "saturday-overall/cruisers-5-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5 IRC",
+      "subPath": "saturday-overall/cruisers-5-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "saturday-overall/cruisers-5a-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dragon",
+      "subPath": "saturday-overall/dragon"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Fireball",
+      "subPath": "saturday-overall/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-overall/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Glen",
+      "subPath": "saturday-overall/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-overall/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "J/109",
+      "subPath": "saturday-overall/j-109"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Laser Radial",
+      "subPath": "saturday-overall/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Laser Standard",
+      "subPath": "saturday-overall/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "PY Class",
+      "subPath": "saturday-overall/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-overall/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "SB20",
+      "subPath": "saturday-overall/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Shipman",
+      "subPath": "saturday-overall/shipman"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-overall/sigma-33"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Overall",
+      "fleet": "Squib-Mermaid",
+      "subPath": "saturday-overall/squib-mermaid"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-series-a/beneteau-211"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-series-a/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5 ECHO",
+      "subPath": "saturday-series-a/cruisers-5-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5 IRC",
+      "subPath": "saturday-series-a/cruisers-5-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "saturday-series-a/cruisers-5a-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Dragon",
+      "subPath": "saturday-series-a/dragon"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-series-a/dublin-bay-21"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Fireball",
+      "subPath": "saturday-series-a/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Glen",
+      "subPath": "saturday-series-a/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-series-a/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "J/109",
+      "subPath": "saturday-series-a/j-109"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Laser Radial",
+      "subPath": "saturday-series-a/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Laser Standard",
+      "subPath": "saturday-series-a/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "PY Class",
+      "subPath": "saturday-series-a/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-series-a/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "SB20",
+      "subPath": "saturday-series-a/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Shipman",
+      "subPath": "saturday-series-a/shipman"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-series-a/sigma-33"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series A",
+      "fleet": "Squib-Mermaid",
+      "subPath": "saturday-series-a/squib-mermaid"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-series-b/beneteau-211"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-series-b/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5 ECHO",
+      "subPath": "saturday-series-b/cruisers-5-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5 IRC",
+      "subPath": "saturday-series-b/cruisers-5-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "saturday-series-b/cruisers-5a-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Dragon",
+      "subPath": "saturday-series-b/dragon"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-series-b/dublin-bay-21"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Fireball",
+      "subPath": "saturday-series-b/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Glen",
+      "subPath": "saturday-series-b/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-series-b/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "J/109",
+      "subPath": "saturday-series-b/j-109"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Laser Radial",
+      "subPath": "saturday-series-b/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Laser Standard",
+      "subPath": "saturday-series-b/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "PY Class",
+      "subPath": "saturday-series-b/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-series-b/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "SB20",
+      "subPath": "saturday-series-b/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Shipman",
+      "subPath": "saturday-series-b/shipman"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-series-b/sigma-33"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Saturday Series B",
+      "fleet": "Squib-Mermaid",
+      "subPath": "saturday-series-b/squib-mermaid"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-overall/beneteau-211"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "thursday-overall/cruisers-5a-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Dragon",
+      "subPath": "thursday-overall/dragon"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-overall/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Glen",
+      "subPath": "thursday-overall/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "J/109",
+      "subPath": "thursday-overall/j-109"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-overall/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "SB20",
+      "subPath": "thursday-overall/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Shipman",
+      "subPath": "thursday-overall/shipman"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-overall/sigma-33"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-series-a/beneteau-211"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-series-a/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "thursday-series-a/cruisers-5a-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Dragon",
+      "subPath": "thursday-series-a/dragon"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Glen",
+      "subPath": "thursday-series-a/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "J/109",
+      "subPath": "thursday-series-a/j-109"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-series-a/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "SB20",
+      "subPath": "thursday-series-a/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Shipman",
+      "subPath": "thursday-series-a/shipman"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-series-a/sigma-33"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-series-b/beneteau-211"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-series-b/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5A IRC",
+      "subPath": "thursday-series-b/cruisers-5a-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Dragon",
+      "subPath": "thursday-series-b/dragon"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Glen",
+      "subPath": "thursday-series-b/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "J/109",
+      "subPath": "thursday-series-b/j-109"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-series-b/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "SB20",
+      "subPath": "thursday-series-b/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Shipman",
+      "subPath": "thursday-series-b/shipman"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Thursday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-series-b/sigma-33"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "tuesday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "tuesday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "tuesday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "tuesday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Fireball",
+      "subPath": "tuesday-overall/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "tuesday-overall/flying-fifteen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Glen",
+      "subPath": "tuesday-overall/glen"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-overall/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-overall/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-overall/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "tuesday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "PY Class",
+      "subPath": "tuesday-overall/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "tuesday-overall/ruffian-23"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "SB20",
+      "subPath": "tuesday-overall/sb20"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Women on the Water",
+      "subPath": "tuesday-overall/women-on-the-water"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-a/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-a/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-series-a/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-series-a/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series A",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-a/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-b/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-b/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-series-b/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-series-b/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series B",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-b/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-c/fireball"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series C",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-c/idra-14"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Laser Radial",
+      "subPath": "tuesday-series-c/laser-radial"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Laser Standard",
+      "subPath": "tuesday-series-c/laser-standard"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Tuesday Series C",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-c/py-class"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Weds Series A",
+      "fleet": "Water Wag",
+      "subPath": "weds-series-a/water-wag"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Weds Series B",
+      "fleet": "Water Wag",
+      "subPath": "weds-series-b/water-wag"
+    },
+    {
+      "year": "2023",
+      "subSeries": "Weds Series C",
+      "fleet": "Water Wag",
+      "subPath": "weds-series-c/water-wag"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "2024-saturday-series-a/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "2024-saturday-series-a/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "2024-saturday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "2024-saturday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "2024-saturday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "2024-saturday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "2024-saturday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "2024-saturday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "2024-saturday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "2024-saturday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "2024-saturday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "2024-saturday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "2024-saturday-series-a/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "2024-saturday-series-a/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "2024-saturday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "2024-saturday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Dragon",
+      "subPath": "2024-saturday-series-a/dragon"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Dublin Bay 21",
+      "subPath": "2024-saturday-series-a/dublin-bay-21"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Fireball",
+      "subPath": "2024-saturday-series-a/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "2024-saturday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Glen",
+      "subPath": "2024-saturday-series-a/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "2024-saturday-series-a/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "ILCA 6",
+      "subPath": "2024-saturday-series-a/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "ILCA 7",
+      "subPath": "2024-saturday-series-a/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "J/109",
+      "subPath": "2024-saturday-series-a/j-109"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "2024-saturday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "PY Class",
+      "subPath": "2024-saturday-series-a/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "2024-saturday-series-a/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "SB20",
+      "subPath": "2024-saturday-series-a/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Shipman",
+      "subPath": "2024-saturday-series-a/shipman"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "2024-saturday-series-a/sigma-33"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "2024-saturday-series-b/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "2024-saturday-series-b/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "2024-saturday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "2024-saturday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "2024-saturday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "2024-saturday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "2024-saturday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "2024-saturday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "2024-saturday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "2024-saturday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "2024-saturday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "2024-saturday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "2024-saturday-series-b/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "2024-saturday-series-b/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "2024-saturday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "2024-saturday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Dublin Bay 21",
+      "subPath": "2024-saturday-series-b/dublin-bay-21"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Fireball",
+      "subPath": "2024-saturday-series-b/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "2024-saturday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Glen",
+      "subPath": "2024-saturday-series-b/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "2024-saturday-series-b/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "ILCA 6",
+      "subPath": "2024-saturday-series-b/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "ILCA 7",
+      "subPath": "2024-saturday-series-b/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "J/109",
+      "subPath": "2024-saturday-series-b/j-109"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Melges 15",
+      "subPath": "2024-saturday-series-b/melges-15"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "2024-saturday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "PY Class",
+      "subPath": "2024-saturday-series-b/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "2024-saturday-series-b/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "SB20",
+      "subPath": "2024-saturday-series-b/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Shipman",
+      "subPath": "2024-saturday-series-b/shipman"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Saturday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "2024-saturday-series-b/sigma-33"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Summer Series",
+      "fleet": "Combined Cruisers",
+      "subPath": "2024-summer-series/combined-cruisers"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Summer Series",
+      "fleet": "Combined Group 2",
+      "subPath": "2024-summer-series/combined-group-2"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Summer Series",
+      "fleet": "Water Wag",
+      "subPath": "2024-summer-series/water-wag"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "2024-thursday-series-a/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "2024-thursday-series-a/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "2024-thursday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "2024-thursday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "2024-thursday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "2024-thursday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "2024-thursday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "2024-thursday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "2024-thursday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "2024-thursday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "2024-thursday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "2024-thursday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "2024-thursday-series-a/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "2024-thursday-series-a/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "2024-thursday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "2024-thursday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Dragon",
+      "subPath": "2024-thursday-series-a/dragon"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "2024-thursday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Glen",
+      "subPath": "2024-thursday-series-a/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "J/109",
+      "subPath": "2024-thursday-series-a/j-109"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "2024-thursday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "2024-thursday-series-a/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "SB20",
+      "subPath": "2024-thursday-series-a/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Shipman",
+      "subPath": "2024-thursday-series-a/shipman"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "2024-thursday-series-a/sigma-33"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "2024-thursday-series-b/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "2024-thursday-series-b/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "2024-thursday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "2024-thursday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "2024-thursday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "2024-thursday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "2024-thursday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "2024-thursday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "2024-thursday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "2024-thursday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "2024-thursday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "2024-thursday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "2024-thursday-series-b/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "2024-thursday-series-b/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "2024-thursday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "2024-thursday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Dragon",
+      "subPath": "2024-thursday-series-b/dragon"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "2024-thursday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Glen",
+      "subPath": "2024-thursday-series-b/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "J/109",
+      "subPath": "2024-thursday-series-b/j-109"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "2024-thursday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "2024-thursday-series-b/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "SB20",
+      "subPath": "2024-thursday-series-b/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Shipman",
+      "subPath": "2024-thursday-series-b/shipman"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Thursday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "2024-thursday-series-b/sigma-33"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series A",
+      "fleet": "Fireball",
+      "subPath": "2024-tuesday-series-a/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "2024-tuesday-series-a/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series A",
+      "fleet": "ILCA 6",
+      "subPath": "2024-tuesday-series-a/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series A",
+      "fleet": "ILCA 7",
+      "subPath": "2024-tuesday-series-a/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series A",
+      "fleet": "Melges 15",
+      "subPath": "2024-tuesday-series-a/melges-15"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series A",
+      "fleet": "PY Class",
+      "subPath": "2024-tuesday-series-a/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series B",
+      "fleet": "Fireball",
+      "subPath": "2024-tuesday-series-b/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "2024-tuesday-series-b/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series B",
+      "fleet": "ILCA 6",
+      "subPath": "2024-tuesday-series-b/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series B",
+      "fleet": "ILCA 7",
+      "subPath": "2024-tuesday-series-b/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series B",
+      "fleet": "Melges 15",
+      "subPath": "2024-tuesday-series-b/melges-15"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series B",
+      "fleet": "PY Class",
+      "subPath": "2024-tuesday-series-b/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series C",
+      "fleet": "Beneteau 211",
+      "subPath": "2024-tuesday-series-c/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series C",
+      "fleet": "Fireball",
+      "subPath": "2024-tuesday-series-c/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series C",
+      "fleet": "IDRA 14",
+      "subPath": "2024-tuesday-series-c/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series C",
+      "fleet": "ILCA 6",
+      "subPath": "2024-tuesday-series-c/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series C",
+      "fleet": "ILCA 7",
+      "subPath": "2024-tuesday-series-c/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Tuesday Series C",
+      "fleet": "PY Class",
+      "subPath": "2024-tuesday-series-c/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Weds Series A",
+      "fleet": "Water Wag",
+      "subPath": "2024-weds-series-a/water-wag"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Weds Series B",
+      "fleet": "Water Wag",
+      "subPath": "2024-weds-series-b/water-wag"
+    },
+    {
+      "year": "2024",
+      "subSeries": "2024 Weds Series C",
+      "fleet": "Water Wag",
+      "subPath": "2024-weds-series-c/water-wag"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-overall/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "saturday-overall/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "saturday-overall/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dragon",
+      "subPath": "saturday-overall/dragon"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Fireball",
+      "subPath": "saturday-overall/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-overall/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Glen",
+      "subPath": "saturday-overall/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-overall/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "ILCA 6",
+      "subPath": "saturday-overall/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "ILCA 7",
+      "subPath": "saturday-overall/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "J/109",
+      "subPath": "saturday-overall/j-109"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Melges 15",
+      "subPath": "saturday-overall/melges-15"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "PY Class",
+      "subPath": "saturday-overall/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-overall/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "SB20",
+      "subPath": "saturday-overall/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Shipman",
+      "subPath": "saturday-overall/shipman"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Saturday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-overall/sigma-33"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-overall/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "thursday-overall/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "thursday-overall/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Dragon",
+      "subPath": "thursday-overall/dragon"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-overall/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Glen",
+      "subPath": "thursday-overall/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "J/109",
+      "subPath": "thursday-overall/j-109"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-overall/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "SB20",
+      "subPath": "thursday-overall/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Shipman",
+      "subPath": "thursday-overall/shipman"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Thursday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-overall/sigma-33"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "tuesday-overall/beneteau-211"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "tuesday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "tuesday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "tuesday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "tuesday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Fireball",
+      "subPath": "tuesday-overall/fireball"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "tuesday-overall/flying-fifteen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Glen",
+      "subPath": "tuesday-overall/glen"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-overall/idra-14"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "ILCA 6",
+      "subPath": "tuesday-overall/ilca-6"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "ILCA 7",
+      "subPath": "tuesday-overall/ilca-7"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Melges 15",
+      "subPath": "tuesday-overall/melges-15"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "tuesday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "PY Class",
+      "subPath": "tuesday-overall/py-class"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "tuesday-overall/ruffian-23"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "SB20",
+      "subPath": "tuesday-overall/sb20"
+    },
+    {
+      "year": "2024",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Women on the Water",
+      "subPath": "tuesday-overall/women-on-the-water"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Series A",
+      "fleet": "Water Wag",
+      "subPath": "2025-series-a/water-wag"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Series B",
+      "fleet": "Water Wag",
+      "subPath": "2025-series-b/water-wag"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Series C",
+      "fleet": "Water Wag",
+      "subPath": "2025-series-c/water-wag"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Summer Series",
+      "fleet": "Combined Cruisers",
+      "subPath": "2025-summer-series/combined-cruisers"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Summer Series",
+      "fleet": "Combined Group 2",
+      "subPath": "2025-summer-series/combined-group-2"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Summer Series",
+      "fleet": "Water Wag",
+      "subPath": "2025-summer-series/water-wag"
+    },
+    {
+      "year": "2025",
+      "subSeries": "2025 Summer Series",
+      "fleet": "Women on the Water",
+      "subPath": "2025-summer-series/women-on-the-water"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-overall/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "saturday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "saturday-overall/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "saturday-overall/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dragon",
+      "subPath": "saturday-overall/dragon"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Fireball",
+      "subPath": "saturday-overall/fireball"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-overall/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Glen",
+      "subPath": "saturday-overall/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "saturday-overall/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-overall/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "ILCA 6",
+      "subPath": "saturday-overall/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "ILCA 7",
+      "subPath": "saturday-overall/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "J/109",
+      "subPath": "saturday-overall/j-109"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Melges 15",
+      "subPath": "saturday-overall/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "PY Class",
+      "subPath": "saturday-overall/py-class"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-overall/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "SB20",
+      "subPath": "saturday-overall/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Shipman",
+      "subPath": "saturday-overall/shipman"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-overall/sigma-33"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-series-a/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "saturday-series-a/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "saturday-series-a/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Dragon",
+      "subPath": "saturday-series-a/dragon"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-series-a/dublin-bay-21"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Fireball",
+      "subPath": "saturday-series-a/fireball"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Glen",
+      "subPath": "saturday-series-a/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "saturday-series-a/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-series-a/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "ILCA 6",
+      "subPath": "saturday-series-a/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "ILCA 7",
+      "subPath": "saturday-series-a/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "J/109",
+      "subPath": "saturday-series-a/j-109"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Melges 15",
+      "subPath": "saturday-series-a/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "PY Class",
+      "subPath": "saturday-series-a/py-class"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-series-a/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "SB20",
+      "subPath": "saturday-series-a/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Shipman",
+      "subPath": "saturday-series-a/shipman"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-series-a/sigma-33"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "saturday-series-b/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "saturday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "saturday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "saturday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "saturday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "saturday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "saturday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "saturday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "saturday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "saturday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "saturday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "saturday-series-b/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "saturday-series-b/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "saturday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "saturday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Dragon",
+      "subPath": "saturday-series-b/dragon"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Dublin Bay 21",
+      "subPath": "saturday-series-b/dublin-bay-21"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "saturday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Glen",
+      "subPath": "saturday-series-b/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "saturday-series-b/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "saturday-series-b/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "ILCA 6",
+      "subPath": "saturday-series-b/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "ILCA 7",
+      "subPath": "saturday-series-b/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "J/109",
+      "subPath": "saturday-series-b/j-109"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Melges 15",
+      "subPath": "saturday-series-b/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "saturday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "PY Class",
+      "subPath": "saturday-series-b/py-class"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "saturday-series-b/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "SB20",
+      "subPath": "saturday-series-b/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Shipman",
+      "subPath": "saturday-series-b/shipman"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Saturday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "saturday-series-b/sigma-33"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-overall/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "thursday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-overall/beneteau-31-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-overall/beneteau-31-7-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-overall/cruisers-0-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-overall/cruisers-0-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-overall/cruisers-1-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-overall/cruisers-1-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-overall/cruisers-2-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-overall/cruisers-2-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "thursday-overall/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "thursday-overall/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-overall/cruisers-5a-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-overall/cruisers-5b-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Dragon",
+      "subPath": "thursday-overall/dragon"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-overall/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Glen",
+      "subPath": "thursday-overall/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "thursday-overall/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "J/109",
+      "subPath": "thursday-overall/j-109"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-overall/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "SB20",
+      "subPath": "thursday-overall/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Shipman",
+      "subPath": "thursday-overall/shipman"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Overall",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-overall/sigma-33"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-series-a/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-series-a/beneteau-31-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-series-a/beneteau-31-7-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-series-a/cruisers-0-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-series-a/cruisers-0-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-series-a/cruisers-1-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-series-a/cruisers-1-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-series-a/cruisers-2-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-series-a/cruisers-2-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-series-a/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-series-a/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "thursday-series-a/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "thursday-series-a/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-series-a/cruisers-5a-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-series-a/cruisers-5b-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Dragon",
+      "subPath": "thursday-series-a/dragon"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-series-a/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Glen",
+      "subPath": "thursday-series-a/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "thursday-series-a/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "J/109",
+      "subPath": "thursday-series-a/j-109"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-series-a/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-series-a/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "SB20",
+      "subPath": "thursday-series-a/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Shipman",
+      "subPath": "thursday-series-a/shipman"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series A",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-series-a/sigma-33"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 211",
+      "subPath": "thursday-series-b/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 31.7",
+      "subPath": "thursday-series-b/beneteau-31-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Beneteau 31.7 ECHO",
+      "subPath": "thursday-series-b/beneteau-31-7-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 0 ECHO",
+      "subPath": "thursday-series-b/cruisers-0-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 0 IRC",
+      "subPath": "thursday-series-b/cruisers-0-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 1 ECHO",
+      "subPath": "thursday-series-b/cruisers-1-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 1 IRC",
+      "subPath": "thursday-series-b/cruisers-1-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 2 ECHO",
+      "subPath": "thursday-series-b/cruisers-2-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 2 IRC",
+      "subPath": "thursday-series-b/cruisers-2-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "thursday-series-b/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "thursday-series-b/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 4-5A VPRS",
+      "subPath": "thursday-series-b/cruisers-4-5a-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 4-5B VPRS",
+      "subPath": "thursday-series-b/cruisers-4-5b-vprs"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5A ECHO",
+      "subPath": "thursday-series-b/cruisers-5a-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Cruisers 5B ECHO",
+      "subPath": "thursday-series-b/cruisers-5b-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Dragon",
+      "subPath": "thursday-series-b/dragon"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Flying Fifteen",
+      "subPath": "thursday-series-b/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Glen",
+      "subPath": "thursday-series-b/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "thursday-series-b/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "J/109",
+      "subPath": "thursday-series-b/j-109"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "thursday-series-b/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Ruffian 23",
+      "subPath": "thursday-series-b/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "SB20",
+      "subPath": "thursday-series-b/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Shipman",
+      "subPath": "thursday-series-b/shipman"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Thursday Series B",
+      "fleet": "Sigma 33",
+      "subPath": "thursday-series-b/sigma-33"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Beneteau 211",
+      "subPath": "tuesday-overall/beneteau-211"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Beneteau 211 ECHO",
+      "subPath": "tuesday-overall/beneteau-211-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 ECHO",
+      "subPath": "tuesday-overall/cruisers-3-echo"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Cruisers 3 IRC",
+      "subPath": "tuesday-overall/cruisers-3-irc"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Dublin Bay 21",
+      "subPath": "tuesday-overall/dublin-bay-21"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Fireball",
+      "subPath": "tuesday-overall/fireball"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Flying Fifteen",
+      "subPath": "tuesday-overall/flying-fifteen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Glen",
+      "subPath": "tuesday-overall/glen"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Glen-Mermaid PY",
+      "subPath": "tuesday-overall/glen-mermaid-py"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-overall/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "ILCA 6",
+      "subPath": "tuesday-overall/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "ILCA 7",
+      "subPath": "tuesday-overall/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Melges 15",
+      "subPath": "tuesday-overall/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Mixed Sportsboats",
+      "subPath": "tuesday-overall/mixed-sportsboats"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "PY Class",
+      "subPath": "tuesday-overall/py-class"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "Ruffian 23",
+      "subPath": "tuesday-overall/ruffian-23"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Overall",
+      "fleet": "SB20",
+      "subPath": "tuesday-overall/sb20"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-a/fireball"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series A",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-a/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series A",
+      "fleet": "ILCA 6",
+      "subPath": "tuesday-series-a/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series A",
+      "fleet": "ILCA 7",
+      "subPath": "tuesday-series-a/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series A",
+      "fleet": "Melges 15",
+      "subPath": "tuesday-series-a/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series A",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-a/py-class"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-b/fireball"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series B",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-b/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series B",
+      "fleet": "ILCA 6",
+      "subPath": "tuesday-series-b/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series B",
+      "fleet": "ILCA 7",
+      "subPath": "tuesday-series-b/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series B",
+      "fleet": "Melges 15",
+      "subPath": "tuesday-series-b/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series B",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-b/py-class"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Fireball",
+      "subPath": "tuesday-series-c/fireball"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series C",
+      "fleet": "IDRA 14",
+      "subPath": "tuesday-series-c/idra-14"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series C",
+      "fleet": "ILCA 6",
+      "subPath": "tuesday-series-c/ilca-6"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series C",
+      "fleet": "ILCA 7",
+      "subPath": "tuesday-series-c/ilca-7"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series C",
+      "fleet": "Melges 15",
+      "subPath": "tuesday-series-c/melges-15"
+    },
+    {
+      "year": "2025",
+      "subSeries": "Tuesday Series C",
+      "fleet": "PY Class",
+      "subPath": "tuesday-series-c/py-class"
+    }
+  ]
+}
