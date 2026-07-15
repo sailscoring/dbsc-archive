@@ -40,3 +40,15 @@ The verbatim `*.html` files are stored unmodified for reproducibility.
 
 The live-site (`halsail.com`) endpoint model, which this archive variant
 parallels, is documented at `docs/notes/halsail/querying-public-results.md`.
+
+## DBSC Yearbook (trophy winners)
+
+Separate from the HalSail captures: the annual DBSC Yearbook (published with
+Afloat magazine on Issuu) prints per-class "Trophy Winners" tables for the
+previous season. Issuu offers no download, so these are transcribed manually
+into `yearbook/<edition-year>/trophy-winners.md`; each file records its source
+URL and page numbers. See `yearbook/README.md`.
+
+| Edition | Source |
+|---------|--------|
+| 2026 (winners 2025) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_2026_yearbook_> |

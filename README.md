@@ -42,6 +42,7 @@ sources/
   2026-live/            live-site (halsail.com) parity dataset
     *.sailscoring         generated day/group series files
     halsail/              captured live result fragments
+yearbook/              DBSC Yearbook trophy-winner transcriptions (manual)
 lib/halsail/           HalSail HTML parser + DBSC day-series builder
 scripts/
   halsail-archive-fetch.ts   archive capture (`pnpm capture`)
@@ -199,9 +200,9 @@ This repository contains three kinds of material, licensed separately:
 
 - **Code** — `scripts/`: [MIT](LICENSE).
 - **Normalized data & docs** — `sources/**/catalog.json`, `sources/manifest.json`,
-  `README.md`, `SOURCES.md`: [CC0 1.0](LICENSE-DATA) (public-domain dedication).
-  These are extractions of published facts (series names, keys, structure), and
-  facts are not copyrightable.
+  `yearbook/`, `README.md`, `SOURCES.md`: [CC0 1.0](LICENSE-DATA) (public-domain
+  dedication). These are extractions of published facts (series names, keys,
+  structure, trophy winners), and facts are not copyrightable.
 - **Source pages** — the verbatim `*.html` under `sources/`: **not covered by
   either license.** These are HalSail result pages published by DBSC, included
   only for reproducibility. All rights remain with their owners.
