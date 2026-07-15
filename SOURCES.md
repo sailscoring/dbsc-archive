@@ -52,3 +52,4 @@ URL and page numbers. See `yearbook/README.md`.
 | Edition | Source |
 |---------|--------|
 | 2026 (winners 2025) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_2026_yearbook_> |
+| 2025 (winners 2024) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_yearbook_2025> |
