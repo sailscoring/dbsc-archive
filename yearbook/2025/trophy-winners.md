@@ -57,6 +57,10 @@ One table in this edition — the Sigma 33 trophies are inline, tagged
 | Annette Cup | Thursdays ECHO Racing | Saki | M Ryan & B Ryan |
 | Mercia Cup | Saturdays ECHO Racing | Wynward | W. McCormack D. Collier |
 
+Row-for-row identical to the table the 2024 edition prints as "Trophy Winners
+2023" — one of the two editions likely reprinted the other's table; recorded
+verbatim from each.
+
 ## Cruiser 4, Non Spinnaker (p. 35)
 
 None published — the page has an Entries 2025 list only.
@@ -185,6 +189,9 @@ None published — the page has an Entries 2025 list only.
 | Goldsmith Cup | Wednesday 1st Place | Puffin | S & H Craig |
 | Bluebird Trophy | Wedneday 2nd Place (sic) | Moosmie | J. O'Driscoll |
 | G.Pugin Meldon Tr | Wedneday 3rd Place (sic) | Swift | G & J Kilroy |
+
+Identical to the table the 2024 edition prints as "Trophy Winners 2023" —
+likely one is a reprint; recorded verbatim from each.
 
 ## ILCA/Laser (p. 43)
 

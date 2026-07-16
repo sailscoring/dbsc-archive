@@ -44,12 +44,19 @@ parallels, is documented at `docs/notes/halsail/querying-public-results.md`.
 ## DBSC Yearbook (trophy winners)
 
 Separate from the HalSail captures: the annual DBSC Yearbook (published with
-Afloat magazine on Issuu) prints per-class "Trophy Winners" tables for the
-previous season. Issuu offers no download, so these are transcribed manually
-into `yearbook/<edition-year>/trophy-winners.md`; each file records its source
-URL and page numbers. See `yearbook/README.md`.
+Afloat magazine) prints per-class "Trophy Winners" tables for the previous
+season. Editions hosted only on Issuu (no download) are transcribed manually
+from viewer screenshots; editions hosted as PDFs on dbsc.ie are transcribed
+from the PDF text layer. Everything lands in
+`yearbook/<edition-year>/trophy-winners.md`; each file records its source URL,
+page numbers, and method. See `yearbook/README.md`.
 
 | Edition | Source |
 |---------|--------|
 | 2026 (winners 2025) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_2026_yearbook_> |
 | 2025 (winners 2024) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_yearbook_2025> |
+| 2024 (winners 2023) | <https://www.dbsc.ie/wp-content/uploads/2024/04/DBSC_Yrbook_2024_small.pdf> |
+| 2023 (winners 2022) | <https://www.dbsc.ie/wp-content/uploads/2023/04/DBSC_2023_-yearbook-download.pdf> |
+| 2022 (winners 2021) | <https://www.dbsc.ie/wp-content/uploads/2022/03/dbsc_2022_yrbk_.pdf> |
+| 2021 (winners 2020) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_2021_> |
+| 2020 (winners 2019) | <https://issuu.com/irelandafloatmagazine/docs/dbsc_2020_yearbook> |
